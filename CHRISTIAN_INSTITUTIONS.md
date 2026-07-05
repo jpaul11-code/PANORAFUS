@@ -49,6 +49,21 @@ A structured overview of major Christian religious institutions worldwide, organ
 
 ---
 
+## Churches & National Communions
+
+| Institution | Location | Description |
+|---|---|---|
+| Church of England | London, UK | Historic mother church of the Anglican Communion |
+| The Episcopal Church | New York, USA | Anglican province serving the United States and other dioceses |
+| Presbyterian Church (USA) | Louisville, USA | Major Reformed denomination in the United States |
+| Evangelical Church in Germany (EKD) | Hannover, Germany | Federation of Lutheran, Reformed, and United regional churches |
+| Church of South India | Chennai, India | United Protestant church with Anglican, Methodist, Presbyterian, and Congregational roots |
+| Redeemed Christian Church of God (RCCG) | Lagos, Nigeria | Global Pentecostal church network with congregations across many nations |
+| Hillsong Church | Sydney, Australia | International Pentecostal church known for worship, church planting, and media ministry |
+| Church of Nigeria (Anglican Communion) | Abuja, Nigeria | One of the largest Anglican provinces in the world |
+
+---
+
 ## Evangelical & Interdenominational
 
 | Institution | Location | Description |
@@ -60,6 +75,20 @@ A structured overview of major Christian religious institutions worldwide, organ
 | Wycliffe Bible Translators | Orlando, USA | Bible translation organization |
 | Samaritan's Purse | Boone, USA | Evangelical Christian humanitarian organization |
 | The Salvation Army | London, UK | International Christian charitable organization |
+
+---
+
+## Ministries, Missions & Service Networks
+
+| Institution | Location | Description |
+|---|---|---|
+| International Fellowship of Evangelical Students (IFES) | Oxford, UK | Global student ministry network active on university campuses |
+| Operation Mobilization (OM) | Tyrone, USA | International missions organization serving in evangelism and humanitarian outreach |
+| Compassion International | Colorado Springs, USA | Christ-centered child development and sponsorship ministry |
+| Scripture Union International | Oxford, UK | Global movement for Bible engagement, children, and youth discipleship |
+| Alpha International | London, UK | Evangelism and discipleship ministry used by churches worldwide |
+| Christian Aid | London, UK | Relief, development, and advocacy ministry supported by churches in the UK and Ireland |
+| Lausanne Movement | Global | International network advancing evangelism, leadership, and mission collaboration |
 
 ---
 
