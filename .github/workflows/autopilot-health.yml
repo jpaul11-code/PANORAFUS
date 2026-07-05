@@ -22,7 +22,7 @@ jobs:
         run: |
           set -euo pipefail
           docs_count=$(find . -maxdepth 1 -type f \( -name "*.md" -o -name "GLOBALNETWORK" \) | wc -l | tr -d ' ')
-          docs_lines=$(cat ./*.md ./GLOBALNETWORK | wc -l | tr -d ' ')
+          docs_lines=$(find . -maxdepth 1 -type f \( -name "*.md" -o -name "GLOBALNETWORK" \) -print0 | xargs -0 -r cat | wc -l | tr -d ' ')
           echo "docs_count=$docs_count" >> "$GITHUB_OUTPUT"
           echo "docs_lines=$docs_lines" >> "$GITHUB_OUTPUT"
 
@@ -46,14 +46,22 @@ jobs:
               "_Generated automatically by PANORAFUS.AI autopilot._"
             ].join("\n");
 
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner,
-              repo,
-              state: "open",
-              per_page: 100
-            });
+            let page = 1;
+            let existing = null;
 
-            const existing = issues.find((issue) => issue.title === title);
+            while (!existing) {
+              const { data: issues } = await github.rest.issues.listForRepo({
+                owner,
+                repo,
+                state: "open",
+                per_page: 100,
+                page
+              });
+
+              if (issues.length === 0) break;
+              existing = issues.find((issue) => issue.title === title) || null;
+              page += 1;
+            }
 
             if (existing) {
               await github.rest.issues.createComment({
