@@ -60,6 +60,7 @@ jobs:
 
               if (issues.length === 0) break;
               existing = issues.find((issue) => issue.title === title) || null;
+              if (!existing && issues.length < 100) break;
               page += 1;
             }
 

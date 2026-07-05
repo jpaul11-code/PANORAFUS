@@ -43,6 +43,7 @@ jobs:
           set -euo pipefail
           mapfile -t files <<< "$DOC_FILES"
           for file in "${files[@]}"; do
+            [[ -z "$file" ]] && continue
             if ! grep -q "PANORAFUS.AI" "$file"; then
               echo "PANORAFUS.AI branding validation failed: '$file' must include the PANORAFUS.AI header/reference."
               exit 1
@@ -55,11 +56,12 @@ jobs:
           set -euo pipefail
           mapfile -t files <<< "$DOC_FILES"
           for file in "${files[@]}"; do
+            [[ -z "$file" ]] && continue
             while IFS= read -r target; do
               clean_target="${target%%#*}"
               [[ -z "$clean_target" ]] && continue
               [[ "$clean_target" =~ ^https?:// ]] && continue
-              if [[ ! -f "$clean_target" ]]; then
+              if [[ ! -e "$clean_target" ]]; then
                 echo "Link target file not found: '$target' (referenced in '$file')."
                 exit 1
               fi
