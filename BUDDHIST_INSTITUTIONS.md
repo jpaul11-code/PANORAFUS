@@ -1,3 +1,5 @@
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+
 # Buddhist Religious Institutions
 
 A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.

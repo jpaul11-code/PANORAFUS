@@ -1,3 +1,5 @@
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+
 # Hindu Religious Institutions
 
 A structured overview of major Hindu religious institutions worldwide, organized by tradition and function.

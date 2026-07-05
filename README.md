@@ -1,4 +1,6 @@
-# PANORAFUS
+# PANORAFUS.AI
+
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
 
 PANORAFUS is a global network directory cataloguing institutions, organizations, and communities around the world.
 

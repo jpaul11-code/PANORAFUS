@@ -1,3 +1,5 @@
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+
 # Christian Religious Institutions
 
 A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.

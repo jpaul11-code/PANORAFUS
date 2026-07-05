@@ -1,3 +1,5 @@
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+
 # Other Religious Institutions
 
 A structured overview of other major world religious institutions, including Sikh, Bahá'í, Indigenous, and interfaith organizations.

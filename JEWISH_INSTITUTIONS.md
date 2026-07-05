@@ -1,3 +1,5 @@
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+
 # Jewish Religious Institutions
 
 A structured overview of major Jewish religious institutions worldwide, organized by tradition and function.

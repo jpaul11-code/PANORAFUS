@@ -1,3 +1,5 @@
+> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+
 # Islamic Religious Institutions
 
 A structured overview of major Islamic religious institutions worldwide, organized by tradition and function.
