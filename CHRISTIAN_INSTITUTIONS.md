@@ -60,7 +60,7 @@ A structured overview of major Christian religious institutions worldwide, organ
 | Church of South India | Chennai, India | United Protestant church with Anglican, Methodist, Presbyterian, and Congregational roots |
 | Redeemed Christian Church of God (RCCG) | Lagos, Nigeria | Global Pentecostal church network with congregations across many nations |
 | Hillsong Church | Sydney, Australia | International Pentecostal church known for worship, church planting, and media ministry |
-| Seasoned Christian Ministry Church | Online / Global | Founding church of PANORAFUS.AI focused on worship, outreach, and Christian connection |
+| Church of Nigeria (Anglican Communion) | Abuja, Nigeria | One of the largest Anglican provinces in the world |
 
 ---
 
