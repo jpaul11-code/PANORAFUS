@@ -3,12 +3,12 @@ name: PANORAFUS.AI Docs Autopilot
 on:
   push:
     paths:
-      - "*.md"
+      - "**/*.md"
       - "GLOBALNETWORK"
       - ".github/workflows/docs-autopilot.yml"
   pull_request:
     paths:
-      - "*.md"
+      - "**/*.md"
       - "GLOBALNETWORK"
       - ".github/workflows/docs-autopilot.yml"
   schedule:

@@ -21,8 +21,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          docs_count=$(find . -maxdepth 1 -type f \( -name "*.md" -o -name "GLOBALNETWORK" \) | wc -l | tr -d ' ')
-          docs_lines=$(find . -maxdepth 1 -type f \( -name "*.md" -o -name "GLOBALNETWORK" \) -print0 | xargs -0 -r cat | wc -l | tr -d ' ')
+          mapfile -d '' -t docs_files < <(find . -maxdepth 1 -type f \( -name "*.md" -o -name "GLOBALNETWORK" \) -print0)
+          docs_count="${#docs_files[@]}"
+          docs_lines="0"
+          if (( docs_count > 0 )); then
+            docs_lines=$(printf '%s\0' "${docs_files[@]}" | xargs -0 cat | wc -l | tr -d ' ')
+          fi
           echo "docs_count=$docs_count" >> "$GITHUB_OUTPUT"
           echo "docs_lines=$docs_lines" >> "$GITHUB_OUTPUT"
 
@@ -46,23 +50,14 @@ jobs:
               "_Generated automatically by PANORAFUS.AI autopilot._"
             ].join("\n");
 
-            let page = 1;
-            let existing = null;
-
-            while (!existing) {
-              const { data: issues } = await github.rest.issues.listForRepo({
-                owner,
-                repo,
-                state: "open",
-                per_page: 100,
-                page
-              });
-
-              if (issues.length === 0) break;
-              existing = issues.find((issue) => issue.title === title) || null;
-              if (!existing && issues.length < 100) break;
-              page += 1;
-            }
+            const query = `repo:${owner}/${repo} is:issue is:open in:title "${title}"`;
+            const { data: searchResults } = await github.rest.search.issuesAndPullRequests({
+              q: query,
+              per_page: 5
+            });
+            const existing = searchResults.items.find(
+              (item) => item.title === title && !item.pull_request
+            ) || null;
 
             if (existing) {
               await github.rest.issues.createComment({
