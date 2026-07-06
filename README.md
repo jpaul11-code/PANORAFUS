@@ -13,6 +13,15 @@ PANORAFUS.AI is a global network platform connecting institutions, organizations
 
 ## Contents
 
+## Contact
+
+For anything related to **PANORAFUS.AI**, please reach out:
+
+- 📧 [paul@seasonedchristianministrychurch.community](mailto:paul@seasonedchristianministrychurch.community)
+- 📧 [pauljacquelin00@gmail.com](mailto:pauljacquelin00@gmail.com)
+
+---
+
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [Seasoned Christian Ministry Church — Founding Institution](SEASONED_CHRISTIAN_MINISTRY.md)
 - [Global Network Index](GLOBALNETWORK)
