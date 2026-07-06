@@ -5,6 +5,12 @@
 
 PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
 
+## PANORAFUS.AI Autopilot
+
+- **Docs Autopilot Workflow:** Automatically validates branding consistency and internal links on push, pull request, daily schedule, and manual run.
+- **Autopilot Health Workflow:** Publishes a weekly PANORAFUS.AI health report issue comment with repository documentation metrics.
+- **Manual Control:** Both workflows support `workflow_dispatch` for on-demand runs from GitHub Actions.
+
 ## Contents
 
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
