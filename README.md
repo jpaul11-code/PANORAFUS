@@ -30,6 +30,7 @@ For anything related to **PANORAFUS.AI**, please reach out:
 
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
+- [✝️ The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
 - [Seasoned Christian Ministry Church — Founding Institution](SEASONED_CHRISTIAN_MINISTRY.md)
 - [Global Network Index](GLOBALNETWORK)
   - [Christian Religious Institutions](CHRISTIAN_INSTITUTIONS.md)
