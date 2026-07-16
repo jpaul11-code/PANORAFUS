@@ -59,12 +59,13 @@ jobs:
             [[ -z "$file" ]] && continue
             while IFS= read -r target; do
               clean_target="${target%%#*}"
+              clean_target="${clean_target//$'\r'/}"
+              clean_target="${clean_target#"${clean_target%%[![:space:]]*}"}"
+              clean_target="${clean_target%"${clean_target##*[![:space:]]}"}"
               [[ -z "$clean_target" ]] && continue
-              [[ "$clean_target" =~ ^https?:// ]] && continue
-              [[ "$clean_target" =~ ^mailto: ]] && continue
-              [[ "$clean_target" =~ ^tel: ]] && continue
+              [[ "$clean_target" =~ ^[A-Za-z][A-Za-z0-9+.-]*: ]] && continue
               if [[ ! -e "$clean_target" ]]; then
-                echo "Link target file not found: '$target' (referenced in '$file')."
+                echo "Link target file not found: '$clean_target' (referenced in '$file')."
                 exit 1
               fi
             done < <(grep -oE '\[[^]]+\]\(([^)]+)\)' "$file" | sed -E 's/.*\(([^)]+)\)/\1/')
