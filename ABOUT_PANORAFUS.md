@@ -85,6 +85,11 @@ For partnership inquiries, institution listings, or collaboration with PANORAFUS
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
 
+For all website management, content, and administrative matters related to **www.seasonedchristianministrychurch.com**, please contact:
+
+**Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
+🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
 ---
 
 *PANORAFUS.AI — Connecting the World, One Institution at a Time.*

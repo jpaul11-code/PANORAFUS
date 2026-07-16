@@ -26,6 +26,11 @@ For anything related to **PANORAFUS.AI**, please reach out:
 - 📧 [paul@seasonedchristianministrychurch.community](mailto:paul@seasonedchristianministrychurch.community)
 - 📧 [pauljacquelin00@gmail.com](mailto:pauljacquelin00@gmail.com)
 
+For website management, content updates, and administrative matters related to **www.seasonedchristianministrychurch.com**:
+
+**Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
+🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
 ---
 
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)

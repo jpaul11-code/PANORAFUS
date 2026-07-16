@@ -594,6 +594,9 @@ This work is championed by **Seasoned Christian Ministry Church** under PANORAFU
 📧 [pauljacquelin00@gmail.com](mailto:pauljacquelin00@gmail.com)
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
 
+**Website Management:** For all matters related to the website [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com), please contact:
+**Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
+
 ---
 
 *PANORAFUS.AI — Connecting the World, One Institution at a Time.*

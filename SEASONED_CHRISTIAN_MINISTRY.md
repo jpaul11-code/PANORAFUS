@@ -68,6 +68,13 @@ Through PANORAFUS.AI, Seasoned Christian Ministry Church is connected to a globa
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
 
+### Website Management
+
+For all website inquiries, content updates, listings, and management of **www.seasonedchristianministrychurch.com**, please contact:
+
+**Selina** — *Website Manager, Seasoned Christian Ministry Church / PANORAFUS.AI*
+🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
 ---
 
 *Seasoned Christian Ministry Church — Founding Institution of PANORAFUS.AI*
