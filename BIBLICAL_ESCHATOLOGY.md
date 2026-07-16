@@ -7,11 +7,31 @@
 
 ---
 
-## What is Biblical Eschatology?
+## What is Biblical Eschatology? — A Purified Definition
 
-**Biblical Eschatology** is the study of the "last things" as revealed in the Holy Scriptures — the divine prophecies, visions, and teachings concerning the final events of history, the end of the age, the return of Jesus Christ, the resurrection of the dead, the final judgment, and the eternal Kingdom of God.
+**Biblical Eschatology** is the systematic, Scripture-rooted study of the *last things* — the divinely revealed sequence of events that will bring this present age to its appointed end and usher in the eternal Kingdom of God.
 
-The word *eschatology* comes from the Greek words **ἔσχατος** (*eschatos*, "last") and **λόγος** (*logos*, "word/study") — meaning **the study of last things**.
+It is not speculation, mythology, or human philosophy. It is the authoritative Word of God concerning what **has been decreed, what is being fulfilled, and what shall surely come to pass.**
+
+> *"I am God, and there is none like me — declaring the end from the beginning and from ancient times things not yet done, saying, 'My counsel shall stand, and I will accomplish all my purpose.'"*
+> — **Isaiah 46:9–10 (ESV)**
+
+### The Purified Definition
+
+| Term | Meaning |
+|---|---|
+| **Greek Root** | *ἔσχατος* (*eschatos*) = "last" + *λόγος* (*logos*) = "word / study" |
+| **Literal Meaning** | The study of last things |
+| **Biblical Scope** | All that God has revealed in Scripture about the end of history, the consummation of salvation, and the eternal state |
+| **Central Focus** | The Person and Return of **Jesus Christ** — the Alpha and the Omega |
+
+### What Biblical Eschatology Is *Not*
+
+- ❌ It is **not** date-setting or sensationalism
+- ❌ It is **not** political prediction or conspiracy theory
+- ❌ It is **not** fearful speculation disconnected from Scripture
+- ✅ It **is** confident, faith-filled reading of God's own prophetic Word
+- ✅ It **is** the blessed hope of every true believer (Titus 2:13)
 
 ---
 
