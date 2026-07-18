@@ -69,9 +69,7 @@ jobs:
             while IFS= read -r target; do
               clean_target="${target%%#*}"
               [[ -z "$clean_target" ]] && continue
-              [[ "$clean_target" =~ ^https?:// ]] && continue
-              [[ "$clean_target" =~ ^mailto: ]] && continue
-              [[ "$clean_target" =~ ^tel: ]] && continue
+              [[ "$clean_target" =~ ^((https?|ftp|file)://|(mailto|tel):) ]] && continue
               if [[ ! -e "$clean_target" ]]; then
                 echo "Link target file not found: '$target' (referenced in '$file')."
                 exit 1
