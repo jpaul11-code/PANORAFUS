@@ -38,3 +38,4 @@ For anything related to **PANORAFUS.AI**, please reach out:
   - [Hindu Religious Institutions](HINDU_INSTITUTIONS.md)
   - [Buddhist Religious Institutions](BUDDHIST_INSTITUTIONS.md)
   - [Other Religious Institutions](OTHER_RELIGIOUS_INSTITUTIONS.md)
+- [Religious Denomination Credentials & Canonical Discussion — Global Index](RELIGIOUS_DENOMINATION_CREDENTIALS.md)
