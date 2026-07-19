@@ -25,6 +25,7 @@ jobs:
       DOC_FILES: |
         README.md
         ABOUT_PANORAFUS.md
+        BIBLICAL_ESCHATOLOGY.md
         SEASONED_CHRISTIAN_MINISTRY.md
         CHRISTIAN_INSTITUTIONS.md
         ISLAMIC_INSTITUTIONS.md
@@ -32,6 +33,14 @@ jobs:
         HINDU_INSTITUTIONS.md
         BUDDHIST_INSTITUTIONS.md
         OTHER_RELIGIOUS_INSTITUTIONS.md
+        RELIGIOUS_DENOMINATION_CREDENTIALS.md
+        HUMANITARIAN_ORGANIZATIONS.md
+        THEOLOGICAL_SCHOOLS_AND_SEMINARIES.md
+        RELIGIOUS_MEDIA_AND_BROADCASTING.md
+        PRAYER_AND_INTERCESSION_NETWORKS.md
+        MISSIONS_AND_EVANGELISM.md
+        RELIGIOUS_EDUCATION.md
+        CONTRIBUTE.md
         GLOBALNETWORK
     steps:
       - name: Checkout repository
@@ -60,9 +69,7 @@ jobs:
             while IFS= read -r target; do
               clean_target="${target%%#*}"
               [[ -z "$clean_target" ]] && continue
-              [[ "$clean_target" =~ ^https?:// ]] && continue
-              [[ "$clean_target" =~ ^mailto: ]] && continue
-              [[ "$clean_target" =~ ^tel: ]] && continue
+              [[ "$clean_target" =~ ^((https?|ftp|file)://|(mailto|tel):) ]] && continue
               if [[ ! -e "$clean_target" ]]; then
                 echo "Link target file not found: '$target' (referenced in '$file')."
                 exit 1
