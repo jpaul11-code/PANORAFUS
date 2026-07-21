@@ -8,9 +8,22 @@
 
 ## What is PANORAFUS.AI?
 
-**PANORAFUS.AI** is a global network platform designed to connect, catalogue, and amplify institutions, organizations, and communities across the world. It serves as the pivotal digital hub for religious, cultural, educational, and humanitarian networks — bringing the world together under one unified index.
+**PANORAFUS.AI** is an AI-powered global platform designed to help people around the world **read, search, comment, and discuss the Word of God** — with Biblical Eschatology as its first and highest priority.
 
-PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and institutional transparency.
+At its core, PANORAFUS.AI brings the prophetic Scriptures to every nation, every tongue, and every people. It also serves as the pivotal digital hub for religious, cultural, educational, and humanitarian networks — connecting institutions and communities across the globe under one unified index.
+
+PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and unwavering fidelity to the Word of God.
+
+### Core Purpose
+
+| Pillar | Description |
+|---|---|
+| 📖 **Read** | Access and engage deeply with the Word of God — especially the prophetic and eschatological Scriptures |
+| 🔍 **Search** | AI-powered tools to discover, explore, and cross-reference biblical truth |
+| 💬 **Comment** | Share reflections, insights, and Spirit-led observations with the global community |
+| 🗣️ **Discuss** | Engage in open, respectful, Scripture-grounded dialogue with believers worldwide |
+
+> *"Your word is a lamp to my feet and a light to my path."* — Psalm 119:105
 
 ---
 
@@ -70,6 +83,11 @@ The PANORAFUS.AI Global Network currently indexes institutions across:
 
 For partnership inquiries, institution listings, or collaboration with PANORAFUS.AI:
 
+🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
+For all website management, content, and administrative matters related to **www.seasonedchristianministrychurch.com**, please contact:
+
+**Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
 
 ---
