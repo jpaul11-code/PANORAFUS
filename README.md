@@ -31,6 +31,7 @@ For anything related to **PANORAFUS.AI**, please reach out:
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [Seasoned Christian Ministry Church — Founding Institution](SEASONED_CHRISTIAN_MINISTRY.md)
+- [Apostle Paul — Genealogy & Life: From Infancy to Death](APOSTLE_PAUL_GENEALOGY.md)
 - [Global Network Index](GLOBALNETWORK)
   - [Christian Religious Institutions](CHRISTIAN_INSTITUTIONS.md)
   - [Islamic Religious Institutions](ISLAMIC_INSTITUTIONS.md)
