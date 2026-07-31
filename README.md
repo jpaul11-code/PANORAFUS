@@ -35,6 +35,7 @@ For website management, content updates, and administrative matters related to *
 
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
+- [🔭 PANORAFUS OF FUTURE KNOWLEDGE — Concepts, Sources & Limits of Prophetic Knowledge](FUTURE_KNOWLEDGE.md)
 - [Seasoned Christian Ministry Church — Founding Institution](SEASONED_CHRISTIAN_MINISTRY.md)
 - [Apostle Paul — Genealogy & Life: From Infancy to Death](APOSTLE_PAUL_GENEALOGY.md)
 - [Global Network Index](GLOBALNETWORK)

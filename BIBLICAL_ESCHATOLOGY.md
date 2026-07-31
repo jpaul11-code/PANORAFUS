@@ -36,8 +36,10 @@
 11. [Chapter X — The New Heaven and New Earth — The Eternal Home](#chapter-x)
 12. [Chapter XI — The Restoration of Israel — The Covenant That Cannot Fail](#chapter-xi)
 13. [Chapter XII — How Then Shall We Live? — The Philosopher's Response](#chapter-xii)
-14. [Epilogue — Even So, Come, Lord Jesus](#epilogue)
-15. [The Great Prophetic Books — A Reader's Guide](#prophetic-books)
+14. [Chapter XIII — The Epistemology of Prophecy — How We Know What God Has Said](#chapter-xiii)
+15. [Chapter XIV — Limits and Boundaries of Human Future Knowledge](#chapter-xiv)
+16. [Epilogue — Even So, Come, Lord Jesus](#epilogue)
+17. [The Great Prophetic Books — A Reader's Guide](#prophetic-books)
 
 ---
 
@@ -509,6 +511,149 @@ Watchfulness is not anxiety. It is spiritual alertness — the posture of a serv
 > — **1 Peter 4:7–8 (NIV)**
 
 The philosopher who has seen the New Jerusalem — who has glimpsed the City where love is the atmosphere and God is the light — cannot live selfishly. Every neighbor is a soul with an eternal destiny. Every relationship is an opportunity for the love of Christ to be displayed.
+
+---
+
+<a name="chapter-xiii"></a>
+## CHAPTER XIII — The Epistemology of Prophecy — How We Know What God Has Said
+
+### The Question Behind the Questions
+
+Every chapter of this work has rested on a foundational assumption: that the prophetic Scriptures can be trusted. But the careful philosopher must ask — *why?* On what basis do we claim that the words of Isaiah, Daniel, Ezekiel, and John of Patmos are not merely the projections of brilliant human minds, but the revealed Word of the living God?
+
+This is the question of **epistemology** — the philosophy of knowledge — applied to prophecy. It is not a question to be avoided. It is a question that, when answered honestly, becomes one of the most powerful apologetic tools in the arsenal of faith.
+
+### Fulfilled Prophecy — The Empirical Standard
+
+The cornerstone of prophetic epistemology is the extraordinary record of **fulfilled prophecy**. God does not merely claim omniscience — He proves it by announcing the future in advance and then fulfilling it with precision.
+
+Consider the prophecies concerning the Messiah, written centuries before the birth of Jesus of Nazareth:
+
+| Prophecy | Scripture Reference | Fulfillment |
+|---|---|---|
+| Born of a virgin | Isaiah 7:14 | Matthew 1:22–23 |
+| Born in Bethlehem | Micah 5:2 | Luke 2:4–7 |
+| Preceded by a messenger | Malachi 3:1; Isaiah 40:3 | Matthew 3:1–3 |
+| Entered Jerusalem on a donkey | Zechariah 9:9 | Matthew 21:4–9 |
+| Betrayed for 30 pieces of silver | Zechariah 11:12–13 | Matthew 26:15 |
+| Hands and feet pierced | Psalm 22:16 | John 20:25–27 |
+| Garments divided by lot | Psalm 22:18 | John 19:23–24 |
+| No bone broken | Psalm 34:20 | John 19:33–36 |
+| Buried in a rich man's tomb | Isaiah 53:9 | Matthew 27:57–60 |
+| Resurrection from the dead | Psalm 16:10 | Acts 2:31; 13:35 |
+
+These are not vague coincidences. They are specific, falsifiable, historical claims — made centuries before the events they describe, and fulfilled with documentary precision. The mathematician Peter Stoner estimated that the probability of any single person fulfilling just eight of these prophecies by chance is 1 in 10^17. The philosophical conclusion is inescapable: **the source of this knowledge transcends human capacity.**
+
+### The Test of the True Prophet — Deuteronomy 18
+
+God Himself established the epistemological standard for evaluating prophetic claims. He did not ask for blind trust. He gave a test:
+
+> *"You may say to yourselves, 'How can we know when a message has not been spoken by the LORD?' If what a prophet proclaims in the name of the LORD does not take place or come true, that is a message the LORD has not spoken."*
+> — **Deuteronomy 18:21–22 (NIV)**
+
+The standard is **100% accuracy.** This is not the standard of astrology, horoscope, or cold reading — which trade in vague generalities that can be interpreted in multiple ways. This is the standard of falsifiability. A true prophet of God makes specific claims that can be verified — and they must be right.
+
+The prophetic record of Scripture passes this test at an extraordinary level. Not a single fulfilled prophecy in the Bible has been demonstrated to be inaccurate. The Scriptures' track record is the foundation on which confidence in their unfulfilled prophecies rightly rests.
+
+### Progressive Revelation — God's Unfolding Disclosure
+
+A second epistemological key is the **principle of progressive revelation**: the recognition that God did not disclose the fullness of His prophetic plan at once, but unveiled it gradually, with each stage enriching and confirming the last.
+
+- **Genesis 3:15** — The seed promise: a descendant of the woman will crush the serpent. No details, just the first light.
+- **Genesis 12, 15, 17** — The Abrahamic Covenant: the seed will come through Abraham, blessing all nations, inheriting a specific land.
+- **2 Samuel 7** — The Davidic Covenant: the seed will be a king from David's line whose throne will be established forever.
+- **Isaiah 52–53** — The Suffering Servant: the Messiah will bear the sins of the people through vicarious suffering and death.
+- **Jeremiah 31** — The New Covenant: one day, God's law will be written on hearts, and sin will be forgiven absolutely.
+- **The New Testament** — All of the above converges in and is fulfilled by Jesus Christ. His first coming fulfills the prophetic pattern. His second coming will complete it.
+
+This progressive convergence — independent prophetic streams across a thousand years of writing, all pointing to the same Person and conclusion — is itself a powerful epistemological argument. No human conspiracy could have coordinated it. No human wisdom could have invented it. **It is the fingerprint of divine authorship.**
+
+### Hermeneutics — Reading Prophecy Rightly
+
+The epistemology of prophecy also requires sound **hermeneutics** — the science of biblical interpretation. The most reliable approach is the *grammatical-historical method*:
+
+1. **Take the literal meaning unless the context clearly demands otherwise.** "Bethlehem" means Bethlehem. "Thirty pieces of silver" means thirty pieces of silver.
+2. **Recognize genre.** Apocalyptic literature (Daniel, Revelation) uses symbolic imagery, but the symbols are internally defined or cross-referenced in other passages.
+3. **Let Scripture interpret Scripture.** Difficult prophetic passages are illuminated by clearer ones on the same subject.
+4. **Distinguish the near and far horizons.** Many prophecies have both an immediate fulfillment and a greater, eschatological fulfillment — the "double reference" principle.
+
+The philosopher who reads prophecy with these tools — and with prayer, humility, and the illumination of the Holy Spirit — will find that the prophetic Word yields an astonishing coherence across centuries of diverse human authors. That coherence is its own testimony.
+
+> *"We also have the prophetic message as something completely reliable, and you will do well to pay attention to it, as to a light shining in a dark place."*
+> — **2 Peter 1:19 (NIV)**
+
+---
+
+<a name="chapter-xiv"></a>
+## CHAPTER XIV — Limits and Boundaries of Human Future Knowledge
+
+### The Gift of Not Knowing Everything
+
+A paradox of divine wisdom: the most important piece of prophetic information God has withheld is precisely the piece we most want to know. The date.
+
+> *"But about that day or hour no one knows, not even the angels in heaven, nor the Son, but only the Father."*
+> — **Matthew 24:36 (NIV)**
+
+This is not a deficiency of revelation. It is a deliberate act of divine grace. The philosopher who has thought carefully about human nature understands why: **if the date were known, faithfulness would become conditional.** The person who knew Christ would return in fifty years might live carelessly for forty-nine. The person who knew the day and hour would scramble into holiness at the last moment.
+
+God's withholding of the hour transforms prophetic knowledge from a countdown to a calling. We do not know when — so we must be ready always. We cannot calculate the deadline — so we must be faithful continuously. The unknown hour is not a frustration of eschatology; it is its ethical engine.
+
+### The Secret Things Belong to God
+
+The foundational principle that governs all human future knowledge is stated with crystal clarity in Deuteronomy:
+
+> *"The secret things belong to the LORD our God, but the things that are revealed belong to us and to our children forever, that we may do all the words of this law."*
+> — **Deuteronomy 29:29 (ESV)**
+
+This verse establishes a boundary that wisdom honors and folly transgresses. There is a realm of divine knowledge that is permanently closed to human access — not because God cannot reveal it, but because He has chosen not to. And the appropriate response to that closure is **trust**, not resentment.
+
+The revealed things are sufficient. We know the destination. We know the One who is coming. We know enough to live faithfully, love boldly, serve humbly, and die in peace. The secret things are not withheld to torment us — they are withheld because we do not need them, and because living without them keeps us in the posture of dependence that is proper before a sovereign God.
+
+### The Danger of Prophetic Speculation
+
+The history of Christianity is littered with the wreckage of confident prophetic speculation that turned out to be false. Date-setters have named their dates and been wrong. Maps of the End have been drawn with certainty and then discarded. Every generation has believed it was the final one.
+
+Scripture anticipates and condemns this tendency:
+
+> *"I did not send these prophets, yet they have run with their message; I did not speak to them, yet they have prophesied."*
+> — **Jeremiah 23:21 (NIV)**
+
+> *"Woe to the foolish prophets who follow their own spirit and have seen nothing!"*
+> — **Ezekiel 13:3 (NIV)**
+
+The test of Deuteronomy 18 is ruthless in its simplicity: if the prophet speaks in the name of the LORD and it does not happen, he has spoken presumptuously. Every failed date-setting is a violation of this standard — not a minor embarrassment, but a profound act of prophetic presumption.
+
+The remedy is not the abandonment of all prophetic expectation. It is the discipline of remaining within the boundaries of what is *written*, interpreting it carefully, applying it humbly, and refusing to add to what God has said.
+
+### Human Forecasting Is Not Divine Foreknowledge
+
+It is worth drawing a clear distinction between the legitimate tools of human future-reasoning and the unique gift of divine foreknowledge:
+
+**Human forecasting** uses observation, pattern recognition, historical analysis, and probability modeling to project future outcomes. This is valuable — it underlies medicine, economics, engineering, and statecraft. But it is *probabilistic*, fallible, and limited to patterns that can be extrapolated from known data.
+
+**Divine foreknowledge** is not probabilistic. God does not *estimate* the future — He *knows* it, because He is its Author. He stands outside of time, declaring "the end from the beginning" (Isaiah 46:10), not because He reads trends, but because He determines outcomes.
+
+Human forecasting has its proper and honored place. But it must never be elevated to the status of prophecy, and it must never be confused with divine foreknowledge. The climate scientist and the seer of Patmos are doing fundamentally different things — and the wisdom to tell the difference is the beginning of prophetic epistemology.
+
+### Living Well Within the Limits
+
+The person who accepts the limits of human future knowledge does not become passive. The acceptance of divine sovereignty over what cannot be known becomes the foundation for radical faithfulness in what *can* be known and done:
+
+- **We cannot know the day.** Therefore we *live* the day — fully, faithfully, lovingly.
+- **We cannot know every detail of the Tribulation's sequence.** Therefore we *obey* every clear command of Scripture, which we can know.
+- **We cannot know which generation will be the last.** Therefore every generation *preaches the gospel* as if souls in the balance depend on it — because they do.
+- **We cannot see the New Jerusalem with physical eyes.** Therefore we *hope* for it with everything in us, letting that hope purify our present choices (1 John 3:3).
+
+The limits of human future knowledge are not walls that imprison — they are banks that direct. A river with banks flows powerfully toward its destination. Remove the banks and you have a swamp. The boundaries of prophetic knowledge channel the energy of eschatological hope into faithful, fruitful, forward-moving life.
+
+> *"For now we see only a reflection as in a mirror; but then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known."*
+> — **1 Corinthians 13:12 (NIV)**
+
+Until that day — we know in part. And knowing in part, we trust the One who knows in full.
+
+---
+
+> 📖 **Companion Reading:** For a deeper philosophical and comparative exploration of future knowledge — including sources, epistemology, comparative traditions, and practical ethics — see [PANORAFUS OF FUTURE KNOWLEDGE](FUTURE_KNOWLEDGE.md).
 
 ---
 
