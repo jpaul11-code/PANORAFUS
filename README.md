@@ -53,3 +53,12 @@ For website management, content updates, and administrative matters related to *
 - [Missions and Evangelism](MISSIONS_AND_EVANGELISM.md)
 - [Religious Education](RELIGIOUS_EDUCATION.md)
 - [Contribute to PANORAFUS.AI](CONTRIBUTE.md)
+
+---
+
+## Theological Background Studies
+
+- [👁️ Visions and Revelations — A Biblical Study of Divine Visions, Dreams, and Supernatural Revelations](VISIONS_AND_REVELATIONS.md)
+- [🍞 The Lord's Supper — A Biblical, Historical, and Theological Study of Holy Communion](THE_LORD_SUPPER.md)
+- [🕊️ The Holy Spirit and Spiritual Gifts — A Biblical and Theological Study](HOLY_SPIRIT_AND_GIFTS.md)
+- [🙏 Worship and Prayer — A Biblical and Theological Study](WORSHIP_AND_PRAYER.md)
