@@ -41,6 +41,7 @@ jobs:
         MISSIONS_AND_EVANGELISM.md
         RELIGIOUS_EDUCATION.md
         CONTRIBUTE.md
+        SEE_THE_WORD.md
         GLOBALNETWORK
     steps:
       - name: Checkout repository
