@@ -71,6 +71,7 @@ jobs:
               clean_target="${target%%#*}"
               [[ -z "$clean_target" ]] && continue
               [[ "$clean_target" =~ ^[A-Za-z][A-Za-z0-9+.-]*: ]] && continue
+              [[ "$clean_target" =~ ^mailto: ]] && continue
               if [[ ! -e "$clean_target" ]]; then
                 echo "Link target file not found: '$target' (referenced in '$file')."
                 exit 1
