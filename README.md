@@ -5,6 +5,8 @@
 
 PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
 
+All PANORAFUS.AI-authored discussion and commentary are **Scripture-grounded, prophetically informed, and eschatologically framed** — oriented toward the last things, divine judgment, Christian hope, prophetic fulfillment, and the return of Christ.
+
 ## PANORAFUS.AI Autopilot
 
 - **Docs Autopilot Workflow:** Automatically validates branding consistency and internal links on push, pull request, daily schedule, and manual run.

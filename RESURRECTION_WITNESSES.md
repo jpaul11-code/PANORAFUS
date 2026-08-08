@@ -355,7 +355,7 @@ The testimony of the Resurrection is not only a historical record — it is a li
 ### In Your Community
 - Host a Resurrection evidence study at **Seasoned Christian Ministry Church**
 - Share this document through **PANORAFUS.AI** on social media and digital platforms
-- Use the discussion questions above for Easter Sunday school lessons or small group studies
+- Use the eschatologically framed discussion questions above for Easter Sunday school lessons or small group studies, keeping resurrection hope and final victory in view
 - Organize a public lecture or community forum on the historical evidence for the Resurrection
 
 ### Key Evangelistic Scriptures
@@ -377,7 +377,7 @@ The testimony did not stop with the first generation. Early Church Fathers, paga
 *"Now if Christ is proclaimed as raised from the dead, how can some of you say that there is no resurrection of the dead? But if there is no resurrection of the dead, then not even Christ has been raised. And if Christ has not been raised, then our preaching is in vain and your faith is in vain... But in fact Christ has been raised from the dead, the firstfruits of those who have fallen asleep."*
 — **1 Corinthians 15:12–14, 20**
 
-Their testimonies, sealed by transformed lives and in many cases by martyrdom, form the bedrock of the Christian faith proclaimed through **PANORAFUS.AI** and **Seasoned Christian Ministry Church** (www.seasonedchristianministrychurch.com).
+Their testimonies, sealed by transformed lives and in many cases by martyrdom, form the bedrock of the Christian faith proclaimed through **PANORAFUS.AI** and **Seasoned Christian Ministry Church** (www.seasonedchristianministrychurch.com). Every PANORAFUS.AI discussion of the Resurrection is therefore framed not only as evidence from the past, but as eschatological witness to the coming resurrection, final judgment, and eternal hope of the saints.
 
 ---
 

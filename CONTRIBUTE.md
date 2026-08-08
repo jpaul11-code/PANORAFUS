@@ -24,6 +24,7 @@ You may submit:
 - Corrections to institution names, locations, or descriptions
 - Updated official websites or contact channels
 - New category suggestions for future PANORAFUS.AI indexes
+- Reflections or commentary intended for PANORAFUS.AI discussion spaces, understanding that PANORAFUS-authored framing is eschatologically grounded
 
 ---
 
@@ -48,8 +49,9 @@ All submissions should be:
 - Respectful across traditions and denominations
 - Focused on organizations with public mission impact
 - Free from hate speech, defamation, and misinformation
+- Suitable for PANORAFUS.AI's Scripture-grounded, prophetically informed, and eschatologically framed discussion standard where commentary is involved
 
-PANORAFUS.AI reserves the right to review and curate submissions for quality, clarity, and alignment with repository scope.
+PANORAFUS.AI reserves the right to review and curate submissions for quality, clarity, alignment with repository scope, and consistency with its biblical eschatology discussion framework in PANORAFUS-authored commentary.
 
 ---
 

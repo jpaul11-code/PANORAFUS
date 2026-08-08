@@ -714,19 +714,19 @@ A philosopher is nothing without sources. Here are the primary texts of Biblical
 - 📖 **READ** — Open your Bible and engage deeply with prophetic Scripture
 - 🛒 **BUY** — Support resources, books, and teaching materials on Biblical Eschatology
 - ⬇️ **DOWNLOAD** — Access digital resources, studies, and teachings to share with others
-- 💬 **COMMENT** — Share your insights, questions, and reflections with the global community
-- 🗣️ **DISCUSS** — Engage in respectful, Spirit-led dialogue about the prophecies and their meaning for today
+- 💬 **COMMENT** — Share your insights, questions, and reflections with the global community through a Scripture-grounded, eschatologically framed lens
+- 🗣️ **DISCUSS** — Engage in respectful, Spirit-led dialogue about the prophecies, divine judgment, Christian hope, and their meaning for today
 
 ---
 
 ## Join the Global Conversation
 
-PANORAFUS OF BIBLICAL ESCHATOLOGY is an open, global study for every person on earth who seeks truth about the last things. Believers and seekers from all backgrounds are invited to:
+PANORAFUS OF BIBLICAL ESCHATOLOGY is an open, global study for every person on earth who seeks truth about the last things. Believers and seekers from all backgrounds are invited into discussion that is Scripture-grounded, prophetically informed, and explicitly oriented toward the consummation of all things:
 
 - Study the prophetic Word together across every language and culture
 - Share testimonies of how Biblical prophecy has transformed their lives and understanding
 - Connect with teachers, scholars, and ministries dedicated to eschatological truth
-- Contribute insights from across the global Body of Christ
+- Contribute insights from across the global Body of Christ in ways that keep the final hope of Scripture clearly in view
 - Ask the hard questions — and find them answered in the living Word of God
 
 ---

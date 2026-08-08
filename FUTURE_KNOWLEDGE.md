@@ -10,6 +10,8 @@
 **Published under PANORAFUS.AI · Seasoned Christian Ministry Church**
 **Author: Paul Jacquelin · Founding Philosopher & Servant of the Word**
 
+Within PANORAFUS.AI, every discussion of future knowledge is Scripture-grounded, prophetically informed, and eschatologically framed — oriented toward the last things, divine judgment, enduring hope, and the fulfillment of God's revealed Word.
+
 ---
 
 > *"The secret things belong to the LORD our God, but the things that are revealed belong to us and to our children forever, that we may do all the words of this law."*
@@ -498,7 +500,7 @@ Modern secular thought offers its own version of "future knowledge" — rooted i
 - Transhumanism is the latest iteration of humanity's oldest temptation — the desire to become like God on human terms (Genesis 3:5). It locates salvation in technology rather than in the redemptive work of Christ.
 - Secular existential risk analysis, at its best, reflects a genuine moral seriousness about the fragility of civilization — a fragility that Scripture acknowledges and explains through the reality of human sin and its consequences
 
-The secular mind is grappling, however unconsciously, with the same questions that eschatology answers. PANORAFUS.AI meets that search with the prophetic Word.
+The secular mind is grappling, however unconsciously, with the same questions that eschatology answers. PANORAFUS.AI meets that search with the prophetic Word and frames the discussion in light of final things, judgment, hope, and fulfillment.
 
 ---
 

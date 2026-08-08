@@ -14,14 +14,16 @@ At its core, PANORAFUS.AI brings the prophetic Scriptures to every nation, every
 
 PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and unwavering fidelity to the Word of God.
 
+All PANORAFUS.AI-authored discussion and commentary are **Scripture-grounded, prophetically informed, and eschatologically framed** — oriented toward the last things, judgment, hope, prophecy, and fulfillment.
+
 ### Core Purpose
 
 | Pillar | Description |
 |---|---|
 | 📖 **Read** | Access and engage deeply with the Word of God — especially the prophetic and eschatological Scriptures |
 | 🔍 **Search** | AI-powered tools to discover, explore, and cross-reference biblical truth |
-| 💬 **Comment** | Share reflections, insights, and Spirit-led observations with the global community |
-| 🗣️ **Discuss** | Engage in open, respectful, Scripture-grounded dialogue with believers worldwide |
+| 💬 **Comment** | Share reflections, insights, and Spirit-led observations with the global community through an eschatologically framed reading of Scripture |
+| 🗣️ **Discuss** | Engage in open, respectful, Scripture-grounded, prophetically informed dialogue centered on the last things, judgment, hope, and fulfillment |
 
 > *"Your word is a lamp to my feet and a light to my path."* — Psalm 119:105
 

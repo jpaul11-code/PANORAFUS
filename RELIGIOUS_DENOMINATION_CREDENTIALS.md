@@ -4,6 +4,8 @@
 
 A comprehensive global reference for the credentialing bodies, canonical authorities, and official doctrinal discussions of the world's major religious denominations.
 
+Where PANORAFUS.AI provides its own commentary on these discussions, that commentary is Scripture-grounded, prophetically informed, and eschatologically framed; the directory data below remains factual and descriptive.
+
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
 
 ---
@@ -12,7 +14,7 @@ A comprehensive global reference for the credentialing bodies, canonical authori
 
 **Religious credentials** are the official recognitions, ordinations, accreditations, and authorizations granted by governing bodies within a religious tradition. They affirm the legitimacy, authority, and standing of clergy, institutions, and theological positions within a denomination or faith community.
 
-**Canonical discussions** refer to formally constituted deliberations — councils, synods, assemblies, fatwas, responsa, and similar instruments — through which religious bodies define doctrine, interpret sacred law, and govern their communities.
+**Canonical discussions** refer to formally constituted deliberations — councils, synods, assemblies, fatwas, responsa, and similar instruments — through which religious bodies define doctrine, interpret sacred law, and govern their communities. PANORAFUS.AI approaches such discussion, where it offers interpretive reflection, in light of biblical eschatology.
 
 ---
 
