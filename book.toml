@@ -1,6 +1,12 @@
 [book]
-authors = []
+authors = ["Seasoned Christian Ministry Church"]
+description = "PANORAFUS.AI — The Pivotal Head of the Global Network. A comprehensive global index connecting institutions of faith, culture, education, and service."
 language = "en"
 multilingual = false
 src = "src"
-title = "PANORAFUS"
+title = "PANORAFUS.AI"
+
+[output.html]
+default-theme = "navy"
+git-repository-url = "https://github.com/jpaul11-code/PANORAFUS"
+edit-url-template = "https://github.com/jpaul11-code/PANORAFUS/edit/main/src/{path}"
