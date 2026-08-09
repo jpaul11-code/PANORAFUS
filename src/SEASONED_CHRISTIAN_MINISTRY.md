@@ -8,23 +8,26 @@
 
 ---
 
+> ## ✝️ Our Mission
+>
+> *"To season the world with the love, truth, and grace of Jesus Christ — through worship, service, and global connection."*
+>
+> **Seasoned Christian Ministry Church** is the founding institution of PANORAFUS.AI, called and commissioned to:
+>
+> | Calling | Description |
+> |---|---|
+> | 📢 **Proclaim** | Spread the Gospel of Jesus Christ to every nation, tongue, and people |
+> | 🤝 **Serve** | Minister to communities through outreach, humanitarian work, and compassionate service |
+> | 🔗 **Connect** | Unite the global body of Christ through technology, innovation, and PANORAFUS.AI |
+> | 🌱 **Equip** | Build disciples who are grounded in the Word, Spirit-filled, and mission-ready |
+>
+> *"Go therefore and make disciples of all nations."* — Matthew 28:19
+
+---
+
 ## About the Church
 
-**Seasoned Christian Ministry Church** is the founding institution behind PANORAFUS.AI, the global network platform connecting religious, cultural, and humanitarian organizations worldwide.
-
-Rooted in the Christian faith, Seasoned Christian Ministry Church is committed to:
-- Spreading the Gospel of Jesus Christ locally and globally
-- Serving communities through ministry, outreach, and humanitarian work
-- Fostering unity among believers of all Christian traditions
-- Connecting the global body of Christ through technology and innovation
-
----
-
-## Mission
-
-> *To season the world with the love, truth, and grace of Jesus Christ — through worship, service, and global connection.*
-
----
+**Seasoned Christian Ministry Church** is the founding institution behind PANORAFUS.AI — the global network platform connecting religious, cultural, and humanitarian organizations worldwide. Rooted in the Christian faith, it is committed to spreading the Gospel of Jesus Christ locally and globally.
 
 ## Vision
 
