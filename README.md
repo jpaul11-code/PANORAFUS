@@ -13,6 +13,12 @@ PANORAFUS.AI is a global network platform connecting institutions, organizations
 
 ## Contents
 
+### 🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI
+
+> 🙏 **[DEVOTIONAL PRAYER — Pouring Water from the Word of God to All the Globe](DEVOTIONAL_PRAYER.md)** — The global devotional prayer launch of PANORAFUS.AI: intercession for every nation, every people, and every tongue.
+
+---
+
 ### ⭐ #1 PRIORITY — Must Read · Buy · Download · Comment · Discuss
 
 > 🔥 **[PANORA-FUS OF BIBLICAL ESCHATOLOGY](BIBLICAL_ESCHATOLOGY.md)** — The study of the last things as revealed in Holy Scripture. This is the first and foremost priority of PANORAFUS.AI.
@@ -58,6 +64,7 @@ For website management, content updates, and administrative matters related to *
 
 ## Theological Background Studies
 
+- [🌊 Devotional Prayer — Launched by PANORAFUS.AI · Pouring Water from the Word to All the Globe](DEVOTIONAL_PRAYER.md)
 - [📖 See the Word — A Biblical and Theological Study of the Written and Living Word of God](SEE_THE_WORD.md)
 - [👁️ Visions and Revelations — A Biblical Study of Divine Visions, Dreams, and Supernatural Revelations](VISIONS_AND_REVELATIONS.md)
 - [🍞 The Lord's Supper — A Biblical, Historical, and Theological Study of Holy Communion](THE_LORD_SUPPER.md)
