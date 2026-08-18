@@ -1,0 +1,7 @@
+[book]
+title = "PANORAFUS.AI"
+authors = []
+language = "en"
+src = "."
+
+[output.html]
