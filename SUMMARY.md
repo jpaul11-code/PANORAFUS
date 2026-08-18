@@ -1,6 +1,7 @@
 # Summary
 
 - [PANORAFUS.AI](README.md)
+- [🌍 Global Trust](GLOBAL_TRUST.md)
 - [About PANORAFUS](ABOUT_PANORAFUS.md)
 - [Biblical Eschatology](BIBLICAL_ESCHATOLOGY.md)
 - [Seasoned Christian Ministry](SEASONED_CHRISTIAN_MINISTRY.md)
