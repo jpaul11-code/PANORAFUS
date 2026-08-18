@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Holy Spirit and Gifts - PANORAFUS.AI</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">About</li><li class="chapter-item expanded "><a href="../ABOUT_PANORAFUS.html"><strong aria-hidden="true">1.</strong> About PANORAFUS.AI</a></li><li class="chapter-item expanded "><a href="../CONTRIBUTE.html"><strong aria-hidden="true">2.</strong> Contribute</a></li><li class="chapter-item expanded "><a href="../SEE_THE_WORD.html"><strong aria-hidden="true">3.</strong> See the Word</a></li><li class="chapter-item expanded "><a href="../GLOBALNETWORK.html"><strong aria-hidden="true">4.</strong> Global Network</a></li><li class="chapter-item expanded affix "><li class="part-title">Theology & Scripture</li><li class="chapter-item expanded "><a href="../BIBLICAL_ESCHATOLOGY.html"><strong aria-hidden="true">5.</strong> Biblical Eschatology</a></li><li class="chapter-item expanded "><a href="../HOLY_SPIRIT_AND_GIFTS.html" class="active"><strong aria-hidden="true">6.</strong> Holy Spirit and Gifts</a></li><li class="chapter-item expanded "><a href="../RESURRECTION_WITNESSES.html"><strong aria-hidden="true">7.</strong> Resurrection Witnesses</a></li><li class="chapter-item expanded "><a href="../THE_LORD_SUPPER.html"><strong aria-hidden="true">8.</strong> The Lord's Supper</a></li><li class="chapter-item expanded "><a href="../VISIONS_AND_REVELATIONS.html"><strong aria-hidden="true">9.</strong> Visions and Revelations</a></li><li class="chapter-item expanded "><a href="../WORSHIP_AND_PRAYER.html"><strong aria-hidden="true">10.</strong> Worship and Prayer</a></li><li class="chapter-item expanded "><a href="../DEVOTIONAL_PRAYER.html"><strong aria-hidden="true">11.</strong> Devotional Prayer</a></li><li class="chapter-item expanded "><a href="../PRAYER_AND_INTERCESSION_NETWORKS.html"><strong aria-hidden="true">12.</strong> Prayer and Intercession Networks</a></li><li class="chapter-item expanded "><a href="../FUTURE_KNOWLEDGE.html"><strong aria-hidden="true">13.</strong> Future Knowledge</a></li><li class="chapter-item expanded "><a href="../APOSTLE_PAUL_GENEALOGY.html"><strong aria-hidden="true">14.</strong> Apostle Paul Genealogy</a></li><li class="chapter-item expanded affix "><li class="part-title">Ministry & Missions</li><li class="chapter-item expanded "><a href="../SEASONED_CHRISTIAN_MINISTRY.html"><strong aria-hidden="true">15.</strong> Seasoned Christian Ministry</a></li><li class="chapter-item expanded "><a href="../MISSIONS_AND_EVANGELISM.html"><strong aria-hidden="true">16.</strong> Missions and Evangelism</a></li><li class="chapter-item expanded "><a href="../RELIGIOUS_EDUCATION.html"><strong aria-hidden="true">17.</strong> Religious Education</a></li><li class="chapter-item expanded "><a href="../RELIGIOUS_DENOMINATION_CREDENTIALS.html"><strong aria-hidden="true">18.</strong> Religious Denomination Credentials</a></li><li class="chapter-item expanded affix "><li class="part-title">Institutions</li><li class="chapter-item expanded "><a href="../CHRISTIAN_INSTITUTIONS.html"><strong aria-hidden="true">19.</strong> Christian Institutions</a></li><li class="chapter-item expanded "><a href="../ISLAMIC_INSTITUTIONS.html"><strong aria-hidden="true">20.</strong> Islamic Institutions</a></li><li class="chapter-item expanded "><a href="../JEWISH_INSTITUTIONS.html"><strong aria-hidden="true">21.</strong> Jewish Institutions</a></li><li class="chapter-item expanded "><a href="../HINDU_INSTITUTIONS.html"><strong aria-hidden="true">22.</strong> Hindu Institutions</a></li><li class="chapter-item expanded "><a href="../BUDDHIST_INSTITUTIONS.html"><strong aria-hidden="true">23.</strong> Buddhist Institutions</a></li><li class="chapter-item expanded "><a href="../OTHER_RELIGIOUS_INSTITUTIONS.html"><strong aria-hidden="true">24.</strong> Other Religious Institutions</a></li><li class="chapter-item expanded "><a href="../THEOLOGICAL_SCHOOLS_AND_SEMINARIES.html"><strong aria-hidden="true">25.</strong> Theological Schools and Seminaries</a></li><li class="chapter-item expanded "><a href="../HUMANITARIAN_ORGANIZATIONS.html"><strong aria-hidden="true">26.</strong> Humanitarian Organizations</a></li><li class="chapter-item expanded "><a href="../RELIGIOUS_MEDIA_AND_BROADCASTING.html"><strong aria-hidden="true">27.</strong> Religious Media and Broadcasting</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">PANORAFUS.AI</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <blockquote>
+<p><strong>PANORAFUS.AI</strong> — The Pivotal Head of the Global Network
+🌐 <a href="https://www.seasonedchristianministrychurch.com">www.seasonedchristianministrychurch.com</a></p>
+</blockquote>
+<hr />
+<h1 id="-the-holy-spirit-and-spiritual-gifts--panorafus-background"><a class="header" href="#-the-holy-spirit-and-spiritual-gifts--panorafus-background">🕊️ THE HOLY SPIRIT AND SPIRITUAL GIFTS — PANORAFUS BACKGROUND</a></h1>
+<h2 id="a-biblical-and-theological-study-of-the-third-person-of-the-trinity-and-his-gifts-to-the-church"><a class="header" href="#a-biblical-and-theological-study-of-the-third-person-of-the-trinity-and-his-gifts-to-the-church"><em>A Biblical and Theological Study of the Third Person of the Trinity and His Gifts to the Church</em></a></h2>
+<p><strong>Published under PANORAFUS.AI · Seasoned Christian Ministry Church</strong>
+<strong>Author: Paul Jacquelin · Founding Philosopher &amp; Servant of the Word</strong></p>
+<hr />
+<blockquote>
+<p><em>&quot;But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things and will remind you of everything I have said to you.&quot;</em>
+— <strong>John 14:26 (NIV)</strong></p>
+</blockquote>
+<blockquote>
+<p><em>&quot;Now to each one the manifestation of the Spirit is given for the common good.&quot;</em>
+— <strong>1 Corinthians 12:7 (NIV)</strong></p>
+</blockquote>
+<hr />
+<h3 id="-companion-to-panora-fus-of-biblical-eschatology--visions-and-revelations"><a class="header" href="#-companion-to-panora-fus-of-biblical-eschatology--visions-and-revelations">⭐ COMPANION TO <a href="BIBLICAL_ESCHATOLOGY.html">PANORA-FUS OF BIBLICAL ESCHATOLOGY</a> · <a href="VISIONS_AND_REVELATIONS.html">VISIONS AND REVELATIONS</a></a></h3>
+<hr />
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">TABLE OF CONTENTS</a></h2>
+<ol>
+<li><a href="#introduction">Introduction — The Forgotten Person of the Trinity</a></li>
+<li><a href="#part-i">Part I — The Holy Spirit in the Old Testament</a></li>
+<li><a href="#part-ii">Part II — The Holy Spirit in the Life of Jesus</a></li>
+<li><a href="#part-iii">Part III — Pentecost and the Outpouring</a></li>
+<li><a href="#part-iv">Part IV — The Work of the Holy Spirit</a></li>
+<li><a href="#part-v">Part V — Spiritual Gifts: An Overview</a></li>
+<li><a href="#part-vi">Part VI — The Gifts Listed in Scripture</a></li>
+<li><a href="#part-vii">Part VII — The Fruit of the Spirit</a></li>
+<li><a href="#part-viii">Part VIII — Views on the Gifts Across Traditions</a></li>
+<li><a href="#part-ix">Part IX — The Spirit, the Church, and the Last Days</a></li>
+<li><a href="#closing">Closing Meditation</a></li>
+</ol>
+<hr />
+<p><a name="introduction"></a></p>
+<h2 id="introduction--the-forgotten-person-of-the-trinity"><a class="header" href="#introduction--the-forgotten-person-of-the-trinity">INTRODUCTION — The Forgotten Person of the Trinity</a></h2>
+<p>The Holy Spirit is the most misunderstood, neglected, and yet most active Person of the Holy Trinity in the life of the believer today. He is not an impersonal force or a vague spiritual influence — He is a <em>Person</em>: the Third Person of the Triune God, co-equal and co-eternal with the Father and the Son.</p>
+<p>He convicts the world of sin. He regenerates the dead heart. He seals the believer for eternity. He intercedes with groanings too deep for words. He distributes gifts to every member of the body of Christ. He inspired every word of Scripture. He is present wherever two or three are gathered in the name of Jesus.</p>
+<p><strong>PANORAFUS.AI</strong> is committed to the full biblical revelation of the Holy Spirit — neither quenching Him nor going beyond what Scripture teaches.</p>
+<hr />
+<p><a name="part-i"></a></p>
+<h2 id="part-i--the-holy-spirit-in-the-old-testament"><a class="header" href="#part-i--the-holy-spirit-in-the-old-testament">PART I — The Holy Spirit in the Old Testament</a></h2>
+<p>The Holy Spirit was active long before Pentecost:</p>
+<h3 id="creation"><a class="header" href="#creation">Creation</a></h3>
+<blockquote>
+<p><em>&quot;The earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.&quot;</em>
+— Genesis 1:2 (NIV)</p>
+</blockquote>
+<p>The Spirit brooded over the primordial chaos, participating in the act of creation.</p>
+<h3 id="empowerment-for-service"><a class="header" href="#empowerment-for-service">Empowerment for Service</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Person</th><th>Gift of the Spirit</th><th>Reference</th></tr></thead><tbody>
+<tr><td>Joseph</td><td>Wisdom and interpretation of dreams</td><td>Genesis 41:38</td></tr>
+<tr><td>Bezalel</td><td>Craftsmanship and artistic skill</td><td>Exodus 31:2–5</td></tr>
+<tr><td>Samson</td><td>Supernatural strength</td><td>Judges 14:6; 15:14</td></tr>
+<tr><td>Saul</td><td>Prophecy and leadership</td><td>1 Samuel 10:10</td></tr>
+<tr><td>David</td><td>Anointing for kingship</td><td>1 Samuel 16:13</td></tr>
+<tr><td>Elijah and Elisha</td><td>Miracles, prophecy, power</td><td>1 Kings 18–19; 2 Kings 2</td></tr>
+</tbody></table>
+</div>
+<h3 id="prophecy"><a class="header" href="#prophecy">Prophecy</a></h3>
+<p>The prophets spoke as they were carried along by the Spirit:</p>
+<blockquote>
+<p><em>&quot;For prophecy never had its origin in the human will, but prophets, though human, spoke from God as they were carried along by the Holy Spirit.&quot;</em>
+— 2 Peter 1:21 (NIV)</p>
+</blockquote>
+<h3 id="the-promise-of-the-new-covenant-spirit"><a class="header" href="#the-promise-of-the-new-covenant-spirit">The Promise of the New Covenant Spirit</a></h3>
+<blockquote>
+<p><em>&quot;I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh. And I will put my Spirit in you and move you to follow my decrees.&quot;</em>
+— Ezekiel 36:26–27 (NIV)</p>
+</blockquote>
+<hr />
+<p><a name="part-ii"></a></p>
+<h2 id="part-ii--the-holy-spirit-in-the-life-of-jesus"><a class="header" href="#part-ii--the-holy-spirit-in-the-life-of-jesus">PART II — The Holy Spirit in the Life of Jesus</a></h2>
+<p>The entire earthly ministry of Jesus was conducted in the power of the Holy Spirit:</p>
+<div class="table-wrapper"><table><thead><tr><th>Event</th><th>Role of the Spirit</th><th>Reference</th></tr></thead><tbody>
+<tr><td>Incarnation</td><td>Conceived by the Holy Spirit</td><td>Matthew 1:20; Luke 1:35</td></tr>
+<tr><td>Baptism</td><td>Spirit descends as a dove</td><td>Matthew 3:16; John 1:32–33</td></tr>
+<tr><td>Temptation</td><td>Led by the Spirit into the wilderness</td><td>Matthew 4:1; Luke 4:1</td></tr>
+<tr><td>Ministry</td><td>Anointed with the Spirit and power</td><td>Acts 10:38; Luke 4:18</td></tr>
+<tr><td>Miracles</td><td>Cast out demons by the Spirit</td><td>Matthew 12:28</td></tr>
+<tr><td>Resurrection</td><td>Raised through the Spirit</td><td>Romans 8:11</td></tr>
+<tr><td>Ascension</td><td>Gave commands through the Spirit</td><td>Acts 1:2</td></tr>
+</tbody></table>
+</div>
+<p>Jesus declared at the beginning of His ministry:</p>
+<blockquote>
+<p><em>&quot;The Spirit of the Lord is on me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind, to set the oppressed free, to proclaim the year of the Lord's favor.&quot;</em>
+— Luke 4:18–19 (NIV)</p>
+</blockquote>
+<hr />
+<p><a name="part-iii"></a></p>
+<h2 id="part-iii--pentecost-and-the-outpouring"><a class="header" href="#part-iii--pentecost-and-the-outpouring">PART III — Pentecost and the Outpouring</a></h2>
+<h3 id="the-promise"><a class="header" href="#the-promise">The Promise</a></h3>
+<blockquote>
+<p><em>&quot;But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.&quot;</em>
+— Acts 1:8 (NIV)</p>
+</blockquote>
+<h3 id="the-day-of-pentecost"><a class="header" href="#the-day-of-pentecost">The Day of Pentecost</a></h3>
+<p><strong>Reference:</strong> Acts 2:1–42</p>
+<ul>
+<li><strong>Day:</strong> The Jewish feast of Shavuot (Feast of Weeks), fifty days after Passover</li>
+<li><strong>Location:</strong> Jerusalem, in an upper room</li>
+<li><strong>People:</strong> 120 disciples gathered in prayer (Acts 1:15)</li>
+</ul>
+<p><strong>The Signs:</strong></p>
+<ol>
+<li>A sound like a violent rushing wind filled the house</li>
+<li>Tongues of fire appeared and rested on each person</li>
+<li>All were filled with the Holy Spirit and began to speak in other languages</li>
+</ol>
+<p><strong>Peter's Explanation:</strong> <em>&quot;This is what was spoken by the prophet Joel: 'In the last days, God says, I will pour out my Spirit on all people.'&quot;</em> (Acts 2:16–17)</p>
+<p><strong>The Result:</strong> Three thousand people were added to the church that day.</p>
+<h3 id="the-significance-of-pentecost"><a class="header" href="#the-significance-of-pentecost">The Significance of Pentecost</a></h3>
+<p>Pentecost inaugurated the <strong>Age of the Spirit</strong> — the era between the first and second coming of Christ in which the Holy Spirit:</p>
+<ul>
+<li>Indwells every believer permanently</li>
+<li>Empowers the global mission of the church</li>
+<li>Applies the saving work of Christ to human hearts</li>
+<li>Distributes gifts for the building up of the body</li>
+</ul>
+<hr />
+<p><a name="part-iv"></a></p>
+<h2 id="part-iv--the-work-of-the-holy-spirit"><a class="header" href="#part-iv--the-work-of-the-holy-spirit">PART IV — The Work of the Holy Spirit</a></h2>
+<p>The Holy Spirit performs essential works in the life of every believer and in the world:</p>
+<h3 id="in-the-world"><a class="header" href="#in-the-world">In the World</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Work</th><th>Description</th><th>Reference</th></tr></thead><tbody>
+<tr><td><strong>Conviction</strong></td><td>Convicts of sin, righteousness, and judgment</td><td>John 16:8</td></tr>
+<tr><td><strong>Restraint</strong></td><td>Restrains the full manifestation of evil</td><td>2 Thessalonians 2:6–7</td></tr>
+</tbody></table>
+</div>
+<h3 id="in-salvation"><a class="header" href="#in-salvation">In Salvation</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Work</th><th>Description</th><th>Reference</th></tr></thead><tbody>
+<tr><td><strong>Regeneration</strong></td><td>New birth — <em>&quot;born of the Spirit&quot;</em></td><td>John 3:5–8; Titus 3:5</td></tr>
+<tr><td><strong>Indwelling</strong></td><td>Permanent residence in the believer</td><td>Romans 8:9; 1 Corinthians 6:19</td></tr>
+<tr><td><strong>Sealing</strong></td><td>Guarantee of eternal life</td><td>Ephesians 1:13–14; 4:30</td></tr>
+<tr><td><strong>Baptism</strong></td><td>Incorporation into the body of Christ</td><td>1 Corinthians 12:13</td></tr>
+</tbody></table>
+</div>
+<h3 id="in-the-believers-life"><a class="header" href="#in-the-believers-life">In the Believer's Life</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Work</th><th>Description</th><th>Reference</th></tr></thead><tbody>
+<tr><td><strong>Assurance</strong></td><td>Witnesses with our spirit that we are God's children</td><td>Romans 8:16</td></tr>
+<tr><td><strong>Sanctification</strong></td><td>Progressive transformation into Christlikeness</td><td>2 Corinthians 3:18; Galatians 5:22–23</td></tr>
+<tr><td><strong>Guidance</strong></td><td>Leading in the will of God</td><td>Romans 8:14; John 16:13</td></tr>
+<tr><td><strong>Prayer</strong></td><td>Interceding for us with groanings</td><td>Romans 8:26–27</td></tr>
+<tr><td><strong>Teaching</strong></td><td>Illuminating Scripture</td><td>1 Corinthians 2:10–13; John 16:13</td></tr>
+<tr><td><strong>Empowerment</strong></td><td>Enabling ministry and witness</td><td>Acts 1:8; Ephesians 3:16</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p><a name="part-v"></a></p>
+<h2 id="part-v--spiritual-gifts-an-overview"><a class="header" href="#part-v--spiritual-gifts-an-overview">PART V — Spiritual Gifts: An Overview</a></h2>
+<p>The spiritual gifts (<em>charismata</em> — from <em>charis</em>, grace) are sovereign bestowments of the Holy Spirit given to every believer for the building up of the body of Christ.</p>
+<h3 id="key-principles"><a class="header" href="#key-principles">Key Principles</a></h3>
+<ol>
+<li><strong>Every believer has at least one gift</strong> — <em>&quot;to each one the manifestation of the Spirit is given&quot;</em> (1 Corinthians 12:7)</li>
+<li><strong>Gifts are given by the Spirit according to His will</strong> — <em>&quot;distributing them to each one, just as he determines&quot;</em> (1 Corinthians 12:11)</li>
+<li><strong>Gifts are for the common good</strong> — not personal status but communal service (1 Corinthians 12:7)</li>
+<li><strong>Gifts must be exercised in love</strong> — without love, gifts are nothing (1 Corinthians 13:1–3)</li>
+<li><strong>Gifts are given to equip the saints</strong> — <em>&quot;to equip his people for works of service&quot;</em> (Ephesians 4:12)</li>
+</ol>
+<hr />
+<p><a name="part-vi"></a></p>
+<h2 id="part-vi--the-gifts-listed-in-scripture"><a class="header" href="#part-vi--the-gifts-listed-in-scripture">PART VI — The Gifts Listed in Scripture</a></h2>
+<h3 id="romans-1268--motivational-gifts"><a class="header" href="#romans-1268--motivational-gifts">Romans 12:6–8 — Motivational Gifts</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Gift</th><th>Greek</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Prophecy</strong></td><td><em>Propheteia</em></td><td>Speaking forth God's message</td></tr>
+<tr><td><strong>Service</strong></td><td><em>Diakonia</em></td><td>Practical ministry and helps</td></tr>
+<tr><td><strong>Teaching</strong></td><td><em>Didaskalia</em></td><td>Explaining and applying Scripture</td></tr>
+<tr><td><strong>Exhortation</strong></td><td><em>Paraklesis</em></td><td>Encouragement, comfort, counsel</td></tr>
+<tr><td><strong>Giving</strong></td><td><em>Metadidomi</em></td><td>Generous contribution of resources</td></tr>
+<tr><td><strong>Leadership</strong></td><td><em>Proistemi</em></td><td>Administration and oversight</td></tr>
+<tr><td><strong>Mercy</strong></td><td><em>Eleos</em></td><td>Compassion in practical action</td></tr>
+</tbody></table>
+</div>
+<h3 id="1-corinthians-12810--manifestation-gifts"><a class="header" href="#1-corinthians-12810--manifestation-gifts">1 Corinthians 12:8–10 — Manifestation Gifts</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Gift</th><th>Greek</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Word of Wisdom</strong></td><td><em>Logos sophias</em></td><td>Supernatural insight into God's wisdom for a situation</td></tr>
+<tr><td><strong>Word of Knowledge</strong></td><td><em>Logos gnoseos</em></td><td>Supernatural revelation of specific knowledge</td></tr>
+<tr><td><strong>Faith</strong></td><td><em>Pistis</em></td><td>Extraordinary trust in God for specific acts</td></tr>
+<tr><td><strong>Gifts of Healing</strong></td><td><em>Charismata iamaton</em></td><td>Supernatural restoration of health</td></tr>
+<tr><td><strong>Miracles</strong></td><td><em>Energemata dynameon</em></td><td>Extraordinary acts of divine power</td></tr>
+<tr><td><strong>Prophecy</strong></td><td><em>Propheteia</em></td><td>Inspired forth-telling and foretelling</td></tr>
+<tr><td><strong>Distinguishing Spirits</strong></td><td><em>Diakrisis pneumaton</em></td><td>Discernment of spiritual sources</td></tr>
+<tr><td><strong>Tongues</strong></td><td><em>Gene glosson</em></td><td>Utterance in unlearned languages</td></tr>
+<tr><td><strong>Interpretation of Tongues</strong></td><td><em>Hermeneia glosson</em></td><td>Translation of tongue-speech</td></tr>
+</tbody></table>
+</div>
+<h3 id="ephesians-411--ministry-gifts-ascension-gifts"><a class="header" href="#ephesians-411--ministry-gifts-ascension-gifts">Ephesians 4:11 — Ministry Gifts (Ascension Gifts)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Gift</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Apostles</strong></td><td>Foundational ministers sent out with divine authority</td></tr>
+<tr><td><strong>Prophets</strong></td><td>Spokespersons for God's revelation and direction</td></tr>
+<tr><td><strong>Evangelists</strong></td><td>Proclaimers of the Gospel with harvest effectiveness</td></tr>
+<tr><td><strong>Pastors</strong></td><td>Shepherds of local congregations</td></tr>
+<tr><td><strong>Teachers</strong></td><td>Systematic instructors in God's Word</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p><a name="part-vii"></a></p>
+<h2 id="part-vii--the-fruit-of-the-spirit"><a class="header" href="#part-vii--the-fruit-of-the-spirit">PART VII — The Fruit of the Spirit</a></h2>
+<p>The gifts of the Spirit reveal what the Spirit <em>does through</em> the believer.
+The fruit of the Spirit reveals what the Spirit <em>produces within</em> the believer.</p>
+<blockquote>
+<p><em>&quot;But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.&quot;</em>
+— Galatians 5:22–23 (NIV)</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th>Fruit</th><th>Greek</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Love</strong></td><td><em>Agape</em></td><td>Selfless, unconditional divine love</td></tr>
+<tr><td><strong>Joy</strong></td><td><em>Chara</em></td><td>Supernatural gladness not dependent on circumstances</td></tr>
+<tr><td><strong>Peace</strong></td><td><em>Eirene</em></td><td>Wholeness and tranquility from God</td></tr>
+<tr><td><strong>Forbearance (Patience)</strong></td><td><em>Makrothymia</em></td><td>Long-suffering endurance under trial</td></tr>
+<tr><td><strong>Kindness</strong></td><td><em>Chrestotes</em></td><td>Gracious goodness in relating to others</td></tr>
+<tr><td><strong>Goodness</strong></td><td><em>Agathosyne</em></td><td>Moral excellence and generosity</td></tr>
+<tr><td><strong>Faithfulness</strong></td><td><em>Pistis</em></td><td>Reliability and trustworthiness</td></tr>
+<tr><td><strong>Gentleness (Meekness)</strong></td><td><em>Prautes</em></td><td>Strength under control, humility</td></tr>
+<tr><td><strong>Self-Control</strong></td><td><em>Enkrateia</em></td><td>Mastery over sinful desires and passions</td></tr>
+</tbody></table>
+</div>
+<p>Note: <em>&quot;fruit&quot;</em> is singular — it is one unified character of Christlikeness produced by the Spirit, not nine independent qualities to cultivate separately.</p>
+<hr />
+<p><a name="part-viii"></a></p>
+<h2 id="part-viii--views-on-the-gifts-across-traditions"><a class="header" href="#part-viii--views-on-the-gifts-across-traditions">PART VIII — Views on the Gifts Across Traditions</a></h2>
+<p>Christian traditions hold varying views on the continuation of the spiritual gifts:</p>
+<div class="table-wrapper"><table><thead><tr><th>Position</th><th>Description</th><th>Traditions</th></tr></thead><tbody>
+<tr><td><strong>Cessationism</strong></td><td>Sign gifts (tongues, prophecy, healing, miracles) ceased with the closing of the apostolic age and the completion of the canon</td><td>Classic Reformed, some Baptist, MacArthur</td></tr>
+<tr><td><strong>Continuationism</strong></td><td>All gifts continue throughout the church age until Christ returns</td><td>Pentecostal, Charismatic, many Evangelical</td></tr>
+<tr><td><strong>Open but Cautious</strong></td><td>Gifts may continue, but are to be carefully tested; neither affirmed nor denied categorically</td><td>Reformed Charismatic, Tim Keller, Wayne Grudem</td></tr>
+<tr><td><strong>Third Wave</strong></td><td>The Spirit moves in waves of renewal; gifts are active but primarily in missional contexts</td><td>C. Peter Wagner, John Wimber</td></tr>
+</tbody></table>
+</div>
+<h3 id="points-of-agreement-across-traditions"><a class="header" href="#points-of-agreement-across-traditions">Points of Agreement Across Traditions</a></h3>
+<p>Regardless of position on continuation, virtually all traditions affirm:</p>
+<ul>
+<li>The Holy Spirit is active in every believer's life today</li>
+<li>Regeneration, sanctification, prayer, and guidance by the Spirit are ongoing</li>
+<li>The fruit of the Spirit is normative for every Christian</li>
+<li>Love is the supreme virtue above all gifts (1 Corinthians 13)</li>
+</ul>
+<hr />
+<p><a name="part-ix"></a></p>
+<h2 id="part-ix--the-spirit-the-church-and-the-last-days"><a class="header" href="#part-ix--the-spirit-the-church-and-the-last-days">PART IX — The Spirit, the Church, and the Last Days</a></h2>
+<p>The Holy Spirit plays a central role in biblical eschatology:</p>
+<h3 id="the-restrainer"><a class="header" href="#the-restrainer">The Restrainer</a></h3>
+<blockquote>
+<p><em>&quot;For the secret power of lawlessness is already at work; but the one who now holds it back will continue to do so till he is taken out of the way.&quot;</em>
+— 2 Thessalonians 2:7 (NIV)</p>
+</blockquote>
+<p>Many theologians identify the restrainer of lawlessness as the Holy Spirit working through the church. His withdrawal will allow the full manifestation of the Antichrist.</p>
+<h3 id="the-last-days-outpouring"><a class="header" href="#the-last-days-outpouring">The Last Days Outpouring</a></h3>
+<p>The Joel 2:28 prophecy — partially fulfilled at Pentecost — awaits its ultimate, climactic fulfillment:</p>
+<blockquote>
+<p><em>&quot;I will pour out my Spirit on all people. Your sons and daughters will prophesy, your old men will dream dreams, your young men will see visions.&quot;</em>
+— Joel 2:28 (NIV)</p>
+</blockquote>
+<h3 id="the-spirit-and-evangelism"><a class="header" href="#the-spirit-and-evangelism">The Spirit and Evangelism</a></h3>
+<p>Before the end comes, the Gospel must be preached to all nations (Matthew 24:14). The Holy Spirit empowers this global mission — and PANORAFUS.AI exists as a digital expression of that commission.</p>
+<h3 id="the-spirit-in-the-new-creation"><a class="header" href="#the-spirit-in-the-new-creation">The Spirit in the New Creation</a></h3>
+<blockquote>
+<p><em>&quot;And the Spirit and the bride say, 'Come!' And let the one who hears say, 'Come!'&quot;</em>
+— Revelation 22:17 (NIV)</p>
+</blockquote>
+<p>The final invitation of Scripture is spoken by the Holy Spirit and the bride (the church) together — an eternal witness to the coming of the Lord Jesus Christ.</p>
+<hr />
+<p><a name="closing"></a></p>
+<h2 id="closing-meditation--come-holy-spirit"><a class="header" href="#closing-meditation--come-holy-spirit">CLOSING MEDITATION — Come, Holy Spirit</a></h2>
+<blockquote>
+<p><em>&quot;Do not quench the Spirit. Do not treat prophecies with contempt but test them all; hold on to what is good.&quot;</em>
+— <strong>1 Thessalonians 5:19–21 (NIV)</strong></p>
+</blockquote>
+<p>The Holy Spirit is not a force to be controlled — He is a Person to be welcomed, obeyed, and honored. He moves like the wind: <em>&quot;The wind blows wherever it pleases. You hear its sound, but you cannot tell where it comes from or where it is going. So it is with everyone born of the Spirit.&quot;</em> (John 3:8)</p>
+<p>In this age between the ascension and the return of Christ, the Holy Spirit is the presence of God with His people. He is the down payment on eternal glory, the firstfruits of the age to come, the fire of God burning in human hearts.</p>
+<p><strong>PANORAFUS.AI</strong> is committed to a full, sober, Scripture-anchored understanding of the Holy Spirit — for the sake of the global church and the coming Kingdom.</p>
+<hr />
+<p><em>PANORAFUS.AI — Connecting the World, One Institution at a Time.</em>
+<em>🌐 <a href="https://www.seasonedchristianministrychurch.com">www.seasonedchristianministrychurch.com</a></em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../BIBLICAL_ESCHATOLOGY.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../RESURRECTION_WITNESSES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../BIBLICAL_ESCHATOLOGY.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../RESURRECTION_WITNESSES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

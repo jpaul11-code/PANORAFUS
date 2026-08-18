@@ -1,0 +1,532 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Visions and Revelations - PANORAFUS.AI</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">About</li><li class="chapter-item expanded "><a href="../ABOUT_PANORAFUS.html"><strong aria-hidden="true">1.</strong> About PANORAFUS.AI</a></li><li class="chapter-item expanded "><a href="../CONTRIBUTE.html"><strong aria-hidden="true">2.</strong> Contribute</a></li><li class="chapter-item expanded "><a href="../SEE_THE_WORD.html"><strong aria-hidden="true">3.</strong> See the Word</a></li><li class="chapter-item expanded "><a href="../GLOBALNETWORK.html"><strong aria-hidden="true">4.</strong> Global Network</a></li><li class="chapter-item expanded affix "><li class="part-title">Theology & Scripture</li><li class="chapter-item expanded "><a href="../BIBLICAL_ESCHATOLOGY.html"><strong aria-hidden="true">5.</strong> Biblical Eschatology</a></li><li class="chapter-item expanded "><a href="../HOLY_SPIRIT_AND_GIFTS.html"><strong aria-hidden="true">6.</strong> Holy Spirit and Gifts</a></li><li class="chapter-item expanded "><a href="../RESURRECTION_WITNESSES.html"><strong aria-hidden="true">7.</strong> Resurrection Witnesses</a></li><li class="chapter-item expanded "><a href="../THE_LORD_SUPPER.html"><strong aria-hidden="true">8.</strong> The Lord's Supper</a></li><li class="chapter-item expanded "><a href="../VISIONS_AND_REVELATIONS.html" class="active"><strong aria-hidden="true">9.</strong> Visions and Revelations</a></li><li class="chapter-item expanded "><a href="../WORSHIP_AND_PRAYER.html"><strong aria-hidden="true">10.</strong> Worship and Prayer</a></li><li class="chapter-item expanded "><a href="../DEVOTIONAL_PRAYER.html"><strong aria-hidden="true">11.</strong> Devotional Prayer</a></li><li class="chapter-item expanded "><a href="../PRAYER_AND_INTERCESSION_NETWORKS.html"><strong aria-hidden="true">12.</strong> Prayer and Intercession Networks</a></li><li class="chapter-item expanded "><a href="../FUTURE_KNOWLEDGE.html"><strong aria-hidden="true">13.</strong> Future Knowledge</a></li><li class="chapter-item expanded "><a href="../APOSTLE_PAUL_GENEALOGY.html"><strong aria-hidden="true">14.</strong> Apostle Paul Genealogy</a></li><li class="chapter-item expanded affix "><li class="part-title">Ministry & Missions</li><li class="chapter-item expanded "><a href="../SEASONED_CHRISTIAN_MINISTRY.html"><strong aria-hidden="true">15.</strong> Seasoned Christian Ministry</a></li><li class="chapter-item expanded "><a href="../MISSIONS_AND_EVANGELISM.html"><strong aria-hidden="true">16.</strong> Missions and Evangelism</a></li><li class="chapter-item expanded "><a href="../RELIGIOUS_EDUCATION.html"><strong aria-hidden="true">17.</strong> Religious Education</a></li><li class="chapter-item expanded "><a href="../RELIGIOUS_DENOMINATION_CREDENTIALS.html"><strong aria-hidden="true">18.</strong> Religious Denomination Credentials</a></li><li class="chapter-item expanded affix "><li class="part-title">Institutions</li><li class="chapter-item expanded "><a href="../CHRISTIAN_INSTITUTIONS.html"><strong aria-hidden="true">19.</strong> Christian Institutions</a></li><li class="chapter-item expanded "><a href="../ISLAMIC_INSTITUTIONS.html"><strong aria-hidden="true">20.</strong> Islamic Institutions</a></li><li class="chapter-item expanded "><a href="../JEWISH_INSTITUTIONS.html"><strong aria-hidden="true">21.</strong> Jewish Institutions</a></li><li class="chapter-item expanded "><a href="../HINDU_INSTITUTIONS.html"><strong aria-hidden="true">22.</strong> Hindu Institutions</a></li><li class="chapter-item expanded "><a href="../BUDDHIST_INSTITUTIONS.html"><strong aria-hidden="true">23.</strong> Buddhist Institutions</a></li><li class="chapter-item expanded "><a href="../OTHER_RELIGIOUS_INSTITUTIONS.html"><strong aria-hidden="true">24.</strong> Other Religious Institutions</a></li><li class="chapter-item expanded "><a href="../THEOLOGICAL_SCHOOLS_AND_SEMINARIES.html"><strong aria-hidden="true">25.</strong> Theological Schools and Seminaries</a></li><li class="chapter-item expanded "><a href="../HUMANITARIAN_ORGANIZATIONS.html"><strong aria-hidden="true">26.</strong> Humanitarian Organizations</a></li><li class="chapter-item expanded "><a href="../RELIGIOUS_MEDIA_AND_BROADCASTING.html"><strong aria-hidden="true">27.</strong> Religious Media and Broadcasting</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">PANORAFUS.AI</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <blockquote>
+<p><strong>PANORAFUS.AI</strong> — The Pivotal Head of the Global Network
+🌐 <a href="https://www.seasonedchristianministrychurch.com">www.seasonedchristianministrychurch.com</a></p>
+</blockquote>
+<hr />
+<h1 id="-panorafus-of-visions-and-revelations"><a class="header" href="#-panorafus-of-visions-and-revelations">👁️ PANORAFUS OF VISIONS AND REVELATIONS</a></h1>
+<h2 id="a-biblical-and-theological-study-of-divine-visions-dreams-and-supernatural-revelations"><a class="header" href="#a-biblical-and-theological-study-of-divine-visions-dreams-and-supernatural-revelations"><em>A Biblical and Theological Study of Divine Visions, Dreams, and Supernatural Revelations</em></a></h2>
+<p><strong>Published under PANORAFUS.AI · Seasoned Christian Ministry Church</strong>
+<strong>Author: Paul Jacquelin · Founding Philosopher &amp; Servant of the Word</strong></p>
+<hr />
+<blockquote>
+<p><em>&quot;And it shall come to pass afterward, that I will pour out my Spirit on all flesh; your sons and your daughters shall prophesy, your old men shall dream dreams, and your young men shall see visions.&quot;</em>
+— <strong>Joel 2:28 (ESV)</strong></p>
+</blockquote>
+<blockquote>
+<p><em>&quot;For God speaks in one way, and in two, though man does not perceive it. In a dream, in a vision of the night, when deep sleep falls on men, while they slumber on their beds, then he opens the ears of men and terrifies them with warnings.&quot;</em>
+— <strong>Job 33:14–16 (ESV)</strong></p>
+</blockquote>
+<hr />
+<h3 id="-companion-to-panora-fus-of-biblical-eschatology--panorafus-of-future-knowledge"><a class="header" href="#-companion-to-panora-fus-of-biblical-eschatology--panorafus-of-future-knowledge">⭐ COMPANION TO <a href="BIBLICAL_ESCHATOLOGY.html">PANORA-FUS OF BIBLICAL ESCHATOLOGY</a> · <a href="FUTURE_KNOWLEDGE.html">PANORAFUS OF FUTURE KNOWLEDGE</a></a></h3>
+<hr />
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">TABLE OF CONTENTS</a></h2>
+<ol>
+<li><a href="#introduction">Introduction — The Language of Heaven</a></li>
+<li><a href="#part-i">Part I — What Are Visions and Revelations?</a></li>
+<li><a href="#part-ii">Part II — Major Old Testament Visions</a></li>
+<li><a href="#part-iii">Part III — Major New Testament Visions</a></li>
+<li><a href="#part-iv">Part IV — The Book of Revelation — The Supreme Visionary Text</a></li>
+<li><a href="#part-v">Part V — Apostolic and Post-Apostolic Visions</a></li>
+<li><a href="#part-vi">Part VI — Theology of Divine Revelation</a></li>
+<li><a href="#part-vii">Part VII — Tests of True Revelation</a></li>
+<li><a href="#part-viii">Part VIII — Visions and the Future of PANORAFUS.AI</a></li>
+<li><a href="#closing">Closing Meditation</a></li>
+</ol>
+<hr />
+<p><a name="introduction"></a></p>
+<h2 id="introduction--the-language-of-heaven"><a class="header" href="#introduction--the-language-of-heaven">INTRODUCTION — The Language of Heaven</a></h2>
+<p>From the earliest pages of Scripture to its final chapter, God has communicated with humanity through visions and revelations. These are not mere religious experiences or products of the human imagination — they are divine communications, initiated by God Himself, delivered through the Holy Spirit, and preserved for the instruction and hope of every generation.</p>
+<p><strong>PANORAFUS.AI</strong> is named in part from the Greek <em>panorama</em> — a sweeping, all-encompassing view. It is fitting, therefore, that this platform be grounded in the study of visions: the revealed panoramic views that God has granted to prophets, apostles, and servants across the ages.</p>
+<p>This document is your guide to understanding Biblical visions and revelations — what they are, how to recognize them, and how they point to the glorious future God has prepared.</p>
+<hr />
+<p><a name="part-i"></a></p>
+<h2 id="part-i--what-are-visions-and-revelations"><a class="header" href="#part-i--what-are-visions-and-revelations">PART I — What Are Visions and Revelations?</a></h2>
+<h3 id="definitions"><a class="header" href="#definitions">Definitions</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Term</th><th>Greek/Hebrew</th><th>Meaning</th></tr></thead><tbody>
+<tr><td><strong>Vision</strong></td><td><em>Chazon</em> (Heb) / <em>Horama</em> (Gk)</td><td>A divine sight — something seen supernaturally</td></tr>
+<tr><td><strong>Dream</strong></td><td><em>Chalom</em> (Heb) / <em>Onar</em> (Gk)</td><td>A divine communication given during sleep</td></tr>
+<tr><td><strong>Revelation</strong></td><td><em>Apokalypsis</em> (Gk)</td><td>An unveiling — what was hidden is made known</td></tr>
+<tr><td><strong>Prophecy</strong></td><td><em>Nabiy</em> (Heb) / <em>Propheteia</em> (Gk)</td><td>A divinely-inspired utterance or message</td></tr>
+<tr><td><strong>Oracle</strong></td><td><em>Massa</em> (Heb)</td><td>A burden or divine pronouncement</td></tr>
+</tbody></table>
+</div>
+<h3 id="forms-of-divine-communication"><a class="header" href="#forms-of-divine-communication">Forms of Divine Communication</a></h3>
+<p>God has used many modes of revelation:</p>
+<ul>
+<li><strong>Audible voice</strong> — God speaking directly (Genesis 3:9; Matthew 3:17)</li>
+<li><strong>Angelic visitation</strong> — Messengers from God (Luke 1:26–38; Revelation 1:1)</li>
+<li><strong>Dreams</strong> — Nighttime visions (Genesis 37:5–11; Matthew 2:12–13)</li>
+<li><strong>Open visions</strong> — Seen while awake (Isaiah 6:1–8; Acts 10:10–16)</li>
+<li><strong>Trances</strong> — Deep supernatural states (Acts 10:10; 2 Corinthians 12:2–4)</li>
+<li><strong>The Word of God</strong> — Primary and final revelation (Hebrews 1:1–2; 2 Timothy 3:16–17)</li>
+</ul>
+<hr />
+<p><a name="part-ii"></a></p>
+<h2 id="part-ii--major-old-testament-visions"><a class="header" href="#part-ii--major-old-testament-visions">PART II — Major Old Testament Visions</a></h2>
+<h3 id="1-abraham--the-covenant-vision"><a class="header" href="#1-abraham--the-covenant-vision">1. Abraham — The Covenant Vision</a></h3>
+<ul>
+<li><strong>Reference:</strong> Genesis 15:1–21</li>
+<li><strong>Type:</strong> Night vision + audible voice</li>
+<li><strong>Content:</strong> God confirms the covenant with Abraham through a supernatural encounter with a smoking firepot and flaming torch passing between the pieces.</li>
+<li><strong>Significance:</strong> Foundation of the covenant relationship between God and Israel.</li>
+</ul>
+<hr />
+<h3 id="2-jacob-at-bethel--the-ladder-vision"><a class="header" href="#2-jacob-at-bethel--the-ladder-vision">2. Jacob at Bethel — The Ladder Vision</a></h3>
+<ul>
+<li><strong>Reference:</strong> Genesis 28:10–17</li>
+<li><strong>Type:</strong> Dream / vision during sleep</li>
+<li><strong>Content:</strong> Jacob sees a ladder reaching from earth to heaven, with angels ascending and descending; God speaks the covenant promise.</li>
+<li><strong>Significance:</strong> A vision of heaven's accessibility to earth — fulfilled in Christ (John 1:51).</li>
+</ul>
+<hr />
+<h3 id="3-moses--the-burning-bush"><a class="header" href="#3-moses--the-burning-bush">3. Moses — The Burning Bush</a></h3>
+<ul>
+<li><strong>Reference:</strong> Exodus 3:1–22</li>
+<li><strong>Type:</strong> Open vision + audible voice</li>
+<li><strong>Content:</strong> A bush burns but is not consumed; God reveals His name: <em>&quot;I AM WHO I AM.&quot;</em></li>
+<li><strong>Significance:</strong> The revelation of God's eternal self-existence and His redemptive purpose.</li>
+</ul>
+<hr />
+<h3 id="4-isaiah--the-throne-room-vision"><a class="header" href="#4-isaiah--the-throne-room-vision">4. Isaiah — The Throne Room Vision</a></h3>
+<ul>
+<li><strong>Reference:</strong> Isaiah 6:1–13</li>
+<li><strong>Type:</strong> Open vision</li>
+<li><strong>Content:</strong> Isaiah sees the Lord high and lifted up, surrounded by seraphim crying <em>&quot;Holy, holy, holy.&quot;</em> Isaiah is cleansed and commissioned.</li>
+<li><strong>Significance:</strong> A foundational vision of God's holiness; the pattern of prophetic commissioning.</li>
+</ul>
+<hr />
+<h3 id="5-ezekiel--the-glory-and-the-chariot"><a class="header" href="#5-ezekiel--the-glory-and-the-chariot">5. Ezekiel — The Glory and the Chariot</a></h3>
+<ul>
+<li><strong>Reference:</strong> Ezekiel 1:1–28; Ezekiel 10</li>
+<li><strong>Type:</strong> Open vision</li>
+<li><strong>Content:</strong> A storm wind, four living creatures, wheels within wheels, a crystal expanse, and the likeness of the glory of God.</li>
+<li><strong>Significance:</strong> A vision of the divine mobile throne — the <em>Merkabah</em> — with deep eschatological implications.</li>
+</ul>
+<hr />
+<h3 id="6-daniel--kingdoms-beasts-and-the-ancient-of-days"><a class="header" href="#6-daniel--kingdoms-beasts-and-the-ancient-of-days">6. Daniel — Kingdoms, Beasts, and the Ancient of Days</a></h3>
+<ul>
+<li><strong>Reference:</strong> Daniel 2; 7; 8; 9; 10–12</li>
+<li><strong>Type:</strong> Dreams and visions</li>
+<li><strong>Content:</strong> A succession of world empires depicted as metals, beasts, and symbols; the coming of the Son of Man; the seventy weeks prophecy.</li>
+<li><strong>Significance:</strong> The most comprehensive prophetic-eschatological vision sequence in the Old Testament.</li>
+</ul>
+<hr />
+<h3 id="7-zechariah--eight-night-visions"><a class="header" href="#7-zechariah--eight-night-visions">7. Zechariah — Eight Night Visions</a></h3>
+<ul>
+<li><strong>Reference:</strong> Zechariah 1–6</li>
+<li><strong>Type:</strong> Night visions</li>
+<li><strong>Content:</strong> A series of eight visions including a man among myrtles, four horns, a flying scroll, a woman in a basket, and four chariots.</li>
+<li><strong>Significance:</strong> Post-exilic visions pointing to restoration, judgment, and the coming Messianic Kingdom.</li>
+</ul>
+<hr />
+<p><a name="part-iii"></a></p>
+<h2 id="part-iii--major-new-testament-visions"><a class="header" href="#part-iii--major-new-testament-visions">PART III — Major New Testament Visions</a></h2>
+<h3 id="1-the-baptism-of-jesus--the-opened-heaven"><a class="header" href="#1-the-baptism-of-jesus--the-opened-heaven">1. The Baptism of Jesus — The Opened Heaven</a></h3>
+<ul>
+<li><strong>Reference:</strong> Matthew 3:13–17; Mark 1:9–11; Luke 3:21–22</li>
+<li><strong>Type:</strong> Open visible sign</li>
+<li><strong>Content:</strong> The heavens open, the Spirit descends as a dove, and the Father's voice declares: <em>&quot;This is my beloved Son, with whom I am well pleased.&quot;</em></li>
+<li><strong>Significance:</strong> The Trinitarian inauguration of Christ's public ministry.</li>
+</ul>
+<hr />
+<h3 id="2-the-transfiguration"><a class="header" href="#2-the-transfiguration">2. The Transfiguration</a></h3>
+<ul>
+<li><strong>Reference:</strong> Matthew 17:1–9; Mark 9:2–10; Luke 9:28–36</li>
+<li><strong>Type:</strong> Glorious open vision</li>
+<li><strong>Content:</strong> Jesus is transfigured before Peter, James, and John; His face shines as the sun; Moses and Elijah appear; the Father's voice speaks from a bright cloud.</li>
+<li><strong>Significance:</strong> A foretaste of the resurrection glory; the witness of the Law and the Prophets to Christ.</li>
+</ul>
+<hr />
+<h3 id="3-stephen--the-son-of-man-standing"><a class="header" href="#3-stephen--the-son-of-man-standing">3. Stephen — The Son of Man Standing</a></h3>
+<ul>
+<li><strong>Reference:</strong> Acts 7:55–56</li>
+<li><strong>Type:</strong> Open vision (at the moment of martyrdom)</li>
+<li><strong>Content:</strong> <em>&quot;I see the heavens opened, and the Son of Man standing at the right hand of God.&quot;</em></li>
+<li><strong>Significance:</strong> The only New Testament vision of the Son of Man <em>standing</em> — an act of reception and honor.</li>
+</ul>
+<hr />
+<h3 id="4-paul--the-road-to-damascus"><a class="header" href="#4-paul--the-road-to-damascus">4. Paul — The Road to Damascus</a></h3>
+<ul>
+<li><strong>Reference:</strong> Acts 9:1–9; Acts 22:6–16; Acts 26:12–18</li>
+<li><strong>Type:</strong> Blinding light + audible voice</li>
+<li><strong>Content:</strong> A light from heaven flashes; Jesus speaks: <em>&quot;Saul, Saul, why are you persecuting me?&quot;</em> Paul is converted and commissioned.</li>
+<li><strong>Significance:</strong> The most dramatic apostolic conversion in the New Testament.</li>
+</ul>
+<hr />
+<h3 id="5-paul--caught-up-to-the-third-heaven"><a class="header" href="#5-paul--caught-up-to-the-third-heaven">5. Paul — Caught Up to the Third Heaven</a></h3>
+<ul>
+<li><strong>Reference:</strong> 2 Corinthians 12:1–10</li>
+<li><strong>Type:</strong> Trance / caught-up experience</li>
+<li><strong>Content:</strong> Paul describes being caught up to <em>Paradise</em> and hearing <em>&quot;inexpressible things, which no one is permitted to tell.&quot;</em></li>
+<li><strong>Significance:</strong> Evidence of multi-layered heavenly realms; the sovereignty of divine timing in revelation.</li>
+</ul>
+<hr />
+<h3 id="6-peter--the-sheet-of-animals"><a class="header" href="#6-peter--the-sheet-of-animals">6. Peter — The Sheet of Animals</a></h3>
+<ul>
+<li><strong>Reference:</strong> Acts 10:9–16</li>
+<li><strong>Type:</strong> Trance / vision</li>
+<li><strong>Content:</strong> Peter falls into a trance and sees a sheet descending with all kinds of animals; a voice commands him to <em>&quot;kill and eat.&quot;</em></li>
+<li><strong>Significance:</strong> God's sovereign opening of the Gospel to the Gentiles.</li>
+</ul>
+<hr />
+<h3 id="7-john--the-revelation-of-jesus-christ"><a class="header" href="#7-john--the-revelation-of-jesus-christ">7. John — The Revelation of Jesus Christ</a></h3>
+<ul>
+<li><strong>Reference:</strong> Revelation 1–22</li>
+<li><strong>Type:</strong> Extended prophetic vision in the Spirit</li>
+<li><strong>Content:</strong> <em>&quot;I was in the Spirit on the Lord's Day, and I heard behind me a loud voice like a trumpet.&quot;</em> (Revelation 1:10) — a vision encompassing heaven, earth, history, and eternity.</li>
+<li><strong>Significance:</strong> The capstone of all biblical revelation — the complete prophetic panorama.</li>
+</ul>
+<hr />
+<p><a name="part-iv"></a></p>
+<h2 id="part-iv--the-book-of-revelation--the-supreme-visionary-text"><a class="header" href="#part-iv--the-book-of-revelation--the-supreme-visionary-text">PART IV — The Book of Revelation — The Supreme Visionary Text</a></h2>
+<p>The book of Revelation (<em>Apokalypsis Ioannou</em> — &quot;The Revelation of John&quot;) is the most extended, structured, and comprehensive prophetic vision in all of Scripture.</p>
+<h3 id="key-features"><a class="header" href="#key-features">Key Features</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Author</strong></td><td>John the Apostle, exiled on Patmos</td></tr>
+<tr><td><strong>Date</strong></td><td>circa 95 AD (reign of Domitian)</td></tr>
+<tr><td><strong>Recipients</strong></td><td>The seven churches of Asia Minor</td></tr>
+<tr><td><strong>Medium</strong></td><td>John &quot;in the Spirit&quot; — sustained visionary state</td></tr>
+<tr><td><strong>Structure</strong></td><td>Letters, seals, trumpets, bowls, cosmic war, new creation</td></tr>
+</tbody></table>
+</div>
+<h3 id="major-visions-in-revelation"><a class="header" href="#major-visions-in-revelation">Major Visions in Revelation</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Section</th><th>Reference</th><th>Content</th></tr></thead><tbody>
+<tr><td>The Glorified Christ</td><td>Rev 1:12–20</td><td>Seven stars, seven lampstands, voice like rushing waters</td></tr>
+<tr><td>The Throne Room</td><td>Rev 4–5</td><td>The twenty-four elders, four living creatures, the Lamb and the scroll</td></tr>
+<tr><td>The Seven Seals</td><td>Rev 6–8</td><td>Conquest, war, famine, death, martyrs, cosmic signs</td></tr>
+<tr><td>The Seven Trumpets</td><td>Rev 8–11</td><td>Judgments on earth, sea, rivers, darkness, abyss, the nations</td></tr>
+<tr><td>The Woman and the Dragon</td><td>Rev 12</td><td>Israel, the Dragon (Satan), the birth and ascension of the Messiah</td></tr>
+<tr><td>The Two Beasts</td><td>Rev 13</td><td>The Antichrist and the False Prophet</td></tr>
+<tr><td>The Seven Bowls</td><td>Rev 15–16</td><td>Final judgments poured out on the earth</td></tr>
+<tr><td>The Fall of Babylon</td><td>Rev 17–18</td><td>The destruction of the world's corrupt religious-commercial system</td></tr>
+<tr><td>The Return of Christ</td><td>Rev 19</td><td>The King of kings riding on a white horse</td></tr>
+<tr><td>The Millennium</td><td>Rev 20</td><td>The binding of Satan; the thousand-year reign of Christ</td></tr>
+<tr><td>The New Heaven and New Earth</td><td>Rev 21–22</td><td>The New Jerusalem; God dwelling with His people forever</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p><a name="part-v"></a></p>
+<h2 id="part-v--apostolic-and-post-apostolic-visions"><a class="header" href="#part-v--apostolic-and-post-apostolic-visions">PART V — Apostolic and Post-Apostolic Visions</a></h2>
+<h3 id="the-fulfillment-of-joel-228"><a class="header" href="#the-fulfillment-of-joel-228">The Fulfillment of Joel 2:28</a></h3>
+<p>The outpouring of the Holy Spirit at Pentecost (Acts 2) inaugurated a new era of revelatory experience for the body of Christ. Peter declared:</p>
+<blockquote>
+<p><em>&quot;And in the last days it shall be, God declares, that I will pour out my Spirit on all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams.&quot;</em>
+— Acts 2:17 (ESV)</p>
+</blockquote>
+<p>This promise is not exhausted. Throughout Church history, and in the present age, God has continued to confirm His Word through sovereign acts of revelation, always subordinate to and tested by Scripture.</p>
+<h3 id="notable-examples-in-church-history"><a class="header" href="#notable-examples-in-church-history">Notable Examples in Church History</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Person</th><th>Vision/Revelation</th><th>Significance</th></tr></thead><tbody>
+<tr><td>Polycarp of Smyrna (c. 69–155 AD)</td><td>Vision of his pillow burning — told this meant he would be burned alive</td><td>Historical martyrdom account</td></tr>
+<tr><td>Constantine (312 AD)</td><td>Vision of the Chi-Rho sign before the Battle of Milvian Bridge</td><td>Influenced Christianization of the Roman Empire</td></tr>
+<tr><td>Patrick of Ireland (c. 415 AD)</td><td>Dreams calling him back to Ireland as a missionary</td><td>Foundation of Celtic Christianity in Ireland</td></tr>
+<tr><td>Joan of Arc (1412–1431)</td><td>Visions and voices directing her military and spiritual mission</td><td>Controversial but historically documented</td></tr>
+<tr><td>John Wesley (1703–1791)</td><td>Documented accounts of dreams and spiritual impressions guiding ministry</td><td>Foundation of the Methodist movement</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p><a name="part-vi"></a></p>
+<h2 id="part-vi--theology-of-divine-revelation"><a class="header" href="#part-vi--theology-of-divine-revelation">PART VI — Theology of Divine Revelation</a></h2>
+<h3 id="the-principle-of-sola-scriptura"><a class="header" href="#the-principle-of-sola-scriptura">The Principle of <em>Sola Scriptura</em></a></h3>
+<p>The Protestant Reformation established the principle that <strong>Scripture alone</strong> is the supreme, infallible, and sufficient rule of faith and practice. This does not mean God cannot speak through dreams or visions today — but it does mean:</p>
+<ol>
+<li>No vision or dream can add to or contradict Scripture.</li>
+<li>All claimed revelations must be tested against the Word of God.</li>
+<li>Scripture remains the ultimate authority over every spiritual experience.</li>
+</ol>
+<blockquote>
+<p><em>&quot;To the teaching and to the testimony! If they will not speak according to this word, it is because they have no dawn.&quot;</em>
+— <strong>Isaiah 8:20 (ESV)</strong></p>
+</blockquote>
+<h3 id="progressive-revelation"><a class="header" href="#progressive-revelation">Progressive Revelation</a></h3>
+<p>God revealed His redemptive plan progressively:</p>
+<div class="table-wrapper"><table><thead><tr><th>Stage</th><th>Content</th></tr></thead><tbody>
+<tr><td><strong>Patriarchal</strong></td><td>Covenant promises to Abraham, Isaac, Jacob</td></tr>
+<tr><td><strong>Mosaic</strong></td><td>Law, Tabernacle, Sacrificial System</td></tr>
+<tr><td><strong>Prophetic</strong></td><td>Eschatological hope, Messianic promises</td></tr>
+<tr><td><strong>Apostolic</strong></td><td>Fulfillment in Christ, the Church, the Spirit</td></tr>
+<tr><td><strong>Completed</strong></td><td>The canon of Scripture — closed and sufficient</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p><a name="part-vii"></a></p>
+<h2 id="part-vii--tests-of-true-revelation"><a class="header" href="#part-vii--tests-of-true-revelation">PART VII — Tests of True Revelation</a></h2>
+<p>Scripture provides clear tests for discerning genuine divine revelation from false:</p>
+<h3 id="test-1--agreement-with-scripture"><a class="header" href="#test-1--agreement-with-scripture">Test 1 — Agreement with Scripture</a></h3>
+<blockquote>
+<p><em>&quot;But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed.&quot;</em>
+— Galatians 1:8 (ESV)</p>
+</blockquote>
+<h3 id="test-2--fulfillment-for-predictive-visions"><a class="header" href="#test-2--fulfillment-for-predictive-visions">Test 2 — Fulfillment (for Predictive Visions)</a></h3>
+<blockquote>
+<p><em>&quot;When a prophet speaks in the name of the LORD, if the word does not come to pass or come true, that is a word that the LORD has not spoken.&quot;</em>
+— Deuteronomy 18:22 (ESV)</p>
+</blockquote>
+<h3 id="test-3--confessing-jesus-christ"><a class="header" href="#test-3--confessing-jesus-christ">Test 3 — Confessing Jesus Christ</a></h3>
+<blockquote>
+<p><em>&quot;By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God.&quot;</em>
+— 1 John 4:2 (ESV)</p>
+</blockquote>
+<h3 id="test-4--fruit"><a class="header" href="#test-4--fruit">Test 4 — Fruit</a></h3>
+<blockquote>
+<p><em>&quot;You will recognize them by their fruits.&quot;</em>
+— Matthew 7:16 (ESV)</p>
+</blockquote>
+<h3 id="test-5--submission-to-the-body-of-christ"><a class="header" href="#test-5--submission-to-the-body-of-christ">Test 5 — Submission to the Body of Christ</a></h3>
+<blockquote>
+<p><em>&quot;Let two or three prophets speak, and let the others weigh what is said.&quot;</em>
+— 1 Corinthians 14:29 (ESV)</p>
+</blockquote>
+<hr />
+<p><a name="part-viii"></a></p>
+<h2 id="part-viii--visions-and-the-future-of-panorafusai"><a class="header" href="#part-viii--visions-and-the-future-of-panorafusai">PART VIII — Visions and the Future of PANORAFUS.AI</a></h2>
+<p><strong>PANORAFUS.AI</strong> — <em>your visions and revelations future</em> — is built on the conviction that the God of Abraham, Isaac, and Jacob is not silent. He has spoken fully and finally in His Son (Hebrews 1:1–2), and His Word continues to illuminate, guide, and transform every generation.</p>
+<p>The mission of PANORAFUS.AI is to:</p>
+<ul>
+<li>Preserve and proclaim the prophetic Scriptures to every nation</li>
+<li>Connect the global community of believers who live in light of God's revealed future</li>
+<li>Equip the body of Christ with tools to search, study, and share the visions of Scripture</li>
+<li>Stand as a digital lighthouse — pointing the world toward the hope of the coming King</li>
+</ul>
+<blockquote>
+<p><em>&quot;Panorafus.AI is your visions and revelations future for all.&quot;</em></p>
+</blockquote>
+<hr />
+<p><a name="closing"></a></p>
+<h2 id="closing-meditation--the-vision-awaits"><a class="header" href="#closing-meditation--the-vision-awaits">CLOSING MEDITATION — The Vision Awaits</a></h2>
+<blockquote>
+<p><em>&quot;For still the vision awaits its appointed time; it hastens to the end — it will not lie. If it seems slow, wait for it; it will surely come; it will not delay.&quot;</em>
+— <strong>Habakkuk 2:3 (ESV)</strong></p>
+</blockquote>
+<p>Every vision God has given is moving toward its appointed fulfillment. The visions of Daniel are converging. The prophecies of Ezekiel are aligning. The Revelation of John is unfolding.</p>
+<p>We are a people who have seen — through Scripture — the end from the beginning. We live not in uncertainty but in expectation. We do not merely hope that history has meaning; we <em>know</em> it does, because we have read the last chapter.</p>
+<p><strong>PANORAFUS.AI is for such a time as this.</strong></p>
+<hr />
+<p><em>PANORAFUS.AI — Connecting the World, One Institution at a Time.</em>
+<em>🌐 <a href="https://www.seasonedchristianministrychurch.com">www.seasonedchristianministrychurch.com</a></em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../THE_LORD_SUPPER.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../WORSHIP_AND_PRAYER.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../THE_LORD_SUPPER.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../WORSHIP_AND_PRAYER.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
