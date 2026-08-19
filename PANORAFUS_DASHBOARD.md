@@ -15,7 +15,7 @@ This dashboard page tracks six core global indicators:
 
 ---
 
-## 🧭 Six Relevant Continents Platforms
+## 🧭 Six Platform Regions
 
 | Platform Region | Subscribers | Visitors | Viewers | Investors | Contractors | Partnerships |
 |---|---:|---:|---:|---:|---:|---:|
