@@ -79,6 +79,7 @@ For website management, content updates, and administrative matters related to *
   - [Hindu Religious Institutions](HINDU_INSTITUTIONS.md)
   - [Buddhist Religious Institutions](BUDDHIST_INSTITUTIONS.md)
   - [Other Religious Institutions](OTHER_RELIGIOUS_INSTITUTIONS.md)
+- [🎓 Release Certificate & Degree Registration — PANORAFUS.AI Online Schools Program](RELEASE_CERTIFICATE_AND_DEGREE.md)
 - [Religious Denomination Credentials & Canonical Discussion — Global Index](RELIGIOUS_DENOMINATION_CREDENTIALS.md)
 - [Humanitarian Organizations](HUMANITARIAN_ORGANIZATIONS.md)
 - [Theological Schools and Seminaries](THEOLOGICAL_SCHOOLS_AND_SEMINARIES.md)
