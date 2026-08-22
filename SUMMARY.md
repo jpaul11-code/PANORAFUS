@@ -29,4 +29,5 @@
 - [Humanitarian Organizations](HUMANITARIAN_ORGANIZATIONS.md)
 - [Future Knowledge](FUTURE_KNOWLEDGE.md)
 - [Global Network](GLOBALNETWORK)
+- [🎓 Release Certificate & Degree](RELEASE_CERTIFICATE_AND_DEGREE.md)
 - [Contribute](CONTRIBUTE.md)

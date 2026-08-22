@@ -1,7 +1,13 @@
 [book]
 title = "PANORAFUS.AI"
-authors = []
+authors = ["JACQUELIN PAUL"]
+description = "The Pivotal Head of the Global Network — connecting institutions, organizations, and communities across the world, powered by AI and founded by Seasoned Christian Ministry Church."
 language = "en"
 src = "."
 
 [output.html]
+git-repository-url = "https://github.com/jpaul11-code/PANORAFUS"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/jpaul11-code/PANORAFUS/edit/main/{path}"
+site-url = "/PANORAFUS/"
+no-section-label = true
