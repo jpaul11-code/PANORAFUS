@@ -14,6 +14,18 @@ PANORAFUS.AI is a global network platform connecting institutions, organizations
 
 ---
 
+## 🌐 Language Selection / Selección de Idioma
+
+| Language | Link |
+|----------|------|
+| 🇺🇸 English | *You are here* |
+| 🇪🇸 Español | [Edición Española](lang/es/README.md) |
+| 🇫🇷 Français | [Édition Française](lang/fr/README.md) |
+| 🇵🇹 Português | [Edição Portuguesa](lang/pt/README.md) |
+| 🇸🇦 العربية | [النسخة العربية](lang/ar/README.md) |
+
+---
+
 ## 🌍 Trust Build in PANORAFUS.AI — All Around the Globe
 
 ```

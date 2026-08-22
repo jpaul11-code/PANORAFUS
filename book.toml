@@ -4,4 +4,7 @@ authors = []
 language = "en"
 src = "."
 
+[build]
+build-dir = "book/en"
+
 [output.html]
