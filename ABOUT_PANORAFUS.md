@@ -92,4 +92,15 @@ For all website management, content, and administrative matters related to **www
 
 ---
 
+---
+
+## Compensation & Tariff
+
+For information on compensation arrangements, contributor agreements, partnership structures, and the Book access/pricing tiers, see:
+
+- 💼 **[Project Compensation & Contact](PROJECT_COMPENSATION.md)** — Compensation structure, donor model, and financial contact information for PANORAFUS.AI
+- 📘 **[Book Tariff — Access Tiers & Licensing](BOOK_TARIFF.md)** — Free access policy, ministry supporter tiers, institutional licensing, and commercial licensing for the PANORAFUS.AI Book
+
+---
+
 *PANORAFUS.AI — Connecting the World, One Institution at a Time.*

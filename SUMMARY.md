@@ -30,4 +30,6 @@
 - [Humanitarian Organizations](HUMANITARIAN_ORGANIZATIONS.md)
 - [Future Knowledge](FUTURE_KNOWLEDGE.md)
 - [Global Network](GLOBALNETWORK)
+- [Project Compensation & Contact](PROJECT_COMPENSATION.md)
+- [Book Tariff](BOOK_TARIFF.md)
 - [Contribute](CONTRIBUTE.md)

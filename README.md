@@ -100,6 +100,8 @@ For website management, content updates, and administrative matters related to *
 - [Prayer and Intercession Networks](PRAYER_AND_INTERCESSION_NETWORKS.md)
 - [Missions and Evangelism](MISSIONS_AND_EVANGELISM.md)
 - [Religious Education](RELIGIOUS_EDUCATION.md)
+- [💼 Project Compensation & Contact](PROJECT_COMPENSATION.md)
+- [📘 Book Tariff — Access Tiers & Licensing](BOOK_TARIFF.md)
 - [Contribute to PANORAFUS.AI](CONTRIBUTE.md)
 
 ---
