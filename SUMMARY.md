@@ -3,6 +3,7 @@
 - [PANORAFUS.AI](README.md)
 - [🌍 Global Trust](GLOBAL_TRUST.md)
 - [📊 PANORAFUS Dashboard](PANORAFUS_DASHBOARD.md)
+- [🎛️ PANORAFUS.AI Studio](PANORAFUS_AI_STUDIO.md)
 - [About PANORAFUS](ABOUT_PANORAFUS.md)
 - [Biblical Eschatology](BIBLICAL_ESCHATOLOGY.md)
 - [Seasoned Christian Ministry](SEASONED_CHRISTIAN_MINISTRY.md)

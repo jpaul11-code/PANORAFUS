@@ -79,6 +79,7 @@ For website management, content updates, and administrative matters related to *
 
 - [🌍 Trust Build in PANORAFUS.AI — All Around the Globe](GLOBAL_TRUST.md)
 - [📊 PANORAFUS.AI Global Dashboard](PANORAFUS_DASHBOARD.md)
+- [🎛️ PANORAFUS.AI Studio — At-a-Glance Church Services](PANORAFUS_AI_STUDIO.md)
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [🔭 PANORAFUS OF FUTURE KNOWLEDGE — Concepts, Sources & Limits of Prophetic Knowledge](FUTURE_KNOWLEDGE.md)
