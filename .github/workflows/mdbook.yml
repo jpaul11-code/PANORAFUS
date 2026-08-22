@@ -99,10 +99,10 @@ jobs:
                 <div class="name">Portuguese</div>
                 <div class="native">Português</div>
               </a>
-              <a class="lang-card" href="ar/index.html" dir="rtl">
+              <a class="lang-card" href="ar/index.html">
                 <div class="flag">🇸🇦</div>
                 <div class="name">Arabic</div>
-                <div class="native">العربية</div>
+                <div class="native" dir="rtl">العربية</div>
               </a>
             </div>
           </body>
