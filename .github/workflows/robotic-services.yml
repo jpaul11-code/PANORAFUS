@@ -33,18 +33,22 @@ jobs:
           for file in "${md_files[@]}"; do
             while IFS= read -r url; do
               [[ -z "$url" ]] && continue
+              # trim trailing punctuation that may be part of surrounding Markdown syntax
+              url=$(echo "$url" | sed 's/[.,;:!?)]+$//')
+              [[ -z "$url" ]] && continue
               # skip already-checked URLs
               [[ -n "${seen_urls[$url]+_}" ]] && continue
               seen_urls[$url]=1
 
               checked=$((checked + 1))
+              # Use GET (not HEAD) to avoid 405 false positives on servers that reject HEAD
               http_code=$(curl -o /dev/null -s -w "%{http_code}" \
                 --max-time 15 \
                 --retry 2 \
                 --retry-delay 3 \
                 -L \
                 -A "PANORAFUS.AI-LinkBot/1.0" \
-                -I "$url" 2>/dev/null || echo "000")
+                "$url" 2>/dev/null || echo "000")
 
               if [[ "$http_code" == "000" || "$http_code" == "4"* || "$http_code" == "5"* ]]; then
                 broken=$((broken + 1))

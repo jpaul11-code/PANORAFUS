@@ -28,10 +28,16 @@ jobs:
             docs_lines=$(printf '%s\0' "${docs_files[@]}" | xargs -0 cat | wc -l | tr -d ' ')
           fi
 
-          # Per-region institution counts (count table rows in each institution file)
+          # Per-region institution counts (count data rows in each institution file,
+          # excluding header row and separator rows like |---|---:|)
           count_institutions() {
             local file="$1"
-            [[ -f "$file" ]] && grep -c '^|' "$file" || echo 0
+            if [[ -f "$file" ]]; then
+              grep -c '^|' "$file" 2>/dev/null | \
+                awk -v sep="$(grep -c '^|[-: |]*|' "$file" 2>/dev/null || echo 0)" '{print $1 - sep}' || echo 0
+            else
+              echo 0
+            fi
           }
           christian=$(count_institutions "CHRISTIAN_INSTITUTIONS.md")
           islamic=$(count_institutions "ISLAMIC_INSTITUTIONS.md")
