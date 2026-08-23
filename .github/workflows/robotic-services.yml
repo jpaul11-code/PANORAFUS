@@ -1,0 +1,150 @@
+name: PANORAFUS.AI Robotic Services — Link Health Monitor
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  link-health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract and check external URLs
+        id: link-check
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          broken_links=()
+          checked=0
+          broken=0
+
+          mapfile -d '' -t md_files < <(find . -maxdepth 2 -type f \( -name "*.md" -o -name "GLOBALNETWORK" \) -print0)
+
+          declare -A seen_urls
+
+          for file in "${md_files[@]}"; do
+            while IFS= read -r url; do
+              [[ -z "$url" ]] && continue
+              # trim trailing punctuation that may be part of surrounding Markdown syntax
+              url=$(echo "$url" | sed 's/[.,;:!?)]+$//')
+              [[ -z "$url" ]] && continue
+              # skip already-checked URLs
+              [[ -n "${seen_urls[$url]+_}" ]] && continue
+              seen_urls[$url]=1
+
+              checked=$((checked + 1))
+              # Use GET (not HEAD) to avoid 405 false positives on servers that reject HEAD
+              http_code=$(curl -o /dev/null -s -w "%{http_code}" \
+                --max-time 15 \
+                --retry 2 \
+                --retry-delay 3 \
+                -L \
+                -A "PANORAFUS.AI-LinkBot/1.0" \
+                "$url" 2>/dev/null || echo "000")
+
+              if [[ "$http_code" == "000" || "$http_code" == "4"* || "$http_code" == "5"* ]]; then
+                broken=$((broken + 1))
+                broken_links+=("- \`$url\` — HTTP $http_code (in \`$file\`)")
+                echo "BROKEN [$http_code]: $url (in $file)"
+              else
+                echo "OK     [$http_code]: $url"
+              fi
+            done < <(grep -oE 'https?://[^)>" ]+' "$file" 2>/dev/null || true)
+          done
+
+          echo "checked=$checked" >> "$GITHUB_OUTPUT"
+          echo "broken=$broken" >> "$GITHUB_OUTPUT"
+
+          if (( broken > 0 )); then
+            {
+              printf '%s\n' "${broken_links[@]}"
+            } > /tmp/broken_links.txt
+          else
+            echo "" > /tmp/broken_links.txt
+          fi
+
+      - name: Report broken links as GitHub Issue
+        if: steps.link-check.outputs.broken != '0'
+        uses: actions/github-script@v7
+        env:
+          CHECKED: ${{ steps.link-check.outputs.checked }}
+          BROKEN: ${{ steps.link-check.outputs.broken }}
+        with:
+          script: |
+            const fs = require('fs');
+            const brokenLinks = fs.readFileSync('/tmp/broken_links.txt', 'utf8').trim();
+            const checked = process.env.CHECKED;
+            const broken = process.env.BROKEN;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const title = "PANORAFUS.AI Link Health Monitor — Broken Links Detected";
+
+            const body = [
+              "## 🔗 PANORAFUS.AI Link Health Report",
+              "",
+              `> Workflow run: ${runUrl}`,
+              "",
+              `**URLs checked:** ${checked}  `,
+              `**Broken links found:** ${broken}`,
+              "",
+              "### Broken Links",
+              "",
+              brokenLinks,
+              "",
+              "---",
+              "_Please update or remove these links from the documentation._",
+              "",
+              "_Generated automatically by PANORAFUS.AI Robotic Services._"
+            ].join("\n");
+
+            const query = `repo:${owner}/${repo} is:issue is:open in:title "${title}"`;
+            const { data: searchResults } = await github.rest.search.issuesAndPullRequests({
+              q: query,
+              per_page: 5
+            });
+            const existing = searchResults.items.find(
+              (item) => item.title === title && !item.pull_request
+            ) || null;
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body,
+                labels: []
+              });
+            }
+
+      - name: Publish health check summary
+        shell: bash
+        env:
+          CHECKED: ${{ steps.link-check.outputs.checked }}
+          BROKEN: ${{ steps.link-check.outputs.broken }}
+        run: |
+          {
+            echo "## 🔗 PANORAFUS.AI Robotic Services — Link Health Monitor"
+            echo "- URLs checked: $CHECKED"
+            echo "- Broken links: $BROKEN"
+            if [[ "$BROKEN" == "0" ]]; then
+              echo "- Status: ✅ All external links healthy"
+            else
+              echo "- Status: ⚠️ Broken links detected — see GitHub Issue"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

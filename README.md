@@ -5,6 +5,7 @@
 
 [![Deploy mdBook](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/mdbook.yml?label=Docs%20Build&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
 [![Docs Autopilot](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/docs-autopilot.yml?label=Docs%20Autopilot&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
+[![Robotic Services](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/robotic-services.yml?label=Link%20Health&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/robotic-services.yml)
 [![Global Network](https://img.shields.io/badge/Global%20Network-Active-blue?style=flat-square)](GLOBALNETWORK)
 [![Scripture Grounded](https://img.shields.io/badge/Scripture-Grounded-gold?style=flat-square)](BIBLICAL_ESCHATOLOGY.md)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-purple?style=flat-square)](CONTRIBUTE.md)
@@ -80,6 +81,9 @@ For website management, content updates, and administrative matters related to *
 - [🌍 Trust Build in PANORAFUS.AI — All Around the Globe](GLOBAL_TRUST.md)
 - [📊 PANORAFUS.AI Global Dashboard](PANORAFUS_DASHBOARD.md)
 - [🎛️ PANORAFUS.AI Studio — At-a-Glance Church Services](PANORAFUS_AI_STUDIO.md)
+- [🤖 PANORAFUS.AI Robotic Services](ROBOTIC_SERVICES.md)
+- [🌍 Global Deployment Strategy](GLOBAL_DEPLOYMENT.md)
+- [🔒 Security & Compliance Policy](SECURITY.md)
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [🔭 PANORAFUS OF FUTURE KNOWLEDGE — Concepts, Sources & Limits of Prophetic Knowledge](FUTURE_KNOWLEDGE.md)
