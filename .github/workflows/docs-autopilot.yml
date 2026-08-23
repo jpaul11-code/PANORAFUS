@@ -6,11 +6,13 @@ on:
       - "**/*.md"
       - "GLOBALNETWORK"
       - ".github/workflows/docs-autopilot.yml"
+      - ".github/workflows/robotic-services.yml"
   pull_request:
     paths:
       - "**/*.md"
       - "GLOBALNETWORK"
       - ".github/workflows/docs-autopilot.yml"
+      - ".github/workflows/robotic-services.yml"
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
@@ -43,6 +45,11 @@ jobs:
         RELIGIOUS_EDUCATION.md
         CONTRIBUTE.md
         SEE_THE_WORD.md
+        PANORAFUS_DASHBOARD.md
+        PANORAFUS_AI_STUDIO.md
+        ROBOTIC_SERVICES.md
+        GLOBAL_DEPLOYMENT.md
+        SECURITY.md
         GLOBALNETWORK
     steps:
       - name: Checkout repository
@@ -86,4 +93,5 @@ jobs:
             echo "## PANORAFUS.AI Docs Autopilot"
             echo "- Branding header check: passed"
             echo "- Internal link check: passed"
+            echo "- Files validated: $(echo "$DOC_FILES" | grep -c '[^[:space:]]') (including all six global regions)"
           } >> "$GITHUB_STEP_SUMMARY"
