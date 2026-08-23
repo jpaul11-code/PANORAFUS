@@ -4,6 +4,14 @@ set -euo pipefail
 repo_root="${1:-.}"
 cd "$repo_root"
 
+tmp_files=()
+cleanup() {
+  if (( ${#tmp_files[@]} > 0 )); then
+    rm -f "${tmp_files[@]}"
+  fi
+}
+trap cleanup EXIT
+
 doc_files=(
   "README.md"
   "ABOUT_PANORAFUS.md"
@@ -30,7 +38,7 @@ doc_files=(
   "ROBOTIC_SERVICES.md"
   "GLOBAL_DEPLOYMENT.md"
   "SECURITY.md"
-  "GLOBALNETWORK"
+  "GLOBALNETWORK" # Canonical global index file intentionally tracked without .md extension.
   "PROJECT_SETUP_ROADMAP.md"
 )
 
@@ -83,21 +91,19 @@ collect_language_file_set() {
 }
 
 reference_list="$(mktemp)"
+tmp_files+=("$reference_list")
 collect_language_file_set "lang/ar" > "$reference_list"
 
 for lang in es fr pt; do
   current_list="$(mktemp)"
+  tmp_files+=("$current_list")
   collect_language_file_set "lang/${lang}" > "$current_list"
   if ! diff -u "$reference_list" "$current_list" >/dev/null; then
     echo "Language parity validation failed: lang/${lang} does not match lang/ar file set."
     diff -u "$reference_list" "$current_list" || true
-    rm -f "$reference_list" "$current_list"
     exit 1
   fi
-  rm -f "$current_list"
 done
-
-rm -f "$reference_list"
 
 if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then
   {
