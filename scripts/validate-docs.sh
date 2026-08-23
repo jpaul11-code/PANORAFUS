@@ -35,6 +35,10 @@ doc_files=(
 )
 
 for file in "${doc_files[@]}"; do
+  if [[ -d "$file" ]]; then
+    echo "Required documentation path is a directory, expected file: '$file'."
+    exit 1
+  fi
   if [[ ! -f "$file" ]]; then
     echo "Required documentation file missing: '$file'."
     exit 1
@@ -72,12 +76,18 @@ if [[ ! -d "lang/ar" || ! -d "lang/es" || ! -d "lang/fr" || ! -d "lang/pt" ]]; t
   exit 1
 fi
 
+collect_language_file_set() {
+  local language_dir="$1"
+  find "$language_dir" -maxdepth 1 -type f \( -name "*.md" -o -name "book.toml" \) \
+    -exec basename {} \; | sort
+}
+
 reference_list="$(mktemp)"
-find "lang/ar" -maxdepth 1 -type f \( -name "*.md" -o -name "book.toml" \) -printf "%f\n" | sort > "$reference_list"
+collect_language_file_set "lang/ar" > "$reference_list"
 
 for lang in es fr pt; do
   current_list="$(mktemp)"
-  find "lang/${lang}" -maxdepth 1 -type f \( -name "*.md" -o -name "book.toml" \) -printf "%f\n" | sort > "$current_list"
+  collect_language_file_set "lang/${lang}" > "$current_list"
   if ! diff -u "$reference_list" "$current_list" >/dev/null; then
     echo "Language parity validation failed: lang/${lang} does not match lang/ar file set."
     diff -u "$reference_list" "$current_list" || true
