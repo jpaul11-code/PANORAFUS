@@ -65,7 +65,6 @@ for file in "${doc_files[@]}"; do
     clean_target="${target%%#*}"
     [[ -z "$clean_target" ]] && continue
     [[ "$clean_target" =~ ^[A-Za-z][A-Za-z0-9+.-]*: ]] && continue
-    [[ "$clean_target" =~ ^mailto: ]] && continue
 
     check_target="$clean_target"
     if [[ "$check_target" == /* ]]; then
