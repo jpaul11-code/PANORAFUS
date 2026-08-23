@@ -4,7 +4,9 @@
   "description": "PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "docs:check": "bash scripts/validate-docs.sh",
+    "package:check": "npm pack --dry-run",
+    "test": "npm run docs:check && npm run package:check"
   },
   "keywords": [
     "ai",
