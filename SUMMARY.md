@@ -7,6 +7,7 @@
 - [🤖 Robotic Services](ROBOTIC_SERVICES.md)
 - [🌍 Global Deployment](GLOBAL_DEPLOYMENT.md)
 - [🔒 Security & Compliance](SECURITY.md)
+- [🏗️ App Architecture Builder](APP_ARCHITECTURE_BUILDER.md)
 - [About PANORAFUS](ABOUT_PANORAFUS.md)
 - [Biblical Eschatology](BIBLICAL_ESCHATOLOGY.md)
 - [Seasoned Christian Ministry](SEASONED_CHRISTIAN_MINISTRY.md)
