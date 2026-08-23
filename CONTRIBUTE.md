@@ -72,6 +72,18 @@ Send your submission through:
 
 ---
 
+## Socratic Setup Alignment
+
+For PANORAFUS.AI setup-oriented pull requests, clarify these questions in your PR summary:
+
+1. What setup priority are you improving now (docs quality, CI reliability, multilingual publishing, package publishing, governance/security)?
+2. What measurable improvement should this PR deliver?
+3. Which audience is the primary beneficiary (contributors, readers, maintainers, automation)?
+
+Use the repository PR template checklist to map your change to setup phase and acceptance criteria.
+
+---
+
 ## Interacting With PANORAFUS.AI Robotic Services
 
 PANORAFUS.AI operates automated robotic services to keep the global network healthy. Here is how community members can interact with them:
