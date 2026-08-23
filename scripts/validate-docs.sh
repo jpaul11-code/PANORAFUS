@@ -97,9 +97,9 @@ for lang in es fr pt; do
   current_list="$(mktemp)"
   tmp_files+=("$current_list")
   collect_language_file_set "lang/${lang}" > "$current_list"
-  if ! diff -u "$reference_list" "$current_list" >/dev/null; then
+  if ! diff_output="$(diff -u "$reference_list" "$current_list")"; then
     echo "Language parity validation failed: lang/${lang} does not match lang/ar file set."
-    diff -u "$reference_list" "$current_list" || true
+    echo "$diff_output"
     exit 1
   fi
 done
