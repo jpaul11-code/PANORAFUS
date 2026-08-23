@@ -25,6 +25,7 @@ These answers determine which phase and acceptance criteria are in scope.
 - mdBook source consistency across English and translated editions.
 - Navigation and internal link integrity.
 - Branding consistency in key PANORAFUS.AI documents.
+- Architecture builder specification lifecycle for repository-tracked application design artifacts.
 
 ### B. Automation
 
@@ -85,6 +86,7 @@ For setup-focused pull requests:
 - `.github/workflows/docs-autopilot.yml` — workflow now delegates to shared validation logic.
 - `.github/pull_request_template.md` — repository-level governance and acceptance checklist.
 - `package.json` scripts — unified local/CI entry points for setup checks.
+- `APP_ARCHITECTURE_BUILDER.md` — documentation-first PANORAFUS.AI architecture builder specification.
 
 ---
 
