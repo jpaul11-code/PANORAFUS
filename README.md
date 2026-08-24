@@ -5,12 +5,25 @@
 
 [![Deploy mdBook](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/mdbook.yml?label=Docs%20Build&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
 [![Docs Autopilot](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/docs-autopilot.yml?label=Docs%20Autopilot&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
+[![Robotic Services](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/robotic-services.yml?label=Link%20Health&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/robotic-services.yml)
 [![Global Network](https://img.shields.io/badge/Global%20Network-Active-blue?style=flat-square)](GLOBALNETWORK)
 [![Scripture Grounded](https://img.shields.io/badge/Scripture-Grounded-gold?style=flat-square)](BIBLICAL_ESCHATOLOGY.md)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-purple?style=flat-square)](CONTRIBUTE.md)
 [![Open Source](https://img.shields.io/badge/Open-Source-orange?style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS)
 
 PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
+
+---
+
+## 🌐 Language Selection / Selección de Idioma
+
+| Language | Link |
+|----------|------|
+| 🇺🇸 English | *You are here* |
+| 🇪🇸 Español | [Edición Española](lang/es/README.md) |
+| 🇫🇷 Français | [Édition Française](lang/fr/README.md) |
+| 🇵🇹 Português | [Edição Portuguesa](lang/pt/README.md) |
+| 🇸🇦 العربية | [النسخة العربية](lang/ar/README.md) |
 
 ---
 
@@ -67,6 +80,12 @@ For website management, content updates, and administrative matters related to *
 
 - [🌍 Trust Build in PANORAFUS.AI — All Around the Globe](GLOBAL_TRUST.md)
 - [📊 PANORAFUS.AI Global Dashboard](PANORAFUS_DASHBOARD.md)
+- [🎛️ PANORAFUS.AI Studio — At-a-Glance Church Services](PANORAFUS_AI_STUDIO.md)
+- [🤖 PANORAFUS.AI Robotic Services](ROBOTIC_SERVICES.md)
+- [🌍 Global Deployment Strategy](GLOBAL_DEPLOYMENT.md)
+- [🔒 Security & Compliance Policy](SECURITY.md)
+- [🧭 PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)](PROJECT_SETUP_ROADMAP.md)
+- [🏗️ PANORAFUS.AI App Architecture Builder](APP_ARCHITECTURE_BUILDER.md)
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [🔭 PANORAFUS OF FUTURE KNOWLEDGE — Concepts, Sources & Limits of Prophetic Knowledge](FUTURE_KNOWLEDGE.md)
@@ -87,6 +106,8 @@ For website management, content updates, and administrative matters related to *
 - [Prayer and Intercession Networks](PRAYER_AND_INTERCESSION_NETWORKS.md)
 - [Missions and Evangelism](MISSIONS_AND_EVANGELISM.md)
 - [Religious Education](RELIGIOUS_EDUCATION.md)
+- [💼 Project Compensation & Contact](PROJECT_COMPENSATION.md)
+- [📘 Book Tariff — Access Tiers & Licensing](BOOK_TARIFF.md)
 - [Contribute to PANORAFUS.AI](CONTRIBUTE.md)
 
 ---

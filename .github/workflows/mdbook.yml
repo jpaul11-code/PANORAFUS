@@ -42,8 +42,72 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
-      - name: Build with mdBook
-        run: mdbook build
+      - name: Build with mdBook (all languages)
+        run: |
+          # English
+          mdbook build
+          # Spanish
+          mdbook build lang/es
+          # French
+          mdbook build lang/fr
+          # Portuguese
+          mdbook build lang/pt
+          # Arabic
+          mdbook build lang/ar
+          # Language selector landing page
+          cat > book/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>PANORAFUS.AI — Language Selection</title>
+            <style>
+              body { font-family: sans-serif; max-width: 600px; margin: 80px auto; text-align: center; padding: 0 20px; }
+              h1 { font-size: 2em; margin-bottom: 0.2em; }
+              p { color: #555; margin-bottom: 2em; }
+              .lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; text-align: left; }
+              .lang-card { border: 1px solid #ddd; border-radius: 8px; padding: 16px 20px; text-decoration: none; color: inherit; transition: box-shadow 0.2s; }
+              .lang-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+              .lang-card .flag { font-size: 2em; }
+              .lang-card .name { font-size: 1.1em; font-weight: bold; margin-top: 6px; }
+              .lang-card .native { color: #555; font-size: 0.95em; }
+            </style>
+          </head>
+          <body>
+            <h1>🌐 PANORAFUS.AI</h1>
+            <p>Select your language / Seleccione su idioma / Choisissez votre langue / Selecione seu idioma / اختر لغتك</p>
+            <div class="lang-grid">
+              <a class="lang-card" href="en/index.html">
+                <div class="flag">🇺🇸</div>
+                <div class="name">English</div>
+                <div class="native">English</div>
+              </a>
+              <a class="lang-card" href="es/index.html">
+                <div class="flag">🇪🇸</div>
+                <div class="name">Spanish</div>
+                <div class="native">Español</div>
+              </a>
+              <a class="lang-card" href="fr/index.html">
+                <div class="flag">🇫🇷</div>
+                <div class="name">French</div>
+                <div class="native">Français</div>
+              </a>
+              <a class="lang-card" href="pt/index.html">
+                <div class="flag">🇵🇹</div>
+                <div class="name">Portuguese</div>
+                <div class="native">Português</div>
+              </a>
+              <a class="lang-card" href="ar/index.html">
+                <div class="flag">🇸🇦</div>
+                <div class="name">Arabic</div>
+                <div class="native" dir="rtl">العربية</div>
+              </a>
+            </div>
+          </body>
+          </html>
+          EOF
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

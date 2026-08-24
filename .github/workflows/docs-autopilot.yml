@@ -5,12 +5,18 @@ on:
     paths:
       - "**/*.md"
       - "GLOBALNETWORK"
+      - "scripts/validate-docs.sh"
+      - "package.json"
       - ".github/workflows/docs-autopilot.yml"
+      - ".github/workflows/robotic-services.yml"
   pull_request:
     paths:
       - "**/*.md"
       - "GLOBALNETWORK"
+      - "scripts/validate-docs.sh"
+      - "package.json"
       - ".github/workflows/docs-autopilot.yml"
+      - ".github/workflows/robotic-services.yml"
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
@@ -21,69 +27,11 @@ permissions:
 jobs:
   validate-docs:
     runs-on: ubuntu-latest
-    env:
-      DOC_FILES: |
-        README.md
-        ABOUT_PANORAFUS.md
-        GLOBAL_TRUST.md
-        BIBLICAL_ESCHATOLOGY.md
-        SEASONED_CHRISTIAN_MINISTRY.md
-        CHRISTIAN_INSTITUTIONS.md
-        ISLAMIC_INSTITUTIONS.md
-        JEWISH_INSTITUTIONS.md
-        HINDU_INSTITUTIONS.md
-        BUDDHIST_INSTITUTIONS.md
-        OTHER_RELIGIOUS_INSTITUTIONS.md
-        RELIGIOUS_DENOMINATION_CREDENTIALS.md
-        HUMANITARIAN_ORGANIZATIONS.md
-        THEOLOGICAL_SCHOOLS_AND_SEMINARIES.md
-        RELIGIOUS_MEDIA_AND_BROADCASTING.md
-        PRAYER_AND_INTERCESSION_NETWORKS.md
-        MISSIONS_AND_EVANGELISM.md
-        RELIGIOUS_EDUCATION.md
-        CONTRIBUTE.md
-        SEE_THE_WORD.md
-        GLOBALNETWORK
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Validate PANORAFUS.AI branding header
+      - name: Validate PANORAFUS.AI documentation guardrails
         shell: bash
         run: |
-          set -euo pipefail
-          mapfile -t files <<< "$DOC_FILES"
-          for file in "${files[@]}"; do
-            [[ -z "$file" ]] && continue
-            if ! grep -q "PANORAFUS.AI" "$file"; then
-              echo "PANORAFUS.AI branding validation failed: '$file' must include the PANORAFUS.AI header/reference."
-              exit 1
-            fi
-          done
-
-      - name: Validate internal markdown links
-        shell: bash
-        run: |
-          set -euo pipefail
-          mapfile -t files <<< "$DOC_FILES"
-          for file in "${files[@]}"; do
-            [[ -z "$file" ]] && continue
-            while IFS= read -r target; do
-              clean_target="${target%%#*}"
-              [[ -z "$clean_target" ]] && continue
-              [[ "$clean_target" =~ ^[A-Za-z][A-Za-z0-9+.-]*: ]] && continue
-              [[ "$clean_target" =~ ^mailto: ]] && continue
-              if [[ ! -e "$clean_target" ]]; then
-                echo "Link target file not found: '$target' (referenced in '$file')."
-                exit 1
-              fi
-            done < <(grep -oE '\[[^]]+\]\(([^)]+)\)' "$file" | sed -E 's/.*\(([^)]+)\)/\1/')
-          done
-
-      - name: Publish validation summary
-        run: |
-          {
-            echo "## PANORAFUS.AI Docs Autopilot"
-            echo "- Branding header check: passed"
-            echo "- Internal link check: passed"
-          } >> "$GITHUB_STEP_SUMMARY"
+          bash scripts/validate-docs.sh

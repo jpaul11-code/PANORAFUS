@@ -5,6 +5,9 @@ description = "The Pivotal Head of the Global Network — connecting institution
 language = "en"
 src = "."
 
+[build]
+build-dir = "book/en"
+
 [output.html]
 git-repository-url = "https://github.com/jpaul11-code/PANORAFUS"
 git-repository-icon = "fa-github"
