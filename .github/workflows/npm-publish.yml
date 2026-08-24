@@ -17,6 +17,27 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
-      - run: npm publish
+      - name: Check if package version already exists
+        id: check_version
+        run: |
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          VERSION=$(node -p "require('./package.json').version")
+          set +e
+          OUTPUT=$(npm view "${PACKAGE_NAME}@${VERSION}" version --registry=https://npm.pkg.github.com 2>&1)
+          STATUS=$?
+          set -e
+          if [ "$STATUS" -eq 0 ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          elif echo "$OUTPUT" | grep -qi 'E404'; then
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "$OUTPUT"
+            exit 1
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish package
+        run: npm publish
+        if: steps.check_version.outputs.exists == 'false'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
