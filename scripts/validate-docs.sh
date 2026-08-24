@@ -89,16 +89,21 @@ collect_language_file_set() {
     -exec basename {} \; | sort
 }
 
+collect_root_translation_targets() {
+  find "." -maxdepth 1 -type f \( -name "*.md" -o -name "GLOBALNETWORK" -o -name "book.toml" \) \
+    -exec basename {} \; | sed 's/^GLOBALNETWORK$/GLOBALNETWORK.md/' | sort
+}
+
 reference_list="$(mktemp)"
 tmp_files+=("$reference_list")
-collect_language_file_set "lang/ar" > "$reference_list"
+collect_root_translation_targets > "$reference_list"
 
-for lang in es fr pt; do
+for lang in ar es fr pt; do
   current_list="$(mktemp)"
   tmp_files+=("$current_list")
   collect_language_file_set "lang/${lang}" > "$current_list"
   if ! diff_output="$(diff -u "$reference_list" "$current_list")"; then
-    echo "Language parity validation failed: lang/${lang} does not match lang/ar file set."
+    echo "Language parity validation failed: lang/${lang} does not match English framework file set."
     echo "$diff_output"
     exit 1
   fi
@@ -109,7 +114,7 @@ if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then
     echo "## PANORAFUS.AI Docs Autopilot"
     echo "- Branding header check: passed"
     echo "- Internal link check: passed"
-    echo "- Language parity check (ar/es/fr/pt): passed"
+    echo "- Language parity check (ar/es/fr/pt vs en root): passed"
     echo "- Files validated: ${#doc_files[@]}"
   } >> "$GITHUB_STEP_SUMMARY"
 fi
