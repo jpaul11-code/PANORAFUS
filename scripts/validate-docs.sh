@@ -40,6 +40,19 @@ doc_files=(
   "SECURITY.md"
   "GLOBALNETWORK" # Canonical global index file intentionally tracked without .md extension.
   "PROJECT_SETUP_ROADMAP.md"
+  "APOSTLE_PAUL_GENEALOGY.md"
+  "APP_ARCHITECTURE_BUILDER.md"
+  "BOOK_TARIFF.md"
+  "DEVOTIONAL_PRAYER.md"
+  "FUTURE_KNOWLEDGE.md"
+  "HOLY_SPIRIT_AND_GIFTS.md"
+  "PROJECT_COMPENSATION.md"
+  "RELEASE_CERTIFICATE_AND_DEGREE.md"
+  "RESURRECTION_WITNESSES.md"
+  "SUMMARY.md"
+  "THE_LORD_SUPPER.md"
+  "VISIONS_AND_REVELATIONS.md"
+  "WORSHIP_AND_PRAYER.md"
 )
 
 for file in "${doc_files[@]}"; do
