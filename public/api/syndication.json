@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-27T18:59:56.657Z",
+  "generatedAt": "2026-08-27T20:17:58.101Z",
   "dashboard": {
-    "generatedAt": "2026-08-27T18:59:56.657Z",
+    "generatedAt": "2026-08-27T20:17:58.101Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -106,29 +106,29 @@
       {
         "monthIndex": 5,
         "month": "June",
-        "commits": 0,
-        "docsTouched": 0,
+        "commits": 2,
+        "docsTouched": 2,
         "workflowChanges": 0,
         "codeChanges": 0,
-        "totalActivity": 0
+        "totalActivity": 4
       },
       {
         "monthIndex": 6,
         "month": "July",
-        "commits": 0,
-        "docsTouched": 0,
-        "workflowChanges": 0,
+        "commits": 40,
+        "docsTouched": 60,
+        "workflowChanges": 12,
         "codeChanges": 0,
-        "totalActivity": 0
+        "totalActivity": 112
       },
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 5,
-        "docsTouched": 410,
-        "workflowChanges": 14,
-        "codeChanges": 28,
-        "totalActivity": 457
+        "commits": 97,
+        "docsTouched": 226,
+        "workflowChanges": 24,
+        "codeChanges": 33,
+        "totalActivity": 380
       },
       {
         "monthIndex": 8,
@@ -187,12 +187,20 @@
   },
   "items": [
     {
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "fix: harden PANORAFUS platform publishing",
+      "file": "GLOBAL_DEPLOYMENT.md",
+      "committedAt": "2026-08-27T19:01:41Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "sha": "71ac6079d97c18c21aed80540718cadad0c627e7"
+    },
+    {
       "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "feat: publish PANORAFUS platform artifacts",
+      "summary": "fix: harden PANORAFUS platform publishing",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-27T18:55:16Z",
+      "committedAt": "2026-08-27T19:01:41Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "5879141151c68407795e4c9f70704c579ffda642"
+      "sha": "71ac6079d97c18c21aed80540718cadad0c627e7"
     },
     {
       "title": "PANORAFUS.AI",
@@ -203,14 +211,6 @@
       "sha": "5879141151c68407795e4c9f70704c579ffda642"
     },
     {
-      "title": "PANORAFUS.AI Global Deployment Strategy",
-      "summary": "feat: add PANORAFUS platform runtime",
-      "file": "GLOBAL_DEPLOYMENT.md",
-      "committedAt": "2026-08-27T18:54:03Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
-      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
-    },
-    {
       "title": "PANORAFUS.AI Robotic Services",
       "summary": "feat: add PANORAFUS platform runtime",
       "file": "ROBOTIC_SERVICES.md",
@@ -219,68 +219,68 @@
       "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
     },
     {
-      "title": "About PANORAFUS.AI",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "file": "ABOUT_PANORAFUS.md",
-      "committedAt": "2026-08-27T17:15:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
-    },
-    {
-      "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "file": "APOSTLE_PAUL_GENEALOGY.md",
-      "committedAt": "2026-08-27T17:15:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+      "title": "Project Compensation & Contact",
+      "summary": "Add monthly income dashboard section",
+      "file": "PROJECT_COMPENSATION.md",
+      "committedAt": "2026-08-27T15:27:16Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md",
+      "sha": "2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4"
     },
     {
       "title": "PANORAFUS.AI App Architecture Builder",
-      "summary": "Add monthly sponsors messages goal to dashboard",
+      "summary": "Add PANORAFUS architecture builder specification",
       "file": "APP_ARCHITECTURE_BUILDER.md",
-      "committedAt": "2026-08-27T17:15:33Z",
+      "committedAt": "2026-08-23T22:13:26Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
     },
     {
-      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "file": "BIBLICAL_ESCHATOLOGY.md",
-      "committedAt": "2026-08-27T17:15:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+      "title": "PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)",
+      "summary": "Add PANORAFUS architecture builder specification",
+      "file": "PROJECT_SETUP_ROADMAP.md",
+      "committedAt": "2026-08-23T22:13:26Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_SETUP_ROADMAP.md",
+      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
     },
     {
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "file": "BOOK_TARIFF.md",
-      "committedAt": "2026-08-27T17:15:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
-    },
-    {
-      "title": "Buddhist Religious Institutions",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "file": "BUDDHIST_INSTITUTIONS.md",
-      "committedAt": "2026-08-27T17:15:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
-    },
-    {
-      "title": "Christian Religious Institutions",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "file": "CHRISTIAN_INSTITUTIONS.md",
-      "committedAt": "2026-08-27T17:15:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+      "title": "Summary",
+      "summary": "Add PANORAFUS architecture builder specification",
+      "file": "SUMMARY.md",
+      "committedAt": "2026-08-23T22:13:26Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
     },
     {
       "title": "Contribute to PANORAFUS.AI",
-      "summary": "Add monthly sponsors messages goal to dashboard",
+      "summary": "feat: add socratic setup roadmap and docs guardrails",
       "file": "CONTRIBUTE.md",
-      "committedAt": "2026-08-27T17:15:33Z",
+      "committedAt": "2026-08-23T21:20:18Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
-      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+      "sha": "a86c353c682fc9cf4a0d31411b9b80385a9d9f9a"
+    },
+    {
+      "title": "PANORAFUS.AI Security & Compliance Policy",
+      "summary": "feat: implement PANORAFUS.AI robotic services performance across the globe",
+      "file": "SECURITY.md",
+      "committedAt": "2026-08-23T16:57:29Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SECURITY.md",
+      "sha": "8a24e3789b3236d904a20fd6c950b68d8ad1685f"
+    },
+    {
+      "title": "About PANORAFUS.AI",
+      "summary": "Add PROJECT_COMPENSATION.md and BOOK_TARIFF.md; update SUMMARY, README, ABOUT",
+      "file": "ABOUT_PANORAFUS.md",
+      "committedAt": "2026-08-22T22:43:41Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "sha": "e72391ee1c06161885c15a02e16a5153c2d21732"
+    },
+    {
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "Add PROJECT_COMPENSATION.md and BOOK_TARIFF.md; update SUMMARY, README, ABOUT",
+      "file": "BOOK_TARIFF.md",
+      "committedAt": "2026-08-22T22:43:41Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "sha": "e72391ee1c06161885c15a02e16a5153c2d21732"
     }
   ]
 }
