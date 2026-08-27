@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+      id-token: write
+      attestations: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -36,8 +38,19 @@ jobs:
           fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pack package
+        id: pack
+        if: steps.check_version.outputs.exists == 'false'
+        run: |
+          TARBALL=$(npm pack --json | node -e "const d=require('fs').readFileSync('/dev/stdin','utf8'); console.log(JSON.parse(d)[0].filename)")
+          echo "tarball=${TARBALL}" >> "$GITHUB_OUTPUT"
       - name: Publish package
-        run: npm publish
+        run: npm publish "${{ steps.pack.outputs.tarball }}"
         if: steps.check_version.outputs.exists == 'false'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@v2
+        if: steps.check_version.outputs.exists == 'false'
+        with:
+          subject-path: ${{ steps.pack.outputs.tarball }}
