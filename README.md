@@ -13,6 +13,13 @@
 
 PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
 
+## Founder Bio Details
+
+- **Name:** Jacquelin Paul
+- **Role:** Founder of PANORAFUS.AI
+- **Affiliation:** Seasoned Christian Ministry Church
+- **Mission Focus:** Global Scripture-centered outreach, unity, and institutional connection through PANORAFUS.AI
+
 ---
 
 ## 🌐 Language Selection / Selección de Idioma
