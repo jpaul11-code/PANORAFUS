@@ -16,7 +16,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   generate-platform-artifacts:
@@ -44,39 +43,14 @@ jobs:
             public/api
             public/syndication
 
-      - name: Create artifact refresh pull request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          branch: automation/panorafus-platform-artifacts
-          commit-message: "chore: refresh PANORAFUS.AI platform artifacts"
-          title: "chore: refresh PANORAFUS.AI platform artifacts"
-          body: |
-            ## Summary
-
-            Refresh generated PANORAFUS.AI dashboard metrics, API snapshots, and syndication feeds.
-
-            ## Scope
-
-            - [x] Documentation architecture (`README.md`, `SUMMARY.md`, language books, indexes)
-            - [x] Automation (`.github/workflows/*.yml`, scripts)
-            - [ ] Repository standards (`CONTRIBUTE.md`, `SECURITY.md`, templates)
-            - [x] Package/project metadata (`package.json`, release/publish setup)
-
-            ## Acceptance Criteria
-
-            - [x] PANORAFUS.AI branding check passes
-            - [x] Internal documentation links resolve
-            - [x] Language parity check passes (ar/es/fr/pt canonical file set)
-            - [x] `npm test` passes
-            - [x] Changes stay within declared file scope
-
-            ## Phase Alignment
-
-            - [ ] Phase 1: Baseline consistency and quality gates
-            - [x] Phase 2: Stronger CI signal and docs governance
-            - [x] Phase 3: Release/publishing discipline and observability
-
-            ## Notes
-
-            Generated automatically by the PANORAFUS.AI Content Syndication workflow.
-          delete-branch: true
+      - name: Commit and push artifact updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add PANORAFUS_DASHBOARD.md public/api public/syndication
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh PANORAFUS.AI platform artifacts [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
