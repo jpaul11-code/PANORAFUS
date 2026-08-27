@@ -32,6 +32,10 @@ This dashboard page tracks six core global indicators:
 
 This section provides a simple monthly income dashboard for verified PANORAFUS.AI revenue and support activity across donations, licensing, partnerships, and related project income.
 
+### Sponsors' Messages Monthly Goal
+
+- **Goal:** 30 sponsors' messages per month
+
 | Month | Ministry Support | Licensing | Partnerships | Other Income | Total Monthly Income |
 |---|---:|---:|---:|---:|---:|
 | January | TBD | TBD | TBD | TBD | TBD |
