@@ -1,0 +1,50 @@
+[
+  {
+    "region": "Americas",
+    "regionSlug": "americas",
+    "institutionsIndexed": 63,
+    "countriesCovered": 2,
+    "traditionsCovered": 6,
+    "categoriesCovered": 26
+  },
+  {
+    "region": "Europe",
+    "regionSlug": "europe",
+    "institutionsIndexed": 38,
+    "countriesCovered": 11,
+    "traditionsCovered": 6,
+    "categoriesCovered": 18
+  },
+  {
+    "region": "Africa",
+    "regionSlug": "africa",
+    "institutionsIndexed": 8,
+    "countriesCovered": 5,
+    "traditionsCovered": 3,
+    "categoriesCovered": 5
+  },
+  {
+    "region": "Asia-Pacific",
+    "regionSlug": "asia-pacific",
+    "institutionsIndexed": 33,
+    "countriesCovered": 6,
+    "traditionsCovered": 5,
+    "categoriesCovered": 14
+  },
+  {
+    "region": "Middle East",
+    "regionSlug": "middle-east",
+    "institutionsIndexed": 20,
+    "countriesCovered": 5,
+    "traditionsCovered": 4,
+    "categoriesCovered": 11
+  },
+  {
+    "region": "Global Online",
+    "regionSlug": "global-online",
+    "institutionsIndexed": 15,
+    "countriesCovered": 10,
+    "traditionsCovered": 4,
+    "categoriesCovered": 8
+  }
+]

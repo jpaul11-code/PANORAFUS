@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-08-27T18:54:45.799Z",
+  "dashboard": {
+    "generatedAt": "2026-08-27T18:54:45.799Z",
+    "dataSources": [
+      "Top-level PANORAFUS.AI documentation files",
+      "Git commit history for the current calendar year",
+      "Repository workflow definitions under .github/workflows"
+    ],
+    "regions": [
+      {
+        "region": "Americas",
+        "regionSlug": "americas",
+        "institutionsIndexed": 63,
+        "countriesCovered": 2,
+        "traditionsCovered": 6,
+        "categoriesCovered": 26
+      },
+      {
+        "region": "Europe",
+        "regionSlug": "europe",
+        "institutionsIndexed": 38,
+        "countriesCovered": 11,
+        "traditionsCovered": 6,
+        "categoriesCovered": 18
+      },
+      {
+        "region": "Africa",
+        "regionSlug": "africa",
+        "institutionsIndexed": 8,
+        "countriesCovered": 5,
+        "traditionsCovered": 3,
+        "categoriesCovered": 5
+      },
+      {
+        "region": "Asia-Pacific",
+        "regionSlug": "asia-pacific",
+        "institutionsIndexed": 33,
+        "countriesCovered": 6,
+        "traditionsCovered": 5,
+        "categoriesCovered": 14
+      },
+      {
+        "region": "Middle East",
+        "regionSlug": "middle-east",
+        "institutionsIndexed": 20,
+        "countriesCovered": 5,
+        "traditionsCovered": 4,
+        "categoriesCovered": 11
+      },
+      {
+        "region": "Global Online",
+        "regionSlug": "global-online",
+        "institutionsIndexed": 15,
+        "countriesCovered": 10,
+        "traditionsCovered": 4,
+        "categoriesCovered": 8
+      }
+    ],
+    "monthlyActivity": [
+      {
+        "monthIndex": 0,
+        "month": "January",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 1,
+        "month": "February",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 2,
+        "month": "March",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 3,
+        "month": "April",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 4,
+        "month": "May",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 5,
+        "month": "June",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 6,
+        "month": "July",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 7,
+        "month": "August",
+        "commits": 4,
+        "docsTouched": 407,
+        "workflowChanges": 14,
+        "codeChanges": 26,
+        "totalActivity": 451
+      },
+      {
+        "monthIndex": 8,
+        "month": "September",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 9,
+        "month": "October",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 10,
+        "month": "November",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 11,
+        "month": "December",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      }
+    ],
+    "kpis": {
+      "documentationFiles": 40,
+      "documentationLines": 6967,
+      "externalLinks": 75,
+      "workflows": 7,
+      "institutionsIndexed": 177,
+      "dashboardPlaceholders": 0
+    },
+    "workflows": [
+      "autopilot-health.yml",
+      "codeql.yml",
+      "content-syndication.yml",
+      "docs-autopilot.yml",
+      "mdbook.yml",
+      "npm-publish.yml",
+      "robotic-services.yml"
+    ]
+  },
+  "items": [
+    {
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "GLOBAL_DEPLOYMENT.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "PANORAFUS.AI",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "README.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "PANORAFUS.AI Robotic Services",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "ROBOTIC_SERVICES.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "About PANORAFUS.AI",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "ABOUT_PANORAFUS.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "APOSTLE_PAUL_GENEALOGY.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "PANORAFUS.AI App Architecture Builder",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "APP_ARCHITECTURE_BUILDER.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "BIBLICAL_ESCHATOLOGY.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "BOOK_TARIFF.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "Buddhist Religious Institutions",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "BUDDHIST_INSTITUTIONS.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "Christian Religious Institutions",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "CHRISTIAN_INSTITUTIONS.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "Contribute to PANORAFUS.AI",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "CONTRIBUTE.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "DEVOTIONAL_PRAYER.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    }
+  ]
+}

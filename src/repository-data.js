@@ -463,7 +463,7 @@ function getRecentContentUpdates(repoRoot, limit = 10) {
 
     const [sha, committedAt, summary, ...files] = lines;
     for (const file of files) {
-      if ((file.endsWith('.md') || file === 'GLOBALNETWORK') && !seenFiles.has(file)) {
+      if (docsByFile.has(file) && !seenFiles.has(file)) {
         seenFiles.add(file);
         items.push({
           sha,

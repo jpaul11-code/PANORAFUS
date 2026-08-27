@@ -9,7 +9,7 @@ function compactMonthName(month) {
 }
 
 function renderBar(value, maxValue) {
-  if (maxValue === 0) {
+  if (maxValue === 0 || value === 0) {
     return '░░░░░░░░░░';
   }
 

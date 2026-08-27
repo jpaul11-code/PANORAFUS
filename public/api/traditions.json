@@ -1,0 +1,38 @@
+[
+  {
+    "tradition": "Buddhist",
+    "institutionsIndexed": 24,
+    "countriesCovered": 13,
+    "regionsCovered": 4
+  },
+  {
+    "tradition": "Christian",
+    "institutionsIndexed": 54,
+    "countriesCovered": 18,
+    "regionsCovered": 6
+  },
+  {
+    "tradition": "Hindu",
+    "institutionsIndexed": 21,
+    "countriesCovered": 4,
+    "regionsCovered": 4
+  },
+  {
+    "tradition": "Islamic",
+    "institutionsIndexed": 25,
+    "countriesCovered": 12,
+    "regionsCovered": 5
+  },
+  {
+    "tradition": "Jewish",
+    "institutionsIndexed": 24,
+    "countriesCovered": 3,
+    "regionsCovered": 3
+  },
+  {
+    "tradition": "Other",
+    "institutionsIndexed": 29,
+    "countriesCovered": 8,
+    "regionsCovered": 6
+  }
+]

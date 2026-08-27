@@ -1,0 +1,93 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "PANORAFUS.AI Content Syndication Feed",
+  "home_page_url": "https://www.seasonedchristianministrychurch.com",
+  "feed_url": "https://www.seasonedchristianministrychurch.com/panorafus/syndication/feed.json",
+  "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
+  "items": [
+    {
+      "id": "GLOBAL_DEPLOYMENT.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "date_published": "2026-08-27T18:54:03Z"
+    },
+    {
+      "id": "README.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "date_published": "2026-08-27T18:54:03Z"
+    },
+    {
+      "id": "ROBOTIC_SERVICES.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md",
+      "title": "PANORAFUS.AI Robotic Services",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "date_published": "2026-08-27T18:54:03Z"
+    },
+    {
+      "id": "ABOUT_PANORAFUS.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "title": "About PANORAFUS.AI",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "APOSTLE_PAUL_GENEALOGY.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md",
+      "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "APP_ARCHITECTURE_BUILDER.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
+      "title": "PANORAFUS.AI App Architecture Builder",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "BIBLICAL_ESCHATOLOGY.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
+      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "BOOK_TARIFF.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "BUDDHIST_INSTITUTIONS.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
+      "title": "Buddhist Religious Institutions",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "CHRISTIAN_INSTITUTIONS.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
+      "title": "Christian Religious Institutions",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "CONTRIBUTE.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
+      "title": "Contribute to PANORAFUS.AI",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "DEVOTIONAL_PRAYER.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md",
+      "title": "🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    }
+  ]
+}

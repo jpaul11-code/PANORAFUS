@@ -56,7 +56,7 @@ PANORAFUS.AI is a global network platform connecting institutions, organizations
 - **Docs Autopilot Workflow:** Automatically validates branding consistency and internal links on push, pull request, daily schedule, and manual run.
 - **Autopilot Health Workflow:** Publishes a weekly PANORAFUS.AI health report issue comment with repository documentation metrics.
 - **Content Syndication Workflow:** Generates the dashboard, static API snapshots, JSON/RSS feeds, and a reviewable refresh PR for published artifacts.
-- **Manual Control:** Both workflows support `workflow_dispatch` for on-demand runs from GitHub Actions.
+- **Manual Control:** These workflows support `workflow_dispatch` for on-demand runs from GitHub Actions.
 
 ## PANORAFUS.AI Platform API
 
