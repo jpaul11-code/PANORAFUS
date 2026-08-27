@@ -28,6 +28,45 @@ This dashboard page tracks six core global indicators:
 
 ---
 
+## 💵 Monthly Income Overview
+
+This section provides a simple monthly income dashboard for verified PANORAFUS.AI revenue and support activity across donations, licensing, partnerships, and related project income.
+
+| Month | Ministry Support | Licensing | Partnerships | Other Income | Total Monthly Income |
+|---|---:|---:|---:|---:|---:|
+| January | TBD | TBD | TBD | TBD | TBD |
+| February | TBD | TBD | TBD | TBD | TBD |
+| March | TBD | TBD | TBD | TBD | TBD |
+| April | TBD | TBD | TBD | TBD | TBD |
+| May | TBD | TBD | TBD | TBD | TBD |
+| June | TBD | TBD | TBD | TBD | TBD |
+| July | TBD | TBD | TBD | TBD | TBD |
+| August | TBD | TBD | TBD | TBD | TBD |
+| September | TBD | TBD | TBD | TBD | TBD |
+| October | TBD | TBD | TBD | TBD | TBD |
+| November | TBD | TBD | TBD | TBD | TBD |
+| December | TBD | TBD | TBD | TBD | TBD |
+
+```text
+Monthly Income Chart (USD)
+Jan | ░░░░░░░░░░ $TBD
+Feb | ░░░░░░░░░░ $TBD
+Mar | ░░░░░░░░░░ $TBD
+Apr | ░░░░░░░░░░ $TBD
+May | ░░░░░░░░░░ $TBD
+Jun | ░░░░░░░░░░ $TBD
+Jul | ░░░░░░░░░░ $TBD
+Aug | ░░░░░░░░░░ $TBD
+Sep | ░░░░░░░░░░ $TBD
+Oct | ░░░░░░░░░░ $TBD
+Nov | ░░░░░░░░░░ $TBD
+Dec | ░░░░░░░░░░ $TBD
+```
+
+> Replace `TBD` with verified monthly figures as financial reports are published.
+
+---
+
 ## 📈 Per-Region KPI Tracking
 
 The following key performance indicators are tracked per region by the PANORAFUS.AI Autopilot Health workflow (updated automatically every Monday).

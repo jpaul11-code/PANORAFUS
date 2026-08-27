@@ -29,6 +29,8 @@ PANORAFUS.AI is a ministry-rooted, mission-driven global network. Compensation a
 
 PANORAFUS.AI operates under a ministry-support model. Voluntary contributions from individuals, congregations, and organizations help sustain the global network and its free public resources.
 
+For a month-by-month dashboard view of verified project income, see the [PANORAFUS.AI Global Dashboard](PANORAFUS_DASHBOARD.md).
+
 > *"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."* — 2 Corinthians 9:7
 
 Donations and financial support are directed to:
