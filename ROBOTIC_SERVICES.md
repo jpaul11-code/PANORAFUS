@@ -68,16 +68,15 @@ These services operate continuously across six global regions:
 
 **Purpose:** Provide an interactive, Scripture-grounded Q&A experience for visitors to the PANORAFUS.AI platform.
 
-**Integration approach:**
-- Embed a web-based conversational AI agent on [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com).
-- The agent is trained on PANORAFUS.AI documentation: Biblical Eschatology, institution indexes, devotional prayers, and theological studies.
+**Implemented approach:**
+- The executable PANORAFUS.AI platform exposes `/api/chat` for repository-backed question answering.
+- By default the chatbot uses local retrieval over PANORAFUS.AI documentation: Biblical Eschatology, institution indexes, devotional prayers, and theological studies.
+- Optional external provider integration is supported through environment variables (`PANORAFUS_CHAT_PROVIDER`, `PANORAFUS_CHAT_API_URL`, `PANORAFUS_CHAT_API_KEY`) without committing secrets to the repository.
 - Visitors can ask questions such as:
   - *"What Christian institutions are listed in Africa?"*
   - *"What does PANORAFUS.AI say about the Last Days?"*
   - *"How do I submit an institution to the global network?"*
 - The agent responds with verified, Scripture-rooted answers and links to relevant PANORAFUS.AI pages.
-
-**Recommended platforms:** OpenAI Assistants API, Hugging Face Inference Endpoints, or a self-hosted LLM with retrieval-augmented generation (RAG) over the PANORAFUS.AI documentation corpus.
 
 ---
 
@@ -85,7 +84,7 @@ These services operate continuously across six global regions:
 
 **Purpose:** Provide programmatic access to the PANORAFUS.AI global institution directory.
 
-**Planned endpoints:**
+**Implemented endpoints:**
 
 | Endpoint | Method | Description |
 |---|---|---|
@@ -95,7 +94,7 @@ These services operate continuously across six global regions:
 | `/api/institutions/search?q=` | GET | Search by institution name or country |
 | `/api/health` | GET | Robotic services health status |
 
-**Data format:** JSON, with fields for institution name, country, city, religious tradition, description, and official website URL.
+**Data format:** JSON, with fields for institution name, country, city, region, religious tradition, category, description, source file, and official website URL when present in the source data.
 
 **Authentication:** Read-only public endpoints require no authentication. Write/submission endpoints require an API key issued by PANORAFUS.AI administration.
 
@@ -106,10 +105,10 @@ These services operate continuously across six global regions:
 **Purpose:** Automatically push PANORAFUS.AI content updates to partner platforms and regional distribution channels.
 
 **How it works:**
-- Weekly workflow scans for newly added or updated institution entries.
+- Scheduled workflow runs `npm run platform:generate` to refresh dashboard metrics, API snapshots, and syndication artifacts.
 - Formats update summaries in partner-compatible formats (RSS, JSON feed, email digest).
-- Distributes to registered partner channels across all six global regions.
-- Opens a Pull Request for human review before any automated commit to the repository.
+- Uploads generated artifacts and opens a Pull Request for human review before any automated commit to the repository.
+- Publishes generated outputs alongside the documentation build so downstream systems can consume static snapshots.
 
 ---
 
@@ -120,7 +119,7 @@ These services operate continuously across six global regions:
 | Link Health Monitor | Schedule + manual | Weekly (Mon 08:00 UTC) |
 | Docs Autopilot | Push, PR, schedule, manual | Daily (06:00 UTC) + events |
 | Autopilot Health Report | Schedule + manual | Weekly (Mon 09:00 UTC) |
-| Content Syndication | Schedule | Weekly |
+| Content Syndication | Push, schedule, manual | Weekly + events |
 
 ---
 

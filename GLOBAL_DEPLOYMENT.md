@@ -79,13 +79,19 @@ PANORAFUS.AI serves institutions, communities, and individuals across six global
   Developer Push / PR Merge
           │
           ▼
+  Platform Artifact Generation
+  - Refresh dashboard metrics
+  - Generate API snapshots and syndication feeds
+          │
+          ▼
   GitHub Actions (mdbook.yml)
   - Build mdBook documentation
-  - Publish to GitHub Pages
+  - Publish to GitHub Pages with /api and /syndication artifacts
           │
           ▼
   CDN Cache Purge (Cloudflare / CloudFront)
   - Invalidate stale documentation pages
+  - Route /api traffic to executable platform origin
           │
           ▼
   Global Edge Propagation (~60 seconds)
@@ -120,6 +126,8 @@ For automated broken-link detection, see [Robotic Services](ROBOTIC_SERVICES.md)
 - HTTP Strict Transport Security (HSTS) enabled.
 - DDoS protection via Cloudflare's global network.
 - No sensitive data stored in CDN cache — documentation only.
+- The repository includes `/home/runner/work/PANORAFUS/PANORAFUS/infra/cloudflare/wrangler.toml` and `/home/runner/work/PANORAFUS/PANORAFUS/infra/cloudflare/worker.mjs` to proxy `/api/*` to the platform origin while caching published static assets.
+- The repository includes `/home/runner/work/PANORAFUS/PANORAFUS/Dockerfile` for packaging the executable PANORAFUS.AI platform server.
 - See [Security & Compliance Policy](SECURITY.md) for full details.
 
 ---
