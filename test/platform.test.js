@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('node:fs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const path = require('path');
@@ -27,6 +28,15 @@ test('dashboard generation removes manual placeholders', () => {
   assert.ok(markdown.includes('PANORAFUS.AI'));
   assert.equal(markdown.includes('TBD'), false);
   assert.ok(snapshot.kpis.institutionsIndexed > 0);
+});
+
+test('content syndication workflow pushes generated artifacts directly', () => {
+  const workflowPath = path.join(repoRoot, '.github', 'workflows', 'content-syndication.yml');
+  assert.ok(fs.existsSync(workflowPath));
+  const workflow = fs.readFileSync(workflowPath, 'utf8');
+
+  assert.match(workflow, /git push origin HEAD:\$\{\{ github\.ref_name \}\}/);
+  assert.doesNotMatch(workflow, /create-pull-request/);
 });
 
 test('platform API serves health, institution, and chatbot responses', async () => {
