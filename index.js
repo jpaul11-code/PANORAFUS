@@ -2,6 +2,26 @@
 
 const { execFileSync } = require('child_process');
 const path = require('path');
+const { loadConfig } = require('./src/config');
+const {
+  buildPlatformSnapshot,
+  getRepositoryMetrics,
+  getInstitutionIndex,
+  searchInstitutions,
+  listRegionMetrics,
+  listTraditionMetrics
+} = require('./src/repository-data');
+const { createServer, startServer } = require('./src/server');
+const { answerQuestion } = require('./src/chatbot');
+const {
+  createDashboardSnapshot,
+  generateDashboardMarkdown,
+  generateDashboardFile
+} = require('./src/dashboard');
+const {
+  createSyndicationSnapshot,
+  writeSyndicationArtifacts
+} = require('./src/syndication');
 
 /**
  * PANORAFUS.AI package runner entry point.
@@ -21,4 +41,21 @@ function validate(repoRoot) {
   execFileSync('bash', [VALIDATE_SCRIPT, root], { stdio: 'inherit' });
 }
 
-module.exports = { validate };
+module.exports = {
+  answerQuestion,
+  buildPlatformSnapshot,
+  createDashboardSnapshot,
+  createServer,
+  createSyndicationSnapshot,
+  generateDashboardFile,
+  generateDashboardMarkdown,
+  getInstitutionIndex,
+  getRepositoryMetrics,
+  listRegionMetrics,
+  listTraditionMetrics,
+  loadConfig,
+  searchInstitutions,
+  startServer,
+  validate,
+  writeSyndicationArtifacts
+};

@@ -32,11 +32,17 @@ jobs:
       MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           rustup update
           cargo install --version ${MDBOOK_VERSION} mdbook
+      - name: Generate PANORAFUS.AI platform artifacts
+        run: npm run platform:generate
       - name: Setup Pages
         id: pages
         if: github.event_name == 'workflow_dispatch'
@@ -108,6 +114,10 @@ jobs:
           </body>
           </html>
           EOF
+
+          mkdir -p book/api book/syndication
+          cp -R public/api/. book/api/
+          cp -R public/syndication/. book/syndication/
 
       - name: Upload artifact
         if: github.event_name == 'workflow_dispatch'
