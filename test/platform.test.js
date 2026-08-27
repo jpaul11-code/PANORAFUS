@@ -32,6 +32,7 @@ test('dashboard generation removes manual placeholders', () => {
 
 test('content syndication workflow pushes generated artifacts directly', () => {
   const workflowPath = path.join(repoRoot, '.github', 'workflows', 'content-syndication.yml');
+  assert.ok(fs.existsSync(workflowPath));
   const workflow = fs.readFileSync(workflowPath, 'utf8');
 
   assert.match(workflow, /git push origin HEAD:\$\{\{ github\.ref_name \}\}/);
