@@ -1,0 +1,185 @@
+{
+  "generatedAt": "2026-08-27T20:23:16.899Z",
+  "dataSources": [
+    "Top-level PANORAFUS.AI documentation files",
+    "Git commit history for the current calendar year",
+    "Repository workflow definitions under .github/workflows"
+  ],
+  "regions": [
+    {
+      "region": "Americas",
+      "regionSlug": "americas",
+      "institutionsIndexed": 63,
+      "countriesCovered": 2,
+      "traditionsCovered": 6,
+      "categoriesCovered": 26
+    },
+    {
+      "region": "Europe",
+      "regionSlug": "europe",
+      "institutionsIndexed": 38,
+      "countriesCovered": 11,
+      "traditionsCovered": 6,
+      "categoriesCovered": 18
+    },
+    {
+      "region": "Africa",
+      "regionSlug": "africa",
+      "institutionsIndexed": 8,
+      "countriesCovered": 5,
+      "traditionsCovered": 3,
+      "categoriesCovered": 5
+    },
+    {
+      "region": "Asia-Pacific",
+      "regionSlug": "asia-pacific",
+      "institutionsIndexed": 33,
+      "countriesCovered": 6,
+      "traditionsCovered": 5,
+      "categoriesCovered": 14
+    },
+    {
+      "region": "Middle East",
+      "regionSlug": "middle-east",
+      "institutionsIndexed": 20,
+      "countriesCovered": 5,
+      "traditionsCovered": 4,
+      "categoriesCovered": 11
+    },
+    {
+      "region": "Global Online",
+      "regionSlug": "global-online",
+      "institutionsIndexed": 15,
+      "countriesCovered": 10,
+      "traditionsCovered": 4,
+      "categoriesCovered": 8
+    }
+  ],
+  "monthlyActivity": [
+    {
+      "monthIndex": 0,
+      "month": "January",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 1,
+      "month": "February",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 2,
+      "month": "March",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 3,
+      "month": "April",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 4,
+      "month": "May",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 5,
+      "month": "June",
+      "commits": 2,
+      "docsTouched": 2,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 4
+    },
+    {
+      "monthIndex": 6,
+      "month": "July",
+      "commits": 40,
+      "docsTouched": 60,
+      "workflowChanges": 12,
+      "codeChanges": 0,
+      "totalActivity": 112
+    },
+    {
+      "monthIndex": 7,
+      "month": "August",
+      "commits": 94,
+      "docsTouched": 220,
+      "workflowChanges": 23,
+      "codeChanges": 26,
+      "totalActivity": 363
+    },
+    {
+      "monthIndex": 8,
+      "month": "September",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 9,
+      "month": "October",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 10,
+      "month": "November",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    },
+    {
+      "monthIndex": 11,
+      "month": "December",
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
+      "codeChanges": 0,
+      "totalActivity": 0
+    }
+  ],
+  "kpis": {
+    "documentationFiles": 40,
+    "documentationLines": 6967,
+    "externalLinks": 75,
+    "workflows": 7,
+    "institutionsIndexed": 177,
+    "dashboardPlaceholders": 0
+  },
+  "workflows": [
+    "autopilot-health.yml",
+    "codeql.yml",
+    "content-syndication.yml",
+    "docs-autopilot.yml",
+    "mdbook.yml",
+    "npm-publish.yml",
+    "robotic-services.yml"
+  ]
+}

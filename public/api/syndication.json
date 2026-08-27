@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-08-27T20:23:16.923Z",
+  "dashboard": {
+    "generatedAt": "2026-08-27T20:23:16.923Z",
+    "dataSources": [
+      "Top-level PANORAFUS.AI documentation files",
+      "Git commit history for the current calendar year",
+      "Repository workflow definitions under .github/workflows"
+    ],
+    "regions": [
+      {
+        "region": "Americas",
+        "regionSlug": "americas",
+        "institutionsIndexed": 63,
+        "countriesCovered": 2,
+        "traditionsCovered": 6,
+        "categoriesCovered": 26
+      },
+      {
+        "region": "Europe",
+        "regionSlug": "europe",
+        "institutionsIndexed": 38,
+        "countriesCovered": 11,
+        "traditionsCovered": 6,
+        "categoriesCovered": 18
+      },
+      {
+        "region": "Africa",
+        "regionSlug": "africa",
+        "institutionsIndexed": 8,
+        "countriesCovered": 5,
+        "traditionsCovered": 3,
+        "categoriesCovered": 5
+      },
+      {
+        "region": "Asia-Pacific",
+        "regionSlug": "asia-pacific",
+        "institutionsIndexed": 33,
+        "countriesCovered": 6,
+        "traditionsCovered": 5,
+        "categoriesCovered": 14
+      },
+      {
+        "region": "Middle East",
+        "regionSlug": "middle-east",
+        "institutionsIndexed": 20,
+        "countriesCovered": 5,
+        "traditionsCovered": 4,
+        "categoriesCovered": 11
+      },
+      {
+        "region": "Global Online",
+        "regionSlug": "global-online",
+        "institutionsIndexed": 15,
+        "countriesCovered": 10,
+        "traditionsCovered": 4,
+        "categoriesCovered": 8
+      }
+    ],
+    "monthlyActivity": [
+      {
+        "monthIndex": 0,
+        "month": "January",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 1,
+        "month": "February",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 2,
+        "month": "March",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 3,
+        "month": "April",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 4,
+        "month": "May",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 5,
+        "month": "June",
+        "commits": 2,
+        "docsTouched": 2,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 4
+      },
+      {
+        "monthIndex": 6,
+        "month": "July",
+        "commits": 40,
+        "docsTouched": 60,
+        "workflowChanges": 12,
+        "codeChanges": 0,
+        "totalActivity": 112
+      },
+      {
+        "monthIndex": 7,
+        "month": "August",
+        "commits": 94,
+        "docsTouched": 220,
+        "workflowChanges": 23,
+        "codeChanges": 26,
+        "totalActivity": 363
+      },
+      {
+        "monthIndex": 8,
+        "month": "September",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 9,
+        "month": "October",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 10,
+        "month": "November",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 11,
+        "month": "December",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      }
+    ],
+    "kpis": {
+      "documentationFiles": 40,
+      "documentationLines": 6967,
+      "externalLinks": 75,
+      "workflows": 7,
+      "institutionsIndexed": 177,
+      "dashboardPlaceholders": 0
+    },
+    "workflows": [
+      "autopilot-health.yml",
+      "codeql.yml",
+      "content-syndication.yml",
+      "docs-autopilot.yml",
+      "mdbook.yml",
+      "npm-publish.yml",
+      "robotic-services.yml"
+    ]
+  },
+  "items": [
+    {
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "GLOBAL_DEPLOYMENT.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "PANORAFUS.AI",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "README.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "PANORAFUS.AI Robotic Services",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "ROBOTIC_SERVICES.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-08-27T17:15:33Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "53f436359873afde7b094dd4ac4cba1e11c76377"
+    },
+    {
+      "title": "Project Compensation & Contact",
+      "summary": "Add monthly income dashboard section",
+      "file": "PROJECT_COMPENSATION.md",
+      "committedAt": "2026-08-27T15:27:16Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md",
+      "sha": "2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4"
+    },
+    {
+      "title": "lang/ar/APP_ARCHITECTURE_BUILDER.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/APP_ARCHITECTURE_BUILDER.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/APP_ARCHITECTURE_BUILDER.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    },
+    {
+      "title": "lang/ar/BOOK_TARIFF.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/BOOK_TARIFF.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/BOOK_TARIFF.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    },
+    {
+      "title": "lang/ar/GLOBAL_DEPLOYMENT.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/GLOBAL_DEPLOYMENT.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/GLOBAL_DEPLOYMENT.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    },
+    {
+      "title": "lang/ar/PANORAFUS_AI_STUDIO.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/PANORAFUS_AI_STUDIO.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PANORAFUS_AI_STUDIO.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    },
+    {
+      "title": "lang/ar/PROJECT_COMPENSATION.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/PROJECT_COMPENSATION.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PROJECT_COMPENSATION.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    },
+    {
+      "title": "lang/ar/PROJECT_SETUP_ROADMAP.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/PROJECT_SETUP_ROADMAP.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PROJECT_SETUP_ROADMAP.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    },
+    {
+      "title": "lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md",
+      "summary": "Add language framework parity files",
+      "file": "lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md",
+      "committedAt": "2026-08-24T15:27:47Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md",
+      "sha": "33f8d5a36d374df3e0d8e93960db3b0e38515e6c"
+    }
+  ]
+}

@@ -1,119 +1,111 @@
 # PANORAFUS.AI — Global Dashboard Page
 
-> **PANORAFUS.AI** dashboard overview for global audience and partnership visibility across six platform regions.
+> **PANORAFUS.AI** dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.
 
 ## 🌍 Dashboard Scope
 
-This dashboard page tracks six core global indicators:
+This dashboard is generated from tracked PANORAFUS.AI repository data sources:
 
-1. **Subscribers**
-2. **Visitors**
-3. **Viewers**
-4. **Investors**
-5. **Contractors**
-6. **Partnerships**
+- Top-level PANORAFUS.AI documentation files
+- Git commit history for the current calendar year
+- Repository workflow definitions under .github/workflows
+
+Generated at: `2026-08-27T20:23:16.671Z`
 
 ---
 
 ## 🧭 Six Platform Regions
 
-| Platform Region | Subscribers | Visitors | Viewers | Investors | Contractors | Partnerships |
-|---|---:|---:|---:|---:|---:|---:|
-| 🇺🇸 Americas | TBD | TBD | TBD | TBD | TBD | TBD |
-| 🇪🇺 Europe | TBD | TBD | TBD | TBD | TBD | TBD |
-| 🌍 Africa | TBD | TBD | TBD | TBD | TBD | TBD |
-| 🌏 Asia-Pacific | TBD | TBD | TBD | TBD | TBD | TBD |
-| 🕌 Middle East | TBD | TBD | TBD | TBD | TBD | TBD |
-| 🌐 Global Online | TBD | TBD | TBD | TBD | TBD | TBD |
+| Platform Region | Institutions Indexed | Countries Covered | Traditions Covered | Categories Covered | Robotic Status |
+|---|---:|---:|---:|---:|---|
+| Americas | 63 | 2 | 6 | 26 | ✅ Monitored |
+| Europe | 38 | 11 | 6 | 18 | ✅ Monitored |
+| Africa | 8 | 5 | 3 | 5 | ✅ Monitored |
+| Asia-Pacific | 33 | 6 | 5 | 14 | ✅ Monitored |
+| Middle East | 20 | 5 | 4 | 11 | ✅ Monitored |
+| Global Online | 15 | 10 | 4 | 8 | ✅ Monitored |
 
 ---
 
-## 💵 Monthly Income Overview
+## 📅 Monthly Repository Activity Overview
 
-This section provides a simple monthly income dashboard for verified PANORAFUS.AI revenue and support activity across donations, licensing, partnerships, and related project income.
+This section replaces manual placeholders with verified activity taken from the current calendar year's git history.
 
-### Sponsors' Messages Monthly Goal
-
-- **Goal:** 30 sponsors' messages per month
-
-| Month | Ministry Support | Licensing | Partnerships | Other Income | Total Monthly Income |
+| Month | Commits | Docs Touched | Workflow Changes | Code Changes | Total Activity |
 |---|---:|---:|---:|---:|---:|
-| January | TBD | TBD | TBD | TBD | TBD |
-| February | TBD | TBD | TBD | TBD | TBD |
-| March | TBD | TBD | TBD | TBD | TBD |
-| April | TBD | TBD | TBD | TBD | TBD |
-| May | TBD | TBD | TBD | TBD | TBD |
-| June | TBD | TBD | TBD | TBD | TBD |
-| July | TBD | TBD | TBD | TBD | TBD |
-| August | TBD | TBD | TBD | TBD | TBD |
-| September | TBD | TBD | TBD | TBD | TBD |
-| October | TBD | TBD | TBD | TBD | TBD |
-| November | TBD | TBD | TBD | TBD | TBD |
-| December | TBD | TBD | TBD | TBD | TBD |
+| January | 0 | 0 | 0 | 0 | 0 |
+| February | 0 | 0 | 0 | 0 | 0 |
+| March | 0 | 0 | 0 | 0 | 0 |
+| April | 0 | 0 | 0 | 0 | 0 |
+| May | 0 | 0 | 0 | 0 | 0 |
+| June | 2 | 2 | 0 | 0 | 4 |
+| July | 40 | 60 | 12 | 0 | 112 |
+| August | 94 | 220 | 23 | 26 | 363 |
+| September | 0 | 0 | 0 | 0 | 0 |
+| October | 0 | 0 | 0 | 0 | 0 |
+| November | 0 | 0 | 0 | 0 | 0 |
+| December | 0 | 0 | 0 | 0 | 0 |
 
 ```text
-Monthly Income Chart (USD)
-Jan | ░░░░░░░░░░ $TBD
-Feb | ░░░░░░░░░░ $TBD
-Mar | ░░░░░░░░░░ $TBD
-Apr | ░░░░░░░░░░ $TBD
-May | ░░░░░░░░░░ $TBD
-Jun | ░░░░░░░░░░ $TBD
-Jul | ░░░░░░░░░░ $TBD
-Aug | ░░░░░░░░░░ $TBD
-Sep | ░░░░░░░░░░ $TBD
-Oct | ░░░░░░░░░░ $TBD
-Nov | ░░░░░░░░░░ $TBD
-Dec | ░░░░░░░░░░ $TBD
+Monthly Activity Chart
+Jan | █░░░░░░░░░ 0
+Feb | █░░░░░░░░░ 0
+Mar | █░░░░░░░░░ 0
+Apr | █░░░░░░░░░ 0
+May | █░░░░░░░░░ 0
+Jun | █░░░░░░░░░ 4
+Jul | ███░░░░░░░ 112
+Aug | ██████████ 363
+Sep | █░░░░░░░░░ 0
+Oct | █░░░░░░░░░ 0
+Nov | █░░░░░░░░░ 0
+Dec | █░░░░░░░░░ 0
 ```
-
-### 📋 Monthly Income Listing
-
-1. **Ministry Support** — voluntary donations and supporter contributions.
-2. **Licensing** — institutional, book, and media licensing income.
-3. **Partnerships** — co-branded agreements and revenue-sharing arrangements.
-4. **Other Income** — verified miscellaneous project-related income.
-5. **Total Monthly Income** — combined monthly total across all listed categories.
-
-> Replace `TBD` with verified monthly figures as financial reports are published.
 
 ---
 
-## 📈 Per-Region KPI Tracking
+## 📈 Platform KPI Tracking
 
-The following key performance indicators are tracked per region by the PANORAFUS.AI Autopilot Health workflow (updated automatically every Monday).
+| KPI | Value |
+|---|---:|
+| Documentation files tracked | 40 |
+| Documentation lines tracked | 6975 |
+| External links tracked | 83 |
+| Workflow automations tracked | 7 |
+| Institutions indexed | 177 |
+| Remaining dashboard placeholders | 0 |
 
-| Platform Region | Institutions Indexed | Verified Links | Content Updated | Robotic Status |
-|---|---:|---:|---|---|
-| 🇺🇸 Americas | TBD | TBD | TBD | ✅ Monitored |
-| 🇪🇺 Europe | TBD | TBD | TBD | ✅ Monitored |
-| 🌍 Africa | TBD | TBD | TBD | ✅ Monitored |
-| 🌏 Asia-Pacific | TBD | TBD | TBD | ✅ Monitored |
-| 🕌 Middle East | TBD | TBD | TBD | ✅ Monitored |
-| 🌐 Global Online | TBD | TBD | TBD | ✅ Monitored |
-
-> KPI values are updated automatically by the [Autopilot Health Report](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/autopilot-health.yml) and [Robotic Services Link Monitor](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/robotic-services.yml).
+> KPI values are generated from the repository and can be exported through the executable PANORAFUS.AI API and published static snapshots.
 
 ---
 
 ## 🤖 Robotic Services Status
 
-| Service | Schedule | Last Run | Status |
-|---|---|---|---|
-| Link Health Monitor | Weekly (Mon 08:00 UTC) | Auto-tracked | [![Robotic Services](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/robotic-services.yml?label=Link+Health&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/robotic-services.yml) |
-| Docs Autopilot | Daily (06:00 UTC) + events | Auto-tracked | [![Docs Autopilot](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/docs-autopilot.yml?label=Docs+Autopilot&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/docs-autopilot.yml) |
-| Autopilot Health | Weekly (Mon 09:00 UTC) | Auto-tracked | [![Autopilot Health](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/autopilot-health.yml?label=Health+Report&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/autopilot-health.yml) |
+| Service | Output | Status |
+|---|---|---|
+| Docs Autopilot | Branding, internal links, language parity | ✅ Active |
+| Link Health Monitor | External URL uptime report | ✅ Active |
+| Autopilot Health | Weekly repository metrics issue update | ✅ Active |
+| Content Syndication Robot | JSON feed, RSS feed, email digest, metrics PR | ✅ Active |
+| Platform API | Health, institution directory, search, chatbot | ✅ Active |
 
-See [🤖 Robotic Services](ROBOTIC_SERVICES.md) for full service catalog details.
+### Workflow Files
+
+- `autopilot-health.yml`
+- `codeql.yml`
+- `content-syndication.yml`
+- `docs-autopilot.yml`
+- `mdbook.yml`
+- `npm-publish.yml`
+- `robotic-services.yml`
 
 ---
 
 ## 📌 Dashboard Use
 
-- Use this page as the central snapshot for PANORAFUS.AI global growth indicators.
-- Update KPI values periodically as verified data becomes available.
-- Keep each region aligned with PANORAFUS.AI trust and transparency goals.
-- Robotic services status badges update automatically from GitHub Actions.
+- Use this page as the central snapshot for PANORAFUS.AI repository health and institution coverage.
+- Publish generated API snapshots and syndication feeds alongside the documentation build.
+- Review monthly activity and regional coverage before expanding the indexed network.
 
 ---
 

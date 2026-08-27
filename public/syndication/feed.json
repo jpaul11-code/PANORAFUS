@@ -1,0 +1,93 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "PANORAFUS.AI Content Syndication Feed",
+  "home_page_url": "https://www.seasonedchristianministrychurch.com",
+  "feed_url": "https://www.seasonedchristianministrychurch.com/panorafus/syndication/feed.json",
+  "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
+  "items": [
+    {
+      "id": "GLOBAL_DEPLOYMENT.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "date_published": "2026-08-27T18:54:03Z"
+    },
+    {
+      "id": "README.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "date_published": "2026-08-27T18:54:03Z"
+    },
+    {
+      "id": "ROBOTIC_SERVICES.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md",
+      "title": "PANORAFUS.AI Robotic Services",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "date_published": "2026-08-27T18:54:03Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:53f436359873afde7b094dd4ac4cba1e11c76377",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "Add monthly sponsors messages goal to dashboard",
+      "date_published": "2026-08-27T17:15:33Z"
+    },
+    {
+      "id": "PROJECT_COMPENSATION.md:2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md",
+      "title": "Project Compensation & Contact",
+      "summary": "Add monthly income dashboard section",
+      "date_published": "2026-08-27T15:27:16Z"
+    },
+    {
+      "id": "lang/ar/APP_ARCHITECTURE_BUILDER.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/APP_ARCHITECTURE_BUILDER.md",
+      "title": "lang/ar/APP_ARCHITECTURE_BUILDER.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    },
+    {
+      "id": "lang/ar/BOOK_TARIFF.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/BOOK_TARIFF.md",
+      "title": "lang/ar/BOOK_TARIFF.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    },
+    {
+      "id": "lang/ar/GLOBAL_DEPLOYMENT.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/GLOBAL_DEPLOYMENT.md",
+      "title": "lang/ar/GLOBAL_DEPLOYMENT.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    },
+    {
+      "id": "lang/ar/PANORAFUS_AI_STUDIO.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PANORAFUS_AI_STUDIO.md",
+      "title": "lang/ar/PANORAFUS_AI_STUDIO.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    },
+    {
+      "id": "lang/ar/PROJECT_COMPENSATION.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PROJECT_COMPENSATION.md",
+      "title": "lang/ar/PROJECT_COMPENSATION.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    },
+    {
+      "id": "lang/ar/PROJECT_SETUP_ROADMAP.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PROJECT_SETUP_ROADMAP.md",
+      "title": "lang/ar/PROJECT_SETUP_ROADMAP.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    },
+    {
+      "id": "lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md",
+      "title": "lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md",
+      "summary": "Add language framework parity files",
+      "date_published": "2026-08-24T15:27:47Z"
+    }
+  ]
+}

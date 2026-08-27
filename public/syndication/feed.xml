@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>PANORAFUS.AI Content Syndication Feed</title>
+    <link>https://www.seasonedchristianministrychurch.com</link>
+    <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
+    <lastBuildDate>Thu, 27 Aug 2026 20:23:17 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI Global Deployment Strategy</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md</link>
+      <guid>GLOBAL_DEPLOYMENT.md:4f13142133413e0d8a79bc9fe883c6eee413522a</guid>
+      <pubDate>Thu, 27 Aug 2026 18:54:03 GMT</pubDate>
+      <description>feat: add PANORAFUS platform runtime</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:4f13142133413e0d8a79bc9fe883c6eee413522a</guid>
+      <pubDate>Thu, 27 Aug 2026 18:54:03 GMT</pubDate>
+      <description>feat: add PANORAFUS platform runtime</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI Robotic Services</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md</link>
+      <guid>ROBOTIC_SERVICES.md:4f13142133413e0d8a79bc9fe883c6eee413522a</guid>
+      <pubDate>Thu, 27 Aug 2026 18:54:03 GMT</pubDate>
+      <description>feat: add PANORAFUS platform runtime</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:53f436359873afde7b094dd4ac4cba1e11c76377</guid>
+      <pubDate>Thu, 27 Aug 2026 17:15:33 GMT</pubDate>
+      <description>Add monthly sponsors messages goal to dashboard</description>
+    </item>
+
+    <item>
+      <title>Project Compensation &amp; Contact</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md</link>
+      <guid>PROJECT_COMPENSATION.md:2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4</guid>
+      <pubDate>Thu, 27 Aug 2026 15:27:16 GMT</pubDate>
+      <description>Add monthly income dashboard section</description>
+    </item>
+
+    <item>
+      <title>lang/ar/APP_ARCHITECTURE_BUILDER.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/APP_ARCHITECTURE_BUILDER.md</link>
+      <guid>lang/ar/APP_ARCHITECTURE_BUILDER.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+
+    <item>
+      <title>lang/ar/BOOK_TARIFF.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/BOOK_TARIFF.md</link>
+      <guid>lang/ar/BOOK_TARIFF.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+
+    <item>
+      <title>lang/ar/GLOBAL_DEPLOYMENT.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/GLOBAL_DEPLOYMENT.md</link>
+      <guid>lang/ar/GLOBAL_DEPLOYMENT.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+
+    <item>
+      <title>lang/ar/PANORAFUS_AI_STUDIO.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PANORAFUS_AI_STUDIO.md</link>
+      <guid>lang/ar/PANORAFUS_AI_STUDIO.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+
+    <item>
+      <title>lang/ar/PROJECT_COMPENSATION.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PROJECT_COMPENSATION.md</link>
+      <guid>lang/ar/PROJECT_COMPENSATION.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+
+    <item>
+      <title>lang/ar/PROJECT_SETUP_ROADMAP.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/PROJECT_SETUP_ROADMAP.md</link>
+      <guid>lang/ar/PROJECT_SETUP_ROADMAP.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+
+    <item>
+      <title>lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md</link>
+      <guid>lang/ar/RELEASE_CERTIFICATE_AND_DEGREE.md:33f8d5a36d374df3e0d8e93960db3b0e38515e6c</guid>
+      <pubDate>Mon, 24 Aug 2026 15:27:47 GMT</pubDate>
+      <description>Add language framework parity files</description>
+    </item>
+  </channel>
+</rss>
