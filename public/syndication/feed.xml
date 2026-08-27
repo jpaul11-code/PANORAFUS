@@ -4,13 +4,13 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Thu, 27 Aug 2026 20:18:47 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 20:47:59 GMT</lastBuildDate>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:6a7fbaa6e19d636bdf6fe9eb293cdfde6e90d6a5</guid>
-      <pubDate>Thu, 27 Aug 2026 20:17:59 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:4b78957a8b8dc308d983b23dedadbc0535d4ae41</guid>
+      <pubDate>Thu, 27 Aug 2026 20:18:47 GMT</pubDate>
       <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
     </item>
 
