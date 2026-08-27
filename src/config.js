@@ -30,8 +30,6 @@ function getSafeConfigView(config) {
   return {
     host: config.host,
     port: config.port,
-    repoRoot: config.repoRoot,
-    publicDir: config.publicDir,
     chat: {
       provider: config.chat.provider,
       model: config.chat.model,

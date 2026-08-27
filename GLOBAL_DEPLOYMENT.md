@@ -126,8 +126,8 @@ For automated broken-link detection, see [Robotic Services](ROBOTIC_SERVICES.md)
 - HTTP Strict Transport Security (HSTS) enabled.
 - DDoS protection via Cloudflare's global network.
 - No sensitive data stored in CDN cache — documentation only.
-- The repository includes `/home/runner/work/PANORAFUS/PANORAFUS/infra/cloudflare/wrangler.toml` and `/home/runner/work/PANORAFUS/PANORAFUS/infra/cloudflare/worker.mjs` to proxy `/api/*` to the platform origin while caching published static assets.
-- The repository includes `/home/runner/work/PANORAFUS/PANORAFUS/Dockerfile` for packaging the executable PANORAFUS.AI platform server.
+- The repository includes `infra/cloudflare/wrangler.toml` and `infra/cloudflare/worker.mjs` to proxy `/api/*` to the platform origin while caching published static assets.
+- The repository includes `Dockerfile` for packaging the executable PANORAFUS.AI platform server.
 - See [Security & Compliance Policy](SECURITY.md) for full details.
 
 ---

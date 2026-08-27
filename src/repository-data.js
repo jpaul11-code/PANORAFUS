@@ -100,6 +100,9 @@ function getRepoRoot(repoRoot) {
 }
 
 function readUtf8(filePath) {
+  if (!fs.existsSync(filePath)) {
+    return '';
+  }
   return fs.readFileSync(filePath, 'utf8');
 }
 
@@ -113,6 +116,9 @@ function countLines(text) {
 
 function listWorkflowFiles(repoRoot) {
   const workflowDir = path.join(getRepoRoot(repoRoot), '.github', 'workflows');
+  if (!fs.existsSync(workflowDir)) {
+    return [];
+  }
   return fs.readdirSync(workflowDir)
     .filter((entry) => entry.endsWith('.yml') || entry.endsWith('.yaml'))
     .map((entry) => path.join(workflowDir, entry))
@@ -237,7 +243,6 @@ function getInstitutionIndex(repoRoot) {
           region: region.label,
           regionSlug: region.slug,
           sourceFile: source.file,
-          sourcePath: filePath,
           websiteUrl: null
         });
       }

@@ -4,8 +4,6 @@
   "config": {
     "host": "0.0.0.0",
     "port": 3000,
-    "repoRoot": "/home/runner/work/PANORAFUS/PANORAFUS",
-    "publicDir": "/home/runner/work/PANORAFUS/PANORAFUS/public",
     "chat": {
       "provider": "local",
       "model": "panorafus-docs-rag",
@@ -13,7 +11,7 @@
     }
   },
   "metrics": {
-    "generatedAt": "2026-08-27T18:54:45.763Z",
+    "generatedAt": "2026-08-27T18:59:56.622Z",
     "docsCount": 40,
     "docsLines": 6967,
     "externalLinks": 75,
@@ -191,11 +189,11 @@
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 4,
-        "docsTouched": 407,
+        "commits": 5,
+        "docsTouched": 410,
         "workflowChanges": 14,
-        "codeChanges": 26,
-        "totalActivity": 451
+        "codeChanges": 28,
+        "totalActivity": 457
       },
       {
         "monthIndex": 8,

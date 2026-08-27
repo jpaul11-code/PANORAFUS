@@ -34,7 +34,7 @@ function createDashboardSnapshot(repoRoot) {
       externalLinks: metrics.externalLinks,
       workflows: metrics.workflowCount,
       institutionsIndexed: metrics.institutionsIndexed,
-      dashboardPlaceholders: 0
+      dashboardPlaceholders: metrics.dashboardPlaceholders
     },
     workflows: metrics.workflows
   };
@@ -135,9 +135,16 @@ ${snapshot.workflows.map((workflow) => `- \`${workflow}\``).join('\n')}
 
 function generateDashboardFile(repoRoot) {
   const root = path.resolve(repoRoot || path.resolve(__dirname, '..'));
-  const snapshot = createDashboardSnapshot(root);
-  const output = generateDashboardMarkdown(snapshot);
+  let snapshot = createDashboardSnapshot(root);
+  let output = generateDashboardMarkdown(snapshot);
   fs.writeFileSync(path.join(root, 'PANORAFUS_DASHBOARD.md'), output);
+
+  if (snapshot.kpis.dashboardPlaceholders !== 0) {
+    snapshot = createDashboardSnapshot(root);
+    output = generateDashboardMarkdown(snapshot);
+    fs.writeFileSync(path.join(root, 'PANORAFUS_DASHBOARD.md'), output);
+  }
+
   return snapshot;
 }
 

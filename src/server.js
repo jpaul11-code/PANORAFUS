@@ -15,6 +15,15 @@ const {
 const { createDashboardSnapshot } = require('./dashboard');
 const { createSyndicationSnapshot } = require('./syndication');
 
+const CONTENT_TYPES = {
+  '.html': 'text/html; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
+  '.md': 'text/markdown; charset=utf-8',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8'
+};
+
 function sendJson(response, statusCode, payload) {
   response.writeHead(statusCode, {
     'Access-Control-Allow-Origin': '*',
@@ -31,6 +40,10 @@ function sendText(response, statusCode, body) {
     'Content-Type': 'text/plain; charset=utf-8'
   });
   response.end(body);
+}
+
+function getContentType(filePath) {
+  return CONTENT_TYPES[path.extname(filePath).toLowerCase()] || 'application/octet-stream';
 }
 
 function collectBody(request) {
@@ -107,7 +120,7 @@ async function handleRequest(request, response, config) {
       return;
     }
     if (fs.existsSync(requestedPath) && fs.statSync(requestedPath).isFile()) {
-      response.writeHead(200, { 'Content-Type': 'application/octet-stream' });
+      response.writeHead(200, { 'Content-Type': getContentType(requestedPath) });
       fs.createReadStream(requestedPath).pipe(response);
       return;
     }
@@ -171,11 +184,14 @@ async function handleRequest(request, response, config) {
   }
 
   if (url.pathname === '/api/chat') {
-    const question = request.method === 'GET'
-      ? (url.searchParams.get('q') || '')
-      : (() => null)();
+    if (request.method !== 'GET' && request.method !== 'POST') {
+      sendJson(response, 405, { error: 'Method not allowed. Use GET or POST.' });
+      return;
+    }
 
-    let prompt = question;
+    let prompt = request.method === 'GET'
+      ? (url.searchParams.get('q') || '')
+      : '';
     if (request.method === 'POST') {
       const body = await collectBody(request);
       let parsed = {};
@@ -202,17 +218,19 @@ async function handleRequest(request, response, config) {
 }
 
 function createServer(overrides = {}) {
-  const config = loadConfig(process.env, overrides);
-  return http.createServer((request, response) => {
+  const config = overrides.config || loadConfig(process.env, overrides);
+  const server = http.createServer((request, response) => {
     Promise.resolve(handleRequest(request, response, config)).catch((error) => {
       sendJson(response, 500, { error: error.message });
     });
   });
+  server.panorafusConfig = config;
+  return server;
 }
 
 function startServer(overrides = {}) {
   const config = loadConfig(process.env, overrides);
-  const server = createServer(overrides);
+  const server = createServer({ config });
   return new Promise((resolve) => {
     server.listen(config.port, config.host, () => resolve({ server, config }));
   });

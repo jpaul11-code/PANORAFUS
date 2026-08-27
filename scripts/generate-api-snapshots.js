@@ -19,6 +19,7 @@ function writeJson(filePath, payload) {
 const repoRoot = path.resolve(__dirname, '..');
 const config = loadConfig(process.env, { repoRoot });
 const outputDir = path.join(repoRoot, 'public', 'api');
+const institutions = getInstitutionIndex(repoRoot);
 fs.mkdirSync(outputDir, { recursive: true });
 
 writeJson(path.join(outputDir, 'health.json'), {
@@ -29,8 +30,8 @@ writeJson(path.join(outputDir, 'health.json'), {
 });
 writeJson(path.join(outputDir, 'dashboard.json'), createDashboardSnapshot(repoRoot));
 writeJson(path.join(outputDir, 'institutions.json'), {
-  total: getInstitutionIndex(repoRoot).length,
-  items: getInstitutionIndex(repoRoot)
+  total: institutions.length,
+  items: institutions
 });
 writeJson(path.join(outputDir, 'regions.json'), listRegionMetrics(repoRoot));
 writeJson(path.join(outputDir, 'traditions.json'), listTraditionMetrics(repoRoot));

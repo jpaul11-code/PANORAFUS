@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-08-27T18:54:45.949Z
+Generated at: 2026-08-27T18:59:56.809Z
 
 ## Dashboard Summary
 
@@ -10,8 +10,9 @@ Generated at: 2026-08-27T18:54:45.949Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI — Global Dashboard Page** — feat: publish PANORAFUS platform artifacts ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
+- **PANORAFUS.AI** — feat: publish PANORAFUS platform artifacts ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **PANORAFUS.AI Global Deployment Strategy** — feat: add PANORAFUS platform runtime ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md))
-- **PANORAFUS.AI** — feat: add PANORAFUS platform runtime ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **PANORAFUS.AI Robotic Services** — feat: add PANORAFUS platform runtime ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md))
 - **About PANORAFUS.AI** — Add monthly sponsors messages goal to dashboard ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md))
 - **Apostle Paul — Genealogy & Life: From Infancy to Death** — Add monthly sponsors messages goal to dashboard ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md))
@@ -21,4 +22,3 @@ Generated at: 2026-08-27T18:54:45.949Z
 - **Buddhist Religious Institutions** — Add monthly sponsors messages goal to dashboard ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md))
 - **Christian Religious Institutions** — Add monthly sponsors messages goal to dashboard ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md))
 - **Contribute to PANORAFUS.AI** — Add monthly sponsors messages goal to dashboard ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md))
-- **🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI** — Add monthly sponsors messages goal to dashboard ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md))

@@ -6,16 +6,23 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:5879141151c68407795e4c9f70704c579ffda642",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "feat: publish PANORAFUS platform artifacts",
+      "date_published": "2026-08-27T18:55:16Z"
+    },
+    {
+      "id": "README.md:5879141151c68407795e4c9f70704c579ffda642",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "feat: publish PANORAFUS platform artifacts",
+      "date_published": "2026-08-27T18:55:16Z"
+    },
+    {
       "id": "GLOBAL_DEPLOYMENT.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
       "title": "PANORAFUS.AI Global Deployment Strategy",
-      "summary": "feat: add PANORAFUS platform runtime",
-      "date_published": "2026-08-27T18:54:03Z"
-    },
-    {
-      "id": "README.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
       "summary": "feat: add PANORAFUS platform runtime",
       "date_published": "2026-08-27T18:54:03Z"
     },
@@ -79,13 +86,6 @@
       "id": "CONTRIBUTE.md:53f436359873afde7b094dd4ac4cba1e11c76377",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
       "title": "Contribute to PANORAFUS.AI",
-      "summary": "Add monthly sponsors messages goal to dashboard",
-      "date_published": "2026-08-27T17:15:33Z"
-    },
-    {
-      "id": "DEVOTIONAL_PRAYER.md:53f436359873afde7b094dd4ac4cba1e11c76377",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md",
-      "title": "🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI",
       "summary": "Add monthly sponsors messages goal to dashboard",
       "date_published": "2026-08-27T17:15:33Z"
     }
