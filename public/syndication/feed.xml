@@ -4,20 +4,20 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Thu, 27 Aug 2026 20:17:58 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 20:18:47 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:6a7fbaa6e19d636bdf6fe9eb293cdfde6e90d6a5</guid>
+      <pubDate>Thu, 27 Aug 2026 20:17:59 GMT</pubDate>
+      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI Global Deployment Strategy</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md</link>
       <guid>GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7</guid>
-      <pubDate>Thu, 27 Aug 2026 19:01:41 GMT</pubDate>
-      <description>fix: harden PANORAFUS platform publishing</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:71ac6079d97c18c21aed80540718cadad0c627e7</guid>
       <pubDate>Thu, 27 Aug 2026 19:01:41 GMT</pubDate>
       <description>fix: harden PANORAFUS platform publishing</description>
     </item>

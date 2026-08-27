@@ -6,16 +6,16 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:6a7fbaa6e19d636bdf6fe9eb293cdfde6e90d6a5",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "date_published": "2026-08-27T20:17:59Z"
+    },
+    {
       "id": "GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
       "title": "PANORAFUS.AI Global Deployment Strategy",
-      "summary": "fix: harden PANORAFUS platform publishing",
-      "date_published": "2026-08-27T19:01:41Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:71ac6079d97c18c21aed80540718cadad0c627e7",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "fix: harden PANORAFUS platform publishing",
       "date_published": "2026-08-27T19:01:41Z"
     },

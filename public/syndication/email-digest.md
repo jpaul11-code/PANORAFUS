@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-08-27T20:17:58.301Z
+Generated at: 2026-08-27T20:18:47.109Z
 
 ## Dashboard Summary
 
@@ -10,8 +10,8 @@ Generated at: 2026-08-27T20:17:58.301Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI — Global Dashboard Page** — chore: refresh PANORAFUS.AI platform artifacts [skip ci] ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **PANORAFUS.AI Global Deployment Strategy** — fix: harden PANORAFUS platform publishing ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md))
-- **PANORAFUS.AI — Global Dashboard Page** — fix: harden PANORAFUS platform publishing ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **PANORAFUS.AI** — feat: publish PANORAFUS platform artifacts ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **PANORAFUS.AI Robotic Services** — feat: add PANORAFUS platform runtime ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md))
 - **Project Compensation & Contact** — Add monthly income dashboard section ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md))

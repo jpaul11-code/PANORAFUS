@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-27T20:17:58.101Z",
+  "generatedAt": "2026-08-27T20:18:46.912Z",
   "dashboard": {
-    "generatedAt": "2026-08-27T20:17:58.101Z",
+    "generatedAt": "2026-08-27T20:18:46.912Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -124,11 +124,11 @@
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 97,
-        "docsTouched": 226,
+        "commits": 99,
+        "docsTouched": 228,
         "workflowChanges": 24,
         "codeChanges": 33,
-        "totalActivity": 380
+        "totalActivity": 384
       },
       {
         "monthIndex": 8,
@@ -187,19 +187,19 @@
   },
   "items": [
     {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-08-27T20:17:59Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "6a7fbaa6e19d636bdf6fe9eb293cdfde6e90d6a5"
+    },
+    {
       "title": "PANORAFUS.AI Global Deployment Strategy",
       "summary": "fix: harden PANORAFUS platform publishing",
       "file": "GLOBAL_DEPLOYMENT.md",
       "committedAt": "2026-08-27T19:01:41Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
-      "sha": "71ac6079d97c18c21aed80540718cadad0c627e7"
-    },
-    {
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "fix: harden PANORAFUS platform publishing",
-      "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-27T19:01:41Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "sha": "71ac6079d97c18c21aed80540718cadad0c627e7"
     },
     {
