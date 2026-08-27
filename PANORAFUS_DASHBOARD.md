@@ -63,6 +63,14 @@ Nov | ░░░░░░░░░░ $TBD
 Dec | ░░░░░░░░░░ $TBD
 ```
 
+### 📋 Monthly Income Listing
+
+1. **Ministry Support** — voluntary donations and supporter contributions.
+2. **Licensing** — institutional, book, and media licensing income.
+3. **Partnerships** — co-branded agreements and revenue-sharing arrangements.
+4. **Other Income** — verified miscellaneous project-related income.
+5. **Total Monthly Income** — combined monthly total across all listed categories.
+
 > Replace `TBD` with verified monthly figures as financial reports are published.
 
 ---
