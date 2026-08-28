@@ -11,9 +11,9 @@
     }
   },
   "metrics": {
-    "generatedAt": "2026-08-27T20:49:48.050Z",
+    "generatedAt": "2026-08-28T19:59:53.821Z",
     "docsCount": 40,
-    "docsLines": 6967,
+    "docsLines": 6971,
     "externalLinks": 75,
     "workflowCount": 7,
     "languages": [
@@ -189,11 +189,11 @@
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 103,
-        "docsTouched": 237,
+        "commits": 109,
+        "docsTouched": 241,
         "workflowChanges": 24,
-        "codeChanges": 33,
-        "totalActivity": 397
+        "codeChanges": 35,
+        "totalActivity": 409
       },
       {
         "monthIndex": 8,

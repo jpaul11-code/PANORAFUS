@@ -4,13 +4,29 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Thu, 27 Aug 2026 20:49:48 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 19:59:54 GMT</lastBuildDate>
+
+    <item>
+      <title>About PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
+      <guid>ABOUT_PANORAFUS.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e</guid>
+      <pubDate>Fri, 28 Aug 2026 19:55:44 GMT</pubDate>
+      <description>Clarify PANORAFUS scripture-rooted identity</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e</guid>
+      <pubDate>Fri, 28 Aug 2026 19:55:44 GMT</pubDate>
+      <description>Clarify PANORAFUS scripture-rooted identity</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:21ee07c1645a22ad3cec00bbc58157d9ac662a2e</guid>
-      <pubDate>Thu, 27 Aug 2026 20:48:00 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:3d7da5148bd9f87c03f67075efe304b04aee4d73</guid>
+      <pubDate>Thu, 27 Aug 2026 20:49:49 GMT</pubDate>
       <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
     </item>
 
@@ -20,14 +36,6 @@
       <guid>GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7</guid>
       <pubDate>Thu, 27 Aug 2026 19:01:41 GMT</pubDate>
       <description>fix: harden PANORAFUS platform publishing</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:5879141151c68407795e4c9f70704c579ffda642</guid>
-      <pubDate>Thu, 27 Aug 2026 18:55:16 GMT</pubDate>
-      <description>feat: publish PANORAFUS platform artifacts</description>
     </item>
 
     <item>
@@ -84,14 +92,6 @@
       <guid>SECURITY.md:8a24e3789b3236d904a20fd6c950b68d8ad1685f</guid>
       <pubDate>Sun, 23 Aug 2026 16:57:29 GMT</pubDate>
       <description>feat: implement PANORAFUS.AI robotic services performance across the globe</description>
-    </item>
-
-    <item>
-      <title>About PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
-      <guid>ABOUT_PANORAFUS.md:e72391ee1c06161885c15a02e16a5153c2d21732</guid>
-      <pubDate>Sat, 22 Aug 2026 22:43:41 GMT</pubDate>
-      <description>Add PROJECT_COMPENSATION.md and BOOK_TARIFF.md; update SUMMARY, README, ABOUT</description>
     </item>
 
     <item>
