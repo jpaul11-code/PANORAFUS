@@ -14,6 +14,8 @@ At its core, PANORAFUS.AI brings the prophetic Scriptures to every nation, every
 
 PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and unwavering fidelity to the Word of God.
 
+PANORAFUS.AI stands for a platform rooted and grounded in Holy Scripture, keeping the Word of God at the center of its global mission and every connected network it serves.
+
 ### Core Purpose
 
 | Pillar | Description |
