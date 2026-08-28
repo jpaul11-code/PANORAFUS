@@ -6,6 +6,13 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:b91743f0f55752a907a4643610029562c9e363da",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "date_published": "2026-08-28T20:57:16Z"
+    },
+    {
       "id": "ABOUT_PANORAFUS.md:07c3ebf1254691323f54873dc29e958d59ce850e",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
       "title": "About PANORAFUS.AI",
@@ -32,13 +39,6 @@
       "title": "Seasoned Christian Ministry Church",
       "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
       "date_published": "2026-08-28T20:11:39Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:a4828402d55ef6446f0672e0c51d51369a840662",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "date_published": "2026-08-28T20:00:38Z"
     },
     {
       "id": "GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T20:57:15.490Z",
+  "generatedAt": "2026-08-28T20:57:53.079Z",
   "dataSources": [
     "Top-level PANORAFUS.AI documentation files",
     "Git commit history for the current calendar year",
@@ -122,11 +122,11 @@
     {
       "monthIndex": 7,
       "month": "August",
-      "commits": 113,
-      "docsTouched": 249,
+      "commits": 115,
+      "docsTouched": 251,
       "workflowChanges": 24,
       "codeChanges": 35,
-      "totalActivity": 421
+      "totalActivity": 425
     },
     {
       "monthIndex": 8,
