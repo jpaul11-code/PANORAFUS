@@ -6,25 +6,39 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:bfa54ce4eaa6f04ff72abd8f3578a0a0571ae540",
+      "id": "ABOUT_PANORAFUS.md:07c3ebf1254691323f54873dc29e958d59ce850e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "title": "About PANORAFUS.AI",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "date_published": "2026-08-28T20:11:39Z"
+    },
+    {
+      "id": "BOOK_TARIFF.md:07c3ebf1254691323f54873dc29e958d59ce850e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "date_published": "2026-08-28T20:11:39Z"
+    },
+    {
+      "id": "README.md:07c3ebf1254691323f54873dc29e958d59ce850e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "date_published": "2026-08-28T20:11:39Z"
+    },
+    {
+      "id": "SEASONED_CHRISTIAN_MINISTRY.md:07c3ebf1254691323f54873dc29e958d59ce850e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SEASONED_CHRISTIAN_MINISTRY.md",
+      "title": "Seasoned Christian Ministry Church",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "date_published": "2026-08-28T20:11:39Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:a4828402d55ef6446f0672e0c51d51369a840662",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "date_published": "2026-08-28T19:59:55Z"
-    },
-    {
-      "id": "ABOUT_PANORAFUS.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
-      "title": "About PANORAFUS.AI",
-      "summary": "Clarify PANORAFUS scripture-rooted identity",
-      "date_published": "2026-08-28T19:55:44Z"
-    },
-    {
-      "id": "README.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
-      "summary": "Clarify PANORAFUS scripture-rooted identity",
-      "date_published": "2026-08-28T19:55:44Z"
+      "date_published": "2026-08-28T20:00:38Z"
     },
     {
       "id": "GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7",
@@ -74,20 +88,6 @@
       "title": "Contribute to PANORAFUS.AI",
       "summary": "feat: add socratic setup roadmap and docs guardrails",
       "date_published": "2026-08-23T21:20:18Z"
-    },
-    {
-      "id": "SECURITY.md:8a24e3789b3236d904a20fd6c950b68d8ad1685f",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SECURITY.md",
-      "title": "PANORAFUS.AI Security & Compliance Policy",
-      "summary": "feat: implement PANORAFUS.AI robotic services performance across the globe",
-      "date_published": "2026-08-23T16:57:29Z"
-    },
-    {
-      "id": "BOOK_TARIFF.md:e72391ee1c06161885c15a02e16a5153c2d21732",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "Add PROJECT_COMPENSATION.md and BOOK_TARIFF.md; update SUMMARY, README, ABOUT",
-      "date_published": "2026-08-22T22:43:41Z"
     }
   ]
 }

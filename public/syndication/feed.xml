@@ -4,30 +4,46 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Fri, 28 Aug 2026 20:00:36 GMT</lastBuildDate>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:bfa54ce4eaa6f04ff72abd8f3578a0a0571ae540</guid>
-      <pubDate>Fri, 28 Aug 2026 19:59:55 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
-    </item>
+    <lastBuildDate>Fri, 28 Aug 2026 20:57:15 GMT</lastBuildDate>
 
     <item>
       <title>About PANORAFUS.AI</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
-      <guid>ABOUT_PANORAFUS.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e</guid>
-      <pubDate>Fri, 28 Aug 2026 19:55:44 GMT</pubDate>
-      <description>Clarify PANORAFUS scripture-rooted identity</description>
+      <guid>ABOUT_PANORAFUS.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI Book Tariff</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
+      <guid>BOOK_TARIFF.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
     </item>
 
     <item>
       <title>PANORAFUS.AI</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e</guid>
-      <pubDate>Fri, 28 Aug 2026 19:55:44 GMT</pubDate>
-      <description>Clarify PANORAFUS scripture-rooted identity</description>
+      <guid>README.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
+    </item>
+
+    <item>
+      <title>Seasoned Christian Ministry Church</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SEASONED_CHRISTIAN_MINISTRY.md</link>
+      <guid>SEASONED_CHRISTIAN_MINISTRY.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:a4828402d55ef6446f0672e0c51d51369a840662</guid>
+      <pubDate>Fri, 28 Aug 2026 20:00:38 GMT</pubDate>
+      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
     </item>
 
     <item>
@@ -84,22 +100,6 @@
       <guid>CONTRIBUTE.md:a86c353c682fc9cf4a0d31411b9b80385a9d9f9a</guid>
       <pubDate>Sun, 23 Aug 2026 21:20:18 GMT</pubDate>
       <description>feat: add socratic setup roadmap and docs guardrails</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI Security &amp; Compliance Policy</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SECURITY.md</link>
-      <guid>SECURITY.md:8a24e3789b3236d904a20fd6c950b68d8ad1685f</guid>
-      <pubDate>Sun, 23 Aug 2026 16:57:29 GMT</pubDate>
-      <description>feat: implement PANORAFUS.AI robotic services performance across the globe</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI Book Tariff</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
-      <guid>BOOK_TARIFF.md:e72391ee1c06161885c15a02e16a5153c2d21732</guid>
-      <pubDate>Sat, 22 Aug 2026 22:43:41 GMT</pubDate>
-      <description>Add PROJECT_COMPENSATION.md and BOOK_TARIFF.md; update SUMMARY, README, ABOUT</description>
     </item>
   </channel>
 </rss>

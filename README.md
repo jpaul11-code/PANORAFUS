@@ -2,6 +2,8 @@
 
 > **PANORAFUS.AI** — The Pivotal Head of the Global Network
 > 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+>
+> © 2024–2026 **SEASONED CHRISTIAN MINISTRY CHURCH, INC.** — All Rights Reserved. | [License](LICENSE)
 
 [![Deploy mdBook](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/mdbook.yml?label=Docs%20Build&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
 [![Docs Autopilot](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/docs-autopilot.yml?label=Docs%20Autopilot&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
@@ -138,3 +140,9 @@ For website management, content updates, and administrative matters related to *
 - [🍞 The Lord's Supper — A Biblical, Historical, and Theological Study of Holy Communion](THE_LORD_SUPPER.md)
 - [🕊️ The Holy Spirit and Spiritual Gifts — A Biblical and Theological Study](HOLY_SPIRIT_AND_GIFTS.md)
 - [🙏 Worship and Prayer — A Biblical and Theological Study](WORSHIP_AND_PRAYER.md)
+
+---
+
+© 2024–2026 **SEASONED CHRISTIAN MINISTRY CHURCH, INC.** — All Rights Reserved.
+PANORAFUS.AI is the exclusive property of SEASONED CHRISTIAN MINISTRY CHURCH, INC., founded by Jacquelin Paul.
+See [LICENSE](LICENSE) for full terms. Licensing inquiries: [paul@seasonedchristianministrychurch.community](mailto:paul@seasonedchristianministrychurch.community)
