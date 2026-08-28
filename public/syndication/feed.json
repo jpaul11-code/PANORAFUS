@@ -6,11 +6,25 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:21ee07c1645a22ad3cec00bbc58157d9ac662a2e",
+      "id": "ABOUT_PANORAFUS.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "title": "About PANORAFUS.AI",
+      "summary": "Clarify PANORAFUS scripture-rooted identity",
+      "date_published": "2026-08-28T19:55:44Z"
+    },
+    {
+      "id": "README.md:dc2c93820a466cbb4aa1d9f21212246f196ad39e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "Clarify PANORAFUS scripture-rooted identity",
+      "date_published": "2026-08-28T19:55:44Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:3d7da5148bd9f87c03f67075efe304b04aee4d73",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "date_published": "2026-08-27T20:48:00Z"
+      "date_published": "2026-08-27T20:49:49Z"
     },
     {
       "id": "GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7",
@@ -18,13 +32,6 @@
       "title": "PANORAFUS.AI Global Deployment Strategy",
       "summary": "fix: harden PANORAFUS platform publishing",
       "date_published": "2026-08-27T19:01:41Z"
-    },
-    {
-      "id": "README.md:5879141151c68407795e4c9f70704c579ffda642",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
-      "summary": "feat: publish PANORAFUS platform artifacts",
-      "date_published": "2026-08-27T18:55:16Z"
     },
     {
       "id": "ROBOTIC_SERVICES.md:4f13142133413e0d8a79bc9fe883c6eee413522a",
@@ -74,13 +81,6 @@
       "title": "PANORAFUS.AI Security & Compliance Policy",
       "summary": "feat: implement PANORAFUS.AI robotic services performance across the globe",
       "date_published": "2026-08-23T16:57:29Z"
-    },
-    {
-      "id": "ABOUT_PANORAFUS.md:e72391ee1c06161885c15a02e16a5153c2d21732",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
-      "title": "About PANORAFUS.AI",
-      "summary": "Add PROJECT_COMPENSATION.md and BOOK_TARIFF.md; update SUMMARY, README, ABOUT",
-      "date_published": "2026-08-22T22:43:41Z"
     },
     {
       "id": "BOOK_TARIFF.md:e72391ee1c06161885c15a02e16a5153c2d21732",
