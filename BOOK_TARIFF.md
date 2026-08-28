@@ -111,3 +111,9 @@ For all tariff, pricing, licensing, and access inquiries:
 ---
 
 *PANORAFUS.AI — Connecting the World, One Institution at a Time.*
+
+---
+
+© 2024–2026 **SEASONED CHRISTIAN MINISTRY CHURCH, INC.** — All Rights Reserved.
+PANORAFUS.AI is the exclusive property of SEASONED CHRISTIAN MINISTRY CHURCH, INC., founded by Jacquelin Paul.
+See [LICENSE](LICENSE) for full terms.

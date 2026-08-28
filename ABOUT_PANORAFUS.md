@@ -105,4 +105,20 @@ For information on compensation arrangements, contributor agreements, partnershi
 
 ---
 
+## Legal Ownership & License
+
+**PANORAFUS.AI** and all associated platform content, software, documentation,
+and branding are the sole and exclusive property of:
+
+> **SEASONED CHRISTIAN MINISTRY CHURCH, INC.**
+> Founder: Jacquelin Paul
+> 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
+All rights reserved. Free public read/educational access is granted worldwide;
+commercial, distribution, and derivative rights are reserved by the Owner.
+
+📄 [View Full License](LICENSE) | 📧 [Licensing Inquiries](mailto:paul@seasonedchristianministrychurch.community)
+
+---
+
 *PANORAFUS.AI — Connecting the World, One Institution at a Time.*
