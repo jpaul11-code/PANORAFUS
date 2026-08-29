@@ -4,13 +4,21 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Fri, 28 Aug 2026 20:57:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 22:18:04 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:889797a6eda3b524fbcadcb2ebfd972239353ba1</guid>
+      <pubDate>Sat, 29 Aug 2026 07:36:56 GMT</pubDate>
+      <description>Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:b91743f0f55752a907a4643610029562c9e363da</guid>
-      <pubDate>Fri, 28 Aug 2026 20:57:16 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:cf08e93e58e26fff328fabb9f1b1f38dc6daa89d</guid>
+      <pubDate>Fri, 28 Aug 2026 20:57:54 GMT</pubDate>
       <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
     </item>
 
@@ -26,14 +34,6 @@
       <title>PANORAFUS.AI Book Tariff</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
       <guid>BOOK_TARIFF.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
-      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
-      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
       <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
       <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
     </item>

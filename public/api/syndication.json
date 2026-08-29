@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-28T20:57:53.099Z",
+  "generatedAt": "2026-08-29T22:18:04.043Z",
   "dashboard": {
-    "generatedAt": "2026-08-28T20:57:53.099Z",
+    "generatedAt": "2026-08-29T22:18:04.043Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -115,20 +115,20 @@
       {
         "monthIndex": 6,
         "month": "July",
-        "commits": 40,
-        "docsTouched": 60,
+        "commits": 41,
+        "docsTouched": 62,
         "workflowChanges": 12,
         "codeChanges": 0,
-        "totalActivity": 112
+        "totalActivity": 115
       },
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 115,
-        "docsTouched": 251,
+        "commits": 119,
+        "docsTouched": 256,
         "workflowChanges": 24,
         "codeChanges": 35,
-        "totalActivity": 425
+        "totalActivity": 434
       },
       {
         "monthIndex": 8,
@@ -169,7 +169,7 @@
     ],
     "kpis": {
       "documentationFiles": 40,
-      "documentationLines": 7018,
+      "documentationLines": 7021,
       "externalLinks": 76,
       "workflows": 7,
       "institutionsIndexed": 177,
@@ -187,12 +187,20 @@
   },
   "items": [
     {
+      "title": "PANORAFUS.AI",
+      "summary": "Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages",
+      "file": "README.md",
+      "committedAt": "2026-08-29T07:36:56Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "sha": "889797a6eda3b524fbcadcb2ebfd972239353ba1"
+    },
+    {
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-28T20:57:16Z",
+      "committedAt": "2026-08-28T20:57:54Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "b91743f0f55752a907a4643610029562c9e363da"
+      "sha": "cf08e93e58e26fff328fabb9f1b1f38dc6daa89d"
     },
     {
       "title": "About PANORAFUS.AI",
@@ -208,14 +216,6 @@
       "file": "BOOK_TARIFF.md",
       "committedAt": "2026-08-28T20:11:39Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
-      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
-    },
-    {
-      "title": "PANORAFUS.AI",
-      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
-      "file": "README.md",
-      "committedAt": "2026-08-28T20:11:39Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
       "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
     },
     {

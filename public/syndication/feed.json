@@ -6,11 +6,18 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:b91743f0f55752a907a4643610029562c9e363da",
+      "id": "README.md:889797a6eda3b524fbcadcb2ebfd972239353ba1",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages",
+      "date_published": "2026-08-29T07:36:56Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:cf08e93e58e26fff328fabb9f1b1f38dc6daa89d",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "date_published": "2026-08-28T20:57:16Z"
+      "date_published": "2026-08-28T20:57:54Z"
     },
     {
       "id": "ABOUT_PANORAFUS.md:07c3ebf1254691323f54873dc29e958d59ce850e",
@@ -23,13 +30,6 @@
       "id": "BOOK_TARIFF.md:07c3ebf1254691323f54873dc29e958d59ce850e",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
       "title": "PANORAFUS.AI Book Tariff",
-      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
-      "date_published": "2026-08-28T20:11:39Z"
-    },
-    {
-      "id": "README.md:07c3ebf1254691323f54873dc29e958d59ce850e",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
       "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
       "date_published": "2026-08-28T20:11:39Z"
     },

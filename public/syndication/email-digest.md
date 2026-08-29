@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-08-28T20:57:53.292Z
+Generated at: 2026-08-29T22:18:04.242Z
 
 ## Dashboard Summary
 
@@ -10,10 +10,10 @@ Generated at: 2026-08-28T20:57:53.292Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI** — Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **PANORAFUS.AI — Global Dashboard Page** — chore: refresh PANORAFUS.AI platform artifacts [skip ci] ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **About PANORAFUS.AI** — feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md))
 - **PANORAFUS.AI Book Tariff** — feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md))
-- **PANORAFUS.AI** — feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **Seasoned Christian Ministry Church** — feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/SEASONED_CHRISTIAN_MINISTRY.md))
 - **PANORAFUS.AI Global Deployment Strategy** — fix: harden PANORAFUS platform publishing ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md))
 - **PANORAFUS.AI Robotic Services** — feat: add PANORAFUS platform runtime ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md))
