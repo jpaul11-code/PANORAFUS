@@ -32,6 +32,8 @@ For anything related to **PANORAFUS.AI**, please reach out:
 - [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [✝️ The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
 - [Seasoned Christian Ministry Church — Founding Institution](SEASONED_CHRISTIAN_MINISTRY.md)
+- [📈 PNRF Stock Information — Planned Listing](PNRF_STOCK.md)
+- [💼 Investor Relations — PANORAFUS.AI (PNRF)](INVESTOR_RELATIONS.md)
 - [Global Network Index](GLOBALNETWORK)
   - [Christian Religious Institutions](CHRISTIAN_INSTITUTIONS.md)
   - [Islamic Religious Institutions](ISLAMIC_INSTITUTIONS.md)
