@@ -8,9 +8,24 @@
 
 ## What is PANORAFUS.AI?
 
-**PANORAFUS.AI** is a global network platform designed to connect, catalogue, and amplify institutions, organizations, and communities across the world. It serves as the pivotal digital hub for religious, cultural, educational, and humanitarian networks — bringing the world together under one unified index.
+**PANORAFUS.AI** is an AI-powered global platform designed to help people around the world **read, search, comment, and discuss the Word of God** — with Biblical Eschatology as its first and highest priority.
 
-PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and institutional transparency.
+At its core, PANORAFUS.AI brings the prophetic Scriptures to every nation, every tongue, and every people. It also serves as the pivotal digital hub for religious, cultural, educational, and humanitarian networks — connecting institutions and communities across the globe under one unified index.
+
+PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and unwavering fidelity to the Word of God.
+
+PANORAFUS.AI stands for a platform rooted and grounded in Holy Scripture, keeping the Word of God at the center of its global mission and every connected network it serves.
+
+### Core Purpose
+
+| Pillar | Description |
+|---|---|
+| 📖 **Read** | Access and engage deeply with the Word of God — especially the prophetic and eschatological Scriptures |
+| 🔍 **Search** | AI-powered tools to discover, explore, and cross-reference biblical truth |
+| 💬 **Comment** | Share reflections, insights, and Spirit-led observations with the global community |
+| 🗣️ **Discuss** | Engage in open, respectful, Scripture-grounded dialogue with believers worldwide |
+
+> *"Your word is a lamp to my feet and a light to my path."* — Psalm 119:105
 
 ---
 
@@ -71,6 +86,38 @@ The PANORAFUS.AI Global Network currently indexes institutions across:
 For partnership inquiries, institution listings, or collaboration with PANORAFUS.AI:
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
+For all website management, content, and administrative matters related to **www.seasonedchristianministrychurch.com**, please contact:
+
+**Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
+🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
+---
+
+---
+
+## Compensation & Tariff
+
+For information on compensation arrangements, contributor agreements, partnership structures, and the Book access/pricing tiers, see:
+
+- 💼 **[Project Compensation & Contact](PROJECT_COMPENSATION.md)** — Compensation structure, donor model, and financial contact information for PANORAFUS.AI
+- 📘 **[Book Tariff — Access Tiers & Licensing](BOOK_TARIFF.md)** — Free access policy, ministry supporter tiers, institutional licensing, and commercial licensing for the PANORAFUS.AI Book
+
+---
+
+## Legal Ownership & License
+
+**PANORAFUS.AI** and all associated platform content, software, documentation,
+and branding are the sole and exclusive property of:
+
+> **SEASONED CHRISTIAN MINISTRY CHURCH, INC.**
+> Founder: Jacquelin Paul
+> 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
+All rights reserved. Free public read/educational access is granted worldwide;
+commercial, distribution, and derivative rights are reserved by the Owner.
+
+📄 [View Full License](LICENSE) | 📧 [Licensing Inquiries](mailto:paul@seasonedchristianministrychurch.community)
 
 ---
 

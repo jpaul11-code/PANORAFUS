@@ -1,0 +1,31 @@
+{
+  "name": "@jpaul11-code/panorafus",
+  "version": "1.0.2",
+  "description": "PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
+  "main": "index.js",
+  "scripts": {
+    "docs:check": "bash scripts/validate-docs.sh",
+    "dashboard:generate": "node scripts/generate-dashboard.js",
+    "api:generate": "node scripts/generate-api-snapshots.js",
+    "syndication:generate": "node scripts/generate-syndication.js",
+    "platform:generate": "npm run dashboard:generate && npm run api:generate && npm run syndication:generate",
+    "package:check": "npm pack --dry-run",
+    "test:app": "node --test",
+    "start": "node src/server.js",
+    "test": "npm run docs:check && npm run test:app && npm run package:check"
+  },
+  "keywords": [
+    "ai",
+    "theology",
+    "global-network",
+    "panorafus"
+  ],
+  "author": "JACQUELIN PAUL",
+  "license": "SEE LICENSE IN LICENSE",
+  "copyright": "Copyright (c) 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. All rights reserved.",
+  "owner": "SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+  "homepage": "https://www.seasonedchristianministrychurch.com",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

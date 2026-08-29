@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-08-28T20:57:53.099Z",
+  "dashboard": {
+    "generatedAt": "2026-08-28T20:57:53.099Z",
+    "dataSources": [
+      "Top-level PANORAFUS.AI documentation files",
+      "Git commit history for the current calendar year",
+      "Repository workflow definitions under .github/workflows"
+    ],
+    "regions": [
+      {
+        "region": "Americas",
+        "regionSlug": "americas",
+        "institutionsIndexed": 63,
+        "countriesCovered": 2,
+        "traditionsCovered": 6,
+        "categoriesCovered": 26
+      },
+      {
+        "region": "Europe",
+        "regionSlug": "europe",
+        "institutionsIndexed": 38,
+        "countriesCovered": 11,
+        "traditionsCovered": 6,
+        "categoriesCovered": 18
+      },
+      {
+        "region": "Africa",
+        "regionSlug": "africa",
+        "institutionsIndexed": 8,
+        "countriesCovered": 5,
+        "traditionsCovered": 3,
+        "categoriesCovered": 5
+      },
+      {
+        "region": "Asia-Pacific",
+        "regionSlug": "asia-pacific",
+        "institutionsIndexed": 33,
+        "countriesCovered": 6,
+        "traditionsCovered": 5,
+        "categoriesCovered": 14
+      },
+      {
+        "region": "Middle East",
+        "regionSlug": "middle-east",
+        "institutionsIndexed": 20,
+        "countriesCovered": 5,
+        "traditionsCovered": 4,
+        "categoriesCovered": 11
+      },
+      {
+        "region": "Global Online",
+        "regionSlug": "global-online",
+        "institutionsIndexed": 15,
+        "countriesCovered": 10,
+        "traditionsCovered": 4,
+        "categoriesCovered": 8
+      }
+    ],
+    "monthlyActivity": [
+      {
+        "monthIndex": 0,
+        "month": "January",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 1,
+        "month": "February",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 2,
+        "month": "March",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 3,
+        "month": "April",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 4,
+        "month": "May",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 5,
+        "month": "June",
+        "commits": 2,
+        "docsTouched": 2,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 4
+      },
+      {
+        "monthIndex": 6,
+        "month": "July",
+        "commits": 40,
+        "docsTouched": 60,
+        "workflowChanges": 12,
+        "codeChanges": 0,
+        "totalActivity": 112
+      },
+      {
+        "monthIndex": 7,
+        "month": "August",
+        "commits": 115,
+        "docsTouched": 251,
+        "workflowChanges": 24,
+        "codeChanges": 35,
+        "totalActivity": 425
+      },
+      {
+        "monthIndex": 8,
+        "month": "September",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 9,
+        "month": "October",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 10,
+        "month": "November",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      },
+      {
+        "monthIndex": 11,
+        "month": "December",
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
+        "codeChanges": 0,
+        "totalActivity": 0
+      }
+    ],
+    "kpis": {
+      "documentationFiles": 40,
+      "documentationLines": 7018,
+      "externalLinks": 76,
+      "workflows": 7,
+      "institutionsIndexed": 177,
+      "dashboardPlaceholders": 0
+    },
+    "workflows": [
+      "autopilot-health.yml",
+      "codeql.yml",
+      "content-syndication.yml",
+      "docs-autopilot.yml",
+      "mdbook.yml",
+      "npm-publish.yml",
+      "robotic-services.yml"
+    ]
+  },
+  "items": [
+    {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-08-28T20:57:16Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "b91743f0f55752a907a4643610029562c9e363da"
+    },
+    {
+      "title": "About PANORAFUS.AI",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "file": "ABOUT_PANORAFUS.md",
+      "committedAt": "2026-08-28T20:11:39Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
+    },
+    {
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "file": "BOOK_TARIFF.md",
+      "committedAt": "2026-08-28T20:11:39Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
+    },
+    {
+      "title": "PANORAFUS.AI",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "file": "README.md",
+      "committedAt": "2026-08-28T20:11:39Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
+    },
+    {
+      "title": "Seasoned Christian Ministry Church",
+      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+      "file": "SEASONED_CHRISTIAN_MINISTRY.md",
+      "committedAt": "2026-08-28T20:11:39Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SEASONED_CHRISTIAN_MINISTRY.md",
+      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
+    },
+    {
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "fix: harden PANORAFUS platform publishing",
+      "file": "GLOBAL_DEPLOYMENT.md",
+      "committedAt": "2026-08-27T19:01:41Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "sha": "71ac6079d97c18c21aed80540718cadad0c627e7"
+    },
+    {
+      "title": "PANORAFUS.AI Robotic Services",
+      "summary": "feat: add PANORAFUS platform runtime",
+      "file": "ROBOTIC_SERVICES.md",
+      "committedAt": "2026-08-27T18:54:03Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md",
+      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
+    },
+    {
+      "title": "Project Compensation & Contact",
+      "summary": "Add monthly income dashboard section",
+      "file": "PROJECT_COMPENSATION.md",
+      "committedAt": "2026-08-27T15:27:16Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md",
+      "sha": "2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4"
+    },
+    {
+      "title": "PANORAFUS.AI App Architecture Builder",
+      "summary": "Add PANORAFUS architecture builder specification",
+      "file": "APP_ARCHITECTURE_BUILDER.md",
+      "committedAt": "2026-08-23T22:13:26Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
+      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
+    },
+    {
+      "title": "PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)",
+      "summary": "Add PANORAFUS architecture builder specification",
+      "file": "PROJECT_SETUP_ROADMAP.md",
+      "committedAt": "2026-08-23T22:13:26Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_SETUP_ROADMAP.md",
+      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
+    },
+    {
+      "title": "Summary",
+      "summary": "Add PANORAFUS architecture builder specification",
+      "file": "SUMMARY.md",
+      "committedAt": "2026-08-23T22:13:26Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
+    },
+    {
+      "title": "Contribute to PANORAFUS.AI",
+      "summary": "feat: add socratic setup roadmap and docs guardrails",
+      "file": "CONTRIBUTE.md",
+      "committedAt": "2026-08-23T21:20:18Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
+      "sha": "a86c353c682fc9cf4a0d31411b9b80385a9d9f9a"
+    }
+  ]
+}

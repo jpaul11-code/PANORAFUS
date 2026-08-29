@@ -1,0 +1,4 @@
+book/
+.env
+.env.*
+!.env.example
