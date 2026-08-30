@@ -95,8 +95,8 @@ for file in "${doc_files[@]}"; do
   done < <(grep -oE '\[[^]]+\]\(([^)]+)\)' "$file" | sed -E 's/.*\(([^)]+)\)/\1/')
 done
 
-if [[ ! -d "lang/ar" || ! -d "lang/es" || ! -d "lang/fr" || ! -d "lang/pt" ]]; then
-  echo "Language directory validation failed: expected lang/ar, lang/es, lang/fr, lang/pt."
+if [[ ! -d "lang/ar" || ! -d "lang/es" || ! -d "lang/fr" || ! -d "lang/pt" || ! -d "lang/zh" || ! -d "lang/hi" ]]; then
+  echo "Language directory validation failed: expected lang/ar, lang/es, lang/fr, lang/pt, lang/zh, lang/hi."
   exit 1
 fi
 
@@ -115,7 +115,7 @@ reference_list="$(mktemp)"
 tmp_files+=("$reference_list")
 collect_root_translation_targets > "$reference_list"
 
-for lang in ar es fr pt; do
+for lang in ar es fr pt zh hi; do
   current_list="$(mktemp)"
   tmp_files+=("$current_list")
   collect_language_file_set "lang/${lang}" > "$current_list"
@@ -131,7 +131,7 @@ if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then
     echo "## PANORAFUS.AI Docs Autopilot"
     echo "- Branding header check: passed"
     echo "- Internal link check: passed"
-    echo "- Language parity check (ar/es/fr/pt vs en root): passed"
+    echo "- Language parity check (ar/es/fr/pt/zh/hi vs en root): passed"
     echo "- Files validated: ${#doc_files[@]}"
   } >> "$GITHUB_STEP_SUMMARY"
 fi

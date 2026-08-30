@@ -1,0 +1,10 @@
+[book]
+title = "PANORAFUS.AI (हिन्दी)"
+authors = []
+language = "hi"
+src = "."
+
+[build]
+build-dir = "../../book/hi"
+
+[output.html]

@@ -1,0 +1,11 @@
+> **PANORAFUS.AI** — वैश्विक नेटवर्क का धुरी केंद्र
+
+# प्रार्थना और मध्यस्थता नेटवर्क
+
+> 🌐 *पूर्ण अनुवाद जल्द आ रहा है — Full translation coming soon.*
+>
+> 📖 [View English version](../../PRAYER_AND_INTERCESSION_NETWORKS.md)
+
+---
+
+*PANORAFUS.AI — विश्व को जोड़ना, एक संस्था एक बार में।*
