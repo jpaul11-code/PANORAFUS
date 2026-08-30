@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 30 Aug 2026 16:11:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 16:21:20 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:caecee24f26772a768cfdb4bffb6b1c5dfc2280e</guid>
+      <pubDate>Sun, 30 Aug 2026 16:11:44 GMT</pubDate>
+      <description>Regenerate platform artifacts</description>
+    </item>
 
     <item>
       <title>👑 MAJESTIC GOD — OUR FATHER</title>
@@ -31,75 +39,67 @@
     </item>
 
     <item>
+      <title>Investor Relations — PANORAFUS.AI (PNRF)</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/INVESTOR_RELATIONS.md</link>
+      <guid>INVESTOR_RELATIONS.md:889797a6eda3b524fbcadcb2ebfd972239353ba1</guid>
+      <pubDate>Sat, 29 Aug 2026 07:36:56 GMT</pubDate>
+      <description>Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages</description>
+    </item>
+
+    <item>
+      <title>PNRF — Stock Ticker Information</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PNRF_STOCK.md</link>
+      <guid>PNRF_STOCK.md:889797a6eda3b524fbcadcb2ebfd972239353ba1</guid>
+      <pubDate>Sat, 29 Aug 2026 07:36:56 GMT</pubDate>
+      <description>Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages</description>
+    </item>
+
+    <item>
       <title>About PANORAFUS.AI</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
-      <guid>ABOUT_PANORAFUS.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
-    </item>
-
-    <item>
-      <title>Apostle Paul — Genealogy &amp; Life: From Infancy to Death</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md</link>
-      <guid>APOSTLE_PAUL_GENEALOGY.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI App Architecture Builder</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md</link>
-      <guid>APP_ARCHITECTURE_BUILDER.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
-    </item>
-
-    <item>
-      <title>📖 PANORAFUS OF BIBLICAL ESCHATOLOGY</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md</link>
-      <guid>BIBLICAL_ESCHATOLOGY.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+      <guid>ABOUT_PANORAFUS.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
     </item>
 
     <item>
       <title>PANORAFUS.AI Book Tariff</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
-      <guid>BOOK_TARIFF.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+      <guid>BOOK_TARIFF.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
     </item>
 
     <item>
-      <title>Buddhist Religious Institutions</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md</link>
-      <guid>BUDDHIST_INSTITUTIONS.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+      <title>Seasoned Christian Ministry Church</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SEASONED_CHRISTIAN_MINISTRY.md</link>
+      <guid>SEASONED_CHRISTIAN_MINISTRY.md:07c3ebf1254691323f54873dc29e958d59ce850e</guid>
+      <pubDate>Fri, 28 Aug 2026 20:11:39 GMT</pubDate>
+      <description>feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.</description>
     </item>
 
     <item>
-      <title>Christian Religious Institutions</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md</link>
-      <guid>CHRISTIAN_INSTITUTIONS.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+      <title>PANORAFUS.AI Global Deployment Strategy</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md</link>
+      <guid>GLOBAL_DEPLOYMENT.md:71ac6079d97c18c21aed80540718cadad0c627e7</guid>
+      <pubDate>Thu, 27 Aug 2026 19:01:41 GMT</pubDate>
+      <description>fix: harden PANORAFUS platform publishing</description>
     </item>
 
     <item>
-      <title>Contribute to PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md</link>
-      <guid>CONTRIBUTE.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+      <title>PANORAFUS.AI Robotic Services</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md</link>
+      <guid>ROBOTIC_SERVICES.md:4f13142133413e0d8a79bc9fe883c6eee413522a</guid>
+      <pubDate>Thu, 27 Aug 2026 18:54:03 GMT</pubDate>
+      <description>feat: add PANORAFUS platform runtime</description>
     </item>
 
     <item>
-      <title>🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md</link>
-      <guid>DEVOTIONAL_PRAYER.md:3728a6b27db72cbe84c8e0ce44c071d063ae4db3</guid>
-      <pubDate>Sat, 29 Aug 2026 22:18:05 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+      <title>Project Compensation &amp; Contact</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md</link>
+      <guid>PROJECT_COMPENSATION.md:2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4</guid>
+      <pubDate>Thu, 27 Aug 2026 15:27:16 GMT</pubDate>
+      <description>Add monthly income dashboard section</description>
     </item>
   </channel>
 </rss>
