@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-08-30T16:21:20.552Z
+Generated at: 2026-08-30T16:22:31.633Z
 
 ## Dashboard Summary
 
@@ -10,7 +10,7 @@ Generated at: 2026-08-30T16:21:20.552Z
 
 ## Recent Content Updates
 
-- **PANORAFUS.AI — Global Dashboard Page** — Regenerate platform artifacts ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
+- **PANORAFUS.AI — Global Dashboard Page** — chore: refresh PANORAFUS.AI platform artifacts [skip ci] ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **👑 MAJESTIC GOD — OUR FATHER** — Add global gift documentation ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/MAJESTIC_GOD_OUR_FATHER.md))
 - **PANORAFUS.AI** — Add global gift documentation ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **Summary** — Add global gift documentation ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md))
