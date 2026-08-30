@@ -4,13 +4,21 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 30 Aug 2026 16:22:31 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 23:14:42 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:eb677469f39dc7b95f6e4a691336d9f8a949bb64</guid>
+      <pubDate>Sun, 30 Aug 2026 22:36:21 GMT</pubDate>
+      <description>feat: add Chinese Simplified (zh) and Hindi (hi) for full six-continent coverage</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:b2f6a0c27c611ef64fc6c1f3275596cf9861a20a</guid>
-      <pubDate>Sun, 30 Aug 2026 16:21:21 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:7222ac233393a5594aa94117dcbc995b7290d80a</guid>
+      <pubDate>Sun, 30 Aug 2026 16:22:33 GMT</pubDate>
       <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
     </item>
 
@@ -18,14 +26,6 @@
       <title>👑 MAJESTIC GOD — OUR FATHER</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/MAJESTIC_GOD_OUR_FATHER.md</link>
       <guid>MAJESTIC_GOD_OUR_FATHER.md:bd38288ce2211961f30fd2c0ae888d877b030f1e</guid>
-      <pubDate>Sun, 30 Aug 2026 16:11:30 GMT</pubDate>
-      <description>Add global gift documentation</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:bd38288ce2211961f30fd2c0ae888d877b030f1e</guid>
       <pubDate>Sun, 30 Aug 2026 16:11:30 GMT</pubDate>
       <description>Add global gift documentation</description>
     </item>

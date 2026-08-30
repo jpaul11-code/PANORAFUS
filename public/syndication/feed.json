@@ -6,23 +6,23 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:b2f6a0c27c611ef64fc6c1f3275596cf9861a20a",
+      "id": "README.md:eb677469f39dc7b95f6e4a691336d9f8a949bb64",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "feat: add Chinese Simplified (zh) and Hindi (hi) for full six-continent coverage",
+      "date_published": "2026-08-30T22:36:21Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:7222ac233393a5594aa94117dcbc995b7290d80a",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "date_published": "2026-08-30T16:21:21Z"
+      "date_published": "2026-08-30T16:22:33Z"
     },
     {
       "id": "MAJESTIC_GOD_OUR_FATHER.md:bd38288ce2211961f30fd2c0ae888d877b030f1e",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/MAJESTIC_GOD_OUR_FATHER.md",
       "title": "👑 MAJESTIC GOD — OUR FATHER",
-      "summary": "Add global gift documentation",
-      "date_published": "2026-08-30T16:11:30Z"
-    },
-    {
-      "id": "README.md:bd38288ce2211961f30fd2c0ae888d877b030f1e",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
       "summary": "Add global gift documentation",
       "date_published": "2026-08-30T16:11:30Z"
     },
