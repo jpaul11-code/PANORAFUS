@@ -137,6 +137,7 @@ For website management, content updates, and administrative matters related to *
 
 ## Theological Background Studies
 
+- [👑 Majestic God Our Father — A PANORAFUS.AI Meditation on the Father's Generous Gift to the World](MAJESTIC_GOD_OUR_FATHER.md)
 - [🌊 Devotional Prayer — Launched by PANORAFUS.AI · Pouring Water from the Word to All the Globe](DEVOTIONAL_PRAYER.md)
 - [📖 See the Word — A Biblical and Theological Study of the Written and Living Word of God](SEE_THE_WORD.md)
 - [👁️ Visions and Revelations — A Biblical Study of Divine Visions, Dreams, and Supernatural Revelations](VISIONS_AND_REVELATIONS.md)

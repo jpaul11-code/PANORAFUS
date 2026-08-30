@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-29T22:18:04.043Z",
+  "generatedAt": "2026-08-30T16:21:20.353Z",
   "dashboard": {
-    "generatedAt": "2026-08-29T22:18:04.043Z",
+    "generatedAt": "2026-08-30T16:21:20.353Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -124,11 +124,11 @@
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 119,
-        "docsTouched": 256,
+        "commits": 124,
+        "docsTouched": 275,
         "workflowChanges": 24,
-        "codeChanges": 35,
-        "totalActivity": 434
+        "codeChanges": 37,
+        "totalActivity": 460
       },
       {
         "monthIndex": 8,
@@ -168,9 +168,9 @@
       }
     ],
     "kpis": {
-      "documentationFiles": 40,
-      "documentationLines": 7021,
-      "externalLinks": 76,
+      "documentationFiles": 44,
+      "documentationLines": 7994,
+      "externalLinks": 86,
       "workflows": 7,
       "institutionsIndexed": 177,
       "dashboardPlaceholders": 0
@@ -187,20 +187,52 @@
   },
   "items": [
     {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "Regenerate platform artifacts",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-08-30T16:11:44Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "caecee24f26772a768cfdb4bffb6b1c5dfc2280e"
+    },
+    {
+      "title": "👑 MAJESTIC GOD — OUR FATHER",
+      "summary": "Add global gift documentation",
+      "file": "MAJESTIC_GOD_OUR_FATHER.md",
+      "committedAt": "2026-08-30T16:11:30Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/MAJESTIC_GOD_OUR_FATHER.md",
+      "sha": "bd38288ce2211961f30fd2c0ae888d877b030f1e"
+    },
+    {
       "title": "PANORAFUS.AI",
-      "summary": "Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages",
+      "summary": "Add global gift documentation",
       "file": "README.md",
-      "committedAt": "2026-08-29T07:36:56Z",
+      "committedAt": "2026-08-30T16:11:30Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "sha": "bd38288ce2211961f30fd2c0ae888d877b030f1e"
+    },
+    {
+      "title": "Summary",
+      "summary": "Add global gift documentation",
+      "file": "SUMMARY.md",
+      "committedAt": "2026-08-30T16:11:30Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "sha": "bd38288ce2211961f30fd2c0ae888d877b030f1e"
+    },
+    {
+      "title": "Investor Relations — PANORAFUS.AI (PNRF)",
+      "summary": "Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages",
+      "file": "INVESTOR_RELATIONS.md",
+      "committedAt": "2026-08-29T07:36:56Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/INVESTOR_RELATIONS.md",
       "sha": "889797a6eda3b524fbcadcb2ebfd972239353ba1"
     },
     {
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-28T20:57:54Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "cf08e93e58e26fff328fabb9f1b1f38dc6daa89d"
+      "title": "PNRF — Stock Ticker Information",
+      "summary": "Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages",
+      "file": "PNRF_STOCK.md",
+      "committedAt": "2026-08-29T07:36:56Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PNRF_STOCK.md",
+      "sha": "889797a6eda3b524fbcadcb2ebfd972239353ba1"
     },
     {
       "title": "About PANORAFUS.AI",
@@ -249,38 +281,6 @@
       "committedAt": "2026-08-27T15:27:16Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md",
       "sha": "2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4"
-    },
-    {
-      "title": "PANORAFUS.AI App Architecture Builder",
-      "summary": "Add PANORAFUS architecture builder specification",
-      "file": "APP_ARCHITECTURE_BUILDER.md",
-      "committedAt": "2026-08-23T22:13:26Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
-      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
-    },
-    {
-      "title": "PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)",
-      "summary": "Add PANORAFUS architecture builder specification",
-      "file": "PROJECT_SETUP_ROADMAP.md",
-      "committedAt": "2026-08-23T22:13:26Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_SETUP_ROADMAP.md",
-      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
-    },
-    {
-      "title": "Summary",
-      "summary": "Add PANORAFUS architecture builder specification",
-      "file": "SUMMARY.md",
-      "committedAt": "2026-08-23T22:13:26Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
-      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
-    },
-    {
-      "title": "Contribute to PANORAFUS.AI",
-      "summary": "feat: add socratic setup roadmap and docs guardrails",
-      "file": "CONTRIBUTE.md",
-      "committedAt": "2026-08-23T21:20:18Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
-      "sha": "a86c353c682fc9cf4a0d31411b9b80385a9d9f9a"
     }
   ]
 }
