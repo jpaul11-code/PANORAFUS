@@ -1,0 +1,10 @@
+[book]
+title = "PANORAFUS.AI (中文简体)"
+authors = []
+language = "zh"
+src = "."
+
+[build]
+build-dir = "../../book/zh"
+
+[output.html]

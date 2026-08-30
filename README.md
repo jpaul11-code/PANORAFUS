@@ -35,6 +35,8 @@ PANORAFUS.AI stands for a platform rooted and grounded in Holy Scripture, carryi
 | 🇫🇷 Français | [Édition Française](lang/fr/README.md) |
 | 🇵🇹 Português | [Edição Portuguesa](lang/pt/README.md) |
 | 🇸🇦 العربية | [النسخة العربية](lang/ar/README.md) |
+| 🇨🇳 中文简体 | [中文简体版](lang/zh/README.md) |
+| 🇮🇳 हिन्दी | [हिन्दी संस्करण](lang/hi/README.md) |
 
 ---
 

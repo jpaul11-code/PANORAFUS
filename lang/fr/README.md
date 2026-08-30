@@ -34,6 +34,8 @@
 | 🇫🇷 Français | *Vous êtes ici* |
 | 🇵🇹 Português | [Edição Portuguesa](../pt/README.md) |
 | 🇸🇦 العربية | [النسخة العربية](../ar/README.md) |
+| 🇨🇳 中文简体 | [中文简体版](../zh/README.md) |
+| 🇮🇳 हिन्दी | [हिन्दी संस्करण](../hi/README.md) |
 
 ---
 
