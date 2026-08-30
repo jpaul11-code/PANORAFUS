@@ -336,7 +336,16 @@ When the young Jesus was found in the Temple, He said:
 
 PANORAFUS.AI understands its mandate in the same terms: we are about the Father's business — connecting His people, advancing His kingdom, declaring His name in all the earth.
 
-### 9.3 An Invitation
+### 9.3 The Father's Liberal Gift to the Globe
+
+At the center of the Father's business stands the Father's gift. He did not send His Son for one border, one people, or one language only. In Jesus Christ, the Majestic Father extends a liberal gift to the whole globe — broad in mercy, holy in purpose, and sufficient for every repentant heart.
+
+> *"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."*
+> — John 3:16 (NIV)
+
+For PANORAFUS.AI, this means the globe is not merely a market or a map. It is the field of the Father's generosity. Every truthful document, every faithful institution, and every act of service is meant to help point the nations back to the Giver.
+
+### 9.4 An Invitation
 
 This platform is extended to every person, every institution, every ministry around the world as an invitation to join the work of the Majestic Father who is also Our Father:
 
