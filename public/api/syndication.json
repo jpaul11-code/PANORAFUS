@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-29T22:18:04.043Z",
+  "generatedAt": "2026-08-30T16:11:35.517Z",
   "dashboard": {
-    "generatedAt": "2026-08-29T22:18:04.043Z",
+    "generatedAt": "2026-08-30T16:11:35.517Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -106,29 +106,29 @@
       {
         "monthIndex": 5,
         "month": "June",
-        "commits": 2,
-        "docsTouched": 2,
+        "commits": 0,
+        "docsTouched": 0,
         "workflowChanges": 0,
         "codeChanges": 0,
-        "totalActivity": 4
+        "totalActivity": 0
       },
       {
         "monthIndex": 6,
         "month": "July",
-        "commits": 41,
-        "docsTouched": 62,
-        "workflowChanges": 12,
+        "commits": 0,
+        "docsTouched": 0,
+        "workflowChanges": 0,
         "codeChanges": 0,
-        "totalActivity": 115
+        "totalActivity": 0
       },
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 119,
-        "docsTouched": 256,
-        "workflowChanges": 24,
-        "codeChanges": 35,
-        "totalActivity": 434
+        "commits": 4,
+        "docsTouched": 434,
+        "workflowChanges": 14,
+        "codeChanges": 38,
+        "totalActivity": 490
       },
       {
         "monthIndex": 8,
@@ -168,9 +168,9 @@
       }
     ],
     "kpis": {
-      "documentationFiles": 40,
-      "documentationLines": 7021,
-      "externalLinks": 76,
+      "documentationFiles": 44,
+      "documentationLines": 7994,
+      "externalLinks": 86,
       "workflows": 7,
       "institutionsIndexed": 177,
       "dashboardPlaceholders": 0
@@ -187,100 +187,100 @@
   },
   "items": [
     {
+      "title": "👑 MAJESTIC GOD — OUR FATHER",
+      "summary": "Add global gift documentation",
+      "file": "MAJESTIC_GOD_OUR_FATHER.md",
+      "committedAt": "2026-08-30T16:11:30Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/MAJESTIC_GOD_OUR_FATHER.md",
+      "sha": "bd38288ce2211961f30fd2c0ae888d877b030f1e"
+    },
+    {
       "title": "PANORAFUS.AI",
-      "summary": "Add PNRF_STOCK.md and INVESTOR_RELATIONS.md — planned listing and investor relations pages",
+      "summary": "Add global gift documentation",
       "file": "README.md",
-      "committedAt": "2026-08-29T07:36:56Z",
+      "committedAt": "2026-08-30T16:11:30Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "sha": "889797a6eda3b524fbcadcb2ebfd972239353ba1"
-    },
-    {
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-28T20:57:54Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "cf08e93e58e26fff328fabb9f1b1f38dc6daa89d"
-    },
-    {
-      "title": "About PANORAFUS.AI",
-      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
-      "file": "ABOUT_PANORAFUS.md",
-      "committedAt": "2026-08-28T20:11:39Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
-      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
-    },
-    {
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
-      "file": "BOOK_TARIFF.md",
-      "committedAt": "2026-08-28T20:11:39Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
-      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
-    },
-    {
-      "title": "Seasoned Christian Ministry Church",
-      "summary": "feat: implement owner license for PANORAFUS.AI — SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
-      "file": "SEASONED_CHRISTIAN_MINISTRY.md",
-      "committedAt": "2026-08-28T20:11:39Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SEASONED_CHRISTIAN_MINISTRY.md",
-      "sha": "07c3ebf1254691323f54873dc29e958d59ce850e"
-    },
-    {
-      "title": "PANORAFUS.AI Global Deployment Strategy",
-      "summary": "fix: harden PANORAFUS platform publishing",
-      "file": "GLOBAL_DEPLOYMENT.md",
-      "committedAt": "2026-08-27T19:01:41Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
-      "sha": "71ac6079d97c18c21aed80540718cadad0c627e7"
-    },
-    {
-      "title": "PANORAFUS.AI Robotic Services",
-      "summary": "feat: add PANORAFUS platform runtime",
-      "file": "ROBOTIC_SERVICES.md",
-      "committedAt": "2026-08-27T18:54:03Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ROBOTIC_SERVICES.md",
-      "sha": "4f13142133413e0d8a79bc9fe883c6eee413522a"
-    },
-    {
-      "title": "Project Compensation & Contact",
-      "summary": "Add monthly income dashboard section",
-      "file": "PROJECT_COMPENSATION.md",
-      "committedAt": "2026-08-27T15:27:16Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_COMPENSATION.md",
-      "sha": "2a425abf1aa6bb17d6c7ad5f3d41db17534a52b4"
-    },
-    {
-      "title": "PANORAFUS.AI App Architecture Builder",
-      "summary": "Add PANORAFUS architecture builder specification",
-      "file": "APP_ARCHITECTURE_BUILDER.md",
-      "committedAt": "2026-08-23T22:13:26Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
-      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
-    },
-    {
-      "title": "PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)",
-      "summary": "Add PANORAFUS architecture builder specification",
-      "file": "PROJECT_SETUP_ROADMAP.md",
-      "committedAt": "2026-08-23T22:13:26Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PROJECT_SETUP_ROADMAP.md",
-      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
+      "sha": "bd38288ce2211961f30fd2c0ae888d877b030f1e"
     },
     {
       "title": "Summary",
-      "summary": "Add PANORAFUS architecture builder specification",
+      "summary": "Add global gift documentation",
       "file": "SUMMARY.md",
-      "committedAt": "2026-08-23T22:13:26Z",
+      "committedAt": "2026-08-30T16:11:30Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
-      "sha": "c59bec3c09215d42ae1bc9198cf5072a8f5cc6b9"
+      "sha": "bd38288ce2211961f30fd2c0ae888d877b030f1e"
+    },
+    {
+      "title": "About PANORAFUS.AI",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "ABOUT_PANORAFUS.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "APOSTLE_PAUL_GENEALOGY.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "PANORAFUS.AI App Architecture Builder",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "APP_ARCHITECTURE_BUILDER.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "BIBLICAL_ESCHATOLOGY.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "BOOK_TARIFF.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "Buddhist Religious Institutions",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "BUDDHIST_INSTITUTIONS.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "Christian Religious Institutions",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "CHRISTIAN_INSTITUTIONS.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
     },
     {
       "title": "Contribute to PANORAFUS.AI",
-      "summary": "feat: add socratic setup roadmap and docs guardrails",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
       "file": "CONTRIBUTE.md",
-      "committedAt": "2026-08-23T21:20:18Z",
+      "committedAt": "2026-08-29T22:18:05Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
-      "sha": "a86c353c682fc9cf4a0d31411b9b80385a9d9f9a"
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
+    },
+    {
+      "title": "🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "DEVOTIONAL_PRAYER.md",
+      "committedAt": "2026-08-29T22:18:05Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md",
+      "sha": "3728a6b27db72cbe84c8e0ce44c071d063ae4db3"
     }
   ]
 }

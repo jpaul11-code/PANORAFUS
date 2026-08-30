@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T22:18:04.017Z",
+  "generatedAt": "2026-08-30T16:11:35.495Z",
   "dataSources": [
     "Top-level PANORAFUS.AI documentation files",
     "Git commit history for the current calendar year",
@@ -104,29 +104,29 @@
     {
       "monthIndex": 5,
       "month": "June",
-      "commits": 2,
-      "docsTouched": 2,
+      "commits": 0,
+      "docsTouched": 0,
       "workflowChanges": 0,
       "codeChanges": 0,
-      "totalActivity": 4
+      "totalActivity": 0
     },
     {
       "monthIndex": 6,
       "month": "July",
-      "commits": 41,
-      "docsTouched": 62,
-      "workflowChanges": 12,
+      "commits": 0,
+      "docsTouched": 0,
+      "workflowChanges": 0,
       "codeChanges": 0,
-      "totalActivity": 115
+      "totalActivity": 0
     },
     {
       "monthIndex": 7,
       "month": "August",
-      "commits": 119,
-      "docsTouched": 256,
-      "workflowChanges": 24,
-      "codeChanges": 35,
-      "totalActivity": 434
+      "commits": 4,
+      "docsTouched": 434,
+      "workflowChanges": 14,
+      "codeChanges": 38,
+      "totalActivity": 490
     },
     {
       "monthIndex": 8,
@@ -166,9 +166,9 @@
     }
   ],
   "kpis": {
-    "documentationFiles": 40,
-    "documentationLines": 7021,
-    "externalLinks": 76,
+    "documentationFiles": 44,
+    "documentationLines": 7994,
+    "externalLinks": 86,
     "workflows": 7,
     "institutionsIndexed": 177,
     "dashboardPlaceholders": 0
