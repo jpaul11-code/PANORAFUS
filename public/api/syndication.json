@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-30T23:14:41.824Z",
+  "generatedAt": "2026-08-31T17:24:55.623Z",
   "dashboard": {
-    "generatedAt": "2026-08-30T23:14:41.824Z",
+    "generatedAt": "2026-08-31T17:24:55.623Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -124,11 +124,11 @@
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 129,
-        "docsTouched": 372,
+        "commits": 130,
+        "docsTouched": 374,
         "workflowChanges": 24,
         "codeChanges": 40,
-        "totalActivity": 565
+        "totalActivity": 568
       },
       {
         "monthIndex": 8,
@@ -187,20 +187,20 @@
   },
   "items": [
     {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-08-30T23:14:43Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "661b1873b9666cd2969e707bb461d7cbfce3fb20"
+    },
+    {
       "title": "PANORAFUS.AI",
       "summary": "feat: add Chinese Simplified (zh) and Hindi (hi) for full six-continent coverage",
       "file": "README.md",
       "committedAt": "2026-08-30T22:36:21Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
       "sha": "eb677469f39dc7b95f6e4a691336d9f8a949bb64"
-    },
-    {
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
-      "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-30T16:22:33Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "7222ac233393a5594aa94117dcbc995b7290d80a"
     },
     {
       "title": "👑 MAJESTIC GOD — OUR FATHER",

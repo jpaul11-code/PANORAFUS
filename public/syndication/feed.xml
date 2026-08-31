@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 30 Aug 2026 23:14:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 17:24:55 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:661b1873b9666cd2969e707bb461d7cbfce3fb20</guid>
+      <pubDate>Sun, 30 Aug 2026 23:14:43 GMT</pubDate>
+      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI</title>
@@ -12,14 +20,6 @@
       <guid>README.md:eb677469f39dc7b95f6e4a691336d9f8a949bb64</guid>
       <pubDate>Sun, 30 Aug 2026 22:36:21 GMT</pubDate>
       <description>feat: add Chinese Simplified (zh) and Hindi (hi) for full six-continent coverage</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:7222ac233393a5594aa94117dcbc995b7290d80a</guid>
-      <pubDate>Sun, 30 Aug 2026 16:22:33 GMT</pubDate>
-      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
     </item>
 
     <item>
