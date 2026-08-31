@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-31T18:55:16.885Z",
+  "generatedAt": "2026-08-31T18:56:28.415Z",
   "dashboard": {
-    "generatedAt": "2026-08-31T18:55:16.885Z",
+    "generatedAt": "2026-08-31T18:56:28.415Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -124,11 +124,11 @@
       {
         "monthIndex": 7,
         "month": "August",
-        "commits": 133,
-        "docsTouched": 392,
+        "commits": 135,
+        "docsTouched": 394,
         "workflowChanges": 24,
         "codeChanges": 42,
-        "totalActivity": 591
+        "totalActivity": 595
       },
       {
         "monthIndex": 8,
@@ -187,20 +187,20 @@
   },
   "items": [
     {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-08-31T18:55:18Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "0b7f7427a14834e17d1afe94ebd2b6307d8a276a"
+    },
+    {
       "title": "PANORAFUS.AI — Final Review & LAUNCH Integration",
       "summary": "fix: correct language count and English reference links in final review stubs",
       "file": "PANORAFUS_AI_FINAL_REVIEW.md",
       "committedAt": "2026-08-31T18:50:18Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_AI_FINAL_REVIEW.md",
       "sha": "a33a6f17e2b02f86ad84f8e8122147e1c00df5bf"
-    },
-    {
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "feat: add PANORAFUS.AI final review and LAUNCH integration document",
-      "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-08-31T18:49:31Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "c251a96c511b3bdc2e755fd8bb6e7b1e07326633"
     },
     {
       "title": "PANORAFUS.AI",

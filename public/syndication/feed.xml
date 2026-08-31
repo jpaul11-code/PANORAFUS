@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Mon, 31 Aug 2026 18:55:17 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 18:56:28 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:0b7f7427a14834e17d1afe94ebd2b6307d8a276a</guid>
+      <pubDate>Mon, 31 Aug 2026 18:55:18 GMT</pubDate>
+      <description>chore: refresh PANORAFUS.AI platform artifacts [skip ci]</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Final Review &amp; LAUNCH Integration</title>
@@ -12,14 +20,6 @@
       <guid>PANORAFUS_AI_FINAL_REVIEW.md:a33a6f17e2b02f86ad84f8e8122147e1c00df5bf</guid>
       <pubDate>Mon, 31 Aug 2026 18:50:18 GMT</pubDate>
       <description>fix: correct language count and English reference links in final review stubs</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:c251a96c511b3bdc2e755fd8bb6e7b1e07326633</guid>
-      <pubDate>Mon, 31 Aug 2026 18:49:31 GMT</pubDate>
-      <description>feat: add PANORAFUS.AI final review and LAUNCH integration document</description>
     </item>
 
     <item>

@@ -6,18 +6,18 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:0b7f7427a14834e17d1afe94ebd2b6307d8a276a",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "chore: refresh PANORAFUS.AI platform artifacts [skip ci]",
+      "date_published": "2026-08-31T18:55:18Z"
+    },
+    {
       "id": "PANORAFUS_AI_FINAL_REVIEW.md:a33a6f17e2b02f86ad84f8e8122147e1c00df5bf",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_AI_FINAL_REVIEW.md",
       "title": "PANORAFUS.AI — Final Review & LAUNCH Integration",
       "summary": "fix: correct language count and English reference links in final review stubs",
       "date_published": "2026-08-31T18:50:18Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:c251a96c511b3bdc2e755fd8bb6e7b1e07326633",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "feat: add PANORAFUS.AI final review and LAUNCH integration document",
-      "date_published": "2026-08-31T18:49:31Z"
     },
     {
       "id": "README.md:c251a96c511b3bdc2e755fd8bb6e7b1e07326633",

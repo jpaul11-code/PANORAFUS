@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-08-31T18:55:17.046Z
+Generated at: 2026-08-31T18:56:28.572Z
 
 ## Dashboard Summary
 
@@ -10,8 +10,8 @@ Generated at: 2026-08-31T18:55:17.046Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI — Global Dashboard Page** — chore: refresh PANORAFUS.AI platform artifacts [skip ci] ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **PANORAFUS.AI — Final Review & LAUNCH Integration** — fix: correct language count and English reference links in final review stubs ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_AI_FINAL_REVIEW.md))
-- **PANORAFUS.AI — Global Dashboard Page** — feat: add PANORAFUS.AI final review and LAUNCH integration document ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **PANORAFUS.AI** — feat: add PANORAFUS.AI final review and LAUNCH integration document ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **Summary** — feat: add PANORAFUS.AI final review and LAUNCH integration document ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md))
 - **👑 MAJESTIC GOD — OUR FATHER** — Add global gift documentation ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/MAJESTIC_GOD_OUR_FATHER.md))
