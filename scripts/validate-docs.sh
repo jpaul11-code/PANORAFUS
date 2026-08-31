@@ -57,6 +57,7 @@ doc_files=(
   "THE_LORD_SUPPER.md"
   "VISIONS_AND_REVELATIONS.md"
   "WORSHIP_AND_PRAYER.md"
+  "PANORAFUS_AI_FINAL_REVIEW.md"
 )
 
 for file in "${doc_files[@]}"; do
