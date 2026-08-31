@@ -5,4 +5,4 @@
 Esta página fue añadida para alinear el alcance de traducción con la edición en inglés. La traducción completa está en preparación.
 
 - Language: Español
-- English reference: [Open English page](../en/PANORAFUS_AI_FINAL_REVIEW.html)
+- English reference: [Open English page](../../PANORAFUS_AI_FINAL_REVIEW.md)
