@@ -41,7 +41,7 @@ const TRAFFIC_ENDPOINTS = [
   }
 ];
 
-function roundNumber(value, digits = 1) {
+function roundToDecimalPlaces(value, digits = 1) {
   return Number(value.toFixed(digits));
 }
 
@@ -83,7 +83,7 @@ function createTrafficInsightsSnapshot(repoRoot) {
       const trafficSignal = computeRegionalSignal(region);
       const trafficShare = totalRegionalSignals === 0
         ? 0
-        : roundNumber((trafficSignal / totalRegionalSignals) * 100);
+        : roundToDecimalPlaces((trafficSignal / totalRegionalSignals) * 100);
 
       return {
         region: region.region,

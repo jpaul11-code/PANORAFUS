@@ -52,8 +52,7 @@ function getStaticFilePath(requestedPath) {
     const stats = fs.statSync(requestedPath);
     if (stats.isDirectory()) {
       const indexPath = path.join(requestedPath, 'index.html');
-      const indexStats = fs.statSync(indexPath);
-      if (indexStats.isFile()) {
+      if (fs.existsSync(indexPath)) {
         return indexPath;
       }
       return null;
