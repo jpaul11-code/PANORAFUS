@@ -13,6 +13,7 @@ const {
   searchInstitutions
 } = require('./repository-data');
 const { createDashboardSnapshot } = require('./dashboard');
+const { createTrafficInsightsSnapshot } = require('./traffic-insights');
 const { createSyndicationSnapshot } = require('./syndication');
 
 const CONTENT_TYPES = {
@@ -103,11 +104,13 @@ async function handleRequest(request, response, config) {
       endpoints: [
         '/api/health',
         '/api/dashboard',
+        '/api/traffic-insights',
         '/api/institutions',
         '/api/institutions/search?q=keyword',
         '/api/institutions/{region}',
         '/api/institutions/{tradition}',
-        '/api/chat?q=question'
+        '/api/chat?q=question',
+        '/traffic-insights/'
       ]
     });
     return;
@@ -119,9 +122,13 @@ async function handleRequest(request, response, config) {
       sendText(response, 403, 'Forbidden');
       return;
     }
-    if (fs.existsSync(requestedPath) && fs.statSync(requestedPath).isFile()) {
-      response.writeHead(200, { 'Content-Type': getContentType(requestedPath) });
-      fs.createReadStream(requestedPath).pipe(response);
+    let filePath = requestedPath;
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+      filePath = path.join(filePath, 'index.html');
+    }
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+      response.writeHead(200, { 'Content-Type': getContentType(filePath) });
+      fs.createReadStream(filePath).pipe(response);
       return;
     }
     sendText(response, 404, 'Not found');
@@ -140,6 +147,11 @@ async function handleRequest(request, response, config) {
 
   if (url.pathname === '/api/dashboard') {
     sendJson(response, 200, createDashboardSnapshot(repoRoot));
+    return;
+  }
+
+  if (url.pathname === '/api/traffic-insights') {
+    sendJson(response, 200, createTrafficInsightsSnapshot(repoRoot));
     return;
   }
 

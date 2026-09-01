@@ -18,6 +18,7 @@ const {
   generateDashboardMarkdown,
   generateDashboardFile
 } = require('./src/dashboard');
+const { createTrafficInsightsSnapshot } = require('./src/traffic-insights');
 const {
   createSyndicationSnapshot,
   writeSyndicationArtifacts
@@ -47,6 +48,7 @@ module.exports = {
   createDashboardSnapshot,
   createServer,
   createSyndicationSnapshot,
+  createTrafficInsightsSnapshot,
   generateDashboardFile,
   generateDashboardMarkdown,
   getInstitutionIndex,

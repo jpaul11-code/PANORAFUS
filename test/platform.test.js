@@ -6,6 +6,7 @@ const assert = require('node:assert/strict');
 const path = require('path');
 const { getInstitutionIndex, searchInstitutions } = require('../src/repository-data');
 const { createDashboardSnapshot, generateDashboardMarkdown } = require('../src/dashboard');
+const { createTrafficInsightsSnapshot } = require('../src/traffic-insights');
 const { createServer } = require('../src/server');
 
 const repoRoot = path.resolve(__dirname, '..');
@@ -30,6 +31,13 @@ test('dashboard generation removes manual placeholders', () => {
   assert.ok(snapshot.kpis.institutionsIndexed > 0);
 });
 
+test('traffic insights snapshot includes regional and endpoint coverage', () => {
+  const snapshot = createTrafficInsightsSnapshot(repoRoot);
+  assert.equal(snapshot.regions.length, 6);
+  assert.ok(snapshot.endpointStats.some((entry) => entry.path === '/api/traffic-insights'));
+  assert.ok(snapshot.highlights.topRegion);
+});
+
 test('content syndication workflow pushes generated artifacts directly', () => {
   const workflowPath = path.join(repoRoot, '.github', 'workflows', 'content-syndication.yml');
   assert.ok(fs.existsSync(workflowPath));
@@ -51,6 +59,12 @@ test('platform API serves health, institution, and chatbot responses', async () 
     assert.equal(health.status, 'ok');
     assert.equal(health.config.chat.provider, 'local');
 
+    const trafficResponse = await fetch(`http://127.0.0.1:${port}/api/traffic-insights`);
+    assert.equal(trafficResponse.status, 200);
+    const traffic = await trafficResponse.json();
+    assert.equal(traffic.regions.length, 6);
+    assert.ok(traffic.endpointStats.some((entry) => entry.path === '/api/traffic-insights'));
+
     const regionResponse = await fetch(`http://127.0.0.1:${port}/api/institutions/europe`);
     assert.equal(regionResponse.status, 200);
     const region = await regionResponse.json();
@@ -62,6 +76,11 @@ test('platform API serves health, institution, and chatbot responses', async () 
     const chat = await chatResponse.json();
     assert.ok(chat.answer.includes('PANORAFUS.AI'));
     assert.ok(Array.isArray(chat.citations));
+
+    const pageResponse = await fetch(`http://127.0.0.1:${port}/traffic-insights/`);
+    assert.equal(pageResponse.status, 200);
+    const page = await pageResponse.text();
+    assert.match(page, /PANORAFUS\.AI Traffic Insights Index/);
   } finally {
     await new Promise((resolve) => server.close(resolve));
   }

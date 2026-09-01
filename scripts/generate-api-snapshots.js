@@ -10,6 +10,7 @@ const {
   listTraditionMetrics
 } = require('../src/repository-data');
 const { createDashboardSnapshot } = require('../src/dashboard');
+const { createTrafficInsightsSnapshot } = require('../src/traffic-insights');
 const { createSyndicationSnapshot } = require('../src/syndication');
 
 function writeJson(filePath, payload) {
@@ -29,6 +30,7 @@ writeJson(path.join(outputDir, 'health.json'), {
   metrics: getRepositoryMetrics(repoRoot)
 });
 writeJson(path.join(outputDir, 'dashboard.json'), createDashboardSnapshot(repoRoot));
+writeJson(path.join(outputDir, 'traffic-insights.json'), createTrafficInsightsSnapshot(repoRoot));
 writeJson(path.join(outputDir, 'institutions.json'), {
   total: institutions.length,
   items: institutions
