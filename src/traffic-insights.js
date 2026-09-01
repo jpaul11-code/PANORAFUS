@@ -66,9 +66,7 @@ function computeRegionalSignal(region) {
 
 function createTrafficInsightsSnapshot(repoRoot) {
   const metrics = getRepositoryMetrics(repoRoot);
-  const totalRegionalSignals = metrics.regions.reduce((total, region) => (
-    total + computeRegionalSignal(region)
-  ), 0) || 1;
+  const totalRegionalSignals = metrics.regions.reduce((total, region) => total + computeRegionalSignal(region), 0);
   const totalTrafficSignals = metrics.monthlyActivity.reduce((total, month) => total + month.totalActivity, 0);
   const busiestMonth = metrics.monthlyActivity.reduce((best, month) => (
     month.totalActivity > best.totalActivity ? month : best
@@ -83,7 +81,9 @@ function createTrafficInsightsSnapshot(repoRoot) {
   const regions = metrics.regions
     .map((region) => {
       const trafficSignal = computeRegionalSignal(region);
-      const trafficShare = roundNumber((trafficSignal / totalRegionalSignals) * 100);
+      const trafficShare = totalRegionalSignals === 0
+        ? 0
+        : roundNumber((trafficSignal / totalRegionalSignals) * 100);
 
       return {
         region: region.region,

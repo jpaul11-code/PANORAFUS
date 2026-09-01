@@ -317,10 +317,10 @@
           renderEndpoints(snapshot);
           document.getElementById('generated-at').textContent = `Generated at ${snapshot.generatedAt}`;
         } catch (error) {
-          const message = `<tr><td colspan="5" class="error">${escapeHtml(error.message)}</td></tr>`;
-          document.getElementById('regions-table').innerHTML = message;
-          document.getElementById('months-table').innerHTML = message;
-          document.getElementById('endpoints-table').innerHTML = `<tr><td colspan="4" class="error">${escapeHtml(error.message)}</td></tr>`;
+          const message = error instanceof Error ? error.message : String(error);
+          document.getElementById('regions-table').innerHTML = `<tr><td colspan="5" class="error">${escapeHtml(message)}</td></tr>`;
+          document.getElementById('months-table').innerHTML = `<tr><td colspan="5" class="error">${escapeHtml(message)}</td></tr>`;
+          document.getElementById('endpoints-table').innerHTML = `<tr><td colspan="4" class="error">${escapeHtml(message)}</td></tr>`;
           document.getElementById('generated-at').textContent = 'Traffic insights unavailable.';
         }
       }
