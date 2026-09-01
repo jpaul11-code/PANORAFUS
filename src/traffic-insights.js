@@ -133,6 +133,7 @@ function createTrafficInsightsSnapshot(repoRoot) {
       busiestMonth: {
         month: busiestMonth.month,
         trafficSignals: busiestMonth.totalActivity,
+        commits: busiestMonth.commits,
         docsSignals: busiestMonth.docsTouched,
         automationSignals: busiestMonth.workflowChanges,
         developmentSignals: busiestMonth.codeChanges
