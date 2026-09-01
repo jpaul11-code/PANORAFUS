@@ -55,10 +55,19 @@ function classifyTrafficShare(share) {
   return 'Emerging coverage';
 }
 
+function computeRegionalSignal(region) {
+  return (
+    (region.institutionsIndexed * 3) +
+    (region.countriesCovered * 2) +
+    (region.traditionsCovered * 4) +
+    region.categoriesCovered
+  );
+}
+
 function createTrafficInsightsSnapshot(repoRoot) {
   const metrics = getRepositoryMetrics(repoRoot);
   const totalRegionalSignals = metrics.regions.reduce((total, region) => (
-    total + (region.institutionsIndexed * 3) + (region.countriesCovered * 2) + (region.traditionsCovered * 4) + region.categoriesCovered
+    total + computeRegionalSignal(region)
   ), 0) || 1;
   const totalTrafficSignals = metrics.monthlyActivity.reduce((total, month) => total + month.totalActivity, 0);
   const busiestMonth = metrics.monthlyActivity.reduce((best, month) => (
@@ -73,12 +82,7 @@ function createTrafficInsightsSnapshot(repoRoot) {
 
   const regions = metrics.regions
     .map((region) => {
-      const trafficSignal = (
-        (region.institutionsIndexed * 3) +
-        (region.countriesCovered * 2) +
-        (region.traditionsCovered * 4) +
-        region.categoriesCovered
-      );
+      const trafficSignal = computeRegionalSignal(region);
       const trafficShare = roundNumber((trafficSignal / totalRegionalSignals) * 100);
 
       return {

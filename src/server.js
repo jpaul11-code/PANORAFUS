@@ -47,6 +47,23 @@ function getContentType(filePath) {
   return CONTENT_TYPES[path.extname(filePath).toLowerCase()] || 'application/octet-stream';
 }
 
+function getStaticFilePath(requestedPath) {
+  try {
+    const stats = fs.statSync(requestedPath);
+    if (stats.isDirectory()) {
+      const indexPath = path.join(requestedPath, 'index.html');
+      const indexStats = fs.statSync(indexPath);
+      if (indexStats.isFile()) {
+        return indexPath;
+      }
+      return null;
+    }
+    return stats.isFile() ? requestedPath : null;
+  } catch (error) {
+    return null;
+  }
+}
+
 function collectBody(request) {
   return new Promise((resolve, reject) => {
     const chunks = [];
@@ -122,11 +139,8 @@ async function handleRequest(request, response, config) {
       sendText(response, 403, 'Forbidden');
       return;
     }
-    let filePath = requestedPath;
-    if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
-      filePath = path.join(filePath, 'index.html');
-    }
-    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+    const filePath = getStaticFilePath(requestedPath);
+    if (filePath) {
       response.writeHead(200, { 'Content-Type': getContentType(filePath) });
       fs.createReadStream(filePath).pipe(response);
       return;
