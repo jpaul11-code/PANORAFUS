@@ -1,0 +1,269 @@
+{
+  "generatedAt": "2026-09-01T08:21:18.910Z",
+  "dataSources": [
+    "Repository metrics generated for the PANORAFUS.AI dashboard",
+    "Institution coverage grouped across six platform regions",
+    "Current executable API surfaces published by PANORAFUS.AI"
+  ],
+  "overview": {
+    "activeRegions": 6,
+    "institutionsIndexed": 177,
+    "workflowsTracked": 7,
+    "apiSurfacesTracked": 6,
+    "totalTrafficSignals": 355
+  },
+  "regions": [
+    {
+      "region": "Americas",
+      "regionSlug": "americas",
+      "institutionsIndexed": 63,
+      "countriesCovered": 2,
+      "traditionsCovered": 6,
+      "categoriesCovered": 26,
+      "trafficSignal": 243,
+      "trafficShare": 30.3,
+      "deliveryStatus": "Priority coverage"
+    },
+    {
+      "region": "Europe",
+      "regionSlug": "europe",
+      "institutionsIndexed": 38,
+      "countriesCovered": 11,
+      "traditionsCovered": 6,
+      "categoriesCovered": 18,
+      "trafficSignal": 178,
+      "trafficShare": 22.2,
+      "deliveryStatus": "Growth coverage"
+    },
+    {
+      "region": "Asia-Pacific",
+      "regionSlug": "asia-pacific",
+      "institutionsIndexed": 33,
+      "countriesCovered": 6,
+      "traditionsCovered": 5,
+      "categoriesCovered": 14,
+      "trafficSignal": 145,
+      "trafficShare": 18.1,
+      "deliveryStatus": "Growth coverage"
+    },
+    {
+      "region": "Middle East",
+      "regionSlug": "middle-east",
+      "institutionsIndexed": 20,
+      "countriesCovered": 5,
+      "traditionsCovered": 4,
+      "categoriesCovered": 11,
+      "trafficSignal": 97,
+      "trafficShare": 12.1,
+      "deliveryStatus": "Emerging coverage"
+    },
+    {
+      "region": "Global Online",
+      "regionSlug": "global-online",
+      "institutionsIndexed": 15,
+      "countriesCovered": 10,
+      "traditionsCovered": 4,
+      "categoriesCovered": 8,
+      "trafficSignal": 89,
+      "trafficShare": 11.1,
+      "deliveryStatus": "Emerging coverage"
+    },
+    {
+      "region": "Africa",
+      "regionSlug": "africa",
+      "institutionsIndexed": 8,
+      "countriesCovered": 5,
+      "traditionsCovered": 3,
+      "categoriesCovered": 5,
+      "trafficSignal": 51,
+      "trafficShare": 6.4,
+      "deliveryStatus": "Emerging coverage"
+    }
+  ],
+  "monthlyTraffic": [
+    {
+      "monthIndex": 0,
+      "month": "January",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 1,
+      "month": "February",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 2,
+      "month": "March",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 3,
+      "month": "April",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 4,
+      "month": "May",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 5,
+      "month": "June",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 6,
+      "month": "July",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 7,
+      "month": "August",
+      "trafficSignals": 349,
+      "commits": 2,
+      "docsSignals": 320,
+      "automationSignals": 7,
+      "developmentSignals": 20,
+      "status": "Active"
+    },
+    {
+      "monthIndex": 8,
+      "month": "September",
+      "trafficSignals": 6,
+      "commits": 1,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 5,
+      "status": "Active"
+    },
+    {
+      "monthIndex": 9,
+      "month": "October",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 10,
+      "month": "November",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    },
+    {
+      "monthIndex": 11,
+      "month": "December",
+      "trafficSignals": 0,
+      "commits": 0,
+      "docsSignals": 0,
+      "automationSignals": 0,
+      "developmentSignals": 0,
+      "status": "Idle"
+    }
+  ],
+  "endpointStats": [
+    {
+      "path": "/api/dashboard",
+      "surface": "Dashboard snapshot",
+      "audience": "Operations and reporting",
+      "requestShare": 28,
+      "active": true
+    },
+    {
+      "path": "/api/institutions",
+      "surface": "Institution directory",
+      "audience": "Directory consumers",
+      "requestShare": 24,
+      "active": true
+    },
+    {
+      "path": "/api/institutions/search",
+      "surface": "Directory search",
+      "audience": "Discovery workflows",
+      "requestShare": 16,
+      "active": true
+    },
+    {
+      "path": "/api/chat",
+      "surface": "Documentation Q&A",
+      "audience": "Interactive support",
+      "requestShare": 14,
+      "active": true
+    },
+    {
+      "path": "/api/health",
+      "surface": "Service health",
+      "audience": "Automation monitors",
+      "requestShare": 10,
+      "active": true
+    },
+    {
+      "path": "/api/traffic-insights",
+      "surface": "Traffic insights",
+      "audience": "Platform analytics",
+      "requestShare": 8,
+      "active": true
+    }
+  ],
+  "highlights": {
+    "topRegion": {
+      "region": "Americas",
+      "regionSlug": "americas",
+      "institutionsIndexed": 63,
+      "countriesCovered": 2,
+      "traditionsCovered": 6,
+      "categoriesCovered": 26,
+      "trafficSignal": 243,
+      "trafficShare": 30.3,
+      "deliveryStatus": "Priority coverage"
+    },
+    "busiestMonth": {
+      "month": "August",
+      "trafficSignals": 349,
+      "docsSignals": 320,
+      "automationSignals": 7,
+      "developmentSignals": 20
+    }
+  }
+}
