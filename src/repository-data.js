@@ -100,6 +100,9 @@ const REGION_DEFINITIONS = [
   }
 ];
 
+const MIN_SUMMARY_LENGTH = 40;
+const SHORT_BRANDING_SECTION_LENGTH = 90;
+
 function getRepoRoot(repoRoot) {
   return path.resolve(repoRoot || path.resolve(__dirname, '..'));
 }
@@ -150,10 +153,10 @@ function extractDocumentSummary(content, title, fallback = '') {
     if (section === title) {
       continue;
     }
-    if (/^PANORAFUS\.AI\b/i.test(section) && section.length < 90) {
+    if (/^PANORAFUS\.AI\b/i.test(section) && section.length < SHORT_BRANDING_SECTION_LENGTH) {
       continue;
     }
-    if (section.length >= 40) {
+    if (section.length >= MIN_SUMMARY_LENGTH) {
       return section;
     }
   }
@@ -377,7 +380,7 @@ function getDocumentationCorpus(repoRoot) {
     const sections = content
       .split(/\n\s*\n/)
       .map((section) => section.replace(/[`>#*_\-\[\]\(\)]/g, ' ').replace(/\s+/g, ' ').trim())
-      .filter((section) => section.length >= 40);
+      .filter((section) => section.length >= MIN_SUMMARY_LENGTH);
 
     return {
       file,
@@ -424,10 +427,15 @@ function mergeMonthlyActivity(current, previous) {
     return current;
   }
 
-  const previousByMonth = new Map(previous.map((entry) => [
-    entry.monthIndex ?? entry.month,
-    entry
-  ]));
+  const previousByMonth = new Map();
+  for (const entry of previous) {
+    if (entry.monthIndex !== undefined && entry.monthIndex !== null) {
+      previousByMonth.set(entry.monthIndex, entry);
+    }
+    if (entry.month) {
+      previousByMonth.set(entry.month, entry);
+    }
+  }
 
   return current.map((month, index) => {
     const prior = previousByMonth.get(month.monthIndex) || previousByMonth.get(month.month);
