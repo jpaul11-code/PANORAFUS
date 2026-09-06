@@ -8,13 +8,15 @@
 
 ## What is PANORAFUS.AI?
 
-**PANORAFUS.AI** is an AI-powered global platform designed to help people around the world **read, search, comment, and discuss the Word of God** — with Biblical Eschatology as its first and highest priority.
+**PANORAFUS.AI** is an AI-powered global devotional platform designed to help people around the world **read, search, comment, and discuss the Word of God** — with Biblical Eschatology as its first and highest priority.
 
 At its core, PANORAFUS.AI brings the prophetic Scriptures to every nation, every tongue, and every people. It also serves as the pivotal digital hub for religious, cultural, educational, and humanitarian networks — connecting institutions and communities across the globe under one unified index.
 
 PANORAFUS.AI is powered by artificial intelligence and rooted in the mission of global unity, knowledge sharing, and unwavering fidelity to the Word of God.
 
-PANORAFUS.AI stands for a platform rooted and grounded in Holy Scripture, keeping the Word of God at the center of its global mission and every connected network it serves.
+In this devotional expression, **PAN** points to the Father over all, **ORA** points to the Son who speaks and calls His people into prayer, and **FUS** points to the Holy Spirit poured out upon believers.
+
+PANORAFUS.AI therefore presents the fullness of God revealed in Christ and poured out by the Spirit, keeping the Word of God at the center of its global mission and every connected network it serves.
 
 ### Core Purpose
 

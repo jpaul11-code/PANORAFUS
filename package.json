@@ -1,7 +1,7 @@
 {
   "name": "@jpaul11-code/panorafus",
   "version": "1.0.2",
-  "description": "PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
+  "description": "PANORAFUS.AI is a Scripture-centered devotional platform proclaiming the fullness of God in Christ and the Holy Spirit to the world.",
   "main": "index.js",
   "scripts": {
     "docs:check": "bash scripts/validate-docs.sh",
