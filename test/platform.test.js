@@ -98,6 +98,7 @@ test('syndication snapshot uses document summaries instead of raw commit subject
   assert.ok(aboutPage);
   assert.match(aboutPage.summary, /global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God/i);
   assert.doesNotMatch(aboutPage.summary, /Add devotional PANORAFUS description/i);
+  assert.match(aboutPage.committedAt, /Z$/);
 });
 
 test('document summary fallback uses the title for short branding-only content', () => {

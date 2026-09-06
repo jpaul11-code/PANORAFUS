@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 06 Sep 2026 17:30:14 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 17:31:10 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:39fd126b76f5d80a8a3cfdec549b120998c5b211</guid>
+      <pubDate>Sun, 06 Sep 2026 17:30:29 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
 
     <item>
       <title>About PANORAFUS.AI</title>
@@ -20,14 +28,6 @@
       <guid>README.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb</guid>
       <pubDate>Sun, 06 Sep 2026 17:30:09 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:507155efb003dc3865792f6d18766836fe393704</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:59 GMT</pubDate>
-      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
     <item>
