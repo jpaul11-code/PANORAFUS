@@ -424,9 +424,14 @@ function mergeMonthlyActivity(current, previous) {
     return current;
   }
 
+  const previousByMonth = new Map(previous.map((entry) => [
+    entry.monthIndex ?? entry.month,
+    entry
+  ]));
+
   return current.map((month, index) => {
-    const prior = previous[index];
-    if (!prior || prior.month !== month.month) {
+    const prior = previousByMonth.get(month.monthIndex) || previousByMonth.get(month.month);
+    if (!prior) {
       return month;
     }
 
@@ -502,7 +507,7 @@ function getMonthlyActivity(repoRoot, year = new Date().getUTCFullYear()) {
   }
 
   if (!output.trim()) {
-    return previous.length > 0 ? previous : months;
+    return mergeMonthlyActivity(months, previous);
   }
 
   return isShallowRepository(root) ? mergeMonthlyActivity(months, previous) : months;
@@ -605,6 +610,7 @@ module.exports = {
   getMonthlyActivity,
   getRecentContentUpdates,
   getRepositoryMetrics,
+  mergeMonthlyActivity,
   listRegionMetrics,
   listTraditionMetrics,
   searchInstitutions
