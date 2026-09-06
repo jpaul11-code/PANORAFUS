@@ -44,12 +44,15 @@ function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_
     }
     seenFiles.add(item.file);
     merged.push(item);
-    if (merged.length >= limit) {
-      break;
-    }
   }
 
-  return merged;
+  return merged
+    .sort((left, right) => {
+      const leftTime = Date.parse(left.committedAt || '') || 0;
+      const rightTime = Date.parse(right.committedAt || '') || 0;
+      return rightTime - leftTime;
+    })
+    .slice(0, limit);
 }
 
 function createSyndicationSnapshot(repoRoot) {
