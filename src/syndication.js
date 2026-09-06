@@ -35,18 +35,21 @@ function readPreviousSyndicationItems(repoRoot) {
 }
 
 function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_ITEM_LIMIT) {
-  const merged = [];
-  const seenFiles = new Set();
+  const mergedByFile = new Map();
 
   for (const item of [...currentItems, ...previousItems]) {
-    if (!item || !item.file || seenFiles.has(item.file)) {
+    if (!item || !item.file) {
       continue;
     }
-    seenFiles.add(item.file);
-    merged.push(item);
+    const existing = mergedByFile.get(item.file);
+    const itemTime = Date.parse(item.committedAt || '') || 0;
+    const existingTime = existing ? (Date.parse(existing.committedAt || '') || 0) : -1;
+    if (!existing || itemTime > existingTime) {
+      mergedByFile.set(item.file, item);
+    }
   }
 
-  return merged
+  return [...mergedByFile.values()]
     .sort((left, right) => {
       const leftTime = Date.parse(left.committedAt || '') || 0;
       const rightTime = Date.parse(right.committedAt || '') || 0;

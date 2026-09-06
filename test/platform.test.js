@@ -158,6 +158,69 @@ test('syndication merge preserves prior items after current updates', () => {
   assert.deepEqual(merged.map((item) => item.file), ['ABOUT_PANORAFUS.md', 'README.md', 'SUMMARY.md']);
 });
 
+test('syndication merge keeps the newest duplicate item per file', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'README.md', summary: 'Older current readme', committedAt: '2026-09-06T07:21:43Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Newer previous readme', committedAt: '2026-09-06T17:30:09Z' }
+    ],
+    1
+  );
+
+  assert.equal(merged[0].summary, 'Newer previous readme');
+});
+
+test('syndication snapshot reads previous published items from disk', () => {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'panorafus-snapshot-'));
+  try {
+    fs.mkdirSync(path.join(fixtureRoot, 'public', 'api'), { recursive: true });
+    fs.writeFileSync(path.join(fixtureRoot, 'ABOUT_PANORAFUS.md'), [
+      '# About PANORAFUS.AI',
+      '',
+      'PANORAFUS.AI is a devotional platform carrying the Word of God across the globe with clarity, unity, and purpose.'
+    ].join('\n'));
+    fs.writeFileSync(path.join(fixtureRoot, 'SUMMARY.md'), [
+      '# Summary',
+      '',
+      'PANORAFUS.AI',
+      '',
+      'Website: panorafus.ai'
+    ].join('\n'));
+    fs.writeFileSync(path.join(fixtureRoot, 'public', 'api', 'syndication.json'), JSON.stringify({
+      items: [
+        {
+          title: 'Summary',
+          summary: 'Summary',
+          file: 'SUMMARY.md',
+          committedAt: '2026-09-06T07:21:43Z',
+          url: 'https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md',
+          sha: 'previous-sha'
+        }
+      ]
+    }, null, 2));
+
+    execFileSync('git', ['init', '-b', 'main'], { cwd: fixtureRoot });
+    execFileSync('git', ['config', 'user.name', 'PANORAFUS Tests'], { cwd: fixtureRoot });
+    execFileSync('git', ['config', 'user.email', 'tests@panorafus.local'], { cwd: fixtureRoot });
+    execFileSync('git', ['add', 'ABOUT_PANORAFUS.md'], { cwd: fixtureRoot });
+    execFileSync('git', ['commit', '-m', 'Seed about'], {
+      cwd: fixtureRoot,
+      env: {
+        ...process.env,
+        GIT_AUTHOR_DATE: '2026-09-06T03:21:43-04:00',
+        GIT_COMMITTER_DATE: '2026-09-06T03:21:43-04:00'
+      }
+    });
+
+    const snapshot = createSyndicationSnapshot(fixtureRoot);
+    assert.ok(snapshot.items.some((item) => item.file === 'SUMMARY.md'));
+  } finally {
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
 test('document summary fallback uses the title for short branding-only content', () => {
   const summary = extractDocumentSummary([
     '# PANORAFUS.AI',
