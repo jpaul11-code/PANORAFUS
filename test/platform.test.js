@@ -4,8 +4,14 @@ const fs = require('node:fs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const path = require('path');
-const { getInstitutionIndex, searchInstitutions } = require('../src/repository-data');
+const {
+  extractDocumentSummary,
+  getInstitutionIndex,
+  mergeMonthlyActivity,
+  searchInstitutions
+} = require('../src/repository-data');
 const { createDashboardSnapshot, generateDashboardMarkdown } = require('../src/dashboard');
+const { createSyndicationSnapshot } = require('../src/syndication');
 const { createServer } = require('../src/server');
 
 const repoRoot = path.resolve(__dirname, '..');
@@ -28,6 +34,25 @@ test('dashboard generation removes manual placeholders', () => {
   assert.ok(markdown.includes('PANORAFUS.AI'));
   assert.equal(markdown.includes('TBD'), false);
   assert.ok(snapshot.kpis.institutionsIndexed > 0);
+  const june = snapshot.monthlyActivity.find((entry) => entry.month === 'June');
+  const july = snapshot.monthlyActivity.find((entry) => entry.month === 'July');
+  assert.ok(june.totalActivity > 0);
+  assert.ok(july.totalActivity > 0);
+});
+
+test('monthly activity fallback preserves prior metrics by month identity', () => {
+  const merged = mergeMonthlyActivity([
+    { monthIndex: 5, month: 'June', commits: 0, docsTouched: 0, workflowChanges: 0, codeChanges: 0, totalActivity: 0 },
+    { monthIndex: 6, month: 'July', commits: 1, docsTouched: 1, workflowChanges: 0, codeChanges: 0, totalActivity: 2 }
+  ], [
+    { monthIndex: 6, month: 'July', commits: 41, docsTouched: 62, workflowChanges: 12, codeChanges: 0, totalActivity: 115 },
+    { monthIndex: 5, month: 'June', commits: 2, docsTouched: 2, workflowChanges: 0, codeChanges: 0, totalActivity: 4 }
+  ]);
+
+  assert.deepEqual(merged, [
+    { monthIndex: 5, month: 'June', commits: 2, docsTouched: 2, workflowChanges: 0, codeChanges: 0, totalActivity: 4 },
+    { monthIndex: 6, month: 'July', commits: 41, docsTouched: 62, workflowChanges: 12, codeChanges: 0, totalActivity: 115 }
+  ]);
 });
 
 test('content syndication workflow pushes generated artifacts directly', () => {
@@ -65,4 +90,27 @@ test('platform API serves health, institution, and chatbot responses', async () 
   } finally {
     await new Promise((resolve) => server.close(resolve));
   }
+});
+
+test('syndication snapshot uses document summaries instead of raw commit subjects', () => {
+  const snapshot = createSyndicationSnapshot(repoRoot);
+  const finalReview = snapshot.items.find((item) => item.file === 'PANORAFUS_AI_FINAL_REVIEW.md');
+  const summaryPage = snapshot.items.find((item) => item.file === 'SUMMARY.md');
+  assert.ok(finalReview);
+  assert.ok(summaryPage);
+  assert.match(finalReview.summary, /official approval of the PANORAFUS\.AI final execution implementation/i);
+  assert.doesNotMatch(finalReview.summary, /merge pull request/i);
+  assert.equal(summaryPage.summary, 'Summary');
+});
+
+test('document summary fallback uses the title for short branding-only content', () => {
+  const summary = extractDocumentSummary([
+    '# PANORAFUS.AI',
+    '',
+    '> **PANORAFUS.AI** — The Pivotal Head of the Global Network',
+    '',
+    'Website: panorafus.ai'
+  ].join('\n'), 'PANORAFUS.AI', 'README.md');
+
+  assert.equal(summary, 'PANORAFUS.AI');
 });

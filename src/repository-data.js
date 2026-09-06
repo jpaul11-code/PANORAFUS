@@ -100,6 +100,9 @@ const REGION_DEFINITIONS = [
   }
 ];
 
+const MIN_SUMMARY_LENGTH = 40;
+const MAX_TITLE_ADJACENT_SECTION_LENGTH = 80;
+
 function getRepoRoot(repoRoot) {
   return path.resolve(repoRoot || path.resolve(__dirname, '..'));
 }
@@ -111,12 +114,88 @@ function readUtf8(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
+function readJsonFile(filePath) {
+  try {
+    return JSON.parse(readUtf8(filePath));
+  } catch (error) {
+    return null;
+  }
+}
+
 function countLines(text) {
   if (!text) {
     return 0;
   }
 
   return text.split(/\r?\n/).length;
+}
+
+function normalizeMarkdownText(text) {
+  return String(text || '')
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/!\[[^\]]*]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/^\s{0,3}>\s?/gm, '')
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/[*_~]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractDocumentSummary(content, title, fallback = '') {
+  const normalizedTitle = normalizeMarkdownText(title);
+  const normalizedFallback = normalizeMarkdownText(fallback);
+  const sections = String(content || '')
+    .split(/\n\s*\n/)
+    .map((section) => ({
+      raw: section,
+      normalized: normalizeMarkdownText(section)
+    }))
+    .filter((section) => section.normalized);
+
+  let fallbackCandidate = '';
+
+  for (const section of sections) {
+    if (
+      section.normalized === normalizedTitle ||
+      (normalizedFallback && section.normalized === normalizedFallback)
+    ) {
+      continue;
+    }
+
+    if (
+      normalizedTitle &&
+      section.normalized.startsWith(normalizedTitle) &&
+      section.normalized.length <= normalizedTitle.length + MAX_TITLE_ADJACENT_SECTION_LENGTH
+    ) {
+      continue;
+    }
+
+    const sectionLines = section.raw.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+    const structuredLineCount = sectionLines.filter((line) => (
+      /^[-*+]\s/.test(line) ||
+      /^\d+\.\s/.test(line) ||
+      /^\|/.test(line) ||
+      /^\[[^\]]+\]\([^)]+\)$/.test(line)
+    )).length;
+
+    if (
+      sectionLines.length >= 3 &&
+      structuredLineCount / sectionLines.length >= 0.6
+    ) {
+      continue;
+    }
+
+    if (section.normalized.length >= MIN_SUMMARY_LENGTH) {
+      if (/[.!?](?:["')\]]*)?(?:\s|$)/.test(section.normalized) || sectionLines.length > 1) {
+        return section.normalized;
+      }
+      fallbackCandidate = fallbackCandidate || section.normalized;
+    }
+  }
+
+  return fallbackCandidate || normalizeMarkdownText(title) || normalizeMarkdownText(fallback);
 }
 
 function listWorkflowFiles(repoRoot) {
@@ -335,12 +414,13 @@ function getDocumentationCorpus(repoRoot) {
     const sections = content
       .split(/\n\s*\n/)
       .map((section) => section.replace(/[`>#*_\-\[\]\(\)]/g, ' ').replace(/\s+/g, ' ').trim())
-      .filter((section) => section.length >= 40);
+      .filter((section) => section.length >= MIN_SUMMARY_LENGTH);
 
     return {
       file,
       path: filePath,
       title,
+      summary: extractDocumentSummary(content, title, file),
       content,
       sections
     };
@@ -356,8 +436,60 @@ function countDashboardPlaceholders(repoRoot) {
   return (readUtf8(dashboardPath).match(/\bTBD\b/g) || []).length;
 }
 
+function getPreviousDashboardMonthlyActivity(repoRoot) {
+  const dashboardPath = path.join(getRepoRoot(repoRoot), 'public', 'api', 'dashboard.json');
+  const snapshot = readJsonFile(dashboardPath);
+  if (!snapshot || !Array.isArray(snapshot.monthlyActivity)) {
+    return [];
+  }
+  return snapshot.monthlyActivity;
+}
+
+function isShallowRepository(repoRoot) {
+  const root = getRepoRoot(repoRoot);
+  return fs.existsSync(path.join(root, '.git', 'shallow'));
+}
+
+function mergeMonthlyActivity(current, previous) {
+  if (!Array.isArray(previous) || previous.length === 0) {
+    return current;
+  }
+
+  const previousByMonth = new Map();
+  for (const entry of previous) {
+    if (entry.monthIndex !== undefined && entry.monthIndex !== null) {
+      previousByMonth.set(entry.monthIndex, entry);
+    }
+    if (entry.month) {
+      previousByMonth.set(entry.month, entry);
+    }
+  }
+
+  return current.map((month) => {
+    const prior = previousByMonth.get(month.monthIndex) || previousByMonth.get(month.month);
+    if (!prior) {
+      return month;
+    }
+
+    const commits = Math.max(month.commits || 0, prior.commits || 0);
+    const docsTouched = Math.max(month.docsTouched || 0, prior.docsTouched || 0);
+    const workflowChanges = Math.max(month.workflowChanges || 0, prior.workflowChanges || 0);
+    const codeChanges = Math.max(month.codeChanges || 0, prior.codeChanges || 0);
+
+    return {
+      ...month,
+      commits,
+      docsTouched,
+      workflowChanges,
+      codeChanges,
+      totalActivity: commits + docsTouched + workflowChanges + codeChanges
+    };
+  });
+}
+
 function getMonthlyActivity(repoRoot, year = new Date().getUTCFullYear()) {
   const root = getRepoRoot(repoRoot);
+  const previous = getPreviousDashboardMonthlyActivity(root);
   let output = '';
 
   try {
@@ -410,7 +542,11 @@ function getMonthlyActivity(repoRoot, year = new Date().getUTCFullYear()) {
     month.totalActivity = month.commits + month.docsTouched + month.workflowChanges + month.codeChanges;
   }
 
-  return months;
+  if (!output.trim()) {
+    return mergeMonthlyActivity(months, previous);
+  }
+
+  return isShallowRepository(root) ? mergeMonthlyActivity(months, previous) : months;
 }
 
 function getRepositoryMetrics(repoRoot) {
@@ -463,7 +599,7 @@ function getRecentContentUpdates(repoRoot, limit = 10) {
 
   const items = [];
   const seenFiles = new Set();
-  const docsByFile = new Map(getDocumentationCorpus(root).map((doc) => [doc.file, doc.title]));
+  const docsByFile = new Map(getDocumentationCorpus(root).map((doc) => [doc.file, doc]));
 
   for (const block of output.split('__COMMIT__').map((entry) => entry.trim()).filter(Boolean)) {
     const lines = block.split(/\r?\n/).filter(Boolean);
@@ -474,13 +610,14 @@ function getRecentContentUpdates(repoRoot, limit = 10) {
     const [sha, committedAt, summary, ...files] = lines;
     for (const file of files) {
       if (docsByFile.has(file) && !seenFiles.has(file)) {
+        const doc = docsByFile.get(file);
         seenFiles.add(file);
         items.push({
           sha,
           committedAt,
-          summary,
+          summary: doc.summary || normalizeMarkdownText(summary) || doc.title,
           file,
-          title: docsByFile.get(file) || file
+          title: doc.title || file
         });
       }
 
@@ -505,10 +642,12 @@ function buildPlatformSnapshot(repoRoot) {
 module.exports = {
   buildPlatformSnapshot,
   getDocumentationCorpus,
+  extractDocumentSummary,
   getInstitutionIndex,
   getMonthlyActivity,
   getRecentContentUpdates,
   getRepositoryMetrics,
+  mergeMonthlyActivity,
   listRegionMetrics,
   listTraditionMetrics,
   searchInstitutions
