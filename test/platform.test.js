@@ -95,9 +95,12 @@ test('platform API serves health, institution, and chatbot responses', async () 
 test('syndication snapshot uses document summaries instead of raw commit subjects', () => {
   const snapshot = createSyndicationSnapshot(repoRoot);
   const finalReview = snapshot.items.find((item) => item.file === 'PANORAFUS_AI_FINAL_REVIEW.md');
+  const summaryPage = snapshot.items.find((item) => item.file === 'SUMMARY.md');
   assert.ok(finalReview);
+  assert.ok(summaryPage);
   assert.match(finalReview.summary, /official approval of the PANORAFUS\.AI final execution implementation/i);
   assert.doesNotMatch(finalReview.summary, /merge pull request/i);
+  assert.equal(summaryPage.summary, 'Summary');
 });
 
 test('document summary fallback uses the title for short branding-only content', () => {

@@ -101,7 +101,7 @@ const REGION_DEFINITIONS = [
 ];
 
 const MIN_SUMMARY_LENGTH = 40;
-const SHORT_BRANDING_SECTION_LENGTH = 90;
+const MAX_TITLE_ADJACENT_SECTION_LENGTH = 80;
 
 function getRepoRoot(repoRoot) {
   return path.resolve(repoRoot || path.resolve(__dirname, '..'));
@@ -144,24 +144,58 @@ function normalizeMarkdownText(text) {
 }
 
 function extractDocumentSummary(content, title, fallback = '') {
+  const normalizedTitle = normalizeMarkdownText(title);
+  const normalizedFallback = normalizeMarkdownText(fallback);
   const sections = String(content || '')
     .split(/\n\s*\n/)
-    .map((section) => normalizeMarkdownText(section))
-    .filter(Boolean);
+    .map((section) => ({
+      raw: section,
+      normalized: normalizeMarkdownText(section)
+    }))
+    .filter((section) => section.normalized);
+
+  let fallbackCandidate = '';
 
   for (const section of sections) {
-    if (section === title) {
+    if (
+      section.normalized === normalizedTitle ||
+      (normalizedFallback && section.normalized === normalizedFallback)
+    ) {
       continue;
     }
-    if (/^PANORAFUS\.AI\b/i.test(section) && section.length < SHORT_BRANDING_SECTION_LENGTH) {
+
+    if (
+      normalizedTitle &&
+      section.normalized.startsWith(normalizedTitle) &&
+      section.normalized.length <= normalizedTitle.length + MAX_TITLE_ADJACENT_SECTION_LENGTH
+    ) {
       continue;
     }
-    if (section.length >= MIN_SUMMARY_LENGTH) {
-      return section;
+
+    const sectionLines = section.raw.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+    const structuredLineCount = sectionLines.filter((line) => (
+      /^[-*+]\s/.test(line) ||
+      /^\d+\.\s/.test(line) ||
+      /^\|/.test(line) ||
+      /^\[[^\]]+\]\([^)]+\)$/.test(line)
+    )).length;
+
+    if (
+      sectionLines.length >= 3 &&
+      structuredLineCount / sectionLines.length >= 0.6
+    ) {
+      continue;
+    }
+
+    if (section.normalized.length >= MIN_SUMMARY_LENGTH) {
+      if (/[.!?](?:["')\]]*)?(?:\s|$)/.test(section.normalized) || sectionLines.length > 1) {
+        return section.normalized;
+      }
+      fallbackCandidate = fallbackCandidate || section.normalized;
     }
   }
 
-  return title || normalizeMarkdownText(fallback);
+  return fallbackCandidate || title || normalizeMarkdownText(fallback);
 }
 
 function listWorkflowFiles(repoRoot) {
