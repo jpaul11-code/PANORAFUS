@@ -161,7 +161,7 @@ function extractDocumentSummary(content, title, fallback = '') {
     }
   }
 
-  return normalizeMarkdownText(fallback) || title;
+  return title || normalizeMarkdownText(fallback);
 }
 
 function listWorkflowFiles(repoRoot) {
@@ -437,7 +437,7 @@ function mergeMonthlyActivity(current, previous) {
     }
   }
 
-  return current.map((month, index) => {
+  return current.map((month) => {
     const prior = previousByMonth.get(month.monthIndex) || previousByMonth.get(month.month);
     if (!prior) {
       return month;
@@ -614,6 +614,7 @@ function buildPlatformSnapshot(repoRoot) {
 module.exports = {
   buildPlatformSnapshot,
   getDocumentationCorpus,
+  extractDocumentSummary,
   getInstitutionIndex,
   getMonthlyActivity,
   getRecentContentUpdates,

@@ -4,7 +4,12 @@ const fs = require('node:fs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const path = require('path');
-const { getInstitutionIndex, mergeMonthlyActivity, searchInstitutions } = require('../src/repository-data');
+const {
+  extractDocumentSummary,
+  getInstitutionIndex,
+  mergeMonthlyActivity,
+  searchInstitutions
+} = require('../src/repository-data');
 const { createDashboardSnapshot, generateDashboardMarkdown } = require('../src/dashboard');
 const { createSyndicationSnapshot } = require('../src/syndication');
 const { createServer } = require('../src/server');
@@ -93,4 +98,16 @@ test('syndication snapshot uses document summaries instead of raw commit subject
   assert.ok(finalReview);
   assert.match(finalReview.summary, /official approval of the PANORAFUS\.AI final execution implementation/i);
   assert.doesNotMatch(finalReview.summary, /merge pull request/i);
+});
+
+test('document summary fallback uses the title for short branding-only content', () => {
+  const summary = extractDocumentSummary([
+    '# PANORAFUS.AI',
+    '',
+    '> **PANORAFUS.AI** — The Pivotal Head of the Global Network',
+    '',
+    'Website: panorafus.ai'
+  ].join('\n'), 'PANORAFUS.AI', 'README.md');
+
+  assert.equal(summary, 'PANORAFUS.AI');
 });
