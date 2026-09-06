@@ -195,7 +195,7 @@ function extractDocumentSummary(content, title, fallback = '') {
     }
   }
 
-  return fallbackCandidate || title || normalizeMarkdownText(fallback);
+  return fallbackCandidate || normalizeMarkdownText(title) || normalizeMarkdownText(fallback);
 }
 
 function listWorkflowFiles(repoRoot) {
@@ -447,13 +447,7 @@ function getPreviousDashboardMonthlyActivity(repoRoot) {
 
 function isShallowRepository(repoRoot) {
   const root = getRepoRoot(repoRoot);
-
-  try {
-    return execFileSync('git', ['-C', root, 'rev-parse', '--is-shallow-repository'], { encoding: 'utf8' })
-      .trim() === 'true';
-  } catch (error) {
-    return false;
-  }
+  return fs.existsSync(path.join(root, '.git', 'shallow'));
 }
 
 function mergeMonthlyActivity(current, previous) {
