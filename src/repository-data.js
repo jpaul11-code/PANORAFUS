@@ -608,13 +608,16 @@ function getRecentContentUpdates(repoRoot, limit = 10) {
     }
 
     const [sha, committedAt, summary, ...files] = lines;
+    const normalizedCommittedAt = Number.isNaN(Date.parse(committedAt))
+      ? committedAt
+      : new Date(committedAt).toISOString().replace('.000Z', 'Z');
     for (const file of files) {
       if (docsByFile.has(file) && !seenFiles.has(file)) {
         const doc = docsByFile.get(file);
         seenFiles.add(file);
         items.push({
           sha,
-          committedAt,
+          committedAt: normalizedCommittedAt,
           summary: doc.summary || normalizeMarkdownText(summary) || doc.title,
           file,
           title: doc.title || file

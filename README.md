@@ -13,9 +13,11 @@
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-purple?style=flat-square)](CONTRIBUTE.md)
 [![Open Source](https://img.shields.io/badge/Open-Source-orange?style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS)
 
-PANORAFUS.AI is a global network platform connecting institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
+PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
 
-PANORAFUS.AI stands for a platform rooted and grounded in Holy Scripture, carrying the Word of God across the globe with clarity, unity, and purpose.
+In this devotional reading, **PAN** points to the Father above all, **ORA** to the Son who speaks and teaches us to pray, and **FUS** to the Holy Spirit poured out upon the earth.
+
+PANORAFUS.AI therefore presents the fullness of God revealed in Christ and poured out by the Spirit, carrying the Word of God across the globe with clarity, unity, and purpose.
 
 ## Founder Bio Details
 
