@@ -4,13 +4,13 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 06 Sep 2026 17:36:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 17:48:29 GMT</lastBuildDate>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:956c84cfacd61f9a56050dba6e02f89733007109</guid>
-      <pubDate>Sun, 06 Sep 2026 17:35:14 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:d2594b1e0479e6d0079d30afaf14a04957fc48c4</guid>
+      <pubDate>Sun, 06 Sep 2026 17:36:15 GMT</pubDate>
       <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
@@ -28,6 +28,14 @@
       <guid>README.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb</guid>
       <pubDate>Sun, 06 Sep 2026 17:30:09 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI Book Tariff</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
+      <guid>BOOK_TARIFF.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
+      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <description>The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.</description>
     </item>
 
     <item>
@@ -52,14 +60,6 @@
       <guid>BIBLICAL_ESCHATOLOGY.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
       <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI Book Tariff</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
-      <guid>BOOK_TARIFF.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
-      <description>The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.</description>
     </item>
 
     <item>

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-06T17:36:10.277Z",
+  "generatedAt": "2026-09-06T17:48:29.291Z",
   "dashboard": {
-    "generatedAt": "2026-09-06T17:36:10.277Z",
+    "generatedAt": "2026-09-06T17:48:29.291Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -133,11 +133,11 @@
       {
         "monthIndex": 8,
         "month": "September",
-        "commits": 10,
-        "docsTouched": 332,
-        "workflowChanges": 7,
-        "codeChanges": 28,
-        "totalActivity": 377
+        "commits": 20,
+        "docsTouched": 41,
+        "workflowChanges": 0,
+        "codeChanges": 20,
+        "totalActivity": 81
       },
       {
         "monthIndex": 9,
@@ -190,9 +190,9 @@
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-09-06T17:35:14Z",
+      "committedAt": "2026-09-06T17:36:15Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "956c84cfacd61f9a56050dba6e02f89733007109"
+      "sha": "d2594b1e0479e6d0079d30afaf14a04957fc48c4"
     },
     {
       "title": "About PANORAFUS.AI",
@@ -209,6 +209,14 @@
       "committedAt": "2026-09-06T17:30:09Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
       "sha": "d9ba587697de3afbf3e0a85da60745bdd4bb1ceb"
+    },
+    {
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
+      "file": "BOOK_TARIFF.md",
+      "committedAt": "2026-09-06T07:21:43Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "sha": "bea23080889c4b41550c18154c2dcdb6ce5f20d4"
     },
     {
       "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
@@ -232,14 +240,6 @@
       "file": "BIBLICAL_ESCHATOLOGY.md",
       "committedAt": "2026-09-06T07:21:43Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
-      "sha": "bea23080889c4b41550c18154c2dcdb6ce5f20d4"
-    },
-    {
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
-      "file": "BOOK_TARIFF.md",
-      "committedAt": "2026-09-06T07:21:43Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
       "sha": "bea23080889c4b41550c18154c2dcdb6ce5f20d4"
     },
     {

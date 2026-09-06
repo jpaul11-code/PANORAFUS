@@ -6,11 +6,11 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:956c84cfacd61f9a56050dba6e02f89733007109",
+      "id": "PANORAFUS_DASHBOARD.md:d2594b1e0479e6d0079d30afaf14a04957fc48c4",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-06T17:35:14Z"
+      "date_published": "2026-09-06T17:36:15Z"
     },
     {
       "id": "ABOUT_PANORAFUS.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb",
@@ -25,6 +25,13 @@
       "title": "PANORAFUS.AI",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
       "date_published": "2026-09-06T17:30:09Z"
+    },
+    {
+      "id": "BOOK_TARIFF.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
+      "date_published": "2026-09-06T07:21:43Z"
     },
     {
       "id": "APOSTLE_PAUL_GENEALOGY.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
@@ -45,13 +52,6 @@
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
       "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-06T07:21:43Z"
-    },
-    {
-      "id": "BOOK_TARIFF.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
       "date_published": "2026-09-06T07:21:43Z"
     },
     {
