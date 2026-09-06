@@ -5,6 +5,8 @@ const path = require('path');
 const { createDashboardSnapshot } = require('./dashboard');
 const { getRecentContentUpdates } = require('./repository-data');
 
+const SYNDICATION_ITEM_LIMIT = 12;
+
 function xmlEscape(input) {
   return String(input)
     .replace(/&/g, '&amp;')
@@ -18,21 +20,56 @@ function toGitHubUrl(file) {
   return `https://github.com/jpaul11-code/PANORAFUS/blob/main/${file}`;
 }
 
+function readPreviousSyndicationItems(repoRoot) {
+  const previousSnapshotPath = path.join(repoRoot, 'public', 'api', 'syndication.json');
+  if (!fs.existsSync(previousSnapshotPath)) {
+    return [];
+  }
+
+  try {
+    const snapshot = JSON.parse(fs.readFileSync(previousSnapshotPath, 'utf8'));
+    return Array.isArray(snapshot.items) ? snapshot.items : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_ITEM_LIMIT) {
+  const merged = [];
+  const seenFiles = new Set();
+
+  for (const item of [...currentItems, ...previousItems]) {
+    if (!item || !item.file || seenFiles.has(item.file)) {
+      continue;
+    }
+    seenFiles.add(item.file);
+    merged.push(item);
+    if (merged.length >= limit) {
+      break;
+    }
+  }
+
+  return merged;
+}
+
 function createSyndicationSnapshot(repoRoot) {
   const dashboard = createDashboardSnapshot(repoRoot);
-  const updates = getRecentContentUpdates(repoRoot, 12);
+  const root = path.resolve(repoRoot || path.resolve(__dirname, '..'));
+  const updates = getRecentContentUpdates(root, SYNDICATION_ITEM_LIMIT);
+  const previousItems = readPreviousSyndicationItems(root);
+  const currentItems = updates.map((item) => ({
+    title: item.title,
+    summary: item.summary,
+    file: item.file,
+    committedAt: item.committedAt,
+    url: toGitHubUrl(item.file),
+    sha: item.sha
+  }));
 
   return {
     generatedAt: dashboard.generatedAt,
     dashboard,
-    items: updates.map((item) => ({
-      title: item.title,
-      summary: item.summary,
-      file: item.file,
-      committedAt: item.committedAt,
-      url: toGitHubUrl(item.file),
-      sha: item.sha
-    }))
+    items: mergeSyndicationItems(currentItems, previousItems, SYNDICATION_ITEM_LIMIT)
   };
 }
 
@@ -110,5 +147,6 @@ function writeSyndicationArtifacts(repoRoot, outputDir) {
 
 module.exports = {
   createSyndicationSnapshot,
+  mergeSyndicationItems,
   writeSyndicationArtifacts
 };

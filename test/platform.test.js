@@ -13,7 +13,7 @@ const {
   searchInstitutions
 } = require('../src/repository-data');
 const { createDashboardSnapshot, generateDashboardMarkdown } = require('../src/dashboard');
-const { createSyndicationSnapshot } = require('../src/syndication');
+const { createSyndicationSnapshot, mergeSyndicationItems } = require('../src/syndication');
 const { createServer } = require('../src/server');
 
 const repoRoot = path.resolve(__dirname, '..');
@@ -105,37 +105,57 @@ test('syndication snapshot uses document summaries instead of raw commit subject
 
 test('syndication snapshot uses title fallback for short branding-only content', () => {
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'panorafus-syndication-'));
-  fs.writeFileSync(path.join(fixtureRoot, 'ABOUT_PANORAFUS.md'), [
-    '# About PANORAFUS.AI',
-    '',
-    'PANORAFUS.AI is a devotional platform carrying the Word of God across the globe with clarity, unity, and purpose.'
-  ].join('\n'));
-  fs.writeFileSync(path.join(fixtureRoot, 'SUMMARY.md'), [
-    '# Summary',
-    '',
-    'PANORAFUS.AI',
-    '',
-    'Website: panorafus.ai'
-  ].join('\n'));
+  try {
+    fs.writeFileSync(path.join(fixtureRoot, 'ABOUT_PANORAFUS.md'), [
+      '# About PANORAFUS.AI',
+      '',
+      'PANORAFUS.AI is a devotional platform carrying the Word of God across the globe with clarity, unity, and purpose.'
+    ].join('\n'));
+    fs.writeFileSync(path.join(fixtureRoot, 'SUMMARY.md'), [
+      '# Summary',
+      '',
+      'PANORAFUS.AI',
+      '',
+      'Website: panorafus.ai'
+    ].join('\n'));
 
-  execFileSync('git', ['init'], { cwd: fixtureRoot });
-  execFileSync('git', ['config', 'user.name', 'PANORAFUS Tests'], { cwd: fixtureRoot });
-  execFileSync('git', ['config', 'user.email', 'tests@panorafus.local'], { cwd: fixtureRoot });
-  execFileSync('git', ['add', 'ABOUT_PANORAFUS.md', 'SUMMARY.md'], { cwd: fixtureRoot });
-  execFileSync('git', ['commit', '-m', 'Seed docs'], {
-    cwd: fixtureRoot,
-    env: {
-      ...process.env,
-      GIT_AUTHOR_DATE: '2026-09-06T03:21:43-04:00',
-      GIT_COMMITTER_DATE: '2026-09-06T03:21:43-04:00'
-    }
-  });
+    execFileSync('git', ['init', '-b', 'main'], { cwd: fixtureRoot });
+    execFileSync('git', ['config', 'user.name', 'PANORAFUS Tests'], { cwd: fixtureRoot });
+    execFileSync('git', ['config', 'user.email', 'tests@panorafus.local'], { cwd: fixtureRoot });
+    execFileSync('git', ['add', 'ABOUT_PANORAFUS.md', 'SUMMARY.md'], { cwd: fixtureRoot });
+    execFileSync('git', ['commit', '-m', 'Seed docs'], {
+      cwd: fixtureRoot,
+      env: {
+        ...process.env,
+        GIT_AUTHOR_DATE: '2026-09-06T03:21:43-04:00',
+        GIT_COMMITTER_DATE: '2026-09-06T03:21:43-04:00'
+      }
+    });
 
-  const snapshot = createSyndicationSnapshot(fixtureRoot);
-  const summaryPage = snapshot.items.find((item) => item.file === 'SUMMARY.md');
-  assert.ok(summaryPage);
-  assert.equal(summaryPage.summary, 'Summary');
-  assert.equal(summaryPage.committedAt, '2026-09-06T07:21:43Z');
+    const snapshot = createSyndicationSnapshot(fixtureRoot);
+    const summaryPage = snapshot.items.find((item) => item.file === 'SUMMARY.md');
+    assert.ok(summaryPage);
+    assert.equal(summaryPage.summary, 'Summary');
+    assert.equal(summaryPage.committedAt, '2026-09-06T07:21:43Z');
+  } finally {
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
+test('syndication merge preserves prior items after current updates', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'ABOUT_PANORAFUS.md', summary: 'Updated about', committedAt: '2026-09-06T17:30:09Z' },
+      { file: 'README.md', summary: 'Updated readme', committedAt: '2026-09-06T17:30:09Z' }
+    ],
+    [
+      { file: 'SUMMARY.md', summary: 'Summary', committedAt: '2026-09-06T07:21:43Z' },
+      { file: 'README.md', summary: 'Old readme', committedAt: '2026-09-06T07:21:43Z' }
+    ],
+    3
+  );
+
+  assert.deepEqual(merged.map((item) => item.file), ['ABOUT_PANORAFUS.md', 'README.md', 'SUMMARY.md']);
 });
 
 test('document summary fallback uses the title for short branding-only content', () => {
