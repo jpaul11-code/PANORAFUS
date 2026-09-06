@@ -1,6 +1,6 @@
 > **PANORAFUS.AI** — Estrutura geral de tradução
 
-# PANORAFUS.AI — Revisão Final e Integração de LANÇAMENTO
+# PANORAFUS.AI — Implementação Final de Execução Aprovada
 
 Esta página foi adicionada para alinhar o escopo de tradução com a edição em inglês. A tradução completa está em preparação.
 
