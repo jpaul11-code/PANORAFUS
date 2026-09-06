@@ -111,12 +111,54 @@ function readUtf8(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
+function readJsonFile(filePath) {
+  try {
+    return JSON.parse(readUtf8(filePath));
+  } catch (error) {
+    return null;
+  }
+}
+
 function countLines(text) {
   if (!text) {
     return 0;
   }
 
   return text.split(/\r?\n/).length;
+}
+
+function normalizeMarkdownText(text) {
+  return String(text || '')
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/!\[[^\]]*]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/^\s{0,3}>\s?/gm, '')
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/[*_~]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractDocumentSummary(content, title, fallback = '') {
+  const sections = String(content || '')
+    .split(/\n\s*\n/)
+    .map((section) => normalizeMarkdownText(section))
+    .filter(Boolean);
+
+  for (const section of sections) {
+    if (section === title) {
+      continue;
+    }
+    if (/^PANORAFUS\.AI\b/i.test(section) && section.length < 90) {
+      continue;
+    }
+    if (section.length >= 40) {
+      return section;
+    }
+  }
+
+  return normalizeMarkdownText(fallback) || title;
 }
 
 function listWorkflowFiles(repoRoot) {
@@ -341,6 +383,7 @@ function getDocumentationCorpus(repoRoot) {
       file,
       path: filePath,
       title,
+      summary: extractDocumentSummary(content, title, file),
       content,
       sections
     };
@@ -356,8 +399,56 @@ function countDashboardPlaceholders(repoRoot) {
   return (readUtf8(dashboardPath).match(/\bTBD\b/g) || []).length;
 }
 
+function getPreviousDashboardMonthlyActivity(repoRoot) {
+  const dashboardPath = path.join(getRepoRoot(repoRoot), 'public', 'api', 'dashboard.json');
+  const snapshot = readJsonFile(dashboardPath);
+  if (!snapshot || !Array.isArray(snapshot.monthlyActivity)) {
+    return [];
+  }
+  return snapshot.monthlyActivity;
+}
+
+function isShallowRepository(repoRoot) {
+  const root = getRepoRoot(repoRoot);
+
+  try {
+    return execFileSync('git', ['-C', root, 'rev-parse', '--is-shallow-repository'], { encoding: 'utf8' })
+      .trim() === 'true';
+  } catch (error) {
+    return false;
+  }
+}
+
+function mergeMonthlyActivity(current, previous) {
+  if (!Array.isArray(previous) || previous.length === 0) {
+    return current;
+  }
+
+  return current.map((month, index) => {
+    const prior = previous[index];
+    if (!prior || prior.month !== month.month) {
+      return month;
+    }
+
+    const commits = Math.max(month.commits || 0, prior.commits || 0);
+    const docsTouched = Math.max(month.docsTouched || 0, prior.docsTouched || 0);
+    const workflowChanges = Math.max(month.workflowChanges || 0, prior.workflowChanges || 0);
+    const codeChanges = Math.max(month.codeChanges || 0, prior.codeChanges || 0);
+
+    return {
+      ...month,
+      commits,
+      docsTouched,
+      workflowChanges,
+      codeChanges,
+      totalActivity: commits + docsTouched + workflowChanges + codeChanges
+    };
+  });
+}
+
 function getMonthlyActivity(repoRoot, year = new Date().getUTCFullYear()) {
   const root = getRepoRoot(repoRoot);
+  const previous = getPreviousDashboardMonthlyActivity(root);
   let output = '';
 
   try {
@@ -410,7 +501,11 @@ function getMonthlyActivity(repoRoot, year = new Date().getUTCFullYear()) {
     month.totalActivity = month.commits + month.docsTouched + month.workflowChanges + month.codeChanges;
   }
 
-  return months;
+  if (!output.trim()) {
+    return previous.length > 0 ? previous : months;
+  }
+
+  return isShallowRepository(root) ? mergeMonthlyActivity(months, previous) : months;
 }
 
 function getRepositoryMetrics(repoRoot) {
@@ -463,7 +558,7 @@ function getRecentContentUpdates(repoRoot, limit = 10) {
 
   const items = [];
   const seenFiles = new Set();
-  const docsByFile = new Map(getDocumentationCorpus(root).map((doc) => [doc.file, doc.title]));
+  const docsByFile = new Map(getDocumentationCorpus(root).map((doc) => [doc.file, doc]));
 
   for (const block of output.split('__COMMIT__').map((entry) => entry.trim()).filter(Boolean)) {
     const lines = block.split(/\r?\n/).filter(Boolean);
@@ -474,13 +569,14 @@ function getRecentContentUpdates(repoRoot, limit = 10) {
     const [sha, committedAt, summary, ...files] = lines;
     for (const file of files) {
       if (docsByFile.has(file) && !seenFiles.has(file)) {
+        const doc = docsByFile.get(file);
         seenFiles.add(file);
         items.push({
           sha,
           committedAt,
-          summary,
+          summary: doc.summary || normalizeMarkdownText(summary) || doc.title,
           file,
-          title: docsByFile.get(file) || file
+          title: doc.title || file
         });
       }
 
