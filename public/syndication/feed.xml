@@ -4,13 +4,37 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Mon, 07 Sep 2026 15:32:33 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 19:55:34 GMT</lastBuildDate>
+
+    <item>
+      <title>FIRST THINGS - LAST THINGS</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/FIRST_THINGS_LAST_THINGS.md</link>
+      <guid>FIRST_THINGS_LAST_THINGS.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703</guid>
+      <pubDate>Mon, 07 Sep 2026 19:50:58 GMT</pubDate>
+      <description>PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ — the One who is the Alpha and the Omega.</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703</guid>
+      <pubDate>Mon, 07 Sep 2026 19:50:58 GMT</pubDate>
+      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
+    </item>
+
+    <item>
+      <title>Summary</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md</link>
+      <guid>SUMMARY.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703</guid>
+      <pubDate>Mon, 07 Sep 2026 19:50:58 GMT</pubDate>
+      <description>Summary</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:ceb4225894101e0ce2fb93473ea425bee8296691</guid>
-      <pubDate>Sun, 06 Sep 2026 18:36:53 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:e723aebeb4a10322e12f28db534416d7481a7144</guid>
+      <pubDate>Mon, 07 Sep 2026 15:32:34 GMT</pubDate>
       <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
@@ -20,14 +44,6 @@
       <guid>ABOUT_PANORAFUS.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb</guid>
       <pubDate>Sun, 06 Sep 2026 17:30:09 GMT</pubDate>
       <description>PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb</guid>
-      <pubDate>Sun, 06 Sep 2026 17:30:09 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
     </item>
 
     <item>
@@ -84,22 +100,6 @@
       <guid>CONTRIBUTE.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
       <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
       <description>Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.</description>
-    </item>
-
-    <item>
-      <title>🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md</link>
-      <guid>DEVOTIONAL_PRAYER.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>🔭 PANORAFUS OF FUTURE KNOWLEDGE</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/FUTURE_KNOWLEDGE.md</link>
-      <guid>FUTURE_KNOWLEDGE.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
     </item>
   </channel>
 </rss>
