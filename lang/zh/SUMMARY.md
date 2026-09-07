@@ -10,6 +10,7 @@
 - [🏗️ 应用架构构建器](APP_ARCHITECTURE_BUILDER.md)
 - [关于 PANORAFUS](ABOUT_PANORAFUS.md)
 - [圣经末世论](BIBLICAL_ESCHATOLOGY.md)
+- [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [成熟基督徒事工](SEASONED_CHRISTIAN_MINISTRY.md)
 - [看见神的话语](SEE_THE_WORD.md)
 - [使徒保罗的族谱](APOSTLE_PAUL_GENEALOGY.md)
