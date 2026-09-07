@@ -122,6 +122,8 @@ Every study, listing, and institutional reference in PANORAFUS.AI is evaluated a
 Connect with PANORAFUS.AI and become part of the worldwide network:
 
 - 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+
+- 🌐 [www.panorafus.ai](https://www.panorafus.ai)
 - 📧 [paul@seasonedchristianministrychurch.community](mailto:paul@seasonedchristianministrychurch.community)
 - 🤝 [Contribute to PANORAFUS.AI](CONTRIBUTE.md)
 

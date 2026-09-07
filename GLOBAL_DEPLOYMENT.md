@@ -142,3 +142,4 @@ For automated broken-link detection, see [Robotic Services](ROBOTIC_SERVICES.md)
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*  
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)

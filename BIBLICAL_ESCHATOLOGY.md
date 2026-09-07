@@ -1,5 +1,6 @@
 > **PANORAFUS.AI** — The Pivotal Head of the Global Network
 > 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+> 🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 
@@ -738,8 +739,9 @@ This work is championed by **Seasoned Christian Ministry Church** under PANORAFU
 📧 [paul@seasonedchristianministrychurch.community](mailto:paul@seasonedchristianministrychurch.community)
 📧 [pauljacquelin00@gmail.com](mailto:pauljacquelin00@gmail.com)
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
-**Website Management:** For all matters related to the website [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com), please contact:
+**Website Management:** For all matters related to the websites [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com) and [www.panorafus.ai](https://www.panorafus.ai), please contact:
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
 
 ---

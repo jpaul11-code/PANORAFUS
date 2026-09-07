@@ -75,8 +75,9 @@ A structured overview of major Islamic religious institutions worldwide, organiz
 This content is part of the **PANORAFUS.AI** Global Network, managed under Seasoned Christian Ministry Church.
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 🖥️ **Website Manager:** Selina — *PANORAFUS.AI / Seasoned Christian Ministry Church*
 
-*For website management, content updates, or to suggest institutions for listing, contact Selina via [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)*
+*For website management, content updates, or to suggest institutions for listing, contact Selina via [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com) or [www.panorafus.ai](https://www.panorafus.ai)*
 
 *PANORAFUS.AI — Connecting the World, One Institution at a Time.*
