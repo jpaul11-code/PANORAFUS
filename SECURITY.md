@@ -118,3 +118,4 @@ If you discover a security vulnerability in PANORAFUS.AI robotic services, workf
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*  
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)

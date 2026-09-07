@@ -99,6 +99,7 @@ For all tariff, pricing, licensing, and access inquiries:
 ### Administrative Contact
 - **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
 - 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+- 🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 

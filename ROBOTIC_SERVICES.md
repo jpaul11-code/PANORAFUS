@@ -143,3 +143,4 @@ See [Contribute to PANORAFUS.AI](CONTRIBUTE.md) for instructions on:
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*  
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)

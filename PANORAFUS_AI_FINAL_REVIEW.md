@@ -13,6 +13,7 @@
 The platform has completed all final quality gates and remains live and operational as the global network connecting institutions, organizations, and communities — powered by AI and grounded in Holy Scripture.
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 
@@ -106,3 +107,4 @@ The executable PANORAFUS.AI API is ready for integration and consumption:
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*  
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)

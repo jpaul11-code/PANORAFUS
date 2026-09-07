@@ -56,6 +56,7 @@ We believe that connection is the foundation of peace, understanding, and progre
 PANORAFUS.AI was founded under the spiritual and organizational leadership of **Seasoned Christian Ministry Church**.
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 
@@ -88,11 +89,13 @@ The PANORAFUS.AI Global Network currently indexes institutions across:
 For partnership inquiries, institution listings, or collaboration with PANORAFUS.AI:
 
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
-For all website management, content, and administrative matters related to **www.seasonedchristianministrychurch.com**, please contact:
+For all website management, content, and administrative matters related to **www.seasonedchristianministrychurch.com** and **www.panorafus.ai**, please contact:
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 
@@ -115,6 +118,7 @@ and branding are the sole and exclusive property of:
 > **SEASONED CHRISTIAN MINISTRY CHURCH, INC.**
 > Founder: Jacquelin Paul
 > 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+> 🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 All rights reserved. Free public read/educational access is granted worldwide;
 commercial, distribution, and derivative rights are reserved by the Owner.

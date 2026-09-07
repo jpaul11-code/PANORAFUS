@@ -6,88 +6,88 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:ceb4225894101e0ce2fb93473ea425bee8296691",
+      "id": "PANORAFUS_DASHBOARD.md:99f3e4e00199bb3ccf362ddf8ef31433c7f80134",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-06T18:36:53Z"
+      "date_published": "2026-09-07T16:50:57Z"
     },
     {
-      "id": "ABOUT_PANORAFUS.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb",
+      "id": "ABOUT_PANORAFUS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
       "title": "About PANORAFUS.AI",
       "summary": "PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.",
-      "date_published": "2026-09-06T17:30:09Z"
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "README.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
-      "date_published": "2026-09-06T17:30:09Z"
+      "id": "BIBLICAL_ESCHATOLOGY.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
+      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com 🌐 www.panorafus.ai",
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "BOOK_TARIFF.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
+      "id": "BOOK_TARIFF.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
       "title": "PANORAFUS.AI Book Tariff",
       "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
-      "date_published": "2026-09-06T07:21:43Z"
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "APOSTLE_PAUL_GENEALOGY.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md",
-      "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-06T07:21:43Z"
-    },
-    {
-      "id": "APP_ARCHITECTURE_BUILDER.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
-      "title": "PANORAFUS.AI App Architecture Builder",
-      "summary": "This document defines the PANORAFUS.AI architecture builder as a documentation-first framework for planning and governing application architecture decisions.",
-      "date_published": "2026-09-06T07:21:43Z"
-    },
-    {
-      "id": "BIBLICAL_ESCHATOLOGY.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
-      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-06T07:21:43Z"
-    },
-    {
-      "id": "BUDDHIST_INSTITUTIONS.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
+      "id": "BUDDHIST_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
       "title": "Buddhist Religious Institutions",
       "summary": "A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.",
-      "date_published": "2026-09-06T07:21:43Z"
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "CHRISTIAN_INSTITUTIONS.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
+      "id": "CHRISTIAN_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
       "title": "Christian Religious Institutions",
       "summary": "A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.",
-      "date_published": "2026-09-06T07:21:43Z"
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "CONTRIBUTE.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
-      "title": "Contribute to PANORAFUS.AI",
-      "summary": "Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.",
-      "date_published": "2026-09-06T07:21:43Z"
+      "id": "GLOBALNETWORK:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBALNETWORK",
+      "title": "PANORAFUS.AI — Global Network Index",
+      "summary": "🌐 Website: www.seasonedchristianministrychurch.com 🖥️ Website Management: Selina — Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church",
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "DEVOTIONAL_PRAYER.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md",
-      "title": "🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-06T07:21:43Z"
+      "id": "GLOBAL_DEPLOYMENT.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_DEPLOYMENT.md",
+      "title": "PANORAFUS.AI Global Deployment Strategy",
+      "summary": "Ensuring low-latency, high-availability delivery of PANORAFUS.AI content and services across all six global regions.",
+      "date_published": "2026-09-07T16:48:31Z"
     },
     {
-      "id": "FUTURE_KNOWLEDGE.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/FUTURE_KNOWLEDGE.md",
-      "title": "🔭 PANORAFUS OF FUTURE KNOWLEDGE",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-06T07:21:43Z"
+      "id": "GLOBAL_TRUST.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/GLOBAL_TRUST.md",
+      "title": "🌍 Trust Build in PANORAFUS.AI — All Around the Globe",
+      "summary": "\"That they all may be one; as thou, Father, art in me, and I in thee, that they also may be one in us: that the world may believe that thou hast sent me.\" — John 17:21",
+      "date_published": "2026-09-07T16:48:31Z"
+    },
+    {
+      "id": "HINDU_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/HINDU_INSTITUTIONS.md",
+      "title": "Hindu Religious Institutions",
+      "summary": "A structured overview of major Hindu religious institutions worldwide, organized by tradition and function.",
+      "date_published": "2026-09-07T16:48:31Z"
+    },
+    {
+      "id": "ISLAMIC_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ISLAMIC_INSTITUTIONS.md",
+      "title": "Islamic Religious Institutions",
+      "summary": "A structured overview of major Islamic religious institutions worldwide, organized by tradition and function.",
+      "date_published": "2026-09-07T16:48:31Z"
+    },
+    {
+      "id": "JEWISH_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/JEWISH_INSTITUTIONS.md",
+      "title": "Jewish Religious Institutions",
+      "summary": "A structured overview of major Jewish religious institutions worldwide, organized by tradition and function.",
+      "date_published": "2026-09-07T16:48:31Z"
     }
   ]
 }

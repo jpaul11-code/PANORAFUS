@@ -27,3 +27,4 @@ This page provides an at-a-glance view of core church meeting services so member
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*  
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)

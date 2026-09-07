@@ -37,6 +37,7 @@ Donations and financial support are directed to:
 
 **Seasoned Christian Ministry Church**
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 
@@ -55,6 +56,7 @@ For all compensation-related inquiries — including contributor agreements, par
 - **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*
   - For content, website management, and administrative compensation matters
   - 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+  - 🌐 [www.panorafus.ai](https://www.panorafus.ai)
 
 ---
 

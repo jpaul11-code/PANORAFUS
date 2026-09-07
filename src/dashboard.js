@@ -130,6 +130,7 @@ ${snapshot.workflows.map((workflow) => `- \`${workflow}\``).join('\n')}
 
 **Selina** — *Website Manager, PANORAFUS.AI / Seasoned Christian Ministry Church*  
 🌐 [www.seasonedchristianministrychurch.com](https://www.seasonedchristianministrychurch.com)
+🌐 [www.panorafus.ai](https://www.panorafus.ai)
 `;
 }
 
