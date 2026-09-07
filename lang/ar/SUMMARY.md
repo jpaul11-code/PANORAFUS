@@ -10,6 +10,7 @@
 - [🏗️ مُنشئ بنية التطبيق](APP_ARCHITECTURE_BUILDER.md)
 - [حول PANORAFUS](ABOUT_PANORAFUS.md)
 - [علم الأخرويات الكتابي](BIBLICAL_ESCHATOLOGY.md)
+- [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [وزارة المسيحيين المتمرسين](SEASONED_CHRISTIAN_MINISTRY.md)
 - [رؤية الكلمة](SEE_THE_WORD.md)
 - [سلالة الرسول بولس](APOSTLE_PAUL_GENEALOGY.md)

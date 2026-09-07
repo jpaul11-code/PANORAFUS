@@ -11,6 +11,7 @@
 - [About PANORAFUS](ABOUT_PANORAFUS.md)
 - [Majestic God Our Father](MAJESTIC_GOD_OUR_FATHER.md)
 - [Biblical Eschatology](BIBLICAL_ESCHATOLOGY.md)
+- [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [Seasoned Christian Ministry](SEASONED_CHRISTIAN_MINISTRY.md)
 - [The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
 - [See the Word](SEE_THE_WORD.md)

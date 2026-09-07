@@ -10,6 +10,7 @@
 - [🏗️ ऐप आर्किटेक्चर बिल्डर](APP_ARCHITECTURE_BUILDER.md)
 - [PANORAFUS के बारे में](ABOUT_PANORAFUS.md)
 - [बाइबिल की एस्केटोलॉजी](BIBLICAL_ESCHATOLOGY.md)
+- [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [परिपक्व ईसाई मंत्रालय](SEASONED_CHRISTIAN_MINISTRY.md)
 - [वचन को देखें](SEE_THE_WORD.md)
 - [प्रेरित पौलुस की वंशावली](APOSTLE_PAUL_GENEALOGY.md)

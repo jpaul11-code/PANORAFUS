@@ -10,6 +10,7 @@
 - [🏗️ Construtor de Arquitetura da Aplicação](APP_ARCHITECTURE_BUILDER.md)
 - [Sobre PANORAFUS](ABOUT_PANORAFUS.md)
 - [Escatologia Bíblica](BIBLICAL_ESCHATOLOGY.md)
+- [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [Ministério Cristão Experiente](SEASONED_CHRISTIAN_MINISTRY.md)
 - [Ver a Palavra](SEE_THE_WORD.md)
 - [Genealogia do Apóstolo Paulo](APOSTLE_PAUL_GENEALOGY.md)
