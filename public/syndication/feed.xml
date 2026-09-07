@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Mon, 07 Sep 2026 16:48:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 16:50:56 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:cf1d59fd888f70838e6fa53c4aa77f2f6870e3a5</guid>
+      <pubDate>Mon, 07 Sep 2026 16:49:00 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
 
     <item>
       <title>About PANORAFUS.AI</title>
@@ -92,14 +100,6 @@
       <guid>JEWISH_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c</guid>
       <pubDate>Mon, 07 Sep 2026 16:48:31 GMT</pubDate>
       <description>A structured overview of major Jewish religious institutions worldwide, organized by tradition and function.</description>
-    </item>
-
-    <item>
-      <title>Other Religious Institutions</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/OTHER_RELIGIOUS_INSTITUTIONS.md</link>
-      <guid>OTHER_RELIGIOUS_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c</guid>
-      <pubDate>Mon, 07 Sep 2026 16:48:31 GMT</pubDate>
-      <description>A structured overview of other major world religious institutions, including Sikh, Bahá&apos;í, Indigenous, and interfaith organizations.</description>
     </item>
   </channel>
 </rss>

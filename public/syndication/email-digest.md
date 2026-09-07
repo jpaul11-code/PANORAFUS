@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-09-07T16:48:56.445Z
+Generated at: 2026-09-07T16:50:56.754Z
 
 ## Dashboard Summary
 
@@ -10,6 +10,7 @@ Generated at: 2026-09-07T16:48:56.445Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI — Global Dashboard Page** — PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **About PANORAFUS.AI** — PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md))
 - **📖 PANORAFUS OF BIBLICAL ESCHATOLOGY** — PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com 🌐 www.panorafus.ai ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md))
 - **PANORAFUS.AI Book Tariff** — The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md))
@@ -21,4 +22,3 @@ Generated at: 2026-09-07T16:48:56.445Z
 - **Hindu Religious Institutions** — A structured overview of major Hindu religious institutions worldwide, organized by tradition and function. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/HINDU_INSTITUTIONS.md))
 - **Islamic Religious Institutions** — A structured overview of major Islamic religious institutions worldwide, organized by tradition and function. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ISLAMIC_INSTITUTIONS.md))
 - **Jewish Religious Institutions** — A structured overview of major Jewish religious institutions worldwide, organized by tradition and function. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/JEWISH_INSTITUTIONS.md))
-- **Other Religious Institutions** — A structured overview of other major world religious institutions, including Sikh, Bahá'í, Indigenous, and interfaith organizations. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/OTHER_RELIGIOUS_INSTITUTIONS.md))

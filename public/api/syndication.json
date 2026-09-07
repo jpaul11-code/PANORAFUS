@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-07T16:48:56.243Z",
+  "generatedAt": "2026-09-07T16:50:56.538Z",
   "dashboard": {
-    "generatedAt": "2026-09-07T16:48:56.243Z",
+    "generatedAt": "2026-09-07T16:50:56.538Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -133,11 +133,11 @@
       {
         "monthIndex": 8,
         "month": "September",
-        "commits": 31,
-        "docsTouched": 353,
-        "workflowChanges": 7,
+        "commits": 34,
+        "docsTouched": 88,
+        "workflowChanges": 0,
         "codeChanges": 21,
-        "totalActivity": 412
+        "totalActivity": 143
       },
       {
         "monthIndex": 9,
@@ -186,6 +186,14 @@
     ]
   },
   "items": [
+    {
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "file": "PANORAFUS_DASHBOARD.md",
+      "committedAt": "2026-09-07T16:49:00Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "sha": "cf1d59fd888f70838e6fa53c4aa77f2f6870e3a5"
+    },
     {
       "title": "About PANORAFUS.AI",
       "summary": "PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.",
@@ -272,14 +280,6 @@
       "file": "JEWISH_INSTITUTIONS.md",
       "committedAt": "2026-09-07T16:48:31Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/JEWISH_INSTITUTIONS.md",
-      "sha": "1c901c62174ca305f9e7f0ea2421ad203f1c1d1c"
-    },
-    {
-      "title": "Other Religious Institutions",
-      "summary": "A structured overview of other major world religious institutions, including Sikh, Bahá'í, Indigenous, and interfaith organizations.",
-      "file": "OTHER_RELIGIOUS_INSTITUTIONS.md",
-      "committedAt": "2026-09-07T16:48:31Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/OTHER_RELIGIOUS_INSTITUTIONS.md",
       "sha": "1c901c62174ca305f9e7f0ea2421ad203f1c1d1c"
     }
   ]

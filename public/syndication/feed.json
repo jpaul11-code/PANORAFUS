@@ -6,6 +6,13 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:cf1d59fd888f70838e6fa53c4aa77f2f6870e3a5",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "date_published": "2026-09-07T16:49:00Z"
+    },
+    {
       "id": "ABOUT_PANORAFUS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
       "title": "About PANORAFUS.AI",
@@ -80,13 +87,6 @@
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/JEWISH_INSTITUTIONS.md",
       "title": "Jewish Religious Institutions",
       "summary": "A structured overview of major Jewish religious institutions worldwide, organized by tradition and function.",
-      "date_published": "2026-09-07T16:48:31Z"
-    },
-    {
-      "id": "OTHER_RELIGIOUS_INSTITUTIONS.md:1c901c62174ca305f9e7f0ea2421ad203f1c1d1c",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/OTHER_RELIGIOUS_INSTITUTIONS.md",
-      "title": "Other Religious Institutions",
-      "summary": "A structured overview of other major world religious institutions, including Sikh, Bahá'í, Indigenous, and interfaith organizations.",
       "date_published": "2026-09-07T16:48:31Z"
     }
   ]
