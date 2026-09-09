@@ -13,6 +13,7 @@
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [Ministério Cristão Experiente](SEASONED_CHRISTIAN_MINISTRY.md)
 - [Ver a Palavra](SEE_THE_WORD.md)
+- [Trevas Espirituais — Luzes do Mundo](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [Genealogia do Apóstolo Paulo](APOSTLE_PAUL_GENEALOGY.md)
 - [Testemunhas da Ressurreição](RESURRECTION_WITNESSES.md)
 - [O Espírito Santo e os Dons](HOLY_SPIRIT_AND_GIFTS.md)
