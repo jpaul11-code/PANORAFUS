@@ -6,6 +6,13 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:a78262e8fa8755d1a1df6ce1b300722a7297994c",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "date_published": "2026-09-09T22:06:22Z"
+    },
+    {
       "id": "README.md:39f725d913c8b3eabf16cf2162ca0279fd3d8441",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
       "title": "PANORAFUS.AI",
@@ -25,13 +32,6 @@
       "title": "Summary",
       "summary": "Summary",
       "date_published": "2026-09-09T22:01:36Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:948d2d0e5638d0842271d8ef3e6b01a15b6bba3b",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-07T19:56:26Z"
     },
     {
       "id": "FIRST_THINGS_LAST_THINGS.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703",
