@@ -15,6 +15,7 @@
 - [Seasoned Christian Ministry](SEASONED_CHRISTIAN_MINISTRY.md)
 - [The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
 - [See the Word](SEE_THE_WORD.md)
+- [Spiritual Darkness - Lights of the World](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [Apostle Paul Genealogy](APOSTLE_PAUL_GENEALOGY.md)
 - [Resurrection Witnesses](RESURRECTION_WITNESSES.md)
 - [Holy Spirit and Gifts](HOLY_SPIRIT_AND_GIFTS.md)
