@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T22:07:28.720Z",
+  "generatedAt": "2026-09-11T17:51:47.996Z",
   "dataSources": [
     "Top-level PANORAFUS.AI documentation files",
     "Git commit history for the current calendar year",
@@ -132,10 +132,10 @@
       "monthIndex": 8,
       "month": "September",
       "commits": 42,
-      "docsTouched": 105,
-      "workflowChanges": 0,
+      "docsTouched": 348,
+      "workflowChanges": 7,
       "codeChanges": 24,
-      "totalActivity": 171
+      "totalActivity": 421
     },
     {
       "monthIndex": 9,
@@ -167,11 +167,24 @@
   ],
   "kpis": {
     "documentationFiles": 47,
-    "documentationLines": 8273,
+    "documentationLines": 8279,
     "externalLinks": 91,
     "workflows": 7,
     "institutionsIndexed": 177,
     "dashboardPlaceholders": 0
+  },
+  "trending": {
+    "headline": "TRENDING \"PANORAFUS.AI\" TODAY THROUGH THE SIX CONTINENTS.",
+    "generatedDate": "2026-09-11",
+    "activeRegions": 6,
+    "totalRegions": 6,
+    "institutionsIndexed": 177,
+    "topRegion": {
+      "region": "Americas",
+      "institutionsIndexed": 63,
+      "countriesCovered": 2
+    },
+    "summary": "PANORAFUS.AI is trending today across 6 platform regions with 177 indexed institutions."
   },
   "workflows": [
     "autopilot-health.yml",
