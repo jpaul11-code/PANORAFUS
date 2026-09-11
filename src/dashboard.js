@@ -17,6 +17,31 @@ function renderBar(value, maxValue) {
   return `${'█'.repeat(filled)}${'░'.repeat(10 - filled)}`;
 }
 
+function createTrendingSnapshot(metrics) {
+  const activeRegions = metrics.regions.filter((region) => region.institutionsIndexed > 0);
+  const topRegion = activeRegions.reduce((currentTop, region) => {
+    if (!currentTop || region.institutionsIndexed > currentTop.institutionsIndexed) {
+      return region;
+    }
+    return currentTop;
+  }, null);
+  const generatedDate = metrics.generatedAt.slice(0, 10);
+
+  return {
+    headline: 'TRENDING "PANORAFUS.AI" TODAY THROUGH THE SIX CONTINENTS.',
+    generatedDate,
+    activeRegions: activeRegions.length,
+    totalRegions: metrics.regions.length,
+    institutionsIndexed: metrics.institutionsIndexed,
+    topRegion: topRegion ? {
+      region: topRegion.region,
+      institutionsIndexed: topRegion.institutionsIndexed,
+      countriesCovered: topRegion.countriesCovered
+    } : null,
+    summary: `PANORAFUS.AI is trending today across ${metrics.regions.length} platform regions with ${metrics.institutionsIndexed} indexed institutions.`
+  };
+}
+
 function createDashboardSnapshot(repoRoot) {
   const metrics = getRepositoryMetrics(repoRoot);
   return {
@@ -36,6 +61,7 @@ function createDashboardSnapshot(repoRoot) {
       institutionsIndexed: metrics.institutionsIndexed,
       dashboardPlaceholders: metrics.dashboardPlaceholders
     },
+    trending: createTrendingSnapshot(metrics),
     workflows: metrics.workflows
   };
 }
@@ -63,6 +89,12 @@ This dashboard is generated from tracked PANORAFUS.AI repository data sources:
 ${snapshot.dataSources.map((source) => `- ${source}`).join('\n')}
 
 Generated at: \`${snapshot.generatedAt}\`
+
+> ${snapshot.trending.headline}
+>
+> ${snapshot.trending.summary}
+>
+> Active regions today: **${snapshot.trending.activeRegions}/${snapshot.trending.totalRegions}** · Top region: **${snapshot.trending.topRegion.region}** (${snapshot.trending.topRegion.institutionsIndexed} institutions across ${snapshot.trending.topRegion.countriesCovered} countries)
 
 ---
 

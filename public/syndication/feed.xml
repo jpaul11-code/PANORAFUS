@@ -4,102 +4,102 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Wed, 09 Sep 2026 22:07:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 17:56:12 GMT</lastBuildDate>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:a78262e8fa8755d1a1df6ce1b300722a7297994c</guid>
-      <pubDate>Wed, 09 Sep 2026 22:06:22 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:c0d74cfdae8508e3ec0d0f8a577f8e80facb4a74</guid>
+      <pubDate>Fri, 11 Sep 2026 17:52:09 GMT</pubDate>
       <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:39f725d913c8b3eabf16cf2162ca0279fd3d8441</guid>
-      <pubDate>Wed, 09 Sep 2026 22:01:36 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
-    </item>
-
-    <item>
-      <title>🌅 SPIRITUAL DARKNESS — LIGHTS OF THE WORLD</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md</link>
-      <guid>SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md:39f725d913c8b3eabf16cf2162ca0279fd3d8441</guid>
-      <pubDate>Wed, 09 Sep 2026 22:01:36 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>Summary</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md</link>
-      <guid>SUMMARY.md:39f725d913c8b3eabf16cf2162ca0279fd3d8441</guid>
-      <pubDate>Wed, 09 Sep 2026 22:01:36 GMT</pubDate>
-      <description>Summary</description>
     </item>
 
     <item>
       <title>FIRST THINGS - LAST THINGS</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/FIRST_THINGS_LAST_THINGS.md</link>
-      <guid>FIRST_THINGS_LAST_THINGS.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703</guid>
-      <pubDate>Mon, 07 Sep 2026 19:50:58 GMT</pubDate>
+      <guid>FIRST_THINGS_LAST_THINGS.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ — the One who is the Alpha and the Omega.</description>
     </item>
 
     <item>
       <title>About PANORAFUS.AI</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
-      <guid>ABOUT_PANORAFUS.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb</guid>
-      <pubDate>Sun, 06 Sep 2026 17:30:09 GMT</pubDate>
+      <guid>ABOUT_PANORAFUS.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.</description>
     </item>
 
     <item>
       <title>PANORAFUS.AI Book Tariff</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
-      <guid>BOOK_TARIFF.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <guid>BOOK_TARIFF.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.</description>
     </item>
 
     <item>
       <title>Apostle Paul — Genealogy &amp; Life: From Infancy to Death</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md</link>
-      <guid>APOSTLE_PAUL_GENEALOGY.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <guid>APOSTLE_PAUL_GENEALOGY.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
     </item>
 
     <item>
       <title>PANORAFUS.AI App Architecture Builder</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md</link>
-      <guid>APP_ARCHITECTURE_BUILDER.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <guid>APP_ARCHITECTURE_BUILDER.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>This document defines the PANORAFUS.AI architecture builder as a documentation-first framework for planning and governing application architecture decisions.</description>
     </item>
 
     <item>
       <title>📖 PANORAFUS OF BIBLICAL ESCHATOLOGY</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md</link>
-      <guid>BIBLICAL_ESCHATOLOGY.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <guid>BIBLICAL_ESCHATOLOGY.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
     </item>
 
     <item>
       <title>Buddhist Religious Institutions</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md</link>
-      <guid>BUDDHIST_INSTITUTIONS.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <guid>BUDDHIST_INSTITUTIONS.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.</description>
     </item>
 
     <item>
       <title>Christian Religious Institutions</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md</link>
-      <guid>CHRISTIAN_INSTITUTIONS.md:bea23080889c4b41550c18154c2dcdb6ce5f20d4</guid>
-      <pubDate>Sun, 06 Sep 2026 07:21:43 GMT</pubDate>
+      <guid>CHRISTIAN_INSTITUTIONS.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
       <description>A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.</description>
+    </item>
+
+    <item>
+      <title>Contribute to PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md</link>
+      <guid>CONTRIBUTE.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
+      <description>Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.</description>
+    </item>
+
+    <item>
+      <title>🌊 DEVOTIONAL PRAYER — LAUNCHED BY PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md</link>
+      <guid>DEVOTIONAL_PRAYER.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
+      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
+    </item>
+
+    <item>
+      <title>🔭 PANORAFUS OF FUTURE KNOWLEDGE</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/FUTURE_KNOWLEDGE.md</link>
+      <guid>FUTURE_KNOWLEDGE.md:702db3cbbad981691f072e64b53fdfaa5c056393</guid>
+      <pubDate>Wed, 09 Sep 2026 22:07:12 GMT</pubDate>
+      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
     </item>
   </channel>
 </rss>

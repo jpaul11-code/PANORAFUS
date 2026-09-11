@@ -34,8 +34,12 @@ test('dashboard generation removes manual placeholders', () => {
   const snapshot = createDashboardSnapshot(repoRoot);
   const markdown = generateDashboardMarkdown(snapshot);
   assert.ok(markdown.includes('PANORAFUS.AI'));
+  assert.match(markdown, /TRENDING "PANORAFUS\.AI" TODAY THROUGH THE SIX CONTINENTS\./);
   assert.equal(markdown.includes('TBD'), false);
   assert.ok(snapshot.kpis.institutionsIndexed > 0);
+  assert.equal(snapshot.trending.totalRegions, 6);
+  assert.equal(snapshot.trending.activeRegions, 6);
+  assert.equal(snapshot.trending.topRegion.region, 'Americas');
   const june = snapshot.monthlyActivity.find((entry) => entry.month === 'June');
   const july = snapshot.monthlyActivity.find((entry) => entry.month === 'July');
   assert.ok(june.totalActivity > 0);
