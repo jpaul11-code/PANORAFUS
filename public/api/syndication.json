@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-11T17:51:48.015Z",
+  "generatedAt": "2026-09-11T17:56:12.012Z",
   "dashboard": {
-    "generatedAt": "2026-09-11T17:51:48.015Z",
+    "generatedAt": "2026-09-11T17:56:12.012Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -133,11 +133,11 @@
       {
         "monthIndex": 8,
         "month": "September",
-        "commits": 42,
-        "docsTouched": 348,
-        "workflowChanges": 7,
-        "codeChanges": 24,
-        "totalActivity": 421
+        "commits": 45,
+        "docsTouched": 109,
+        "workflowChanges": 0,
+        "codeChanges": 26,
+        "totalActivity": 180
       },
       {
         "monthIndex": 9,
@@ -203,9 +203,17 @@
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-09-09T22:07:30Z",
+      "committedAt": "2026-09-11T17:52:09Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "779c390855af0eeaa28ece66368668902a77d61f"
+      "sha": "c0d74cfdae8508e3ec0d0f8a577f8e80facb4a74"
+    },
+    {
+      "title": "FIRST THINGS - LAST THINGS",
+      "summary": "PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ — the One who is the Alpha and the Omega.",
+      "file": "FIRST_THINGS_LAST_THINGS.md",
+      "committedAt": "2026-09-09T22:07:12Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/FIRST_THINGS_LAST_THINGS.md",
+      "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
     },
     {
       "title": "About PANORAFUS.AI",
@@ -213,6 +221,14 @@
       "file": "ABOUT_PANORAFUS.md",
       "committedAt": "2026-09-09T22:07:12Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
+      "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
+    },
+    {
+      "title": "PANORAFUS.AI Book Tariff",
+      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
+      "file": "BOOK_TARIFF.md",
+      "committedAt": "2026-09-09T22:07:12Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
       "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
     },
     {
@@ -237,14 +253,6 @@
       "file": "BIBLICAL_ESCHATOLOGY.md",
       "committedAt": "2026-09-09T22:07:12Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
-      "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
-    },
-    {
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
-      "file": "BOOK_TARIFF.md",
-      "committedAt": "2026-09-09T22:07:12Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
       "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
     },
     {
@@ -277,14 +285,6 @@
       "file": "DEVOTIONAL_PRAYER.md",
       "committedAt": "2026-09-09T22:07:12Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/DEVOTIONAL_PRAYER.md",
-      "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
-    },
-    {
-      "title": "FIRST THINGS - LAST THINGS",
-      "summary": "PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ — the One who is the Alpha and the Omega.",
-      "file": "FIRST_THINGS_LAST_THINGS.md",
-      "committedAt": "2026-09-09T22:07:12Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/FIRST_THINGS_LAST_THINGS.md",
       "sha": "702db3cbbad981691f072e64b53fdfaa5c056393"
     },
     {
