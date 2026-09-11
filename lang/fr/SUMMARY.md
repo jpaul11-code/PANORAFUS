@@ -14,6 +14,7 @@
 - [Ministère Chrétien Chevronné](SEASONED_CHRISTIAN_MINISTRY.md)
 - [Voir la Parole](SEE_THE_WORD.md)
 - [Ténèbres Spirituelles — Lumières du Monde](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
+- [La victoire de Satan — La défaite de Satan](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [Généalogie de l'Apôtre Paul](APOSTLE_PAUL_GENEALOGY.md)
 - [Témoins de la Résurrection](RESURRECTION_WITNESSES.md)
 - [Le Saint-Esprit et les Dons](HOLY_SPIRIT_AND_GIFTS.md)

@@ -14,6 +14,7 @@
 - [成熟基督徒事工](SEASONED_CHRISTIAN_MINISTRY.md)
 - [看见神的话语](SEE_THE_WORD.md)
 - [属灵黑暗 — 世上的光](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
+- [撒但的胜利——撒但的失败](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [使徒保罗的族谱](APOSTLE_PAUL_GENEALOGY.md)
 - [复活见证者](RESURRECTION_WITNESSES.md)
 - [圣灵与属灵恩赐](HOLY_SPIRIT_AND_GIFTS.md)
