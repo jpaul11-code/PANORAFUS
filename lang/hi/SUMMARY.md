@@ -14,6 +14,7 @@
 - [परिपक्व ईसाई मंत्रालय](SEASONED_CHRISTIAN_MINISTRY.md)
 - [वचन को देखें](SEE_THE_WORD.md)
 - [आत्मिक अंधकार — संसार की ज्योतियाँ](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
+- [शैतान की विजय — शैतान की पराजय](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [प्रेरित पौलुस की वंशावली](APOSTLE_PAUL_GENEALOGY.md)
 - [पुनरुत्थान के साक्षी](RESURRECTION_WITNESSES.md)
 - [पवित्र आत्मा और वरदान](HOLY_SPIRIT_AND_GIFTS.md)
