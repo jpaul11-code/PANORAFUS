@@ -4,13 +4,21 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Fri, 11 Sep 2026 19:55:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 20:19:04 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI Security &amp; Compliance Policy</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SECURITY.md</link>
+      <guid>SECURITY.md:e5a59c27b1ecef1ff28be708a7e10120111df88f</guid>
+      <pubDate>Sat, 12 Sep 2026 20:18:53 GMT</pubDate>
+      <description>Protecting the integrity, privacy, and trustworthiness of the PANORAFUS.AI global network and its automated robotic services.</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:788455f7d92f29d172927c40a72e2e9a0868362c</guid>
-      <pubDate>Fri, 11 Sep 2026 19:54:49 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:25c6120393cba4fb659004f41e3630e57fa6b7f7</guid>
+      <pubDate>Fri, 11 Sep 2026 19:55:54 GMT</pubDate>
       <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
@@ -92,14 +100,6 @@
       <guid>CHRISTIAN_INSTITUTIONS.md:b9e20a1a06151fdf50a42fd46aee6e038b696bdd</guid>
       <pubDate>Fri, 11 Sep 2026 17:56:40 GMT</pubDate>
       <description>A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.</description>
-    </item>
-
-    <item>
-      <title>Contribute to PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md</link>
-      <guid>CONTRIBUTE.md:b9e20a1a06151fdf50a42fd46aee6e038b696bdd</guid>
-      <pubDate>Fri, 11 Sep 2026 17:56:40 GMT</pubDate>
-      <description>Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.</description>
     </item>
   </channel>
 </rss>
