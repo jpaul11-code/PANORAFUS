@@ -1,4 +1,4 @@
-> **PANORAFUS.AI** — The Pivotal Head of the Global Network
+   > **PANORAFUS.AI** — The Pivotal Head of the Global Network
 
 # PANORAFUS.AI Security & Compliance Policy
 
