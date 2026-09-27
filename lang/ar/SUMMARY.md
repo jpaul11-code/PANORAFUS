@@ -15,6 +15,7 @@
 - [رؤية الكلمة](SEE_THE_WORD.md)
 - [الظلمة الروحية — أنوار العالم](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [انتصار الشيطان — هزيمة الشيطان](SATANS_VICTORY_SATANS_DEFEAT.md)
+- [الفردوس المفقود — الفردوس المستعاد](LOST_PARADISE_RETRIEVED_PARADISE.md)
 - [سلالة الرسول بولس](APOSTLE_PAUL_GENEALOGY.md)
 - [شهود القيامة](RESURRECTION_WITNESSES.md)
 - [الروح القدس والمواهب الروحية](HOLY_SPIRIT_AND_GIFTS.md)
