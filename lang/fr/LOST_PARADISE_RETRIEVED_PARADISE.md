@@ -3,7 +3,7 @@
 
 ---
 
-# PARADIS PERDU - PARADIS RETROUVÉ
+# PARADIS PERDU — PARADIS RETROUVÉ
 
 ## *De la ruine d'Éden au Royaume restauré en Christ*
 

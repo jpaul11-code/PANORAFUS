@@ -3,7 +3,7 @@
 
 ---
 
-# LOST PARADISE - RETRIEVED PARADISE
+# LOST PARADISE — RETRIEVED PARADISE
 
 ## *From Eden's Ruin to Christ's Restored Kingdom*
 

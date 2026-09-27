@@ -3,7 +3,7 @@
 
 ---
 
-# PARAÍSO PERDIDO - PARAÍSO RECUPERADO
+# PARAÍSO PERDIDO — PARAÍSO RECUPERADO
 
 ## *De la ruina del Edén al Reino restaurado en Cristo*
 
