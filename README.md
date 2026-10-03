@@ -70,7 +70,7 @@ PANORAFUS.AI therefore presents the fullness of God revealed in Christ and poure
 
 - **Start locally:** `npm start`
 - **Generate published artifacts:** `npm run platform:generate`
-- **Primary endpoints:** `/api/health`, `/api/dashboard`, `/api/institutions`, `/api/institutions/search?q=...`, `/api/chat?q=...`
+- **Primary endpoints:** `/api/health`, `/api/dashboard`, `/api/products`, `/api/institutions`, `/api/institutions/search?q=...`, `/api/chat?q=...`
 
 The executable platform uses repository-backed data from the institution indexes, workflow files, and git history to power dashboard metrics, syndication feeds, and a documentation-aware Q&A endpoint.
 
