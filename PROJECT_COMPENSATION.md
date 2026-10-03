@@ -40,6 +40,22 @@ Donations and financial support are directed to:
 
 ---
 
+## Global Institution Membership — Pilot
+
+PANORAFUS.AI is piloting a month-to-month service for institutions seeking a richer directory profile. The public directory and core devotional resources remain free. Membership fees are service payments, not donations, and do not buy verification, endorsement, or preferential search ranking.
+
+| Plan | Pilot price (USD/month) | Included service |
+|---|---:|---|
+| Community | Free | Public resources and a basic directory listing where eligible |
+| Profile Plus | $19 | Enhanced profile up to 250 words, one website link, and one profile update per month |
+| Featured Profile | $49 | Profile Plus, plus a clearly labeled sponsored placement in one relevant directory category |
+
+The pilot is global where service is lawful and available. Orders are confirmed in writing and fulfilled manually with monthly invoicing; online checkout and automatic renewal are not available. Prices are pilot prices in USD. Any taxes, local availability, or localized quote will be confirmed before an order. Sponsored placement is not verification, endorsement, or a promise of ranking, traffic, or results. Free public access is not conditional on payment.
+
+To request a pilot profile or ask about a localized price, contact the primary contact below. The read-only catalog is also available at `/api/products`.
+
+---
+
 ## Compensation Inquiries
 
 For all compensation-related inquiries — including contributor agreements, partnership arrangements, licensing, and financial matters — please contact:

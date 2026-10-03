@@ -14,6 +14,7 @@ const {
 } = require('./repository-data');
 const { createDashboardSnapshot } = require('./dashboard');
 const { createSyndicationSnapshot } = require('./syndication');
+const { getProductCatalog } = require('./products');
 
 const CONTENT_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -103,6 +104,7 @@ async function handleRequest(request, response, config) {
       endpoints: [
         '/api/health',
         '/api/dashboard',
+        '/api/products',
         '/api/institutions',
         '/api/institutions/search?q=keyword',
         '/api/institutions/{region}',
@@ -145,6 +147,11 @@ async function handleRequest(request, response, config) {
 
   if (url.pathname === '/api/syndication') {
     sendJson(response, 200, createSyndicationSnapshot(repoRoot));
+    return;
+  }
+
+  if (url.pathname === '/api/products' && request.method === 'GET') {
+    sendJson(response, 200, getProductCatalog());
     return;
   }
 

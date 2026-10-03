@@ -82,6 +82,14 @@ test('platform API serves health, institution, and chatbot responses', async () 
     assert.equal(health.status, 'ok');
     assert.equal(health.config.chat.provider, 'local');
 
+    const productsResponse = await fetch(`http://127.0.0.1:${port}/api/products`);
+    assert.equal(productsResponse.status, 200);
+    const catalog = await productsResponse.json();
+    assert.equal(catalog.status, 'pilot');
+    assert.equal(catalog.checkoutAvailable, false);
+    assert.deepEqual(catalog.plans.map((plan) => plan.amountMinor), [0, 1900, 4900]);
+    assert.match(catalog.terms.join(' '), /Sponsored placement is not verification/);
+
     const regionResponse = await fetch(`http://127.0.0.1:${port}/api/institutions/europe`);
     assert.equal(regionResponse.status, 200);
     const region = await regionResponse.json();
