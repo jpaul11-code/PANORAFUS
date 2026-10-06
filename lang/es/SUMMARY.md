@@ -15,6 +15,7 @@
 - [Ver la Palabra](SEE_THE_WORD.md)
 - [Oscuridad Espiritual — Luces del Mundo](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [La victoria de Satanás — La derrota de Satanás](SATANS_VICTORY_SATANS_DEFEAT.md)
+- [Paraíso perdido — Paraíso recuperado](LOST_PARADISE_RETRIEVED_PARADISE.md)
 - [Genealogía del Apóstol Pablo](APOSTLE_PAUL_GENEALOGY.md)
 - [Testigos de la Resurrección](RESURRECTION_WITNESSES.md)
 - [El Espíritu Santo y los Dones](HOLY_SPIRIT_AND_GIFTS.md)
