@@ -260,18 +260,29 @@ test('Safe user projections match documented response fields', () => {
     profile: {
       id: '123e4567-e89b-42d3-a456-426614174001', user_id: '123e4567-e89b-42d3-a456-426614174000',
       display_name: 'Reader', bio: null, avatar_url: null, reading_level: 'beginner',
-      language_code: 'en', is_public: true, created_at: timestamp, updated_at: timestamp
+      language_code: 'en', is_public: true, created_at: '2026-02-01T00:00:00.000Z',
+      updated_at: '2026-02-02T00:00:00.000Z', church_name: 'Private metadata',
+      denomination: 'Private metadata', study_goal: 'Private metadata',
+      location: 'Private metadata', timezone: 'UTC'
     }
   };
   for (const [name, projection] of [['User', ownUser(account)], ['PublicUser', publicUser(account)]]) {
     assert.equal(projection.id, account.id, 'Profile ID must not overwrite the account ID');
+    assert.equal(projection.created_at, account.created_at, 'Profile timestamp must not overwrite account creation time');
     const schema = document.components.schemas[name];
     for (const field of Object.keys(projection)) assert.ok(schema.properties[field], `${name}.${field}`);
     for (const field of schema.required) assert.ok(Object.hasOwn(projection, field), `${name}.${field}`);
     assert.ok(!Object.hasOwn(projection, 'password_hash'));
     assert.ok(!Object.hasOwn(projection, 'token_version'));
   }
-  assert.ok(!Object.hasOwn(publicUser(account), 'email'));
+  assert.equal(ownUser(account).updated_at, account.updated_at);
+  const publicProjection = publicUser(account);
+  assert.deepEqual(Object.keys(document.components.schemas.PublicUser.properties).sort(),
+    Object.keys(publicProjection).sort());
+  for (const field of ['email', 'updated_at', 'church_name', 'denomination', 'study_goal', 'location', 'timezone']) {
+    assert.ok(!Object.hasOwn(publicProjection, field), `${field} cannot be exposed publicly`);
+    assert.ok(!Object.hasOwn(document.components.schemas.PublicUser.properties, field), `${field} cannot be documented publicly`);
+  }
 });
 
 let backendSchemas;

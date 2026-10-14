@@ -5,11 +5,12 @@ function inputAliases(req, res, next) {
   if (!['POST', 'PATCH'].includes(req.method) || !req.body || typeof req.body !== 'object' || Array.isArray(req.body)) return next();
   const path = req.path.replace(/\/$/, '');
   const aliases = {};
-  if (path === '/auth/register') Object.assign(aliases, { full_name: 'display_name', preferred_language: 'language_code' });
+  const legacyRegistration = path === '/auth/register' && Object.hasOwn(req.body, 'display_name');
+  if (path === '/auth/register') Object.assign(aliases, { display_name: 'full_name', language_code: 'preferred_language' });
   if (/^\/questions\/[^/]+\/answers$/.test(path) || /^\/answers\/[^/]+$/.test(path)) aliases.response_text = 'body';
   if (/^\/journals(?:\/[^/]+)?$/.test(path)) Object.assign(aliases, { content: 'body', passage_id: 'passage_reference' });
-  if (path === '/study-sessions') aliases.study_plan_id = 'plan_id';
-  if (path === '/ai/ask') aliases.message = 'question';
+  if (path === '/study-sessions') aliases.plan_id = 'study_plan_id';
+  if (path === '/ai/ask') aliases.question = 'message';
   if (path === '/accessibility-settings') Object.assign(aliases, { reduced_motion: 'reduce_motion', text_size: 'font_size' });
   const data = { ...req.body };
   for (const [alias, target] of Object.entries(aliases)) {
@@ -23,6 +24,19 @@ function inputAliases(req, res, next) {
     }
     data[target] = value;
     delete data[alias];
+  }
+  if (legacyRegistration && !Object.hasOwn(data, 'preferred_language')) data.preferred_language = 'en';
+  if (path.startsWith('/ai/')) {
+    for (const [alias, target] of [['language_code', 'language'], ['reading_level', 'reading_level'], ['study_goal', 'study_goal']]) {
+      if (!Object.hasOwn(data, alias)) continue;
+      const context = data.context === undefined ? {} : data.context;
+      if (!context || typeof context !== 'object' || Array.isArray(context)) {
+        throw new ApiError(400, 'VALIDATION_ERROR', 'AI context must be an object');
+      }
+      if (Object.hasOwn(context, target)) throw new ApiError(400, 'VALIDATION_ERROR', `Supply only context.${target} or ${alias}, not both`);
+      data.context = { ...context, [target]: data[alias] };
+      delete data[alias];
+    }
   }
   req.body = data;
   next();

@@ -7,7 +7,7 @@
     "start": "node server.js",
     "test": "node --test test/*.test.js",
     "check": "node --check app.js && node --check routes/api.js && node --check services/auth.js",
-    "prisma:generate": "prisma generate --schema ../prisma/schema.prisma",
+    "prisma:generate": "node config/generate-prisma.js",
     "db:push": "prisma db push --schema ../prisma/schema.prisma"
   },
   "dependencies": {

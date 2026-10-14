@@ -93,7 +93,7 @@ test('registration/login enforce role whitelist, normalized email, safe user out
   assert.equal(registered.token_type, 'Bearer');
   status(await f.request('POST', '/auth/register', input, null), 409);
   status(await f.request('POST', '/auth/login', { email: input.email, password: input.password }, null), 200);
-  status(await f.request('POST', '/auth/login', { email: input.email, password: 'incorrect' }, null), 401);
+  status(await f.request('POST', '/auth/login', { email: input.email, password: 'Incorrect-passphrase!123' }, null), 401);
   status(await f.request('POST', '/auth/login', { email: 'unknown@example.com', password: input.password }, null), 401);
   assert.ok(f.db.tables.refreshToken.every(x => !registered.refresh_token.includes(x.token_hash)));
 });
@@ -259,6 +259,9 @@ test('requested request aliases, church sessions, question types, accessibility 
     password: 'SafePassphrase!123', full_name: 'Original API learner', preferred_language: 'en' }, null), 201);
   assert.equal(registered.user.display_name, 'Original API learner');
   assert.equal(registered.user.language_code, 'en');
+  status(await f.request('POST', '/auth/register', { email: 'missing-language@example.com',
+    password: 'SafePassphrase!123', full_name: 'Missing language' }, null), 400);
+  status(await f.request('POST', '/auth/login', { email: 'alias@example.com', password: 'short' }, null), 400);
   status(await f.request('POST', '/auth/register', { email: 'conflict@example.com', password: 'SafePassphrase!123',
     full_name: 'Original', display_name: 'Conflict' }, null), 400);
   const plan = status(await f.request('POST', '/study-plans', {
@@ -433,7 +436,7 @@ test('AI fails closed when unconfigured, validates request and rate limits', asy
   status(await f.request('POST', '/ai/ask', { message: 'What is hope?' }), 503);
   status(await f.request('POST', '/ai/ask', { question: 'Question', unexpected: true }), 400);
   status(await f.request('POST', '/ai/ask', { question: 'Question' }), 429);
-  const login = { email: 'user@example.com', password: 'wrong' };
+  const login = { email: 'user@example.com', password: 'Incorrect-passphrase!123' };
   status(await f.request('POST', '/auth/login', login, null), 401);
   status(await f.request('POST', '/auth/login', login, null), 401);
   status(await f.request('POST', '/auth/login', login, null), 429);
@@ -448,8 +451,8 @@ test('AI fixed HTTPS endpoint receives structured schema and validated Socratic 
   const { outputs, system } = require('../services/ai');
   const examples = {
     ask: { answer: 'Consider the passage', scripture_references: ['Romans 8:1'], reflection_question: 'What do you notice?', next_step: 'Read Romans 8' },
-    'generate-study': { title: 'Hope', description: 'Reflect', lessons: [{ title: 'Romans', content: 'Reflect',
-      scripture_references: ['Romans 8:1'], reflection_question: 'What do you notice?', next_step: 'Read' }] },
+    'generate-study': { study: { title: 'Hope', description: 'Reflect', lessons: [{ title: 'Romans', content: 'Reflect',
+      scripture_references: ['Romans 8:1'], reflection_question: 'What do you notice?', next_step: 'Read' }] } },
     'generate-questions': { questions: [{ question: 'What do you notice?', scripture_references: ['Romans 8:1'],
       reflection_question: 'Why?', next_step: 'Reflect' }] },
     'generate-prayer': { title: 'Hope', prayer: 'Help us reflect', scripture_references: ['Romans 8:1'],
@@ -475,6 +478,15 @@ test('AI fixed HTTPS endpoint receives structured schema and validated Socratic 
   assert.match(system, /eschatology neutrally/);
   assert.match(system, /Socratic/);
   assert.ok(calls.every(x => x.payload.output_schema.type === 'object'));
+  delete examples.ask.next_step;
+  const contextual = status(await f.request('POST', '/ai/ask', {
+    message: 'How can I reflect?', context: { language: 'en', reading_level: 'beginner', study_goal: 'Apply Scripture' }
+  }), 200);
+  assert.equal(contextual.next_step, undefined);
+  assert.equal(calls.at(-1).payload.input.context.study_goal, 'Apply Scripture');
+  status(await f.request('POST', '/ai/ask', { message: 'Hope?', context: { role: 'admin' } }), 400);
+  status(await f.request('POST', '/ai/ask', { question: 'Legacy input', language_code: 'en',
+    reading_level: 'beginner', study_goal: 'Reflect' }), 200);
 });
 test('AI malformed, excessive and timeout provider output produces safe 503', async t => {
   for (const fetchImpl of [

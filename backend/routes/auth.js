@@ -4,7 +4,7 @@ const { hashPassword, checkPassword, unauthorized } = require('../services/auth'
 const { ApiError } = require('../middleware/errors');
 function authRoutes(router, db, auth, limiter) {
   router.post('/auth/register', limiter, async (req, res) => {
-    const { password, display_name, language_code = 'en', ...data } = parse(schemas.register, req.body);
+    const { password, full_name: display_name, preferred_language: language_code, ...data } = parse(schemas.register, req.body);
     const password_hash = await hashPassword(password);
     const result = await db.$transaction(async tx => {
       const language = await tx.language.findUnique({ where: { code: language_code } });

@@ -125,7 +125,8 @@ function learningRoutes(router, db, resources, access) {
     ] }
   }));
   router.post('/study-sessions', async (req, res) => {
-    const data = parse(schemas.session, req.body);
+    const { study_plan_id, ...data } = parse(schemas.session, req.body);
+    data.plan_id = study_plan_id;
     await sessionReferences(data, req);
     res.status(201).json(await db.studySession.create({ data: { ...data, user_id: req.user.id } }));
   });

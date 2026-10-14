@@ -14,8 +14,8 @@ const profile = body({
 });
 const schemas = {
   register: body({ email: z.email().max(254).transform(x => x.toLowerCase()), password: z.string().min(12).max(128),
-    display_name: text(100), language_code: language.optional() }),
-  login: body({ email: z.email().max(254).transform(x => x.toLowerCase()), password: z.string().min(1).max(128) }),
+    full_name: text(100), preferred_language: language }),
+  login: body({ email: z.email().max(254).transform(x => x.toLowerCase()), password: z.string().min(12).max(128) }),
   refresh: body({ refresh_token: z.string().min(32).max(256) }),
   profile,
   plan: body({ title: text(200), description: text(), reading_level: reading.optional(),
@@ -25,7 +25,7 @@ const schemas = {
   question: body({ title: text(200), body: text(), lesson_id: optionalId, passage_id: optionalId,
     question_type: z.enum(['reflection', 'discussion', 'application', 'theology']).optional() }),
   answer: body({ body: text() }),
-  session: body({ plan_id: id, group_id: optionalId, current_lesson_id: optionalId,
+  session: body({ study_plan_id: id, group_id: optionalId, current_lesson_id: optionalId,
     session_type: z.enum(['personal', 'group', 'church']).optional(), status: z.enum(['active', 'paused', 'completed']).optional() }),
   sessionUpdate: body({ current_lesson_id: optionalId, session_type: z.enum(['personal', 'group', 'church']).optional(),
     status: z.enum(['active', 'paused', 'completed']).optional() }),
