@@ -154,6 +154,9 @@ test('public bible endpoints, pagination, bounded and strict query validation', 
     status(await f.request('GET', '/bible/books?' + query, undefined, null), 400);
   }
   status(await f.request('GET', '/bible/search', undefined, null), 400);
+  assert.equal(status(await f.request('GET', '/bible/passages?verse=1', undefined, null), 200).items.length, 1);
+  assert.equal(status(await f.request('GET', '/bible/passages?verse=2', undefined, null), 200).items.length, 0);
+  for (const verse of [0, 177]) status(await f.request('GET', '/bible/passages?verse=' + verse, undefined, null), 400);
   status(await f.request('GET', `/bible/books/${book.id}?unknown=true`, undefined, null), 400);
   status(await f.request('GET', '/bible/books/not-an-id', undefined, null), 400);
   status(await f.request('GET', '/bible/books/' + randomUUID(), undefined, null), 404);
@@ -171,6 +174,16 @@ test('profile visibility opt-in and ownership, language validation, accessibilit
   assert.equal(publicProfile.email, undefined);
   status(await f.request('PATCH', '/users/me', { church_name: 'Local congregation', denomination: 'Independent',
     study_goal: 'Read Romans', location: 'Haiti', timezone: 'America/Port-au-Prince' }), 200);
+  const safePublic = status(await f.request('GET', `/users/${f.users.user.id}`, undefined, 'other'), 200);
+  assert.equal(safePublic.id, f.users.user.id);
+  assert.equal(safePublic.created_at, f.users.user.created_at.toISOString());
+  for (const privateField of ['email', 'password_hash', 'token_version', 'user_id',
+    'church_name', 'denomination', 'study_goal', 'location', 'timezone']) {
+    assert.equal(safePublic[privateField], undefined);
+  }
+  const ownProfile = status(await f.request('GET', '/users/me'), 200);
+  assert.equal(ownProfile.location, 'Haiti');
+  assert.equal(ownProfile.church_name, 'Local congregation');
   status(await f.request('PATCH', '/users/me', { timezone: 'invalid/timezone' }), 400);
   status(await f.request('PATCH', '/users/me', { church_name: null, denomination: null, study_goal: null,
     location: null, timezone: null }), 200);
@@ -240,6 +253,65 @@ test('journals and prayers owner-only CRUD excludes administrators; strict priva
     status(await f.request('DELETE', `${path}/${resource.id}`), 204);
   }
 });
+test('requested request aliases, church sessions, question types, accessibility and answered prayers', async t => {
+  const f = await fixture(t);
+  const registered = status(await f.request('POST', '/auth/register', { email: 'alias@example.com',
+    password: 'SafePassphrase!123', full_name: 'Original API learner', preferred_language: 'en' }, null), 201);
+  assert.equal(registered.user.display_name, 'Original API learner');
+  assert.equal(registered.user.language_code, 'en');
+  status(await f.request('POST', '/auth/register', { email: 'conflict@example.com', password: 'SafePassphrase!123',
+    full_name: 'Original', display_name: 'Conflict' }, null), 400);
+  const plan = status(await f.request('POST', '/study-plans', {
+    title: 'Eschatology', description: 'Compare interpretations neutrally', topic: 'eschatology', is_published: true
+  }, 'leader'), 201);
+  assert.equal(status(await f.request('GET', '/study-plans?topic=eschatology'), 200).items.length, 1);
+  assert.equal(status(await f.request('GET', '/study-plans?topic=other'), 200).items.length, 0);
+  const lesson = status(await f.request('POST', `/study-plans/${plan.id}/lessons`, { title: 'Hope', position: 1 }, 'leader'), 201);
+  let question;
+  for (const question_type of ['reflection', 'discussion', 'application', 'theology']) {
+    question = status(await f.request('POST', '/questions', { title: 'Reflect', body: 'What do you notice?',
+      lesson_id: lesson.id, question_type }, 'leader'), 201);
+    assert.equal(question.question_type, question_type);
+  }
+  status(await f.request('POST', '/questions', { title: 'No', body: 'No', question_type: 'invalid' }), 400);
+  const answer = status(await f.request('POST', `/questions/${question.id}/answers`, { response_text: 'Original reflection' }), 201);
+  assert.equal(answer.body, 'Original reflection');
+  status(await f.request('PATCH', `/answers/${answer.id}`, { response_text: 'Edited reflection' }), 200);
+  status(await f.request('POST', `/questions/${question.id}/answers`, { response_text: 'Original', body: 'Conflicting' }), 400);
+  const church = status(await f.request('POST', '/study-sessions', { study_plan_id: plan.id, session_type: 'church',
+    status: 'completed' }), 201);
+  assert.equal(church.plan_id, plan.id);
+  assert.equal(church.session_type, 'church');
+  assert.equal(church.started_at, church.completed_at);
+  status(await f.request('PATCH', `/study-sessions/${church.id}`, { session_type: 'personal' }), 200);
+  status(await f.request('POST', '/study-sessions', { study_plan_id: plan.id, plan_id: plan.id }), 400);
+  const book = await f.db.bibleBook.create({ data: { name: 'Romans', abbreviation: 'Rom', testament: 'new', canonical_order: 45 } });
+  const passage = await f.db.biblePassage.create({ data: { book_id: book.id, chapter: 8, verse_start: 1, verse_end: 1,
+    text: 'Public domain sample', translation: 'WEB', language_code: 'en', license: 'Public domain' } });
+  const journal = status(await f.request('POST', '/journals', {
+    title: 'Original journal', content: 'Reflect in hope', passage_id: passage.id, mood: 'hopeful'
+  }), 201);
+  assert.equal(journal.body, 'Reflect in hope');
+  assert.equal(journal.passage_reference, passage.id);
+  status(await f.request('PATCH', `/journals/${journal.id}`, { content: 'Edited reflection' }), 200);
+  status(await f.request('POST', '/journals', { title: 'No', content: 'No', passage_id: randomUUID() }), 404);
+  const accessibility = status(await f.request('PATCH', '/accessibility-settings', {
+    text_size: 'large', reduced_motion: true, speech_enabled: true, simplified_language: true
+  }), 200);
+  assert.equal(accessibility.font_size, 20);
+  assert.equal(accessibility.reduce_motion, true);
+  assert.equal(accessibility.speech_enabled, true);
+  assert.equal(accessibility.simplified_language, true);
+  status(await f.request('PATCH', '/accessibility-settings', { text_size: 24 }), 200);
+  status(await f.request('PATCH', '/accessibility-settings', { text_size: 'giant' }), 400);
+  status(await f.request('PATCH', '/accessibility-settings', { text_size: 'large', font_size: 24 }), 400);
+  status(await f.request('PATCH', '/accessibility-settings', { reduced_motion: true, reduce_motion: false }), 400);
+  const prayer = status(await f.request('POST', '/prayers', { title: 'Thankfulness', body: 'An original prayer', status: 'answered' }), 201);
+  assert.equal(prayer.answered_at, prayer.created_at);
+  assert.equal(status(await f.request('PATCH', `/prayers/${prayer.id}`, { status: 'active' }), 200).answered_at, null);
+  status(await f.request('PATCH', `/prayers/${prayer.id}`, { answered_at: '2000-01-01T00:00:00Z' }), 400);
+  status(await f.request('PATCH', `/prayers/${prayer.id}`, { status: 'answered' }), 200);
+});
 test('groups leadership, member invitations, scoped sessions and comments', async t => {
   const f = await fixture(t);
   const group = status(await f.request('POST', '/groups', { name: 'Small group' }, 'leader'), 201);
@@ -256,7 +328,8 @@ test('groups leadership, member invitations, scoped sessions and comments', asyn
   const session = status(await f.request('POST', `/groups/${group.id}/sessions`, { title: 'Meeting', starts_at: '2026-11-01T12:00:00Z' }, 'leader'), 201);
   status(await f.request('GET', `/groups/${group.id}/sessions`), 200);
   status(await f.request('GET', `/group-sessions/${session.id}`), 200);
-  status(await f.request('PATCH', `/group-sessions/${session.id}`, { title: 'Edited' }, 'leader'), 200);
+  status(await f.request('PATCH', `/group-sessions/${session.id}`, { title: 'Edited', status: 'live',
+    notes: 'Original discussion notes' }, 'leader'), 200);
   status(await f.request('PATCH', `/group-sessions/${session.id}`, { title: 'No' }), 403);
   status(await f.request('PATCH', `/group-sessions/${session.id}`, { ends_at: '2026-10-01T12:00:00Z' }, 'leader'), 400);
   const comment = status(await f.request('POST', '/comments', { body: 'Reflection', group_session_id: session.id }), 201);
@@ -357,7 +430,7 @@ test('SSE rejects query tokens and foreign cursors, and expires with its access 
 });
 test('AI fails closed when unconfigured, validates request and rate limits', async t => {
   const f = await fixture(t, { authLimit: 2, aiLimit: 2 });
-  status(await f.request('POST', '/ai/ask', { question: 'What is hope?' }), 503);
+  status(await f.request('POST', '/ai/ask', { message: 'What is hope?' }), 503);
   status(await f.request('POST', '/ai/ask', { question: 'Question', unexpected: true }), 400);
   status(await f.request('POST', '/ai/ask', { question: 'Question' }), 429);
   const login = { email: 'user@example.com', password: 'wrong' };

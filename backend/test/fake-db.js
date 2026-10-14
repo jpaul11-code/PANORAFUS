@@ -28,6 +28,8 @@ function fakeDatabase() {
       const actual = row[key] ?? null;
       if (value && typeof value === 'object' && !(value instanceof Date)) {
         if ('gt' in value && !(actual > value.gt)) return false;
+        if ('lte' in value && !(actual <= value.lte)) return false;
+        if ('gte' in value && !(actual >= value.gte)) return false;
         if ('contains' in value && !String(actual).toLowerCase().includes(value.contains.toLowerCase())) return false;
         if ('in' in value && !value.in.includes(actual)) return false;
         if ('not' in value && actual === value.not) return false;
@@ -48,16 +50,18 @@ function fakeDatabase() {
       user: { role: 'user', status: 'active', token_version: 0, email_verified: false },
       profile: { language_code: 'en', reading_level: 'beginner', is_public: false, bio: null, avatar_url: null },
       refreshToken: { used_at: null, revoked_at: null }, language: { is_active: true },
-      studyPlan: { is_published: false, reading_level: 'beginner', language_code: 'en' },
+      studyPlan: { is_published: false, reading_level: 'beginner', language_code: 'en', topic: 'general' },
       studyLesson: { description: '', content: '', reflection_prompt: '' },
-      question: { lesson_id: null, passage_id: null }, answer: { is_accepted: false },
-      studySession: { group_id: null, current_lesson_id: null, status: 'active', completed_at: null, started_at: new Date() },
-      journal: { session_id: null, lesson_id: null, is_private: true },
-      prayer: { group_id: null, is_private: true, status: 'active' },
+      question: { lesson_id: null, passage_id: null, question_type: 'discussion' }, answer: { is_accepted: false },
+      studySession: { group_id: null, current_lesson_id: null, session_type: 'personal', status: 'active', completed_at: null, started_at: new Date() },
+      journal: { session_id: null, lesson_id: null, is_private: true, passage_reference: null, mood: null },
+      prayer: { group_id: null, is_private: true, status: 'active', answered_at: null },
       group: { description: '', visibility: 'private' }, groupMember: { role: 'member' },
-      groupSession: { lesson_id: null, ends_at: null }, comment: { question_id: null, lesson_id: null, group_session_id: null },
+      groupSession: { lesson_id: null, ends_at: null, notes: null, status: 'scheduled' },
+      comment: { question_id: null, lesson_id: null, group_session_id: null },
       notification: { is_read: false, data: {} },
-      accessibilitySettings: { font_size: 16, high_contrast: false, reduce_motion: false, screen_reader: false }
+      accessibilitySettings: { font_size: 16, high_contrast: false, reduce_motion: false, screen_reader: false,
+        speech_enabled: false, simplified_language: false }
     };
     return { ...common, ...byModel[model] };
   }

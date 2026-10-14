@@ -6,6 +6,7 @@ const path = require('node:path');
 const { createApp } = require('../app');
 const { loadConfig } = require('../config');
 const { authService } = require('../services/auth');
+const jwt = require('jsonwebtoken');
 
 test('real PostgreSQL: HTTP workflow, atomic rotation/replay, privacy cascades and audit', {
   skip: !process.env.API_TEST_DATABASE_URL,
@@ -23,11 +24,10 @@ test('real PostgreSQL: HTTP workflow, atomic rotation/replay, privacy cascades a
     await admin.$executeRawUnsafe(`DROP SCHEMA "${schema}" CASCADE`);
     await admin.$disconnect();
   });
+  url.searchParams.delete('schema');
+  execFileSync('psql', [url.href, '-X', '-v', 'ON_ERROR_STOP=1', '-c', `SET search_path TO "${schema}"`,
+    '-f', path.resolve(__dirname, '../../db/schema.sql')], { stdio: 'pipe' });
   url.searchParams.set('schema', schema);
-  execFileSync(process.execPath, [
-    path.resolve(__dirname, '../node_modules/prisma/build/index.js'), 'db', 'push',
-    '--schema', path.resolve(__dirname, '../../prisma/schema.prisma'), '--skip-generate'
-  ], { cwd: path.resolve(__dirname, '..'), env: { ...process.env, DATABASE_URL: url.href }, stdio: 'pipe' });
   db = new PrismaClient({ datasources: { db: { url: url.href } } });
   await db.language.create({ data: { code: 'en', name: 'English', native_name: 'English' } });
   const config = loadConfig({ JWT_SECRET: randomBytes(48).toString('hex'), SSE_POLL_MS: '100' });
@@ -48,7 +48,8 @@ test('real PostgreSQL: HTTP workflow, atomic rotation/replay, privacy cascades a
   }
   for (const actor of ['leader', 'user', 'admin', 'other']) {
     tokens[actor] = await request('POST', '/auth/register', {
-      email: `${actor}@integration.example`, password: 'Integration-passphrase!123', display_name: actor
+      email: `${actor}@integration.example`, password: 'Integration-passphrase!123',
+      ...(actor === 'user' ? { full_name: actor, preferred_language: 'en' } : { display_name: actor })
     }, null, 201);
     if (actor === 'leader' || actor === 'admin') {
       const user = await db.user.update({ where: { id: tokens[actor].user.id },
@@ -56,24 +57,54 @@ test('real PostgreSQL: HTTP workflow, atomic rotation/replay, privacy cascades a
       tokens[actor] = await auth.issue(db, user);
     }
   }
-  const plan = await request('POST', '/study-plans', { title: 'Hope', description: 'A private study' }, 'leader', 201);
+  await request('PATCH', '/users/me', { is_public: true, church_name: 'Personal congregation',
+    location: 'Haiti', timezone: 'America/Port-au-Prince' }, 'user');
+  const publicUser = await request('GET', `/users/${tokens.user.user.id}`, null, 'other');
+  assert.equal(publicUser.id, tokens.user.user.id);
+  assert.equal(publicUser.location, undefined);
+  assert.equal(publicUser.church_name, undefined);
+  assert.equal((await request('GET', '/users/me', null, 'user')).location, 'Haiti');
+  const plan = await request('POST', '/study-plans', { title: 'Hope', description: 'A private study', topic: 'eschatology' }, 'leader', 201);
+  assert.equal((await request('GET', '/study-plans?topic=eschatology', null, 'leader')).items.length, 1);
   const lesson = await request('POST', `/study-plans/${plan.id}/lessons`, { title: 'Romans', position: 1 }, 'leader', 201);
-  const question = await request('POST', '/questions', { title: 'Why?', body: 'Reflect', lesson_id: lesson.id }, 'leader', 201);
+  const question = await request('POST', '/questions', { title: 'Why?', body: 'Reflect',
+    question_type: 'reflection', lesson_id: lesson.id }, 'leader', 201);
+  assert.equal(question.question_type, 'reflection');
   await request('GET', `/questions/${question.id}`, null, 'user', 404);
   await request('PATCH', `/study-plans/${plan.id}`, { is_published: true }, 'leader');
-  const answer = await request('POST', `/questions/${question.id}/answers`, { body: 'Private answer' }, 'user', 201);
+  const answer = await request('POST', `/questions/${question.id}/answers`, { response_text: 'Private answer' }, 'user', 201);
   assert.equal((await request('GET', `/questions/${question.id}/answers`, null, 'other')).items.length, 0);
-  await request('PATCH', `/answers/${answer.id}`, { body: 'Edited answer' }, 'user');
-  const session = await request('POST', '/study-sessions', { plan_id: plan.id, current_lesson_id: lesson.id }, 'user', 201);
+  await request('PATCH', `/answers/${answer.id}`, { response_text: 'Edited answer' }, 'user');
+  const session = await request('POST', '/study-sessions', { study_plan_id: plan.id,
+    current_lesson_id: lesson.id, session_type: 'church' }, 'user', 201);
+  assert.equal(session.session_type, 'church');
+  const completedSession = await request('POST', '/study-sessions', { plan_id: plan.id, status: 'completed' }, 'user', 201);
+  assert.equal(completedSession.completed_at, completedSession.started_at);
   await request('GET', '/study-sessions', null, 'user');
-  const journal = await request('POST', '/journals', { title: 'Reflection', body: 'Private',
-    session_id: session.id, lesson_id: lesson.id }, 'user', 201);
+  const book = await db.bibleBook.create({ data: { name: 'Romans', abbreviation: 'Rom', testament: 'new', canonical_order: 45 } });
+  const passage = await db.biblePassage.create({ data: { book_id: book.id, chapter: 8, verse_start: 1, verse_end: 1,
+    text: 'Original test fixture', translation: 'fixture', language_code: 'en', license: 'Original test data' } });
+  const journal = await request('POST', '/journals', { title: 'Reflection', content: 'Private',
+    passage_id: passage.id, mood: 'hopeful', session_id: session.id, lesson_id: lesson.id }, 'user', 201);
+  assert.equal(journal.body, 'Private');
+  assert.equal(journal.passage_reference, passage.id);
+  const settings = await request('PATCH', '/accessibility-settings', {
+    text_size: 'large', reduced_motion: true, speech_enabled: true, simplified_language: true
+  }, 'user');
+  assert.equal(settings.font_size, 20);
+  assert.equal(settings.speech_enabled, true);
+  const prayer = await request('POST', '/prayers', { title: 'Thankfulness', body: 'Original prayer', status: 'answered' }, 'user', 201);
+  assert.equal(prayer.answered_at, prayer.created_at);
+  await request('PATCH', `/prayers/${prayer.id}`, { status: 'active' }, 'user');
   await request('GET', `/journals/${journal.id}`, null, 'admin', 404);
   const group = await request('POST', '/groups', { name: 'Group' }, 'leader', 201);
   await request('POST', `/groups/${group.id}/members`, { user_id: tokens.user.user.id }, 'leader', 201);
   const groupSession = await request('POST', `/groups/${group.id}/sessions`, {
     title: 'Study', lesson_id: lesson.id, starts_at: '2026-11-01T12:00:00Z'
   }, 'leader', 201);
+  assert.equal((await request('PATCH', `/group-sessions/${groupSession.id}`, {
+    status: 'live', notes: 'Original discussion notes'
+  }, 'leader')).status, 'live');
   await request('GET', `/groups/${group.id}/sessions`, null, 'user');
   const comment = await request('POST', '/comments', { body: 'Thought', group_session_id: groupSession.id }, 'user', 201);
   await request('PATCH', `/study-plans/${plan.id}`, { is_published: false }, 'leader');
@@ -116,4 +147,18 @@ test('real PostgreSQL: HTTP workflow, atomic rotation/replay, privacy cascades a
   await request('PATCH', `/admin/users/${tokens.leader.user.id}`, { status: 'suspended' }, 'admin');
   await request('GET', '/users/me', null, 'leader', 401);
   assert.equal(await db.adminAuditLog.count(), 2);
+  const { PanorafusClient } = await import('../../frontend/client-examples/client.mjs');
+  const client = new PanorafusClient(base + '/api/v1');
+  const clientAuth = await client.register({ email: 'client@integration.example', password: 'Client-passphrase!123',
+    display_name: 'Client learner' });
+  await client.login('client@integration.example', 'Client-passphrase!123');
+  client.accessToken = jwt.sign({ ver: 0 }, config.secret, {
+    subject: clientAuth.user.id, issuer: config.issuer, audience: config.audience, expiresIn: -1
+  });
+  await client.logout();
+  assert.equal(client.accessToken, null);
+  assert.equal(client.refreshToken, null);
+  const clientRefreshRows = await db.refreshToken.findMany({ where: { user_id: clientAuth.user.id } });
+  assert.equal(clientRefreshRows.length, 3);
+  assert.ok(clientRefreshRows.every(row => row.revoked_at));
 });

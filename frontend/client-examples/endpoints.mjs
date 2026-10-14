@@ -51,9 +51,9 @@ export function endpoints(client) {
       list: (query) => get('/questions', query),
       create: (input) => post('/questions', input),
       get: (value) => get(`/questions/${id(value)}`),
-      answer: (value, response_text) => post(`/questions/${id(value)}/answers`, { response_text }),
+      answer: (value, body) => post(`/questions/${id(value)}/answers`, { body }),
       answers: (value, query) => get(`/questions/${id(value)}/answers`, query),
-      updateAnswer: (value, response_text) => patch(`/answers/${id(value)}`, { response_text })
+      updateAnswer: (value, body) => patch(`/answers/${id(value)}`, { body })
     },
     studySessions: {
       list: (query) => get('/study-sessions', query),

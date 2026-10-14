@@ -11,6 +11,7 @@ const { accountRoutes } = require('./account');
 const { learningRoutes } = require('./learning');
 const { communityRoutes } = require('./community');
 const { adminRoutes } = require('./admin');
+const { inputAliases } = require('../middleware/aliases');
 function limiter(limit) {
   return rateLimit({
     windowMs: 60000, limit, standardHeaders: 'draft-8', legacyHeaders: false,
@@ -25,6 +26,7 @@ function apiRoutes(db, config, options = {}) {
     handler(req, res, next) { next(new ApiError(429, 'RATE_LIMITED', 'Too many requests')); }
   });
   router.use(requestLimiter);
+  router.use(inputAliases);
   const collections = new Set(['/languages', '/bible/books', '/bible/passages', '/bible/search',
     '/study-plans', '/lessons', '/questions', '/study-sessions', '/journals', '/prayers', '/groups',
     '/comments', '/notifications', '/admin/users', '/admin/audit-logs']);
@@ -40,8 +42,16 @@ function apiRoutes(db, config, options = {}) {
   router.get('/languages', (req, res) => resources.list('language', req, res, { is_active: true }));
   router.get('/bible/books', (req, res) => resources.list('bibleBook', req, res, {}));
   router.get('/bible/books/:id', async (req, res) => res.json(await resources.one('bibleBook', parse(id, req.params.id))));
-  router.get('/bible/passages', (req, res) => resources.list('biblePassage', req, res, filters => filters, {
+  router.get('/bible/passages', (req, res) => resources.list('biblePassage', req, res, filters => {
+    const { verse, ...where } = filters;
+    if (verse !== undefined) {
+      where.verse_start = { lte: verse };
+      where.verse_end = { gte: verse };
+    }
+    return where;
+  }, {
     book_id: id.optional(), chapter: z.coerce.number().int().min(1).max(150).optional(),
+    verse: z.coerce.number().int().min(1).max(176).optional(),
     language_code: language.optional(), translation: text(100).optional()
   }));
   router.get('/bible/passages/:id', async (req, res) => res.json(await resources.one('biblePassage', parse(id, req.params.id))));

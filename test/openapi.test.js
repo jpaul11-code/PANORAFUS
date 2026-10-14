@@ -30,7 +30,6 @@ function walk(value, visit) {
 test('OpenAPI contract has complete local references and unique operation IDs', () => {
   assert.equal(document.openapi, '3.0.3');
   assert.equal(document.servers[0].url, '/api/v1');
-  assert.ok(operations.length >= 75, 'The learning API must document its complete route inventory');
   const identifiers = new Set();
   walk(document, (value) => {
     if (value.$ref) resolve(value.$ref);
@@ -91,6 +90,47 @@ test('Security, strict bodies, pagination and reusable errors follow API policy'
   assert.equal(document.components.parameters.Limit.schema.maximum, 100);
   assert.equal(document.components.parameters.Offset.schema.minimum, 0);
   assert.doesNotMatch(JSON.stringify(document), /password_hash|refresh_token_hash|refresh_hash/);
+});
+
+test('Original design operations and the six implemented additions are all present', () => {
+  const design = {
+    auth: ['post /auth/register', 'post /auth/login', 'post /auth/refresh', 'post /auth/logout'],
+    users: ['get /users/me', 'patch /users/me', 'get /users/{id}'],
+    bible: ['get /bible/books', 'get /bible/books/{id}', 'get /bible/passages',
+      'get /bible/passages/{id}', 'get /bible/search'],
+    plans: ['get /study-plans', 'post /study-plans', 'get /study-plans/{id}',
+      'patch /study-plans/{id}', 'delete /study-plans/{id}'],
+    lessons: ['get /study-plans/{id}/lessons', 'post /study-plans/{id}/lessons',
+      'get /lessons/{id}', 'patch /lessons/{id}', 'delete /lessons/{id}'],
+    questions: ['post /questions', 'get /questions/{id}', 'get /lessons/{id}/questions',
+      'get /questions/{id}/answers', 'post /questions/{id}/answers', 'patch /answers/{id}'],
+    study_sessions: ['get /study-sessions', 'post /study-sessions',
+      'get /study-sessions/{id}', 'patch /study-sessions/{id}'],
+    journals: ['get /journals', 'post /journals', 'get /journals/{id}',
+      'patch /journals/{id}', 'delete /journals/{id}'],
+    prayers: ['get /prayers', 'post /prayers', 'get /prayers/{id}',
+      'patch /prayers/{id}', 'delete /prayers/{id}'],
+    groups: ['get /groups', 'post /groups', 'get /groups/{id}',
+      'patch /groups/{id}', 'delete /groups/{id}'],
+    members: ['get /groups/{id}/members', 'post /groups/{id}/members',
+      'delete /groups/{id}/members/{user_id}'],
+    group_sessions: ['get /groups/{id}/sessions', 'post /groups/{id}/sessions',
+      'get /group-sessions/{id}', 'patch /group-sessions/{id}'],
+    comments: ['get /comments', 'post /comments', 'patch /comments/{id}', 'delete /comments/{id}'],
+    notifications: ['get /notifications', 'patch /notifications/{id}', 'delete /notifications/{id}'],
+    accessibility: ['get /accessibility-settings', 'patch /accessibility-settings'],
+    languages: ['get /languages', 'post /languages'],
+    admin: ['get /admin/users', 'patch /admin/users/{id}', 'get /admin/audit-logs',
+      'delete /admin/content/{type}/{id}'],
+    ai: ['post /ai/ask', 'post /ai/generate-study', 'post /ai/generate-questions', 'post /ai/generate-prayer']
+  };
+  const additions = ['get /notifications/stream', 'get /health', 'get /ready',
+    'get /lessons', 'post /lessons', 'get /questions'];
+  const original = Object.values(design).flat();
+  assert.equal(original.length, 73);
+  const expected = [...original, ...additions].sort();
+  assert.equal(new Set(expected).size, 79);
+  assert.deepEqual(operations.map(({ route, method }) => `${method} ${route}`).sort(), expected);
 });
 
 test('Documented operations exactly cover implemented route registrations', () => {
@@ -163,6 +203,8 @@ test('Authentication contracts never expose stored credentials and constrain inp
   assert.ok(document.paths['/auth/register'].post.responses['201']);
   assert.ok(document.paths['/auth/login'].post.responses['200']);
   assert.ok(document.paths['/auth/refresh'].post.responses['200']);
+  assert.match(document.paths['/auth/logout'].post.description, /first call the public refresh endpoint/);
+  assert.match(document.paths['/auth/logout'].post.description, /newly rotated refresh_token/);
   for (const { route, method, operation } of operations) {
     if (route.startsWith('/ai/')) {
       assert.equal(method, 'post');
@@ -331,7 +373,13 @@ test('Request fields and bounds match backend validators', {
     if (actual.enum) assert.deepEqual([...documented.enum].sort(), [...actual.enum].sort(), location);
     if (actual.items) compare(documented.items, actual.items, `${location}[]`);
   }
+  const mismatches = [];
   for (const [name, schema] of Object.entries(pairs)) {
-    compare(document.components.schemas[name], z.toJSONSchema(schema, { io: 'input' }), name);
+    try {
+      compare(document.components.schemas[name], z.toJSONSchema(schema, { io: 'input' }), name);
+    } catch (error) {
+      mismatches.push(`${name}: ${error.message.split('\n')[0]} (${JSON.stringify(error.actual)} != ${JSON.stringify(error.expected)})`);
+    }
   }
+  assert.deepEqual(mismatches, [], 'Documented schemas must match every live backend validator');
 });

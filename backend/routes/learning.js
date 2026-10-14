@@ -1,5 +1,5 @@
 const { schemas, reading } = require('../models/schemas');
-const { id, language, patch, parse } = require('../middleware/validation');
+const { id, text, language, patch, parse } = require('../middleware/validation');
 const { missing, ApiError } = require('../middleware/errors');
 const { deleteContent } = require('../services/content');
 function learningRoutes(router, db, resources, access) {
@@ -7,8 +7,9 @@ function learningRoutes(router, db, resources, access) {
   router.get('/study-plans', (req, res) => list('studyPlan', req, res, filters => ({
     OR: [{ is_published: true }, { created_by: req.user.id }, ...(req.user.role === 'admin' ? [{}] : [])],
     ...(filters.language_code ? { language_code: filters.language_code } : {}),
+    ...(filters.topic ? { topic: filters.topic } : {}),
     ...(filters.reading_level ? { reading_level: filters.reading_level } : {})
-  }), { language_code: language.optional(), reading_level: reading.optional() }));
+  }), { language_code: language.optional(), reading_level: reading.optional(), topic: text(100).optional() }));
   router.post('/study-plans', async (req, res) => {
     access.leadership(req.user);
     res.status(201).json(await db.studyPlan.create({ data: {
@@ -112,7 +113,10 @@ function learningRoutes(router, db, resources, access) {
       const lesson = await access.lesson(current, req.user);
       if (lesson.plan_id !== plan_id) throw new ApiError(400, 'INVALID_REFERENCE', 'Lesson must belong to the study plan');
     }
-    if (data.status === 'completed') data.completed_at = new Date();
+    if (data.status === 'completed') {
+      data.completed_at = new Date();
+      if (!previous) data.started_at = data.completed_at;
+    }
     else if (data.status) data.completed_at = null;
   }
   router.get('/study-sessions', (req, res) => list('studySession', req, res, {
@@ -140,6 +144,9 @@ function learningRoutes(router, db, resources, access) {
     res.json(await db.studySession.update({ where: { id: resource_id }, data }));
   });
   resources.privateCrud(router, '/journals', 'journal', schemas.journal, async (data, req) => {
+    if (data.passage_reference && id.safeParse(data.passage_reference).success) {
+      await one('biblePassage', data.passage_reference);
+    }
     if (data.lesson_id) await access.lesson(data.lesson_id, req.user);
     if (data.session_id) {
       const session = await one('studySession', data.session_id);
@@ -147,8 +154,15 @@ function learningRoutes(router, db, resources, access) {
       await access.plan(session.plan_id, req.user);
     }
   });
-  resources.privateCrud(router, '/prayers', 'prayer', schemas.prayer, async (data, req) => {
+  resources.privateCrud(router, '/prayers', 'prayer', schemas.prayer, async (data, req, previous) => {
     if (data.group_id) await access.membership(data.group_id, req.user);
+    if (data.answered_at && data.answered_at < (previous?.created_at || new Date())) {
+      throw new ApiError(400, 'INVALID_ANSWERED_AT', 'answered_at must not precede the prayer creation time');
+    }
+    if (data.status === 'answered' && data.answered_at === undefined) {
+      data.answered_at = new Date();
+      if (!previous) data.created_at = data.answered_at;
+    } else if (data.status === 'active' && data.answered_at === undefined) data.answered_at = null;
   });
 }
 module.exports = { learningRoutes };

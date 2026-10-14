@@ -98,6 +98,8 @@ If configuration is stored in `backend/.env` rather than exported, start from
   as validation metadata, not text to render as HTML. Keep request IDs for support.
 - Unknown fields and invalid identifiers are rejected. Display user, Scripture,
   and model output as plain text, never unsanitized HTML.
+- JSON request bodies are limited to 64 KiB; AI gateway responses are limited to
+  256 KiB. Individual text-field limits do not override these aggregate byte limits.
 - Registration does not grant privileged roles. Administrators provision leaders,
   pastors, and other administrators through audited operations.
 - Public profiles require explicit opt-in. Journals, prayers, answers, and personal

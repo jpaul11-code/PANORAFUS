@@ -132,6 +132,6 @@ test('endpoint examples use safe resource IDs, pagination, and expected bodies',
   api.questions.answer(id, 'My reflection');
   api.accessibility.update({ high_contrast: true });
   assert.deepEqual(calls[0], ['GET', `/study-plans/${id}/lessons`, { query: { limit: 20, offset: 0 } }]);
-  assert.deepEqual(calls[1][2], { body: { response_text: 'My reflection' } });
+  assert.deepEqual(calls[1][2], { body: { body: 'My reflection' } });
   assert.throws(() => api.admin.moderate('users', id), /Unsupported/);
 });
