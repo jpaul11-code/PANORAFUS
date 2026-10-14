@@ -1,0 +1,504 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../backend/node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  user
+  leader
+  pastor
+  admin
+}
+
+enum UserStatus {
+  active
+  suspended
+}
+
+enum ReadingLevel {
+  beginner
+  intermediate
+  advanced
+}
+
+enum Testament {
+  old
+  new
+}
+
+enum Visibility {
+  private
+  invite_only
+  public
+}
+
+enum MemberRole {
+  member
+  leader
+  assistant
+  pastor
+}
+
+enum SessionStatus {
+  active
+  completed
+  paused
+}
+
+enum PrayerStatus {
+  active
+  answered
+  archived
+}
+
+enum QuestionType {
+  reflection
+  discussion
+  application
+  theology
+}
+
+enum SessionType {
+  personal
+  group
+  church
+}
+
+enum GroupSessionStatus {
+  scheduled
+  live
+  completed
+  cancelled
+}
+
+model User {
+  id             String     @id @default(uuid()) @db.Uuid
+  email          String     @unique @db.VarChar(254)
+  password_hash  String
+  role           UserRole   @default(user)
+  status         UserStatus @default(active)
+  email_verified Boolean    @default(false)
+  token_version  Int        @default(0)
+  created_at     DateTime   @default(now()) @db.Timestamptz(3)
+  updated_at     DateTime   @updatedAt @db.Timestamptz(3)
+
+  profile                Profile?
+  accessibility_settings AccessibilitySettings?
+  study_plans            StudyPlan[]
+  questions              Question[]
+  answers                Answer[]
+  study_sessions         StudySession[]
+  journals               Journal[]
+  prayers                Prayer[]
+  led_groups             Group[]
+  group_memberships      GroupMember[]
+  group_sessions         GroupSession[]
+  comments               Comment[]
+  notifications          Notification[]
+  admin_audit_logs       AdminAuditLog[]
+  refresh_tokens         RefreshToken[]
+
+  @@index([status, role])
+  @@map("users")
+}
+
+model Profile {
+  id            String       @id @default(uuid()) @db.Uuid
+  user_id       String       @unique @db.Uuid
+  display_name  String       @db.VarChar(100)
+  bio           String?
+  avatar_url    String?
+  church_name   String?      @db.VarChar(200)
+  denomination  String?      @db.VarChar(100)
+  study_goal    String?
+  location      String?      @db.VarChar(200)
+  timezone      String?      @db.VarChar(64)
+  reading_level ReadingLevel @default(beginner)
+  language_code String       @default("en") @db.VarChar(35)
+  is_public     Boolean      @default(false)
+  created_at    DateTime     @default(now()) @db.Timestamptz(3)
+  updated_at    DateTime     @updatedAt @db.Timestamptz(3)
+
+  user     User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  language Language @relation(fields: [language_code], references: [code], onDelete: Restrict, onUpdate: Cascade)
+
+  @@index([language_code])
+  @@index([is_public])
+  @@map("profiles")
+}
+
+model BibleBook {
+  id              String    @id @default(uuid()) @db.Uuid
+  name            String    @unique @db.VarChar(100)
+  abbreviation    String    @unique @db.VarChar(20)
+  testament       Testament
+  canonical_order Int       @unique
+  created_at      DateTime  @default(now()) @db.Timestamptz(3)
+  updated_at      DateTime  @updatedAt @db.Timestamptz(3)
+  passages        BiblePassage[]
+
+  @@map("bible_books")
+}
+
+model BiblePassage {
+  id            String   @id @default(uuid()) @db.Uuid
+  book_id       String   @db.Uuid
+  chapter       Int
+  verse_start   Int
+  verse_end     Int
+  text          String
+  translation   String   @db.VarChar(100)
+  language_code String   @db.VarChar(35)
+  license       String
+  source_url    String?
+  created_at    DateTime @default(now()) @db.Timestamptz(3)
+  updated_at    DateTime @updatedAt @db.Timestamptz(3)
+
+  book            BibleBook       @relation(fields: [book_id], references: [id], onDelete: Restrict)
+  language        Language        @relation(fields: [language_code], references: [code], onDelete: Restrict, onUpdate: Cascade)
+  lesson_passages LessonPassage[]
+  questions       Question[]
+
+  @@unique([book_id, chapter, verse_start, verse_end, translation, language_code])
+  @@index([language_code, translation])
+  @@map("bible_passages")
+}
+
+model StudyPlan {
+  id            String       @id @default(uuid()) @db.Uuid
+  title         String       @db.VarChar(200)
+  description   String
+  topic         String       @default("general") @db.VarChar(100)
+  reading_level ReadingLevel @default(beginner)
+  language_code String       @default("en") @db.VarChar(35)
+  created_by    String?      @db.Uuid
+  is_published  Boolean      @default(false)
+  created_at    DateTime     @default(now()) @db.Timestamptz(3)
+  updated_at    DateTime     @updatedAt @db.Timestamptz(3)
+
+  creator  User?          @relation(fields: [created_by], references: [id], onDelete: SetNull)
+  language Language       @relation(fields: [language_code], references: [code], onDelete: Restrict, onUpdate: Cascade)
+  lessons  StudyLesson[]
+  sessions StudySession[]
+
+  @@index([created_by])
+  @@index([is_published, language_code, reading_level])
+  @@index([topic, is_published])
+  @@map("study_plans")
+}
+
+model StudyLesson {
+  id                String   @id @default(uuid()) @db.Uuid
+  plan_id           String   @db.Uuid
+  title             String   @db.VarChar(200)
+  description       String   @default("")
+  content           String   @default("")
+  reflection_prompt String   @default("")
+  position          Int
+  created_at        DateTime @default(now()) @db.Timestamptz(3)
+  updated_at        DateTime @updatedAt @db.Timestamptz(3)
+
+  plan             StudyPlan       @relation(fields: [plan_id], references: [id], onDelete: Cascade)
+  lesson_passages  LessonPassage[]
+  questions       Question[]
+  current_sessions StudySession[]
+  journals         Journal[]
+  group_sessions   GroupSession[]
+  comments         Comment[]
+
+  @@unique([plan_id, position])
+  @@map("study_lessons")
+}
+
+model LessonPassage {
+  id         String   @id @default(uuid()) @db.Uuid
+  lesson_id  String   @db.Uuid
+  passage_id String   @db.Uuid
+  position   Int      @default(0)
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+
+  lesson  StudyLesson  @relation(fields: [lesson_id], references: [id], onDelete: Cascade)
+  passage BiblePassage @relation(fields: [passage_id], references: [id], onDelete: Restrict)
+
+  @@unique([lesson_id, passage_id])
+  @@index([passage_id])
+  @@map("lesson_passages")
+}
+
+model Question {
+  id         String   @id @default(uuid()) @db.Uuid
+  created_by String   @db.Uuid
+  lesson_id  String?  @db.Uuid
+  passage_id String?  @db.Uuid
+  title      String   @db.VarChar(200)
+  body       String
+  question_type QuestionType @default(discussion)
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+
+  creator  User          @relation(fields: [created_by], references: [id], onDelete: Cascade)
+  lesson   StudyLesson?  @relation(fields: [lesson_id], references: [id], onDelete: Cascade)
+  passage  BiblePassage? @relation(fields: [passage_id], references: [id], onDelete: SetNull)
+  answers  Answer[]
+  comments Comment[]
+
+  @@index([created_by, created_at])
+  @@index([lesson_id])
+  @@index([passage_id])
+  @@index([question_type])
+  @@map("questions")
+}
+
+model Answer {
+  id          String   @id @default(uuid()) @db.Uuid
+  question_id String   @db.Uuid
+  created_by  String   @db.Uuid
+  body        String
+  is_accepted Boolean  @default(false)
+  created_at  DateTime @default(now()) @db.Timestamptz(3)
+  updated_at  DateTime @updatedAt @db.Timestamptz(3)
+
+  question Question @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  creator  User     @relation(fields: [created_by], references: [id], onDelete: Cascade)
+
+  @@index([question_id, created_at])
+  @@index([created_by])
+  @@map("answers")
+}
+
+model StudySession {
+  id                String        @id @default(uuid()) @db.Uuid
+  user_id           String        @db.Uuid
+  plan_id           String        @db.Uuid
+  group_id          String?       @db.Uuid
+  current_lesson_id String?       @db.Uuid
+  status            SessionStatus @default(active)
+  session_type      SessionType   @default(personal)
+  started_at        DateTime      @default(now()) @db.Timestamptz(3)
+  completed_at      DateTime?     @db.Timestamptz(3)
+  created_at        DateTime      @default(now()) @db.Timestamptz(3)
+  updated_at        DateTime      @updatedAt @db.Timestamptz(3)
+
+  user           User         @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  plan           StudyPlan    @relation(fields: [plan_id], references: [id], onDelete: Restrict)
+  group          Group?       @relation(fields: [group_id], references: [id], onDelete: SetNull)
+  current_lesson StudyLesson? @relation(fields: [current_lesson_id], references: [id], onDelete: SetNull)
+  journals       Journal[]
+
+  @@index([user_id, status])
+  @@index([plan_id])
+  @@index([group_id])
+  @@index([current_lesson_id])
+  @@map("study_sessions")
+}
+
+model Journal {
+  id         String   @id @default(uuid()) @db.Uuid
+  user_id    String   @db.Uuid
+  session_id String?  @db.Uuid
+  lesson_id  String?  @db.Uuid
+  title      String   @db.VarChar(200)
+  body       String
+  passage_reference String? @db.VarChar(100)
+  mood       String? @db.VarChar(50)
+  is_private Boolean  @default(true)
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+
+  user    User          @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  session StudySession? @relation(fields: [session_id], references: [id], onDelete: SetNull)
+  lesson  StudyLesson?  @relation(fields: [lesson_id], references: [id], onDelete: SetNull)
+
+  @@index([user_id, created_at])
+  @@index([session_id])
+  @@index([lesson_id])
+  @@map("journals")
+}
+
+model Prayer {
+  id         String       @id @default(uuid()) @db.Uuid
+  user_id    String       @db.Uuid
+  group_id   String?      @db.Uuid
+  title      String       @db.VarChar(200)
+  body       String
+  status     PrayerStatus @default(active)
+  answered_at DateTime?   @db.Timestamptz(3)
+  is_private Boolean      @default(true)
+  created_at DateTime     @default(now()) @db.Timestamptz(3)
+  updated_at DateTime     @updatedAt @db.Timestamptz(3)
+
+  user  User   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  group Group? @relation(fields: [group_id], references: [id], onDelete: SetNull)
+
+  @@index([user_id, status, created_at])
+  @@index([group_id])
+  @@map("prayers")
+}
+
+model Group {
+  id          String     @id @default(uuid()) @db.Uuid
+  name        String     @db.VarChar(200)
+  description String     @default("")
+  leader_id   String     @db.Uuid
+  visibility  Visibility @default(private)
+  created_at  DateTime   @default(now()) @db.Timestamptz(3)
+  updated_at  DateTime   @updatedAt @db.Timestamptz(3)
+
+  leader         User           @relation(fields: [leader_id], references: [id], onDelete: Restrict)
+  members        GroupMember[]
+  sessions       GroupSession[]
+  study_sessions StudySession[]
+  prayers        Prayer[]
+
+  @@index([leader_id])
+  @@index([visibility])
+  @@map("groups")
+}
+
+model GroupMember {
+  id         String     @id @default(uuid()) @db.Uuid
+  group_id   String     @db.Uuid
+  user_id    String     @db.Uuid
+  role       MemberRole @default(member)
+  created_at DateTime   @default(now()) @db.Timestamptz(3)
+  updated_at DateTime   @updatedAt @db.Timestamptz(3)
+
+  group Group @relation(fields: [group_id], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([group_id, user_id])
+  @@index([user_id])
+  @@map("group_members")
+}
+
+model GroupSession {
+  id         String   @id @default(uuid()) @db.Uuid
+  group_id   String   @db.Uuid
+  lesson_id  String?  @db.Uuid
+  created_by String   @db.Uuid
+  title      String   @db.VarChar(200)
+  status     GroupSessionStatus @default(scheduled)
+  notes      String?
+  starts_at  DateTime @db.Timestamptz(3)
+  ends_at    DateTime? @db.Timestamptz(3)
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+
+  group    Group        @relation(fields: [group_id], references: [id], onDelete: Cascade)
+  lesson   StudyLesson? @relation(fields: [lesson_id], references: [id], onDelete: Cascade)
+  creator  User         @relation(fields: [created_by], references: [id], onDelete: Restrict)
+  comments Comment[]
+
+  @@index([group_id, starts_at])
+  @@index([lesson_id])
+  @@index([created_by])
+  @@map("group_sessions")
+}
+
+model Comment {
+  id               String   @id @default(uuid()) @db.Uuid
+  created_by       String   @db.Uuid
+  question_id      String?  @db.Uuid
+  lesson_id        String?  @db.Uuid
+  group_session_id String?  @db.Uuid
+  body             String
+  created_at       DateTime @default(now()) @db.Timestamptz(3)
+  updated_at       DateTime @updatedAt @db.Timestamptz(3)
+
+  creator       User          @relation(fields: [created_by], references: [id], onDelete: Cascade)
+  question      Question?     @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  lesson        StudyLesson?  @relation(fields: [lesson_id], references: [id], onDelete: Cascade)
+  group_session GroupSession? @relation(fields: [group_session_id], references: [id], onDelete: Cascade)
+
+  @@index([created_by])
+  @@index([question_id, created_at])
+  @@index([lesson_id, created_at])
+  @@index([group_session_id, created_at])
+  @@map("comments")
+}
+
+model Notification {
+  id         String   @id @default(uuid()) @db.Uuid
+  user_id    String   @db.Uuid
+  type       String   @db.VarChar(50)
+  title      String   @db.VarChar(200)
+  body       String
+  is_read    Boolean  @default(false)
+  data       Json     @default("{}")
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  updated_at DateTime @updatedAt @db.Timestamptz(3)
+  user       User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, is_read, created_at])
+  @@map("notifications")
+}
+
+model Language {
+  id            String   @id @default(uuid()) @db.Uuid
+  code          String   @unique @db.VarChar(35)
+  name          String   @db.VarChar(100)
+  native_name   String   @db.VarChar(100)
+  is_active     Boolean  @default(true)
+  created_at    DateTime @default(now()) @db.Timestamptz(3)
+  updated_at    DateTime @updatedAt @db.Timestamptz(3)
+
+  profiles    Profile[]
+  passages    BiblePassage[]
+  study_plans StudyPlan[]
+
+  @@map("languages")
+}
+
+model AccessibilitySettings {
+  id            String   @id @default(uuid()) @db.Uuid
+  user_id       String   @unique @db.Uuid
+  font_size     Int      @default(16)
+  high_contrast Boolean  @default(false)
+  reduce_motion Boolean  @default(false)
+  screen_reader Boolean  @default(false)
+  speech_enabled Boolean @default(false)
+  simplified_language Boolean @default(false)
+  created_at    DateTime @default(now()) @db.Timestamptz(3)
+  updated_at    DateTime @updatedAt @db.Timestamptz(3)
+  user          User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("accessibility_settings")
+}
+
+model AdminAuditLog {
+  id          String   @id @default(uuid()) @db.Uuid
+  admin_id    String   @db.Uuid
+  action      String   @db.VarChar(100)
+  entity_type String   @db.VarChar(100)
+  entity_id   String?  @db.Uuid
+  details     Json     @default("{}")
+  created_at  DateTime @default(now()) @db.Timestamptz(3)
+  admin       User     @relation(fields: [admin_id], references: [id], onDelete: Restrict)
+
+  @@index([admin_id, created_at])
+  @@index([entity_type, entity_id])
+  @@map("admin_audit_logs")
+}
+
+model RefreshToken {
+  id         String   @id @default(uuid()) @db.Uuid
+  token_hash String   @unique @db.VarChar(128)
+  user_id    String   @db.Uuid
+  expires_at DateTime @db.Timestamptz(3)
+  revoked_at DateTime? @db.Timestamptz(3)
+  used_at    DateTime? @db.Timestamptz(3)
+  family_id  String   @db.Uuid
+  created_at DateTime @default(now()) @db.Timestamptz(3)
+  user       User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@index([family_id])
+  @@index([expires_at])
+  @@map("refresh_tokens")
+}
