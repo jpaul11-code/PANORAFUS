@@ -24,6 +24,10 @@
   "license": "SEE LICENSE IN LICENSE",
   "copyright": "Copyright (c) 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. All rights reserved.",
   "owner": "SEASONED CHRISTIAN MINISTRY CHURCH, INC.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpaul11-code/PANORAFUS.git"
+  },
   "homepage": "https://www.seasonedchristianministrychurch.com",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
