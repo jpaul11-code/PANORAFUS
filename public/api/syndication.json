@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-21T16:15:37.833Z",
+  "generatedAt": "2026-11-02T19:59:33.200Z",
   "dashboard": {
-    "generatedAt": "2026-09-21T16:15:37.833Z",
+    "generatedAt": "2026-11-02T19:59:33.200Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -133,20 +133,20 @@
       {
         "monthIndex": 8,
         "month": "September",
-        "commits": 100,
-        "docsTouched": 245,
-        "workflowChanges": 0,
-        "codeChanges": 55,
-        "totalActivity": 400
+        "commits": 124,
+        "docsTouched": 291,
+        "workflowChanges": 1,
+        "codeChanges": 69,
+        "totalActivity": 485
       },
       {
         "monthIndex": 9,
         "month": "October",
-        "commits": 0,
-        "docsTouched": 0,
+        "commits": 9,
+        "docsTouched": 22,
         "workflowChanges": 0,
         "codeChanges": 0,
-        "totalActivity": 0
+        "totalActivity": 31
       },
       {
         "monthIndex": 10,
@@ -168,16 +168,16 @@
       }
     ],
     "kpis": {
-      "documentationFiles": 52,
-      "documentationLines": 9151,
-      "externalLinks": 96,
+      "documentationFiles": 54,
+      "documentationLines": 9299,
+      "externalLinks": 97,
       "workflows": 7,
       "institutionsIndexed": 177,
       "dashboardPlaceholders": 0
     },
     "trending": {
       "headline": "TRENDING \"PANORAFUS.AI\" TODAY THROUGH THE SIX CONTINENTS.",
-      "generatedDate": "2026-09-21",
+      "generatedDate": "2026-11-02",
       "activeRegions": 6,
       "totalRegions": 6,
       "institutionsIndexed": 177,
@@ -203,9 +203,25 @@
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-09-17T12:53:00Z",
+      "committedAt": "2026-10-26T16:33:25Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "f3d5b8d2448b11f5fb9e55d5fd43775c6762f05b"
+      "sha": "070fda3dae4958d132d494ed39184bbe39c605e5"
+    },
+    {
+      "title": "PANORAFUS.AI",
+      "summary": "PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
+      "file": "README.md",
+      "committedAt": "2026-10-02T16:17:07Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "sha": "bf2b7cd972eefba10c4d3839c8c800fefb1c49e1"
+    },
+    {
+      "title": "Summary",
+      "summary": "Summary",
+      "file": "SUMMARY.md",
+      "committedAt": "2026-09-23T17:38:42Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "sha": "11421e1565378c32eb98ea75aa8d9741d01c03a5"
     },
     {
       "title": "BLOOD SACRIFICES — CHRIST THE LAMB",
@@ -270,22 +286,6 @@
       "committedAt": "2026-09-17T12:28:14Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
       "sha": "71ac0e260809589c0ea0f7778e6934fed7124e12"
-    },
-    {
-      "title": "PANORAFUS.AI",
-      "summary": "PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
-      "file": "README.md",
-      "committedAt": "2026-09-16T20:51:37Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "sha": "1a92594bd998037126bfefed7895b351012a9a57"
-    },
-    {
-      "title": "Summary",
-      "summary": "Summary",
-      "file": "SUMMARY.md",
-      "committedAt": "2026-09-16T20:51:37Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
-      "sha": "1a92594bd998037126bfefed7895b351012a9a57"
     },
     {
       "title": "LAW — GOSPEL",

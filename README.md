@@ -84,7 +84,7 @@ The executable platform uses repository-backed data from the institution indexes
 
 ### ⭐ #1 PRIORITY — Must Read · Buy · Download · Comment · Discuss
 
-> 🔥 **[PANORA-FUS OF BIBLICAL ESCHATOLOGY](BIBLICAL_ESCHATOLOGY.md)** — The study of the last things as revealed in Holy Scripture. This is the first and foremost priority of PANORAFUS.AI.
+> 🔥 **[PANORAFUS OF BIBLICAL ESCHATOLOGY](BIBLICAL_ESCHATOLOGY.md)** — The study of the last things as revealed in Holy Scripture. This is the first and foremost priority of PANORAFUS.AI.
 
 ---
 
@@ -112,7 +112,7 @@ For website management, content updates, and administrative matters related to *
 - [🧭 PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)](PROJECT_SETUP_ROADMAP.md)
 - [🏗️ PANORAFUS.AI App Architecture Builder](APP_ARCHITECTURE_BUILDER.md)
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
-- [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
+- [⭐ PANORAFUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [🕰️ FIRST THINGS - LAST THINGS](FIRST_THINGS_LAST_THINGS.md)
 - [✝️ The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
 - [🔭 PANORAFUS OF FUTURE KNOWLEDGE — Concepts, Sources & Limits of Prophetic Knowledge](FUTURE_KNOWLEDGE.md)
@@ -150,6 +150,7 @@ For website management, content updates, and administrative matters related to *
 - [⚔️ Satan's Victory — Satan's Defeat](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [👑 Reign of Death – Eternal Life — An Eschatology-Centered Biblical Meditation](REIGN_OF_DEATH_ETERNAL_LIFE.md)
 - [👁️ Visions and Revelations — A Biblical Study of Divine Visions, Dreams, and Supernatural Revelations](VISIONS_AND_REVELATIONS.md)
+- [🕍 Ritual Ceremonies — Inner Experience — An Eschatology-Centered Biblical Study of Outward Worship and Inward Renewal in Christ](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [🍞 The Lord's Supper — A Biblical, Historical, and Theological Study of Holy Communion](THE_LORD_SUPPER.md)
 - [🩸 Blood Sacrifices — Christ the Lamb — An Eschatology-Centered Biblical Study of Sin, Atonement, and the Triumph of the Lamb of God](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [🕯️ Figures and Shadows — Substance — An Eschatology-Centered Biblical Study of Types, Shadows, and Fulfillment in Jesus Christ](FIGURES_AND_SHADOWS_SUBSTANCE.md)
