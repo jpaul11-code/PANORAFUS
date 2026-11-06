@@ -19,6 +19,7 @@
 - [Spiritual Darkness - Lights of the World](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [Satan's Victory - Satan's Defeat](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [Reign of Death - Eternal Life](REIGN_OF_DEATH_ETERNAL_LIFE.md)
+- [Lost Paradise — Retrieved Paradise](LOST_PARADISE_RETRIEVED_PARADISE.md)
 - [Apostle Paul Genealogy](APOSTLE_PAUL_GENEALOGY.md)
 - [Resurrection Witnesses](RESURRECTION_WITNESSES.md)
 - [Ritual Ceremonies — Inner Experience](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)

@@ -149,6 +149,7 @@ For website management, content updates, and administrative matters related to *
 - [🌅 Spiritual Darkness — Lights of the World](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [⚔️ Satan's Victory — Satan's Defeat](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [👑 Reign of Death – Eternal Life — An Eschatology-Centered Biblical Meditation](REIGN_OF_DEATH_ETERNAL_LIFE.md)
+- [🌿 Lost Paradise — Retrieved Paradise](LOST_PARADISE_RETRIEVED_PARADISE.md) — From Eden's Ruin to Christ's Restored Kingdom
 - [👁️ Visions and Revelations — A Biblical Study of Divine Visions, Dreams, and Supernatural Revelations](VISIONS_AND_REVELATIONS.md)
 - [🕍 Ritual Ceremonies — Inner Experience — An Eschatology-Centered Biblical Study of Outward Worship and Inward Renewal in Christ](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [🍞 The Lord's Supper — A Biblical, Historical, and Theological Study of Holy Communion](THE_LORD_SUPPER.md)
