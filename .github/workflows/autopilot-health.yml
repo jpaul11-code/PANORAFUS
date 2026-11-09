@@ -92,27 +92,37 @@ jobs:
               "_Generated automatically by PANORAFUS.AI autopilot._"
             ].join("\n");
 
-            const query = `repo:${owner}/${repo} is:issue is:open in:title "${title}"`;
-            const { data: searchResults } = await github.rest.search.issuesAndPullRequests({
-              q: query,
-              per_page: 5
-            });
-            const existing = searchResults.items.find(
-              (item) => item.title === title && !item.pull_request
-            ) || null;
+            await core.summary.addRaw(report).write();
 
-            if (existing) {
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number: existing.number,
-                body: report
+            try {
+              const query = `repo:${owner}/${repo} is:issue is:open in:title "${title}"`;
+              const { data: searchResults } = await github.rest.search.issuesAndPullRequests({
+                q: query,
+                per_page: 5
               });
-            } else {
-              await github.rest.issues.create({
-                owner,
-                repo,
-                title,
-                body: report
-              });
+              const existing = searchResults.items.find(
+                (item) => item.title === title && !item.pull_request
+              ) || null;
+
+              if (existing) {
+                await github.rest.issues.createComment({
+                  owner,
+                  repo,
+                  issue_number: existing.number,
+                  body: report
+                });
+              } else {
+                await github.rest.issues.create({
+                  owner,
+                  repo,
+                  title,
+                  body: report
+                });
+              }
+            } catch (error) {
+              if (error.status === 410 || /Issues has been disabled/i.test(error.message)) {
+                core.warning("Issues are disabled for this repository; report written to the job summary only.");
+              } else {
+                throw error;
+              }
             }
